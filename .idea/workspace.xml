@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c62a4eec-d582-4e13-b7e5-eef246bc66c3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plotter.html" afterPath="$PROJECT_DIR$/plotter.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stampe.html" afterPath="$PROJECT_DIR$/stampe.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mase_univ.iws" />
@@ -80,12 +81,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stampe.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="stampe.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stampe.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3615" max-vertical-offset="4590">
-              <caret line="241" column="42" selection-start-line="241" selection-start-column="42" selection-end-line="241" selection-end-column="42" />
-              <folding />
+            <state vertical-scroll-proportion="0.44371942" vertical-offset="3434" max-vertical-offset="6171">
+              <caret line="218" column="50" selection-start-line="218" selection-start-column="50" selection-end-line="218" selection-end-column="50" />
+              <folding>
+                <element signature="n#style#0;n#table#0;n#article#0;n#li#0;n#ul#0;n#section#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#col#0;n#colgroup#0;n#table#0;n#article#0;n#li#0;n#ul#0;n#section#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -100,11 +104,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plotter.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="plotter.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plotter.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.13376835" vertical-offset="5987" max-vertical-offset="7837">
-              <caret line="357" column="15" selection-start-line="357" selection-start-column="15" selection-end-line="357" selection-end-column="15" />
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="7837">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="455" selection-end-column="7" />
               <folding>
                 <element signature="n#style#0;n#table#0;n#article#0;n#li#0;n#ul#0;n#section#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#col#0;n#colgroup#0;n#table#0;n#article#0;n#li#0;n#ul#0;n#section#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -134,11 +138,11 @@
         <option value="$PROJECT_DIR$/css/skel-noscript.css" />
         <option value="$PROJECT_DIR$/pubblicaconnoi.html" />
         <option value="$PROJECT_DIR$/rilegaturaTesi.html" />
-        <option value="$PROJECT_DIR$/stampe.html" />
         <option value="$PROJECT_DIR$/TestIngresso.html" />
         <option value="$PROJECT_DIR$/timbri.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/plotter.html" />
+        <option value="$PROJECT_DIR$/stampe.html" />
       </list>
     </option>
   </component>
@@ -411,7 +415,11 @@
       <created>1400161868923</created>
       <updated>1400161868923</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Plotter new">
+      <created>1400164438878</created>
+      <updated>1400164438878</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -457,7 +465,8 @@
     <MESSAGE value="href Rilegatura tesi" />
     <MESSAGE value="href rilegatura tesi" />
     <MESSAGE value="Plotter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Plotter" />
+    <MESSAGE value="Plotter new" />
+    <option name="LAST_COMMIT_MESSAGE" value="Plotter new" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -475,7 +484,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3615" max-vertical-offset="4590">
           <caret line="241" column="42" selection-start-line="241" selection-start-column="42" selection-end-line="241" selection-end-column="42" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#article#0;n#li#0;n#ul#0;n#section#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#col#0;n#colgroup#0;n#table#0;n#article#0;n#li#0;n#ul#0;n#section#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -538,7 +550,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3615" max-vertical-offset="4590">
           <caret line="241" column="42" selection-start-line="241" selection-start-column="42" selection-end-line="241" selection-end-column="42" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#article#0;n#li#0;n#ul#0;n#section#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#col#0;n#colgroup#0;n#table#0;n#article#0;n#li#0;n#ul#0;n#section#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -761,14 +776,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stampe.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3615" max-vertical-offset="4590">
-          <caret line="241" column="42" selection-start-line="241" selection-start-column="42" selection-end-line="241" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TestIngresso.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3666" max-vertical-offset="4590">
@@ -830,7 +837,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3570">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -845,8 +852,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/plotter.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13376835" vertical-offset="5987" max-vertical-offset="7837">
-          <caret line="357" column="15" selection-start-line="357" selection-start-column="15" selection-end-line="357" selection-end-column="15" />
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="7837">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="455" selection-end-column="7" />
           <folding>
             <element signature="n#style#0;n#table#0;n#article#0;n#li#0;n#ul#0;n#section#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#col#0;n#colgroup#0;n#table#0;n#article#0;n#li#0;n#ul#0;n#section#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -854,6 +861,17 @@
             <element signature="n#style#0;n#col#0;n#colgroup#0;n#table#1;n#article#0;n#li#0;n#ul#0;n#section#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#table#2;n#article#0;n#li#0;n#ul#0;n#section#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#col#0;n#colgroup#0;n#table#2;n#article#0;n#li#0;n#ul#0;n#section#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stampe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44371942" vertical-offset="3434" max-vertical-offset="6171">
+          <caret line="218" column="50" selection-start-line="218" selection-start-column="50" selection-end-line="218" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#article#0;n#li#0;n#ul#0;n#section#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#col#0;n#colgroup#0;n#table#0;n#article#0;n#li#0;n#ul#0;n#section#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
