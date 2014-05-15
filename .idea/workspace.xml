@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c62a4eec-d582-4e13-b7e5-eef246bc66c3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plotter.html" afterPath="$PROJECT_DIR$/plotter.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stampe.html" afterPath="$PROJECT_DIR$/stampe.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -84,8 +83,8 @@
       <file leaf-file-name="stampe.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stampe.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44371942" vertical-offset="3434" max-vertical-offset="6171">
-              <caret line="218" column="50" selection-start-line="218" selection-start-column="50" selection-end-line="218" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.24959217" vertical-offset="1955" max-vertical-offset="6171">
+              <caret line="124" column="28" selection-start-line="124" selection-start-column="28" selection-end-line="124" selection-end-column="28" />
               <folding>
                 <element signature="n#style#0;n#table#0;n#article#0;n#li#0;n#ul#0;n#section#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#col#0;n#colgroup#0;n#table#0;n#article#0;n#li#0;n#ul#0;n#section#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -419,7 +418,11 @@
       <created>1400164438878</created>
       <updated>1400164438878</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Digital print">
+      <created>1400165134503</created>
+      <updated>1400165134503</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -466,7 +469,8 @@
     <MESSAGE value="href rilegatura tesi" />
     <MESSAGE value="Plotter" />
     <MESSAGE value="Plotter new" />
-    <option name="LAST_COMMIT_MESSAGE" value="Plotter new" />
+    <MESSAGE value="Digital print" />
+    <option name="LAST_COMMIT_MESSAGE" value="Digital print" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -867,8 +871,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stampe.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44371942" vertical-offset="3434" max-vertical-offset="6171">
-          <caret line="218" column="50" selection-start-line="218" selection-start-column="50" selection-end-line="218" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.24959217" vertical-offset="1955" max-vertical-offset="6171">
+          <caret line="124" column="28" selection-start-line="124" selection-start-column="28" selection-end-line="124" selection-end-column="28" />
           <folding>
             <element signature="n#style#0;n#table#0;n#article#0;n#li#0;n#ul#0;n#section#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#col#0;n#colgroup#0;n#table#0;n#article#0;n#li#0;n#ul#0;n#section#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
