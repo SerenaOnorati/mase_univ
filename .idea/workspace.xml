@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c62a4eec-d582-4e13-b7e5-eef246bc66c3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plotter.html" afterPath="$PROJECT_DIR$/plotter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/js_slideshow_images_text/jquery.easing.1.3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/js_slideshow_images_text/jquery.eislideshow.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mase_univ.iws" />
@@ -409,7 +410,15 @@
       <created>1400161572370</created>
       <updated>1400161572370</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Plotter">
+      <created>1400161824885</created>
+      <updated>1400161824885</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Plotter">
+      <created>1400161846651</created>
+      <updated>1400161846651</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
