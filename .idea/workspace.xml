@@ -384,7 +384,11 @@
       <created>1400160875077</created>
       <updated>1400160875077</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Plotter">
+      <created>1400161100746</created>
+      <updated>1400161100746</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
