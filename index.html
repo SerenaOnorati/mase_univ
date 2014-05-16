@@ -19,6 +19,7 @@
 		<script src="js/config.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-panels.min.js"></script>
+        <script src="js/js_check_form/check_form.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel-noscript.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -236,21 +237,22 @@
 									<form method="post" action="#">
 										<div class="row half">
 											<div class="6u">
-												<input name="name" placeholder="Nome" type="text" class="text" />
+												<input id="name" name="name" placeholder="Nome" type="text" class="text" />
 											</div>
 											<div class="6u">
-												<input name="email" placeholder="Email" type="text" class="text" />
+												<input id="email" name="email" placeholder="Email" type="text" class="text" />
 											</div>
 										</div>
 										<div class="row half">
 											<div class="12u">
-												<textarea name="message" placeholder="Messaggio"></textarea>
+												<textarea id="message" name="message" placeholder="Messaggio"></textarea>
 											</div>
 										</div>
 										<div class="row half">
 											<div class="12u">
-												<a href="#" class="button button-icon fa fa-envelope">Invia</a>
-											</div>
+												<a href="#" class="button button-icon fa fa-envelope" onclick="Modulo(document.getElementById('name').value,document.getElementById('email').value,document.getElementById('message').value)">Invia</a>
+
+                                            </div>
 										</div>
 									</form>
 								</section>
