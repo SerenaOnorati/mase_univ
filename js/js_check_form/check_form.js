@@ -1,4 +1,3 @@
-
 function Modulo(nome, email, messaggio){
 
     if ((nome == "") || (nome == "undefined")){
@@ -20,6 +19,7 @@ function Modulo(nome, email, messaggio){
             else{
                 //Invio del messaggio lo farò inserendo codice asp
                 var oggetto = "Richiesta informazioni dal sito Universitalia";
+                location.href = "mailto:" + email + "?Subject=" + oggetto + "&ReplyTo=" + email + "&Body=" + messaggio + aCapo + aCapo + nome;
 
 
             }
