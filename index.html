@@ -208,29 +208,28 @@
 				<!-- Footer -->
 					<div id="footer" class="container">
 						<header>
-							<h2>Domande o commenti?</h2>
+							<h2><a name="domande_commenti"> Domande o commenti?</a></h2>
 						</header>
 						<div class="row">
 							<div class="6u">
 								<section>
-									<form method="post" action="#">
+									<form method="post" action="php/mail.php" name="contactform" id="contact">
 										<div class="row half">
 											<div class="6u">
-												<input id="name" name="name" placeholder="Nome" type="text" class="text" />
+												<input id="name" name="name" placeholder="Nome" type="text" class="text" required="required"/>
 											</div>
 											<div class="6u">
-												<input id="email" name="email" placeholder="Email" type="text" class="text" />
+												<input id="email" name="email" placeholder="Email" type="text" class="text" required="required" />
 											</div>
 										</div>
 										<div class="row half">
 											<div class="12u">
-												<textarea id="message" name="message" placeholder="Messaggio"></textarea>
+												<textarea id="message" name="message" placeholder="Messaggio" required="required"></textarea>
 											</div>
 										</div>
 										<div class="row half">
 											<div class="12u">
-												<a href="#" class="button button-icon fa fa-envelope" onclick="Modulo(document.getElementById('name').value,document.getElementById('email').value,document.getElementById('message').value)">Invia</a>
-
+												<button class="button button-icon fa fa-envelope">Invia</button>
                                             </div>
 										</div>
 									</form>
