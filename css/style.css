@@ -721,6 +721,7 @@
 		.fa-briefcase:before{content:"\f0b1"}
 		.fa-fullscreen:before{content:"\f0b2"}
 		.fa-group:before{content:"\f0c0"}
+        .fa-graduation-cap:before {content: "\f19d";}
 		.fa-chain:before,.fa-link:before{content:"\f0c1"}
 		.fa-cloud:before{content:"\f0c2"}
 		.fa-flask:before{content:"\f0c3"}
