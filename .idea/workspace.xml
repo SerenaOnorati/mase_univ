@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c62a4eec-d582-4e13-b7e5-eef246bc66c3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/favicon.ico" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestIngresso.html" afterPath="$PROJECT_DIR$/TestIngresso.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style-desktop.css" afterPath="$PROJECT_DIR$/css/style-desktop.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/indexlibri.html" afterPath="$PROJECT_DIR$/indexlibri.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plotter.html" afterPath="$PROJECT_DIR$/plotter.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rilegaturaTesi.html" afterPath="$PROJECT_DIR$/rilegaturaTesi.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stampe.html" afterPath="$PROJECT_DIR$/stampe.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timbri.html" afterPath="$PROJECT_DIR$/timbri.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -63,11 +67,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25701624" vertical-offset="2053" max-vertical-offset="4998">
-              <caret line="131" column="72" selection-start-line="131" selection-start-column="72" selection-end-line="131" selection-end-column="72" />
+            <state vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="4998">
+              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="82" />
               <folding>
                 <element signature="n#style#0;n#iframe#0;n#article#0;n#li#0;n#ul#0;n#section#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -78,8 +82,8 @@
       <file leaf-file-name="TestIngresso.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestIngresso.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.23077" vertical-offset="461" max-vertical-offset="3570">
-              <caret line="55" column="36" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
+            <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="3587">
+              <caret line="9" column="82" selection-start-line="9" selection-start-column="82" selection-end-line="9" selection-end-column="82" />
               <folding />
             </state>
           </provider>
@@ -88,8 +92,8 @@
       <file leaf-file-name="timbri.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/timbri.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.730769" vertical-offset="333" max-vertical-offset="4607">
-              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="4624">
+              <caret line="9" column="82" selection-start-line="9" selection-start-column="82" selection-end-line="9" selection-end-column="82" />
               <folding />
             </state>
           </provider>
@@ -98,8 +102,8 @@
       <file leaf-file-name="indexlibri.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/indexlibri.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="67.30769" vertical-offset="1750" max-vertical-offset="2465">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="2482">
+              <caret line="4" column="82" selection-start-line="4" selection-start-column="82" selection-end-line="4" selection-end-column="82" />
               <folding />
             </state>
           </provider>
@@ -108,8 +112,8 @@
       <file leaf-file-name="plotter.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plotter.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.5" vertical-offset="954" max-vertical-offset="7786">
-              <caret line="89" column="14" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="14" />
+            <state vertical-scroll-proportion="-4.5" vertical-offset="36" max-vertical-offset="7786">
+              <caret line="9" column="78" selection-start-line="9" selection-start-column="78" selection-end-line="9" selection-end-column="78" />
               <folding />
             </state>
           </provider>
@@ -118,18 +122,18 @@
       <file leaf-file-name="stampe.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stampe.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.23077" vertical-offset="935" max-vertical-offset="6120">
-              <caret line="89" column="14" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="14" />
+            <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="6120">
+              <caret line="9" column="78" selection-start-line="9" selection-start-column="78" selection-end-line="9" selection-end-column="78" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rilegaturaTesi.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="rilegaturaTesi.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rilegaturaTesi.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.274509" vertical-offset="870" max-vertical-offset="3502">
-              <caret line="79" column="30" selection-start-line="35" selection-start-column="24" selection-end-line="79" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.22599705" vertical-offset="0" max-vertical-offset="3519">
+              <caret line="9" column="82" selection-start-line="9" selection-start-column="82" selection-end-line="9" selection-end-column="82" />
               <folding />
             </state>
           </provider>
@@ -138,7 +142,7 @@
       <file leaf-file-name="style-desktop.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style-desktop.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.32" vertical-offset="2618" max-vertical-offset="6562">
+            <state vertical-scroll-proportion="-28.56" vertical-offset="2312" max-vertical-offset="6562">
               <caret line="178" column="0" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
               <folding />
             </state>
@@ -173,14 +177,15 @@
         <option value="$PROJECT_DIR$/css/skel-noscript.css" />
         <option value="$PROJECT_DIR$/testIngresso.html" />
         <option value="$PROJECT_DIR$/js/js_check_form/check_form.js" />
-        <option value="$PROJECT_DIR$/rilegaturaTesi.html" />
-        <option value="$PROJECT_DIR$/plotter.html" />
-        <option value="$PROJECT_DIR$/stampe.html" />
-        <option value="$PROJECT_DIR$/timbri.html" />
-        <option value="$PROJECT_DIR$/TestIngresso.html" />
         <option value="$PROJECT_DIR$/css/style-desktop.css" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/TestIngresso.html" />
+        <option value="$PROJECT_DIR$/timbri.html" />
+        <option value="$PROJECT_DIR$/indexlibri.html" />
+        <option value="$PROJECT_DIR$/plotter.html" />
+        <option value="$PROJECT_DIR$/stampe.html" />
+        <option value="$PROJECT_DIR$/rilegaturaTesi.html" />
       </list>
     </option>
   </component>
@@ -245,6 +250,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mase_univ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mase_univ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -265,6 +284,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Serena Onorati\mase_univ" />
       <recent name="C:\Users\Massimo\WebstormProjects\mase_univ" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Serena Onorati\mase_univ\images" />
     </key>
   </component>
   <component name="RunManager">
@@ -433,7 +455,11 @@
       <created>1400940229012</created>
       <updated>1400940229012</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Modifica intestazione 2">
+      <created>1400943388517</created>
+      <updated>1400943388517</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -486,7 +512,8 @@
     <MESSAGE value="commit merge template test d'ingresso seconda prova (serena)" />
     <MESSAGE value="Commit modulo contatti - manca solo funzione di invio e riportare il codice in ogni altra pagina oltre all'index" />
     <MESSAGE value="Modifica intestazione" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modifica intestazione" />
+    <MESSAGE value="Modifica intestazione 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modifica intestazione 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -778,62 +805,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rilegaturaTesi.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.274509" vertical-offset="870" max-vertical-offset="3502">
-          <caret line="79" column="30" selection-start-line="35" selection-start-column="24" selection-end-line="79" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/indexlibri.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="67.30769" vertical-offset="1750" max-vertical-offset="2465">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plotter.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.5" vertical-offset="954" max-vertical-offset="7786">
-          <caret line="89" column="14" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stampe.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.23077" vertical-offset="935" max-vertical-offset="6120">
-          <caret line="89" column="14" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timbri.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.730769" vertical-offset="333" max-vertical-offset="4607">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestIngresso.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.23077" vertical-offset="461" max-vertical-offset="3570">
-          <caret line="55" column="36" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style-desktop.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.32" vertical-offset="2618" max-vertical-offset="6562">
-          <caret line="178" column="0" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-26.76" vertical-offset="1490" max-vertical-offset="21709">
@@ -844,11 +815,67 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25701624" vertical-offset="2053" max-vertical-offset="4998">
-          <caret line="131" column="72" selection-start-line="131" selection-start-column="72" selection-end-line="131" selection-end-column="72" />
+        <state vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="4998">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="82" />
           <folding>
             <element signature="n#style#0;n#iframe#0;n#article#0;n#li#0;n#ul#0;n#section#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/indexlibri.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="2482">
+          <caret line="4" column="82" selection-start-line="4" selection-start-column="82" selection-end-line="4" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timbri.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="4624">
+          <caret line="9" column="82" selection-start-line="9" selection-start-column="82" selection-end-line="9" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestIngresso.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="3587">
+          <caret line="9" column="82" selection-start-line="9" selection-start-column="82" selection-end-line="9" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plotter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.5" vertical-offset="36" max-vertical-offset="7786">
+          <caret line="9" column="78" selection-start-line="9" selection-start-column="78" selection-end-line="9" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stampe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="6120">
+          <caret line="9" column="78" selection-start-line="9" selection-start-column="78" selection-end-line="9" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style-desktop.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-28.56" vertical-offset="2312" max-vertical-offset="6562">
+          <caret line="178" column="0" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rilegaturaTesi.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22599705" vertical-offset="0" max-vertical-offset="3519">
+          <caret line="9" column="82" selection-start-line="9" selection-start-column="82" selection-end-line="9" selection-end-column="82" />
+          <folding />
         </state>
       </provider>
     </entry>
