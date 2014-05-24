@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c62a4eec-d582-4e13-b7e5-eef246bc66c3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/favicon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestIngresso.html" afterPath="$PROJECT_DIR$/TestIngresso.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/indexlibri.html" afterPath="$PROJECT_DIR$/indexlibri.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plotter.html" afterPath="$PROJECT_DIR$/plotter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/tesi.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rilegaturaTesi.html" afterPath="$PROJECT_DIR$/rilegaturaTesi.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stampe.html" afterPath="$PROJECT_DIR$/stampe.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timbri.html" afterPath="$PROJECT_DIR$/timbri.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mase_univ.iws" />
@@ -132,8 +126,8 @@
       <file leaf-file-name="rilegaturaTesi.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rilegaturaTesi.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.22599705" vertical-offset="0" max-vertical-offset="3519">
-              <caret line="9" column="82" selection-start-line="9" selection-start-column="82" selection-end-line="9" selection-end-column="82" />
+            <state vertical-scroll-proportion="0.12555392" vertical-offset="1326" max-vertical-offset="3519">
+              <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -282,6 +276,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Serena Onorati\mase_univ\images" />
       <recent name="C:\Users\Serena Onorati\mase_univ" />
       <recent name="C:\Users\Massimo\WebstormProjects\mase_univ" />
     </key>
@@ -459,7 +454,11 @@
       <created>1400943388517</created>
       <updated>1400943388517</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="favicon">
+      <created>1400943985011</created>
+      <updated>1400943985011</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -513,20 +512,13 @@
     <MESSAGE value="Commit modulo contatti - manca solo funzione di invio e riportare il codice in ogni altra pagina oltre all'index" />
     <MESSAGE value="Modifica intestazione" />
     <MESSAGE value="Modifica intestazione 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modifica intestazione 2" />
+    <MESSAGE value="favicon" />
+    <option name="LAST_COMMIT_MESSAGE" value="favicon" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="593" max-vertical-offset="21505">
-          <caret line="63" column="8" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="4225" max-vertical-offset="5015">
@@ -873,8 +865,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rilegaturaTesi.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22599705" vertical-offset="0" max-vertical-offset="3519">
-          <caret line="9" column="82" selection-start-line="9" selection-start-column="82" selection-end-line="9" selection-end-column="82" />
+        <state vertical-scroll-proportion="0.12555392" vertical-offset="1326" max-vertical-offset="3519">
+          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
           <folding />
         </state>
       </provider>
