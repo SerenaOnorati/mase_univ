@@ -116,6 +116,9 @@
 	p, ul, ol, dl, table, blockquote
 	{
 		margin-bottom: 2em;
+        border-top: solid 4px #e5e5e5;
+        border-top-left-radius: 30px 25px;
+        border-top-right-radius: 30px 25px;
 	}
 
 	br.clear
@@ -962,7 +965,8 @@
 	#header-wrapper
 	{
 		position: relative;
-		background: #fff;
+        height: 250px;
+        background: #fff;
 		text-align: center;
 	}
 
@@ -1054,11 +1058,6 @@
 	{
 		position: relative;
 		border-bottom: solid 4px #e5e5e5;
-        border-top: solid 4px #e5e5e5;
-
-        box-shadow: inset 0px -8px 0px 0px #fff, inset 0px -10px 0px 0px #e5e5e5;
-
-
 
 	}
 
