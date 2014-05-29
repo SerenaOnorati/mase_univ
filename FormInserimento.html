@@ -9,7 +9,9 @@ Transitional//EN"
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <title>PAGINA CARICAMENTO DATI</title>
+    <script src="js/angular.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+
 
     <script>
         $(document).ready(function (){
@@ -42,10 +44,6 @@ Transitional//EN"
 
     </script>
 
-
-
-
-
 </head>
 
 
@@ -61,26 +59,25 @@ Transitional//EN"
         </select>
     </div>
     <div id="domanda">
-        <p>Domanda</p>
-        <input type="text" name="name" size="20">
+        <p>Inserisci la Domanda</p>
+        <textarea name="text" rows="5" cols="40"></textarea>
     </div>
     <div id="risposte">
-        <p>Risposte</p>
+        <p>Inserisci le Risposte</p>
         <ol>
             <li>
-                <input type="text" name="name" size="20">
+                <textarea name="text" rows="5" cols="40"></textarea>
             </li>
             <li>
-                <input type="text" name="name" size="20">
+                <textarea name="text" rows="5" cols="40"></textarea>
+            <li>
+                <textarea name="text" rows="5" cols="40"></textarea>
             </li>
             <li>
-                <input type="text" name="name" size="20">
+                <textarea name="text" rows="5" cols="40"></textarea>
             </li>
             <li>
-                <input type="text" name="name" size="20">
-            </li>
-            <li>
-                <input type="text" name="name" size="20">
+                <textarea name="text" rows="5" cols="40"></textarea>
             </li>
         </ol>
 
@@ -95,8 +92,8 @@ Transitional//EN"
     </div>
 
     <div id="spiegazione">
-        <p>Commento alla risposta corretta</p>
-        <input type="text" name="name" size="20">
+        <p>Inserisci Commento alla risposta corretta</p>
+        <textarea name="text" rows="5" cols="40"></textarea>
     </div>
 
     <div id="immagine">
