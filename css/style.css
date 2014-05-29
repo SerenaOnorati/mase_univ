@@ -118,14 +118,16 @@
 	ul, ol, dl, table, blockquote
 	{
 		margin-bottom: 2em;
-        border-top: solid 4px #e5e5e5;
+
 
 	}
 
     #icone
     {
+        border-top: solid 4px #e5e5e5;
         border-top-left-radius: 30px 25px;
         border-top-right-radius: 30px 25px;
+        border-bottom: solid 4px #e5e5e5
     }
 
 	br.clear
@@ -245,7 +247,7 @@
 
 		ul.actions
 		{
-			margin-top: 2.5em;
+			margin-top: 0.5em;
 			clear: both;
 		}
 
