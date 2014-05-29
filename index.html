@@ -20,6 +20,7 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-panels.min.js"></script>
         <script src="js/js_check_form/check_form.js"></script>
+        <script src="js/angular.min.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel-noscript.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -213,15 +214,15 @@
 									<form method="post" action="php/mail.php" name="contactform" id="contact">
 										<div class="row half">
 											<div class="6u">
-												<input id="name" name="name" placeholder="Nome" type="text" class="text" required="required"/>
+												<input id="name" name="name" placeholder="Nome" type="text" class="text" required="required" ng-model="name"/>
 											</div>
 											<div class="6u">
-												<input id="email" name="email" placeholder="Email" type="text" class="text" required="required" />
+												<input id="email" name="email" placeholder="Email" type="text" class="text" required="required" ng-model="email" />
 											</div>
 										</div>
 										<div class="row half">
 											<div class="12u">
-												<textarea id="message" name="message" placeholder="Messaggio" required="required"></textarea>
+												<textarea id="message" name="message" placeholder="Messaggio" required="required" ng-model="message"></textarea>
 											</div>
 										</div>
 										<div class="row half">
