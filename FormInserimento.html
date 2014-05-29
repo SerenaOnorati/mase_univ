@@ -9,80 +9,124 @@ Transitional//EN"
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <title>PAGINA CARICAMENTO DATI</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function (){
+            $("#state").change(function() {
+                // foo is the id of the other select box
+                if ($(this).val() != "notinoz") {
+                    $("#foo").show();
+                }else{
+                    $("#foo").hide();
+                }
+            });
+        });
+    </script>
+
+    <script>
+
+        window.addEvent('domready', function(){
+
+            var upload = new Form.Upload('url', {
+                onComplete: function(){
+                    alert('Completed uploading the Files');
+                }
+            });
+
+            if (!upload.isModern()){
+// Use something like
+            }
+
+        });
+
+    </script>
+
+
+
+
+
 </head>
 
+
 <body>
-<table border="0">
-    <tr>
-        <td align="center">Inserisci i dati richiesti</td>
-    </tr>
-    <tr>
-        <td>
-            <table>
-                <form method="post" action="input.php">
-                    <tr>
-                        <td>Nome</td>
-                        <td><input type="text" name="name" size="20">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Cognome</td>
-                        <td><input type="text" name="surname" size="20">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Sezione</td>
-                        <td><input type="text" name="section" size="40">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Domanda</td>
-                        <td><input type="text" name="question" size="40">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Risposta 1</td>
-                        <td><input type="text" name="risp1" size="400">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Risposta 2</td>
-                        <td><input type="text" name="risp2" size="400">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Risposta 3</td>
-                        <td><input type="text" name="risp3" size="400">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Risposta 4</td>
-                        <td><input type="text" name="risp4" size="400">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Risposta 5</td>
-                        <td><input type="text" name="risp5" size="400">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Risposta Corretta</td>
-                        <td><input type="text" name="rispCorr" size="40">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Ha immagine?</td>
-                        <td><input type="text" name="section" size="40">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td align="right"><input type="submit"
-                                                 name="submit" value="Sent"></td>
-                    </tr>
-            </table>
-        </td>
-    </tr>
-</table>
+<div id="user">Hello,</div>
+<form name="myform" action="http://www.mydomain.com/myformhandler.cgi" method="POST">
+    <div>
+        <p>Seleziona la Sezione</p>
+        <select name="mydropdown">
+            <option value="Latte">Latte Fresco</option>
+            <option value="Formaggio">Formaggio Stagionato</option>
+            <option value="Pane">Pane Caldo</option>
+        </select>
+    </div>
+    <div id="domanda">
+        <p>Domanda</p>
+        <input type="text" name="name" size="20">
+    </div>
+    <div id="risposte">
+        <p>Risposte</p>
+        <ol>
+            <li>
+                <input type="text" name="name" size="20">
+            </li>
+            <li>
+                <input type="text" name="name" size="20">
+            </li>
+            <li>
+                <input type="text" name="name" size="20">
+            </li>
+            <li>
+                <input type="text" name="name" size="20">
+            </li>
+            <li>
+                <input type="text" name="name" size="20">
+            </li>
+        </ol>
+
+    </div>
+    <div id="corretta">
+        <p>Seleziona la risposta corretta</p>
+        <input type="radio" name="risp" value="1">1<br>
+        <input type="radio" name="risp" value="2">2<br>
+        <input type="radio" name="risp" value="3">3<br>
+        <input type="radio" name="risp" value="4">4<br>
+        <input type="radio" name="risp" value="5">5
+    </div>
+
+    <div id="spiegazione">
+        <p>Commento alla risposta corretta</p>
+        <input type="text" name="name" size="20">
+    </div>
+
+    <div id="immagine">
+        <p>Se c'è un'immagine seleziona si e inserisci</p>
+        <p>
+            <select id="state" name="state" style="width: 212px;">
+                <option value="nsw">No</option>
+                <option value="qld">Si</option>
+
+            </select>
+        </p>
+
+        <div id="foo" style="display:none;">
+
+
+            <div class="formRow">
+                <label for="url" class="floated">File: </label>
+                <input type="file" id="url" name="url[]" multiple><br>
+            </div>
+
+            <div class="formRow">
+                <input type="submit" id="_submit" name="_submit" value="Upload">
+            </div>
+
+        </div>
+    </div>
+
+    <input type="button" name="button" style="background-color: #f7f7f7" value="Invia Domanda"/>
+</form>
+
 </body>
+
 </html>
