@@ -41,54 +41,9 @@
 
     <!-- Header -->
     <div id="header" class="container">
-
-
-        <nav id="nav">
-            <br>
-            <h1 id="logo"><a href="#">Universitalia</a></h1><br><br><br>
-            <ul id="icone">
-                <li>
-                    <a class="fa fa-home" href="index.html"><span>Home</span></a>
-                    <ul>
-                        <li><a href="#chisiamo">Chi siamo</a></li>
-                        <li><a href="#dovesiamo">Dove siamo</a></li>
-                        <li><a href="#rilegaturatesi">Rilegature Tesi</a></li>
-                        <li><a href="#news">News</a></li>
-
-                    </ul>
-
-                </li>
-                <li>
-                    <a href="" class="fa fa-book"><span>Libri</span></a>
-                    <ul>
-                        <li><a href="#libreriaonline">Ricerca Libri</a></li>
-                        <li><a href="testIngresso.html">Test d'ingresso</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="rilegaturaTesi.html" class="fa fa-graduation-cap"><span>Rilegatura Tesi</span></a>
-                </li>
-
-                <li>
-                    <a href="" class="fa fa-print"><span>Stampe Digitali</span></a>
-                    <ul>
-                        <li><a href="plotter.html">Plotter</a></li>
-                        <li><a href="stampe.html">Stampe</a></li>
-                        <li><a href="timbri.html">Timbri</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="" class="fa fa-book"><span>Editoria</span></a>
-                    <ul>
-                        <li><a href="http://universitaliaeditrice.it/" target="_blank">Pubblica con noi</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="" class="fa fa-shopping-cart"><span>UniShop</span></a>
-                </li>
-            </ul>
-        </nav>
-
+        <?php
+        include 'menu.php';
+        ?>
     </div>
 
 </div>

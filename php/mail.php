@@ -22,7 +22,7 @@
       $stringa = $messaggio_invio->ErrorInfo;
     }else{
         //echo 'Email inviata correttamente!';
-        header('Location: ../index.html#domande_commenti');
+        header('Location: ../index.php#domande_commenti');
         $stringa= "Email inviata correttamente!";
         echo "<script language=\"JavaScript\">\n";
         echo "alert(\"$stringa\");\n";
