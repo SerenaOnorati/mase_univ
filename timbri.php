@@ -52,11 +52,18 @@
 									<!-- Post -->
 										<article class="is-post">
 											<header>
-												<h2>Behold! This is the <strong>no sidebar</strong> layout<br />
-												with no sidebar at all!</h2>
+												<h2> Timbri in  <strong>24 ore</strong></h2>
 											</header>
 											<span class="image image-full"><img src="images/pic04.jpg" alt="" /></span>
-											<h3>And yeah, that's basically it</h3>
+											<h3>And yeah, that's basically it</h3><br>
+                                            <div>
+                                                <div>
+
+                                                </div>
+                                                <div>
+                                                    tup èadre
+                                                </div>
+                                            </div>
 											<p>Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit 
 											ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris 
 											sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada 
