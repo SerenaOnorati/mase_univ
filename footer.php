@@ -9,7 +9,7 @@
         <div class="row">
             <div class="6u">
                 <section>
-                    <form method="post" action="php/mail.php" name="contactform" id="contact" target="_parent">
+                    <form method="post" action="mail.php" name="contactform" id="contact" target="_parent">
                         <div class="row half">
                             <div class="6u">
                                 <input id="name" name="name" placeholder="Nome" type="text" class="text" required="required" ng-model="name"/>
@@ -22,6 +22,10 @@
                             <div class="12u">
                                 <textarea id="message" name="message" placeholder="Messaggio" required="required" ng-model="message"></textarea>
                             </div>
+                        </div>
+                        <div class="row half">
+                            <label for="url" class="floated">Inserisci un file che vuoi inviare: </label>
+                            <input type="file" id="url" name="url" multiple><br>
                         </div>
                         <div class="row half">
                             <div class="12u">
