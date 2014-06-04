@@ -19,7 +19,7 @@
     <script src="js/config.js"></script>
     <script src="js/skel.min.js"></script>
     <script src="js/skel-panels.min.js"></script>
-    <script src="js/js_check_form/check_form.js"></script>
+
 
     <noscript>
         <link rel="stylesheet" href="css/skel-noscript.css" />

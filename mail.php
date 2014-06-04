@@ -35,7 +35,7 @@
                 $risultato = $messaggio_invio->ErrorInfo;
             }else{
                 //echo 'Email inviata correttamente!';
-                //header('Location: ../index.php#domande_commenti');
+                header('Location: ../index.php');
                 $risultato = "Email inviata correttamente!";
                 //exit();
             }
