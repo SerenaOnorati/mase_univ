@@ -31,14 +31,15 @@
 
             //definiamo i comportamenti in caso di invio corretto
             //o di errore
+
             if(!$messaggio_invio->Send()){
                 $risultato = $messaggio_invio->ErrorInfo;
             }else{
                 //echo 'Email inviata correttamente!';
-                header('Location: ../index.php');
                 $risultato = "Email inviata correttamente!";
                 //exit();
             }
+            include 'index.php';
             echo "<script language=\"JavaScript\">\n";
             echo "alert(\"$risultato\");\n";
             echo "</script>";
