@@ -62,14 +62,14 @@
 
                 <!-- Post -->
                 <article class="is-post">
-                    <header>
-                        <h2>Calcola il tuo preventivo</h2>
-                    </header>
                     <div class="row">
                         <div class="6u">
                             <section>
-                                <form method="post" action="mail.php" name="formpreventivo" id="preventivo" target="_parent">
 
+                                <form method="post" action="mail.php" name="formpreventivo" id="preventivo" target="_parent">
+                                    <header>
+                                        <div align="left"><h2>Calcola il tuo preventivo</h2></div>
+                                    </header>
                                     <div class="row half">
 
                                         <div class="6u">
@@ -158,34 +158,14 @@
                         </div>
                         <div class="6u">
                             <section>
-
+                                <header>
+                                    <h2><a name="istruzioni"><font color="blue">Istruzioni</font></a></h2><br>
+                                </header>
                                 <div class="row">
+
                                     <ul class="icons 6u">
-                                        <li class="fa fa-home">
-                                            Via di Tor Vergata, 143<br />
-                                            Roma, 00133<br />
-                                            Italia
-                                        </li>
-                                        <li class="fa fa-phone">
-                                            (06)2026342
-                                        </li>
-                                        <li class="fa fa-print">
-                                            (06)20419483
-                                        </li>
-                                        <li class="fa fa-clock-o">
-                                            8:00 - 18:30<br />
-                                            Sabato 8:00 - 12:30
-                                        </li>
-                                    </ul>
-                                    <ul class="icons 6u">
-                                        <li class="fa fa-envelope">
-                                            info@universitaliasrl.it
-                                        </li>
-                                        <li class="fa fa-facebook">
-                                            <a href="https://www.facebook.com/groups/35057244586/?fref=ts" target="_blank">Universitalia</a>
-                                        </li>
-                                        <li class="fa fa-skype">
-                                            universitaliasas@hotmail.it
+                                        <li class="fa fa-circle-o">
+                                           Compila il form
                                         </li>
                                     </ul>
                                 </div>
