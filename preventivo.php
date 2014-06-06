@@ -33,7 +33,9 @@
     </script>
 </head>
 <body class="no-sidebar">
-
+<?php
+  include_once 'configuration.php';
+?>
 <!-- Header Wrapper -->
 <div id="header-wrapper">
 
@@ -86,15 +88,21 @@
                                        <div class="6u">
                                            <p>Seleziona il tipo di documento che vuoi stampare</p>
                                            <select name="tipodoc">
-                                               <option value="Latte">Latte Fresco</option>
-                                               <option value="Formaggio">Formaggio Stagionato</option>
-                                               <option value="Pane">Pane Caldo</option>
+                                               <?php
+                                                 $num = count($tipo_doc);
+                                                 for($i=0; $i<$num; $i++){
+                                                     echo"<option value=".$tipo_doc[$i].">".$tipo_doc[$i]."</option>";
+                                                 }
+                                               ?>
                                            </select>
                                        </div>
                                         <div class="6u">
                                             <p>Seleziona il formato</p>
                                             <br>
                                             <select name="tipoformato">
+                                                <?php
+                                                  if($_POST[''])
+                                                ?>
                                                 <option value="Latte">Latte Fresco</option>
                                                 <option value="Formaggio">Formaggio Stagionato</option>
                                                 <option value="Pane">Pane Caldo</option>
