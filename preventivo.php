@@ -100,12 +100,19 @@
                                             <p>Seleziona il formato</p>
                                             <br>
                                             <select name="tipoformato">
-                                                <?php
-                                                  if($_POST[''])
-                                                ?>
-                                                <option value="Latte">Latte Fresco</option>
-                                                <option value="Formaggio">Formaggio Stagionato</option>
-                                                <option value="Pane">Pane Caldo</option>
+                                                <script type="javascript">
+                                                            //recupero variabile "discriminante"
+                                                            var tipodoc = $(‘#tipodoc option:selected’).text()
+
+                                                            if(tipodoc == 'Progetti CAD Vettoriali' || tipodoc == 'Progetti CAD Raster'){
+                                                                <?php
+                                                                   $count = count($formato_CAD);
+                                                                   for($i=0; $i<$count; $i++){
+                                                                     echo"<option value=".$formato_CAD[$i].">".$formato_CAD[$i]."</option>";
+                                                                   }
+                                                                 ?>
+                                                    });//FINE DOM
+                                                </script>
                                             </select>
                                         </div>
 
@@ -162,7 +169,6 @@
                                     <h2><a name="istruzioni"><font color="blue">Istruzioni</font></a></h2><br>
                                 </header>
                                 <div class="row">
-
                                     <ul class="icons 6u">
                                         <li class="fa fa-circle-o">
                                            Compila il form
