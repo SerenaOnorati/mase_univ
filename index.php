@@ -106,7 +106,7 @@
                                     <h3><a>Registrati o Accedi</a></h3><br>
                                 </header>
                                 <div>
-                                    <input id="login" name="login" placeholder="User" type="text" class="text" />
+                                    <input id="username" name="username" placeholder="e-mail" type="text" class="text" />
                                     <input id="password" name="password" placeholder="Password" type="password" class="text" />
 
                                 </div>
@@ -114,7 +114,7 @@
 
                                 <ul class="actions">
                                     <li>
-                                        <a href="#" class="button button-icon fa fa-lock">Accedi</a>
+                                        <a href="login.php" id="accedi" class="button button-icon fa fa-lock">Accedi</a>
                                         <br><br>
 
                                         <a href="#" class="button button-icon fa fa-edit">Registrati</a>

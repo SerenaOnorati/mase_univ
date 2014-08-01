@@ -23,10 +23,10 @@
                                 <textarea id="message" name="message" placeholder="Messaggio" required="required" ng-model="message"></textarea>
                             </div>
                         </div>
-                        <div class="row half">
+                        <!--<div class="row half">
                             <label for="url" class="floated">Inserisci un file che vuoi inviare: </label>
                             <input type="file" id="url" name="url" multiple><br>
-                        </div>
+                        </div>-->
                         <div class="row half">
                             <div class="12u">
                                 <button class="button button-icon fa fa-envelope">Invia</button>

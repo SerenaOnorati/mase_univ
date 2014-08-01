@@ -33,7 +33,19 @@
     <div id="header" class="container">
 
         <?php
-          include 'menuAdmin.php'
+            session_start();
+            //se non c'è la sessione registrata
+            if(isset($_SESSION['autorizzato'])) {
+                echo "Area riservata, accesso negato.";
+                echo '<script language=javascript>document.location.href="index.php"</script>';
+                die;
+            }
+
+            //Altrimenti Prelevo il codice identificatico dell’utente loggato
+            session_start();
+            $cod = $_SESSION['cod']; //id cod recuperato nel file di verifica
+
+            include 'menuAdmin.php'
         ?>
 
     </div>
