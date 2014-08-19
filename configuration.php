@@ -17,10 +17,14 @@
      $db_psw = "Etei2wex";
 
     //connessione database
+    /*
     $connessione = mysql_connect("$host","$db_user","$db_psw");
     if(!$connessione)
     {
         die("Errore critico di Connessione al Database" . mysql_error());
     }
+    */
 
+    //query
+    $q_login = "SELECT email, password, id_ruolo FROM user WHERE email = ? AND password = ?";
 ?>

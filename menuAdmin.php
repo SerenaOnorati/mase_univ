@@ -11,7 +11,7 @@
         </li>
 
         <li>
-            <a href="" class="fa fa-edit"><span>Ordini</span></a>
+            <a href="" class="fa fa-truck"><span>Ordini</span></a>
             <ul>
                 <li><a href="">Da ordinare</a></li>
                 <li><a href="">Ordinati</a></li>
@@ -19,6 +19,9 @@
         </li>
         <li>
             <a href="" class="fa fa-user"><span>Utenti registrati</span></a>
+        </li>
+        <li>
+            <a href="" class="fa fa-edit"><span>News</span></a>
         </li>
     </ul>
 </nav>

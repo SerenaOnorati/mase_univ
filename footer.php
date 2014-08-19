@@ -12,15 +12,15 @@
                     <form method="post" action="mail.php" name="contactform" id="contact" target="_parent">
                         <div class="row half">
                             <div class="6u">
-                                <input id="name" name="name" placeholder="Nome" type="text" class="text" required="required" ng-model="name"/>
+                                <input id="name" name="name" placeholder="Nome" type="text" class="text" required="required"/>
                             </div>
                             <div class="6u">
-                                <input id="email" name="email" placeholder="Email" type="text" class="text" required="required" ng-model="email" />
+                                <input id="email" name="email" placeholder="Email" type="text" class="text" required="required"/>
                             </div>
                         </div>
                         <div class="row half">
                             <div class="12u">
-                                <textarea id="message" name="message" placeholder="Messaggio" required="required" ng-model="message"></textarea>
+                                <textarea id="message" name="message" placeholder="Messaggio" required="required"></textarea>
                             </div>
                         </div>
                         <!--<div class="row half">
