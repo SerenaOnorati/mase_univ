@@ -4,6 +4,8 @@
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+
+
 <html>
 <head>
     <title>Universitalia S.r.l</title>
@@ -105,22 +107,24 @@
                                 <header>
                                     <h3><a>Registrati o Accedi</a></h3><br>
                                 </header>
-                                <div>
-                                    <input id="username" name="username" placeholder="e-mail" type="text" class="text" />
-                                    <input id="password" name="password" placeholder="Password" type="password" class="text" />
+                                <form action="login.php" method="post">
+                                    <div>
+                                        <input id="username" name="username" placeholder="e-mail" type="text" class="text" />
+                                        <input id="password" name="password" placeholder="Password" type="password" class="text" />
 
-                                </div>
-                                <br>
+                                    </div>
+                                    <br>
 
-                                <ul class="actions">
-                                    <li>
-                                        <a href="login.php" id="accedi" class="button button-icon fa fa-lock">Accedi</a>
-                                        <br><br>
+                                    <ul class="actions">
+                                        <li>
+                                            <input type='submit' id="accedi" class="button button-icon fa fa-lock">
+                                            <!--<a href="login.php" id="accedi" class="button button-icon fa fa-lock">Accedi</a>
+                                            <br><br>
+                                            <a href="#" class="button button-icon fa fa-edit">Registrati</a>-->
 
-                                        <a href="#" class="button button-icon fa fa-edit">Registrati</a>
-
-                                    </li>
-                                </ul>
+                                        </li>
+                                    </ul>
+                                </form>
                             </article>
                         </li>
                         <li>

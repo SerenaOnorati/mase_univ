@@ -27,4 +27,8 @@
 
     //query
     $q_login = "SELECT email, password, id_ruolo FROM user WHERE email = ? AND password = ?";
+    $q_news = "SELECT testo, immagine, data FROM news ORDER BY data";
+
 ?>
+
+
