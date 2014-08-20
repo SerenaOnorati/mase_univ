@@ -29,7 +29,6 @@
 
 		<!-- Header Wrapper -->
 			<div id="header-wrapper">
-						
 				<!-- Header -->
 					<div id="header" class="container">
                         <?php

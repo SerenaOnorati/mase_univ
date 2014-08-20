@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c62a4eec-d582-4e13-b7e5-eef246bc66c3" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Massimo\PhpstormProjects\mase_univ\css\tabella.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timbri.php" afterPath="$PROJECT_DIR$/timbri.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -73,7 +72,7 @@
       <file leaf-file-name="timbri.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/timbri.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="66" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.5708583" vertical-offset="122" max-vertical-offset="1649">
+            <state line="30" column="37" selection-start="1193" selection-end="1193" vertical-scroll-proportion="0.8083832" vertical-offset="105" max-vertical-offset="1632">
               <folding />
             </state>
           </provider>
@@ -467,12 +466,16 @@
       <created>1408527932435</created>
       <updated>1408527932435</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="modifica pagina timbri&#10;">
+      <created>1408530351828</created>
+      <updated>1408530351828</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1378" height="780" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13580246" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16023739" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -481,7 +484,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17033774" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17033774" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -530,7 +533,8 @@
     <MESSAGE value="controllo login" />
     <MESSAGE value="newsAdmin" />
     <MESSAGE value="modifica pagina timbri&#10;cancellazionepagina test d'ingresso&#10;inserimento nuove immagini" />
-    <option name="LAST_COMMIT_MESSAGE" value="modifica pagina timbri&#10;cancellazionepagina test d'ingresso&#10;inserimento nuove immagini" />
+    <MESSAGE value="modifica pagina timbri&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="modifica pagina timbri&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -794,7 +798,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/timbri.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="66" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.5708583" vertical-offset="122" max-vertical-offset="1649">
+        <state line="30" column="37" selection-start="1193" selection-end="1193" vertical-scroll-proportion="0.8083832" vertical-offset="105" max-vertical-offset="1632">
           <folding />
         </state>
       </provider>
