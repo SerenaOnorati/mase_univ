@@ -1,0 +1,13 @@
+.wrapper_table {
+    display: table;
+    table-layout: fixed;
+
+    width:90%;
+    height:100px;
+    background-color:Gray
+    !important
+}
+.wrapper_table div {
+    display: table-cell;
+    height:100px;
+}

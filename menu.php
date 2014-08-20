@@ -18,7 +18,6 @@
             <a href="" class="fa fa-book"><span>Libri</span></a>
             <ul>
                 <li><a href="index.php#libreriaonline">Ricerca Libri</a></li>
-                <li><a href="testIngresso.php">Test d'ingresso</a></li>
             </ul>
         </li>
         <li>

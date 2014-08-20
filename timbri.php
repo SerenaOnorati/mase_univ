@@ -23,6 +23,7 @@
 			<link rel="stylesheet" href="css/skel-noscript.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-desktop.css" />
+            <link rel="stylesheet" href="css/tabella.css"/>
 		</noscript>
 	</head>
 	<body class="no-sidebar">
@@ -54,81 +55,28 @@
 											<header>
 												<h2> Timbri in  <strong>24 ore</strong></h2>
 											</header>
-											<span class="image image-full"><img src="images/pic04.jpg" alt="" /></span>
-											<h3>And yeah, that's basically it</h3><br>
-                                            <div>
-                                                <div>
+											<span class="image image-full"><img src="images/timbri_testata.jpg" alt=""/></span>
+                                            <div class="wrapper_table">
+                                                <div><img src="images/PR_4911_P4_H_ecoblack.jpg"><img src="images/IM_MCI_4911_Handwerker_NL.jpg"> <p><strong>cod. 4911</strong> - Max. dimensioni piastra
+                                                        di testo 38 x 14 mm</p></div>
+                                                <div><img src="images/PR_4912_P4_HR_ecoblack.jpg"><img src="images/IM_MCI_4912_RotKreuzHaus.jpg"><p><strong>cod. 4912</strong> - Max. dimensioni piastra
+                                                        di testo 47 x 18 mm</p></div>
+                                                <div><img src="images/PR_4913_P4_H_ecoblack.jpg"><img src="images/IM_MCI_4913_Pesca_4c_IT.jpg"><p><strong>cod. 4913</strong> - Max. dimensioni piastra
+                                                        di testo 58 x 22 mm</p></div>
 
-                                                </div>
-                                                <div>
-                                                    tup èadre
-                                                </div>
                                             </div>
-											<p>Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit 
-											ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris 
-											sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada 
-											in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat 
-											magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros 
-											consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id 
-											justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet 
-											mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique. 
-											Curabitur leo nibh, rutrum eu malesuada in, tristique at erat.</p>
-											<p>Erat lorem ipsum veroeros consequat magna tempus lorem ipsum consequat 
-											Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit ligula 
-											vel quam viverra sit amet mollis tortor congue. Sed quis mauris sit amet 
-											magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada in, 
-											tristique at erat. Curabitur leo nibh, rutrum eu malesuada  in, tristique 
-											at erat lorem ipsum dolor sit amet lorem ipsum sed consequat magna 
-											tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros consequat 
-											magna tempus</p>
-											<p>Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit 
-											ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris 
-											sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada 
-											in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat 
-											consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id 
-											in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat 
-											magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros 
-											consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id 
-											justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet 
-											mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique. 
-											Curabitur leo nibh, rutrum eu malesuada in, tristique at erat.</p>
-											<h3>Accumsan lorem ipsum veroeros</h3>
-											<p>Consequat Phasellus laoreet massa id in, tristique at erat lorem 
-											ipsum dolor sit amet lorem ipsum sed consequat magna tempus veroeros 
-											consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id 
-											justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet 
-											mollis tortor congue. Sed quis mauris sit amet magna.</p>
-											<p>Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit 
-											ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris 
-											sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada 
-											in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat 
-											consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id 
-											in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat 
-											magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros 
-											consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id 
-											justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet 
-											mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique. 
-											Curabitur leo nibh, rutrum eu malesuada in, tristique at erat.</p>
-											<h3>Ligula suspcipit fusce veroeros</h3>
-											<p>Nullam dolore etiam sed massa id in, tristique at erat lorem 
-											ipsum dolor sit amet lorem ipsum sed consequat magna tempus veroeros 
-											consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id 
-											justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet 
-											mollis tortor congue. Sed quis mauris sit amet magna.</p>
-											<p>Sed massa id justo mattis pharetra. Fusce suscipit 
-											ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris 
-											sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada 
-											in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat 
-											consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id 
-											in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat 
-											magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros 
-											consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id 
-											justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet 
-											mollis tortor congue. Sed quis mauris sit amet magna accumsan.</p>
+                                            <div class="wrapper_table">
+                                                <div><img src="images/PR_4914_P4_ecoblack.jpg"><img src="images/IM_MCI_4914_Cortica_4c_PT.jpg"><p><strong>cod. 4914</strong> - Max. dimensioni piastra
+                                                        di testo 64 x 26 mm</p></div>
+                                                <div><img src="images/PR_4915_P4_ecoblack.jpg"><img src="images/IM_MCI_4915_2cv_4c_FR.jpg"><p><strong>cod. 4915</strong> - Max. dimensioni piastra
+                                                        di testo 70 x 25 mm</p></div>
+                                                <div><img src="images/PR_4926_P3_black_standard.jpg"><img src="images/IM_MCI_4926_Hummelkog_4c_CH.jpg"><p><strong>cod. 4926</strong> - Max. dimensioni piastra
+                                                        di testo 75 x 38 mm</p></div>
+                                            </div>
 										</article>
 								
 								</div>
-								
+
 						</div>
 					</div>
 
