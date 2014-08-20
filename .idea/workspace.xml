@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c62a4eec-d582-4e13-b7e5-eef246bc66c3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/skel-noscript.css" afterPath="$PROJECT_DIR$/css/skel-noscript.css" />
+      <change type="DELETED" beforePath="C:\Users\Serena Onorati\PhpstormProjects\mase_univ\images\IM_MCI_4911_Handwerker_NL.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Serena Onorati\PhpstormProjects\mase_univ\images\IM_MCI_4912_RotKreuzHaus.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Serena Onorati\PhpstormProjects\mase_univ\images\IM_MCI_4913_Pesca_4c_IT.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Serena Onorati\PhpstormProjects\mase_univ\images\IM_MCI_4914_Cortica_4c_PT.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Serena Onorati\PhpstormProjects\mase_univ\images\IM_MCI_4915_2cv_4c_FR.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Serena Onorati\PhpstormProjects\mase_univ\images\IM_MCI_4926_Hummelkog_4c_CH.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Serena Onorati\PhpstormProjects\mase_univ\images\PR_4911_P4_H_ecoblack.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Serena Onorati\PhpstormProjects\mase_univ\images\PR_4912_P4_HR_ecoblack.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Serena Onorati\PhpstormProjects\mase_univ\images\PR_4913_P4_H_ecoblack.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Serena Onorati\PhpstormProjects\mase_univ\images\PR_4914_P4_ecoblack.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Serena Onorati\PhpstormProjects\mase_univ\images\PR_4915_P4_ecoblack.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Serena Onorati\PhpstormProjects\mase_univ\images\PR_4926_P3_black_standard.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timbri.php" afterPath="$PROJECT_DIR$/timbri.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -72,22 +82,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="timbri.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="timbri.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/timbri.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="54" selection-start="2785" selection-end="2785" vertical-scroll-proportion="-9.230769" vertical-offset="831" max-vertical-offset="1649">
+            <state line="71" column="51" selection-start="3750" selection-end="3750" vertical-scroll-proportion="0.20862068" vertical-offset="1086" max-vertical-offset="1853">
               <folding>
                 <element signature="n#style#0;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#span#0;n#div#0;n#div#0;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#span#0;n#div#1;n#div#0;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#span#0;n#div#0;n#div#1;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#span#0;n#div#1;n#div#1;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#span#0;n#div#0;n#div#2;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#span#0;n#div#1;n#div#2;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="28" selection-start="2858" selection-end="2858" vertical-scroll-proportion="0.49827588" vertical-offset="1037" max-vertical-offset="2873">
+            <state line="78" column="28" selection-start="2858" selection-end="2858" vertical-scroll-proportion="-39.23077" vertical-offset="306" max-vertical-offset="2873">
               <folding>
                 <element signature="n#style#0;n#iframe#0;n#div#0;n#article#0;n#li#0;n#ul#0;n#section#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -98,7 +113,7 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1283" column="93" selection-start="35316" selection-end="35316" vertical-scroll-proportion="0.0" vertical-offset="21273" max-vertical-offset="21913">
+            <state line="178" column="26" selection-start="3652" selection-end="3652" vertical-scroll-proportion="0.0" vertical-offset="2681" max-vertical-offset="21930">
               <folding />
             </state>
           </provider>
@@ -183,9 +198,9 @@
         <option value="$PROJECT_DIR$/tabella_timbri.php" />
         <option value="$PROJECT_DIR$/preventivo.php" />
         <option value="$PROJECT_DIR$/css/skel-noscript.css" />
-        <option value="$PROJECT_DIR$/timbri.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/timbri.php" />
       </list>
     </option>
   </component>
@@ -532,13 +547,18 @@
       <created>1408531610250</created>
       <updated>1408531610250</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="maps_responsive and timbri&#10;">
+      <created>1408542809903</created>
+      <updated>1408542809903</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13580246" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15906128" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -555,7 +575,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13580246" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -597,7 +616,8 @@
     <MESSAGE value="modifica pagina timbri&#10;cancellazionepagina test d'ingresso&#10;inserimento nuove immagini" />
     <MESSAGE value="modifica pagina timbri&#10;" />
     <MESSAGE value="modifica pagina timbri_serena&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="modifica pagina timbri_serena&#10;" />
+    <MESSAGE value="maps_responsive and timbri&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="maps_responsive and timbri&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -609,6 +629,11 @@
           <folding>
             <element signature="n#style#0;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#span#0;n#div#0;n#div#0;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#span#0;n#div#1;n#div#0;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#span#0;n#div#0;n#div#1;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#span#0;n#div#1;n#div#1;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#span#0;n#div#0;n#div#2;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#span#0;n#div#1;n#div#2;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -626,6 +651,11 @@
           <folding>
             <element signature="n#style#0;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#span#0;n#div#0;n#div#0;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#span#0;n#div#1;n#div#0;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#span#0;n#div#0;n#div#1;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#span#0;n#div#1;n#div#1;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#span#0;n#div#0;n#div#2;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#span#0;n#div#1;n#div#2;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -856,16 +886,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/timbri.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="54" selection-start="2785" selection-end="2785" vertical-scroll-proportion="-9.230769" vertical-offset="831" max-vertical-offset="1649">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#span#0;n#div#0;n#div#0;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/skel-noscript.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="22" selection-start="123" selection-end="127" vertical-scroll-proportion="-1.36" vertical-offset="0" max-vertical-offset="2941">
@@ -873,18 +893,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="28" selection-start="2858" selection-end="2858" vertical-scroll-proportion="-39.23077" vertical-offset="306" max-vertical-offset="2873">
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#article#0;n#li#0;n#ul#0;n#section#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1283" column="93" selection-start="35316" selection-end="35316" vertical-scroll-proportion="0.0" vertical-offset="21273" max-vertical-offset="21913">
+        <state line="178" column="26" selection-start="3652" selection-end="3652" vertical-scroll-proportion="0.0" vertical-offset="2681" max-vertical-offset="21930">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/timbri.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="28" selection-start="2858" selection-end="2858" vertical-scroll-proportion="0.49827588" vertical-offset="1037" max-vertical-offset="2873">
+        <state line="71" column="51" selection-start="3750" selection-end="3750" vertical-scroll-proportion="0.20862068" vertical-offset="1086" max-vertical-offset="1853">
           <folding>
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#article#0;n#li#0;n#ul#0;n#section#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#span#0;n#div#0;n#div#0;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#span#0;n#div#1;n#div#0;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#span#0;n#div#0;n#div#1;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#span#0;n#div#1;n#div#1;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#span#0;n#div#0;n#div#2;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#span#0;n#div#1;n#div#2;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -56,24 +56,36 @@
 											<span class="image image-full"><img src="images/timbri_testata.jpg" alt=""/></span>
                                             <span><div class="row"  style="padding-left: 100px">
 
-                                                <div class="row half">
-                                                    <div class="6u"><span class="image"><img src="images/PR_4911_P4_H_ecoblack.jpg"><img src="images/IM_MCI_4911_Handwerker_NL.jpg"><p style="text-align: center"><strong>cod. 4911</strong> <br> Max. dimensioni piastra<br>
-                                                            di testo 38 x 14 mm</p></span></div>
-                                                    <div class="6u"><span class="image"><img src="images/PR_4912_P4_HR_ecoblack.jpg"><img src="images/IM_MCI_4912_RotKreuzHaus.jpg"><p><strong>cod. 4912</strong> -<br>Max. dimensioni piastra
+                                               <!-- <div class="row half">
+                                                    <div class="6u"><span class="image"><img src="images/PR_4911_P4_H_ecoblack.jpg"><img src="images/IM_MCI_4911_Handwerker_NL.jpg" alt="cod. 4911 - Max. dimensioni piastra  di testo 38 x 14 mm"/>
+                                                           </span></div>
+                                                    <div class="6u"><span class="image"><img src="images/PR_4912_P4_HR_ecoblack.jpg"><img src="images/IM_MCI_4912_RotKreuzHaus.jpg"><p style="text-align: center"><strong>cod. 4912</strong> -<br>Max. dimensioni piastra
                                                             di testo 47 x 18 mm</p></span></div>
                                                 </div>
                                                 <div class="row half">
-                                                    <div class="6u"><span class="image"><img src="images/PR_4913_P4_H_ecoblack.jpg"><img src="images/IM_MCI_4913_Pesca_4c_IT.jpg"><p><strong>cod. 4913</strong> <br> Max. dimensioni piastra<br>
+                                                    <div class="6u"><span class="image"><img src="images/PR_4913_P4_H_ecoblack.jpg"><img src="images/IM_MCI_4913_Pesca_4c_IT.jpg"><p style="text-align: center"><strong>cod. 4913</strong> <br> Max. dimensioni piastra<br>
                                                             di testo 58 x 22 mm</p></span></div>
-                                                    <div class="6u"><span class="image"><img src="images/PR_4914_P4_ecoblack.jpg"><img src="images/IM_MCI_4914_Cortica_4c_PT.jpg"><p><strong>cod. 4914</strong> <br> Max. dimensioni piastra <br>
+                                                    <div class="6u"><span class="image"><img src="images/PR_4914_P4_ecoblack.jpg"><img src="images/IM_MCI_4914_Cortica_4c_PT.jpg"><p style="text-align: center"><strong>cod. 4914</strong> <br> Max. dimensioni piastra <br>
                                                             di testo 64 x 26 mm</p></span></div>
-                                                </div>
+                                                </div>-->
                                                 <div class="row half">
-                                                    <div class="6u"><span class="image"><img src="images/PR_4915_P4_ecoblack.jpg"><img src="images/IM_MCI_4915_2cv_4c_FR.jpg"><p><strong>cod. 4915</strong> <br> Max. dimensioni piastra <br>
-                                                            di testo 70 x 25 mm</p></span></div>
-                                                    <div class="6u"><span class="image"><img src="images/PR_4926_P3_black_standard.jpg"><img src="images/IM_MCI_4926_Hummelkog_4c_CH.jpg"><p><strong>cod. 4926</strong> <br> Max. dimensioni piastra<br>
-                                                            di testo 75 x 38 mm</p></span></div>
+                                                   <div class="6u"><span class="image"><img src="images/4911.gif"><p style="text-align: center"><strong>cod. 4911</strong> <br> Max. dimensioni piastra<br>
+                                                                di testo 38 x 14 mm</p></span></div>
+                                                    <div class="6u"><span class="image"><img src="images/4912.gif"><p style="text-align: center"><strong>cod. 4912</strong> <br> Max. dimensioni piastra<br>
+                                                                di testo 47 x 18 mm</p></span></div>
                                                 </div>
+                                                    <div class="row half">
+                                                        <div class="6u"><span class="image"><img src="images/4913.gif"><p style="text-align: center"><strong>cod. 4913</strong> <br> Max. dimensioni piastra<br>
+                                                                    di testo 58 x 22 mm</p></span></div>
+                                                        <div class="6u"><span class="image"><img src="images/4914.gif"><p style="text-align: center"><strong>cod. 4914</strong> <br> Max. dimensioni piastra<br>
+                                                                    di testo 64 x 26 mm</p></span></div>
+                                                    </div>
+                                                    <div class="row half">
+                                                        <div class="6u"><span class="image"><img src="images/4915.gif"><p style="text-align: center"><strong>cod. 4915</strong> <br> Max. dimensioni piastra<br>
+                                                                    di testo 70 x 25 mm</p></span></div>
+                                                        <div class="6u"><span class="image"><img src="images/4926.gif"><p style="text-align: center"><strong>cod. 4926</strong> <br> Max. dimensioni piastra<br>
+                                                                    di testo 75 x 38 mm</p></span></div>
+                                                    </div>
 
                                             </div>
                                                 </span>
