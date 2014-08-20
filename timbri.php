@@ -54,7 +54,7 @@
 												<h2> Timbri in  <strong>24 ore</strong></h2>
 											</header>
 											<span class="image image-full"><img src="images/timbri_testata.jpg" alt=""/></span>
-                                            <div class="row">
+                                            <div class="row"  style="padding-left: 100px">
 
                                                 <div class="row half">
                                                     <div class="6u"><img src="images/PR_4911_P4_H_ecoblack.jpg"><img src="images/IM_MCI_4911_Handwerker_NL.jpg"> <p><strong>cod. 4911</strong> - Max. dimensioni piastra
