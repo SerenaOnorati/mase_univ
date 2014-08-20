@@ -150,7 +150,7 @@
 
 	#header
 	{
-		padding: 8em 0 4.5em 0;
+		padding: 5em 0 4.5em 0;
 	}
 	
 		#header h1
@@ -173,7 +173,7 @@
 	#nav
 	{
 		position: absolute;
-		top: 2em;
+		top: 10em;
 		left: 0;
 		width: 100%;
 

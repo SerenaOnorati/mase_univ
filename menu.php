@@ -1,7 +1,6 @@
+<h1 id="logo"><a href="index.php">Universitalia</a></h1>
 <!-- Nav -->
 <nav id="nav">
-    <br>
-    <h1 id="logo"><a href="index.php">Universitalia</a></h1><br><br><br>
     <ul id="icone">
         <li>
             <a class="fa fa-home" href="index.php"><span>Home</span></a>
