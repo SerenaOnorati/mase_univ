@@ -2,6 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c62a4eec-d582-4e13-b7e5-eef246bc66c3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/4911.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/4912.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/4913.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/4914.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/4915.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/4926.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/skel-noscript.css" afterPath="$PROJECT_DIR$/css/skel-noscript.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mase_univ.iws" />
@@ -71,7 +78,7 @@
       <file leaf-file-name="timbri.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/timbri.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="54" selection-start="4364" selection-end="4364" vertical-scroll-proportion="0.32586208" vertical-offset="1086" max-vertical-offset="1853">
+            <state line="75" column="54" selection-start="4364" selection-end="4364" vertical-scroll-proportion="0.8534483" vertical-offset="780" max-vertical-offset="1853">
               <folding>
                 <element signature="n#style#0;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#span#0;n#div#0;n#div#0;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -108,7 +115,7 @@
       <file leaf-file-name="skel-noscript.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/skel-noscript.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="22" selection-start="123" selection-end="127" vertical-scroll-proportion="-1.36" vertical-offset="0" max-vertical-offset="2941">
+            <state line="139" column="17" selection-start="3211" selection-end="3211" vertical-scroll-proportion="-14.52" vertical-offset="2000" max-vertical-offset="2941">
               <folding />
             </state>
           </provider>
@@ -183,10 +190,10 @@
         <option value="$PROJECT_DIR$/css/tabella.css" />
         <option value="$PROJECT_DIR$/tabella_timbri.php" />
         <option value="$PROJECT_DIR$/preventivo.php" />
-        <option value="$PROJECT_DIR$/css/skel-noscript.css" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/timbri.php" />
+        <option value="$PROJECT_DIR$/css/skel-noscript.css" />
       </list>
     </option>
   </component>
@@ -244,6 +251,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mase_univ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mase_univ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mase_univ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -541,12 +562,16 @@
       <created>1408545546463</created>
       <updated>1408545546463</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="timbri photoshop">
+      <created>1408545595940</created>
+      <updated>1408545595940</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13580246" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15906128" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -555,7 +580,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.168125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.168125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -876,9 +901,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="178" column="26" selection-start="3652" selection-end="3652" vertical-scroll-proportion="0.0" vertical-offset="2681" max-vertical-offset="21930">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/skel-noscript.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="22" selection-start="123" selection-end="127" vertical-scroll-proportion="-1.36" vertical-offset="0" max-vertical-offset="2941">
+        <state line="139" column="17" selection-start="3211" selection-end="3211" vertical-scroll-proportion="-14.52" vertical-offset="2000" max-vertical-offset="2941">
           <folding />
         </state>
       </provider>
@@ -892,16 +924,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="178" column="26" selection-start="3652" selection-end="3652" vertical-scroll-proportion="0.0" vertical-offset="2681" max-vertical-offset="21930">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/timbri.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="54" selection-start="4364" selection-end="4364" vertical-scroll-proportion="0.32586208" vertical-offset="1086" max-vertical-offset="1853">
+        <state line="75" column="54" selection-start="4364" selection-end="4364" vertical-scroll-proportion="0.8534483" vertical-offset="780" max-vertical-offset="1853">
           <folding>
             <element signature="n#style#0;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#span#0;n#div#0;n#div#0;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
