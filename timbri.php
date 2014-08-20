@@ -54,8 +54,8 @@
 												<h2> Timbri in  <strong>24 ore</strong></h2>
 											</header>
 											<span class="image image-full"><img src="images/timbri_testata.jpg" alt=""/></span>
-                                            <span>
-                                                <div class="row"  style="padding-left: 100px">
+                                            <span class="image-table">
+                                                <div class="row">
                                                     <div class="row half">
                                                        <div class="6u"><span class="image"><img src="images/4911.gif"><p style="text-align: center"><strong>cod. 4911</strong> <br> Max. dimensioni piastra<br>
                                                                     di testo 38 x 14 mm</p></span></div>
