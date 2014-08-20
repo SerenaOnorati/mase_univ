@@ -2,20 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c62a4eec-d582-4e13-b7e5-eef246bc66c3" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Serena Onorati\PhpstormProjects\mase_univ\images\IM_MCI_4911_Handwerker_NL.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Serena Onorati\PhpstormProjects\mase_univ\images\IM_MCI_4912_RotKreuzHaus.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Serena Onorati\PhpstormProjects\mase_univ\images\IM_MCI_4913_Pesca_4c_IT.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Serena Onorati\PhpstormProjects\mase_univ\images\IM_MCI_4914_Cortica_4c_PT.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Serena Onorati\PhpstormProjects\mase_univ\images\IM_MCI_4915_2cv_4c_FR.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Serena Onorati\PhpstormProjects\mase_univ\images\IM_MCI_4926_Hummelkog_4c_CH.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Serena Onorati\PhpstormProjects\mase_univ\images\PR_4911_P4_H_ecoblack.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Serena Onorati\PhpstormProjects\mase_univ\images\PR_4912_P4_HR_ecoblack.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Serena Onorati\PhpstormProjects\mase_univ\images\PR_4913_P4_H_ecoblack.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Serena Onorati\PhpstormProjects\mase_univ\images\PR_4914_P4_ecoblack.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Serena Onorati\PhpstormProjects\mase_univ\images\PR_4915_P4_ecoblack.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Serena Onorati\PhpstormProjects\mase_univ\images\PR_4926_P3_black_standard.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timbri.php" afterPath="$PROJECT_DIR$/timbri.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mase_univ.iws" />
@@ -85,7 +71,7 @@
       <file leaf-file-name="timbri.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/timbri.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="51" selection-start="3750" selection-end="3750" vertical-scroll-proportion="0.20862068" vertical-offset="1086" max-vertical-offset="1853">
+            <state line="75" column="54" selection-start="4364" selection-end="4364" vertical-scroll-proportion="0.32586208" vertical-offset="1086" max-vertical-offset="1853">
               <folding>
                 <element signature="n#style#0;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#span#0;n#div#0;n#div#0;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -551,7 +537,11 @@
       <created>1408542809903</created>
       <updated>1408542809903</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="timbri photoshop">
+      <created>1408545546463</created>
+      <updated>1408545546463</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -592,7 +582,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Inserimento del templete" />
     <MESSAGE value="href Rilegatura tesi" />
     <MESSAGE value="href rilegatura tesi" />
     <MESSAGE value="Plotter" />
@@ -617,7 +606,8 @@
     <MESSAGE value="modifica pagina timbri&#10;" />
     <MESSAGE value="modifica pagina timbri_serena&#10;" />
     <MESSAGE value="maps_responsive and timbri&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="maps_responsive and timbri&#10;" />
+    <MESSAGE value="timbri photoshop" />
+    <option name="LAST_COMMIT_MESSAGE" value="timbri photoshop" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -911,7 +901,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/timbri.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="51" selection-start="3750" selection-end="3750" vertical-scroll-proportion="0.20862068" vertical-offset="1086" max-vertical-offset="1853">
+        <state line="75" column="54" selection-start="4364" selection-end="4364" vertical-scroll-proportion="0.32586208" vertical-offset="1086" max-vertical-offset="1853">
           <folding>
             <element signature="n#style#0;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#span#0;n#div#0;n#div#0;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
