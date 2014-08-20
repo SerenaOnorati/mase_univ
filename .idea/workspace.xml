@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c62a4eec-d582-4e13-b7e5-eef246bc66c3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/menu.php" afterPath="$PROJECT_DIR$/menu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style-desktop.css" afterPath="$PROJECT_DIR$/css/style-desktop.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mase_univ.iws" />
@@ -73,16 +71,17 @@
       <file leaf-file-name="timbri.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/timbri.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="16" selection-start="2409" selection-end="2409" vertical-scroll-proportion="1.7470356" vertical-offset="153" max-vertical-offset="1649">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#span#0;n#div#0;n#div#0;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#span#0;n#div#1;n#div#0;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#span#0;n#div#0;n#div#1;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#span#0;n#div#1;n#div#1;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#span#0;n#div#0;n#div#2;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#span#0;n#div#1;n#div#2;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="61" column="16" selection-start="2409" selection-end="2409" vertical-scroll-proportion="1.7848537" vertical-offset="0" max-vertical-offset="1649">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1068" column="27" selection-start="30240" selection-end="30240" vertical-scroll-proportion="-9.8" vertical-offset="17911" max-vertical-offset="21913">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -90,7 +89,7 @@
       <file leaf-file-name="left-sidebar.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/left-sidebar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="11.769231" vertical-offset="306" max-vertical-offset="5746">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="5746">
               <folding />
             </state>
           </provider>
@@ -99,7 +98,7 @@
       <file leaf-file-name="menu.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/menu.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="884">
+            <state line="17" column="16" selection-start="613" selection-end="613" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="884">
               <folding />
             </state>
           </provider>
@@ -108,7 +107,7 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="38" selection-start="1299" selection-end="1299" vertical-scroll-proportion="-1.9615384" vertical-offset="578" max-vertical-offset="2873">
+            <state line="37" column="38" selection-start="1299" selection-end="1299" vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="2873">
               <folding />
             </state>
           </provider>
@@ -117,7 +116,7 @@
       <file leaf-file-name="style-desktop.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style-desktop.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="166" column="4" selection-start="2712" selection-end="2712" vertical-scroll-proportion="-14.384615" vertical-offset="2448" max-vertical-offset="6562">
+            <state line="166" column="4" selection-start="2712" selection-end="2712" vertical-scroll-proportion="0.0" vertical-offset="2448" max-vertical-offset="6562">
               <folding />
             </state>
           </provider>
@@ -172,13 +171,13 @@
         <option value="$PROJECT_DIR$/css/tabella.css" />
         <option value="$PROJECT_DIR$/tabella_timbri.php" />
         <option value="$PROJECT_DIR$/preventivo.php" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/css/skel-noscript.css" />
-        <option value="$PROJECT_DIR$/timbri.php" />
         <option value="$PROJECT_DIR$/css/style-mobile.css" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/menu.php" />
         <option value="$PROJECT_DIR$/css/style-desktop.css" />
+        <option value="$PROJECT_DIR$/timbri.php" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -187,12 +186,12 @@
       <server name="Unnamed" />
     </option>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="php" />
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="Unnamed" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="784" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -220,7 +219,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -269,6 +267,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -559,21 +558,25 @@
       <created>1408547892451</created>
       <updated>1408547892451</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="modifica collegamenti ipertestuali A">
+      <created>1408552564002</created>
+      <updated>1408552564002</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="0" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13580246" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15781711" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15775749" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16764276" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1675" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -581,11 +584,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27429467" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -600,7 +603,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Plotter" />
     <MESSAGE value="Plotter new" />
     <MESSAGE value="Digital print" />
     <MESSAGE value="commit plotter" />
@@ -625,7 +627,8 @@
     <MESSAGE value="timbri photoshop" />
     <MESSAGE value=" timbri aggiustamenti vari" />
     <MESSAGE value="modifica collegamenti ipertestuali" />
-    <option name="LAST_COMMIT_MESSAGE" value="modifica collegamenti ipertestuali" />
+    <MESSAGE value="modifica collegamenti ipertestuali A" />
+    <option name="LAST_COMMIT_MESSAGE" value="modifica collegamenti ipertestuali A" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -634,15 +637,7 @@
     <entry file="file://$PROJECT_DIR$/timbri.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="61" column="0" selection-start="2300" selection-end="2300" vertical-scroll-proportion="0.0" vertical-offset="763" max-vertical-offset="1632">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#span#0;n#div#0;n#div#0;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#span#0;n#div#1;n#div#0;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#span#0;n#div#0;n#div#1;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#span#0;n#div#1;n#div#1;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#span#0;n#div#0;n#div#2;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#span#0;n#div#1;n#div#2;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -656,15 +651,7 @@
     <entry file="file://$PROJECT_DIR$/timbri.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="86" column="7" selection-start="4042" selection-end="4042" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1564">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#span#0;n#div#0;n#div#0;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#span#0;n#div#1;n#div#0;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#span#0;n#div#0;n#div#1;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#span#0;n#div#1;n#div#1;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#span#0;n#div#0;n#div#2;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#span#0;n#div#1;n#div#2;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -867,72 +854,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style-1000px.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="178" column="26" selection-start="3652" selection-end="3652" vertical-scroll-proportion="0.0" vertical-offset="2681" max-vertical-offset="21930">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2125" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/skel-noscript.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="139" column="17" selection-start="3211" selection-end="3211" vertical-scroll-proportion="0.0" vertical-offset="2000" max-vertical-offset="2941">
-          <folding />
-        </state>
+        <state line="139" column="17" selection-start="3211" selection-end="3211" vertical-scroll-proportion="0.0" vertical-offset="2000" max-vertical-offset="2941" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style-mobile.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="0" selection-start="1912" selection-end="1912" vertical-scroll-proportion="-6.6538463" vertical-offset="2071" max-vertical-offset="6562">
-          <folding />
-        </state>
+        <state line="132" column="0" selection-start="1912" selection-end="1912" vertical-scroll-proportion="-6.6538463" vertical-offset="2071" max-vertical-offset="6562" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/left-sidebar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="11.769231" vertical-offset="306" max-vertical-offset="5746">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="5746">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="38" selection-start="1299" selection-end="1299" vertical-scroll-proportion="-1.9615384" vertical-offset="578" max-vertical-offset="2873">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/menu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
+        <state line="37" column="38" selection-start="1299" selection-end="1299" vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="2873">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style-desktop.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="166" column="4" selection-start="2712" selection-end="2712" vertical-scroll-proportion="-14.384615" vertical-offset="2448" max-vertical-offset="6562">
+        <state line="166" column="4" selection-start="2712" selection-end="2712" vertical-scroll-proportion="0.0" vertical-offset="2448" max-vertical-offset="6562">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1068" column="27" selection-start="30240" selection-end="30240" vertical-scroll-proportion="-9.8" vertical-offset="17911" max-vertical-offset="21913">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="16" selection-start="613" selection-end="613" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="884">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/timbri.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="16" selection-start="2409" selection-end="2409" vertical-scroll-proportion="1.7470356" vertical-offset="153" max-vertical-offset="1649">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#span#0;n#div#0;n#div#0;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#span#0;n#div#1;n#div#0;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#span#0;n#div#0;n#div#1;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#span#0;n#div#1;n#div#1;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#span#0;n#div#0;n#div#2;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#span#0;n#div#1;n#div#2;n#div#0;n#span#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="61" column="16" selection-start="2409" selection-end="2409" vertical-scroll-proportion="1.7848537" vertical-offset="0" max-vertical-offset="1649">
+          <folding />
         </state>
       </provider>
     </entry>
