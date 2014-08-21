@@ -3,7 +3,7 @@
 <nav id="nav">
     <ul id="icone">
         <li>
-            <a class="fa fa-home" href="index.php"><span>Home</span></a>
+            <a class="fa fa-home" href=""><span>Home</span></a>
             <ul>
                 <li><a href="index.php#chisiamo">Chi siamo</a></li>
                 <li><a href="index.php#dovesiamo">Dove siamo</a></li>
@@ -24,7 +24,7 @@
         </li>
 
         <li>
-            <a href="plotter.php" class="fa fa-print"><span>Stampe Digitali</span></a>
+            <a href="" class="fa fa-print"><span>Stampe Digitali</span></a>
             <ul>
                 <li><a href="plotter.php">Plotter</a></li>
                 <li><a href="stampe.php">Stampe</a></li>
@@ -38,7 +38,7 @@
             </ul>
         </li>
         <li>
-            <a href="preventivo.php" class="fa fa-shopping-cart"><span>UniShop</span></a>
+            <a href="" class="fa fa-shopping-cart"><span>UniShop</span></a>
             <ul>
                 <li><a href="preventivo.php">Preventivo Stampe</a></li>
             </ul>

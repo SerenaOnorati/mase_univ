@@ -11,10 +11,10 @@
 
 
      // parametri per la connessione al database
-     $host = "sql41.securesites.it";
+     $host = "localhost";
      $db_name = "unipass_it";
-     $db_user = "a_2632";
-     $db_psw = "Etei2wex";
+     $db_user = "root";
+     $db_psw = "";
 
     //connessione database
     /*

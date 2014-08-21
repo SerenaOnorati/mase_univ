@@ -11,13 +11,17 @@
      * Date: 20/08/14
      * Time: 10.28
      */
-    include("configuration.php");
+    include 'configuration.php';
 
     try
     {
         echo "sto tentando di connettermi<br>";
         $pdo = new PDO('mysql:host='.$host.';dbname='.$db_name, $db_user, $db_psw);
-        echo 'connesso';
+        $sql = 'SELECT name from user';
+        $result = $pdo->query($sql);
+        while ($row = $result->fetch()){
+            echo $row['name']."<br>";
+        }
 
     }
     catch (PDOException $e)
@@ -26,6 +30,8 @@
         echo $e->getMessage();
         exit();
     }
+    echo 'connesso';
+
     ?>
 </body>
 </html>
