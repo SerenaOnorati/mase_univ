@@ -4,7 +4,8 @@
 
     if(!IsLogged())
     {
-        header("Location: index.php#login");
+        $GLOBALS['loginError'] = "Non hai effettuato il login. Inserire email e password";
+        include 'index.php';
     }
     if(!userHasRole('Amministratore'))
     {
