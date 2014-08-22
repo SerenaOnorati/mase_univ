@@ -11,20 +11,21 @@
 
 
      // parametri per la connessione al database
-     $host = "localhost";
+     $host = "sql41.securesites.it";
      $db_name = "unipass_it";
      $db_user = "root";
      $db_psw = "";
 
-    //connessione database
     /*
-    $connessione = mysql_connect("$host","$db_user","$db_psw");
-    if(!$connessione)
-    {
-        die("Errore critico di Connessione al Database" . mysql_error());
-    }
+     //parametri connessione al database
+     $host = "localhost";
+     $db_name = "unipass_it";
+     $db_user = "a_2632";
+     $db_psw = "aqT4wqbJ";
+
     */
 
+     $salt = 'wktxl';
     //query
     $q_login = "SELECT email, password, id_ruolo FROM user WHERE email = ? AND password = ?";
     $q_news = "SELECT testo, immagine, data FROM news ORDER BY data";
