@@ -30,9 +30,8 @@
             unset($_SESSION['loggedIn']);
             unset($_SESSION['email']);
             unset($_SESSION['password']);
-            $GLOBALS['loginError'] =
-                'Controlla se email e password sono corretti.';
-            include 'index.php';;
+            $GLOBALS['loginError'] = 'Controlla se email e password sono corretti.';
+            include 'index.php';
             return FALSE;
         }
     }
