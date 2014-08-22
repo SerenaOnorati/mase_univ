@@ -80,8 +80,8 @@
                                 <!-- Excerpt -->
                                 <article class="is-excerpt">
                                     <a name="dovesiamo"></a>
-                                    <p>La nostra libreria è raggiungibile sia da Via di Tor Vergata,143 sia da Via di Passolombardo,421.</p>
-                                    <div class="blocco_variabile"><iframe class="iframe-googlemaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2971.943728169065!2d12.626552000000007!3d41.851038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132587ff308b9443%3A0xb86c1ae011f30d81!2sUniversitalia+di+Onorati+srl!5e0!3m2!1sit!2sit!4v1397421686380" width="356" height="460" frameborder="0" style="border:0"></iframe></div>                                <p><br />Sita di fronte alla Cappella Universitaria e alla Facoltà di Economia.</p>
+                                    <p>La libreria si trova in Via di Tor Vergata, 143 angolo Via di Passolombardo, 421.</p>
+                                    <div class="blocco_variabile"><iframe class="iframe-googlemaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2971.943728169065!2d12.626552000000007!3d41.851038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132587ff308b9443%3A0xb86c1ae011f30d81!2sUniversitalia+di+Onorati+srl!5e0!3m2!1sit!2sit!4v1397421686380" width="356" height="460" frameborder="0" style="border:0"></iframe></div>
                                 </article>
 
                             </li>
