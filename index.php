@@ -1,9 +1,3 @@
-<?php
-    include 'access.inc.php';
-
-
-?>
-
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -30,140 +24,142 @@
 </head>
 <body class="homepage">
 
-<!-- Header Wrapper -->
-<div id="header-wrapper">
+    <!-- Header Wrapper -->
+    <div id="header-wrapper">
 
-    <!-- Header -->
-    <div id="header" class="container">
-        <?php
+        <!-- Header -->
+        <div id="header" class="container">
+            <?php
             include 'menu.php';
-        ?>
+            ?>
+        </div>
+
     </div>
 
-</div>
+    <!-- Main Wrapper -->
+    <div id="main-wrapper">
 
-<!-- Main Wrapper -->
-<div id="main-wrapper">
+        <!-- Main -->
+        <div id="main" class="container">
+            <div class="row">
 
-    <!-- Main -->
-    <div id="main" class="container">
-        <div class="row">
+                <!-- Content -->
+                <div id="content" class="8u">
 
-            <!-- Content -->
-            <div id="content" class="8u">
+                    <!-- Post -->
+                    <article class="is-post">
+                        <a name="chisiamo"></a>
+                        <a href="http://regularjane.deviantart.com/art/Write-354865228" class="image image-full"><img src="images/pic04.jpg" alt="" /></a>
+                        <p></p>
+                    </article>
+                    <article class="is-post">
+                        <header>
+                            <h2><a name="news">News</a></h2>
+                        </header>
+                        <p></p>
+                    </article>
+                    <article class="is-post">
+                        <header>
+                            <h2><a name="rilegaturatesi">Rilegatura Tesi</a></h2>
+                        </header>
+                        <h3>in Pelle o Tela con Incisione</h3>
+                        <p><b style="color: #D4A017">Oro</b>  <b style="color: #C0C0C0">Argento</b>  <b style="color: #CC0000">Rossa</b>  <b style="color: #CC0066">Fucsia</b>  <b style="color: #663399">Blu</b>  <b style="color: #339933">Verde</b></p>
+                        <div id="3D"><h3>Prendi 4 paghi 3</h3></div>
+                        <p>La rilegatura completa di incisione a 17&euro;, con l'offerta prendi 4 paghi 3 a 51&euro; </p>
+                    </article>
+                </div>
 
-                <!-- Post -->
-                <article class="is-post">
-                    <a name="chisiamo"></a>
-                    <a href="http://regularjane.deviantart.com/art/Write-354865228" class="image image-full"><img src="images/pic04.jpg" alt="" /></a>
-                    <p></p>
-                </article>
-                <article class="is-post">
-                    <header>
-                        <h2><a name="news">News</a></h2>
-                    </header>
-                    <p></p>
-                </article>
-                <article class="is-post">
-                    <header>
-                        <h2><a name="rilegaturatesi">Rilegatura Tesi</a></h2>
-                    </header>
-                    <h3>in Pelle o Tela con Incisione</h3>
-                    <p><b style="color: #D4A017">Oro</b>  <b style="color: #C0C0C0">Argento</b>  <b style="color: #CC0000">Rossa</b>  <b style="color: #CC0066">Fucsia</b>  <b style="color: #663399">Blu</b>  <b style="color: #339933">Verde</b></p>
-                    <div id="3D"><h3>Prendi 4 paghi 3</h3></div>
-                    <p>La rilegatura completa di incisione a 17&euro;, con l'offerta prendi 4 paghi 3 a 51&euro; </p>
-                </article>
-            </div>
+                <!-- Sidebar -->
+                <div id="sidebar" class="4u">
 
-            <!-- Sidebar -->
-            <div id="sidebar" class="4u">
+                    <!-- Excerpts -->
+                    <section>
+                        <ul class="divided">
+                            <li>
 
-                <!-- Excerpts -->
-                <section>
-                    <ul class="divided">
-                        <li>
+                                <!-- Excerpt -->
+                                <article class="is-excerpt">
+                                    <a name="dovesiamo"></a>
+                                    <p>La nostra libreria è raggiungibile sia da Via di Tor Vergata,143 sia da Via di Passolombardo,421.</p>
+                                    <div class="blocco_variabile"><iframe class="iframe-googlemaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2971.943728169065!2d12.626552000000007!3d41.851038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132587ff308b9443%3A0xb86c1ae011f30d81!2sUniversitalia+di+Onorati+srl!5e0!3m2!1sit!2sit!4v1397421686380" width="356" height="460" frameborder="0" style="border:0"></iframe></div>                                <p><br />Sita di fronte alla Cappella Universitaria e alla Facoltà di Economia.</p>
+                                </article>
 
-                            <!-- Excerpt -->
-                            <article class="is-excerpt">
-                                <a name="dovesiamo"></a>
-                                <p>La nostra libreria è raggiungibile sia da Via di Tor Vergata,143 sia da Via di Passolombardo,421.</p>
-                                <div class="blocco_variabile"><iframe class="iframe-googlemaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2971.943728169065!2d12.626552000000007!3d41.851038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132587ff308b9443%3A0xb86c1ae011f30d81!2sUniversitalia+di+Onorati+srl!5e0!3m2!1sit!2sit!4v1397421686380" width="356" height="460" frameborder="0" style="border:0"></iframe></div>                                <p><br />Sita di fronte alla Cappella Universitaria e alla Facoltà di Economia.</p>
-                            </article>
+                            </li>
 
-                        </li>
+                        </ul>
+                    </section>
 
-                    </ul>
-                </section>
+                    <!-- Highlights -->
+                    <section>
+                        <ul class="divided">
+                            <li>
 
-                <!-- Highlights -->
-                <section>
-                    <ul class="divided">
-                        <li>
+                                <!-- Highlight -->
+                                <article class="is-highlight">
+                                    <header>
+                                        <h3><a name = "login">Registrati o Accedi</a></h3><br>
+                                    </header>
+                                    <form action="login.php" method="post">
+                                        <div>
+                                            <input id="email" name="email" placeholder="e-mail" type="text" class="text" />
+                                            <input id="password" name="password" placeholder="Password" type="password" class="text" />
+                                           <br>
+                                            <p style=" text-align: center"><b style="color: red">
+                                                <?php
+                                                    if(isset($loginError)){
+                                                        echo $loginError;
+                                                    }
+                                                ?>
+                                            </b></p>
+                                        </div>
+                                        <br>
 
-                            <!-- Highlight -->
-                            <article class="is-highlight">
-                                <header>
-                                    <h3><a name = "login">Registrati o Accedi</a></h3><br>
-                                </header>
-                                <form action="login.php" method="post">
+                                        <ul class="actions">
+                                            <li>
+                                                <input type='submit' id="accedi" class="button button-icon fa fa-lock">
+
+                                                <!--<a href="login.php" id="accedi" class="button button-icon fa fa-lock">Accedi</a>
+                                                <br><br>
+                                                <a href="#" class="button button-icon fa fa-edit">Registrati</a>-->
+
+                                            </li>
+
+                                        </ul>
+                                    </form>
+                                </article>
+                            </li>
+                            <li>
+                                <article class="is-highlight">
+                                    <header>
+                                        <h3><a name="libreriaonline">Libreria on-line</a></h3><br>
+                                    </header>
                                     <div>
-                                        <input id="email" name="email" placeholder="e-mail" type="text" class="text" />
-                                        <input id="password" name="password" placeholder="Password" type="password" class="text" />
+                                        <input id="titolo" name="titolo" placeholder="Titolo" type="text" class="text" />
+                                        <input id="autore" name="autore" placeholder="Autore" type="password" class="text" />
 
-                                        <?php
-                                            echo "<p>";
-                                            echo $_GET['loginError'];
-                                            echo "</p>";
-                                        ?>
                                     </div>
+
                                     <br>
 
                                     <ul class="actions">
                                         <li>
-                                            <input type='submit' id="accedi" class="button button-icon fa fa-lock">
-
-                                            <!--<a href="login.php" id="accedi" class="button button-icon fa fa-lock">Accedi</a>
-                                            <br><br>
-                                            <a href="#" class="button button-icon fa fa-edit">Registrati</a>-->
-
+                                            <a href="#" class="button button-icon fa fa-search">Cerca</a>
                                         </li>
-
                                     </ul>
-                                </form>
-                            </article>
-                        </li>
-                        <li>
-                            <article class="is-highlight">
-                                <header>
-                                    <h3><a name="libreriaonline">Libreria on-line</a></h3><br>
-                                </header>
-                                <div>
-                                    <input id="titolo" name="titolo" placeholder="Titolo" type="text" class="text" />
-                                    <input id="autore" name="autore" placeholder="Autore" type="password" class="text" />
+                                </article>
+                            </li>
 
-                                </div>
+                        </ul>
+                    </section>
 
-                                <br>
-
-                                <ul class="actions">
-                                    <li>
-                                        <a href="#" class="button button-icon fa fa-search">Cerca</a>
-                                    </li>
-                                </ul>
-                            </article>
-                        </li>
-
-                    </ul>
-                </section>
+                </div>
 
             </div>
-
         </div>
     </div>
 
-</div>
-<?php
-    include 'footer.php';
-?>
+    <?php
+        include 'footer.php';
+    ?>
 
 </body>

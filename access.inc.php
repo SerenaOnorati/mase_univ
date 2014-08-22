@@ -12,7 +12,7 @@
             !isset($_POST['password']) or $_POST['password'] == '')
         {
             $GLOBALS['loginError'] = 'Inserisci entrambi i campi';
-            header("Location: index.php#login");
+            include 'index.php';("Location: index.php#login");
             return FALSE;
         }
 
@@ -34,7 +34,7 @@
             unset($_SESSION['password']);
             $GLOBALS['loginError'] =
                 'Controlla se email e password sono corretti.';
-            header("Location: index.php#login");
+            include 'index.php';("Location: index.php#login");
             return FALSE;
         }
     }
@@ -46,11 +46,9 @@
         unset($_SESSION['loggedIn']);
         unset($_SESSION['email']);
         unset($_SESSION['password']);
-        echo
-        "<script>
-        document.location.href=\"index.php\";
-        </script>";
-        //header('Location:'.$nome_sito.'index.php');
+
+        header('Location: index.php');
+
         exit();
 
     }

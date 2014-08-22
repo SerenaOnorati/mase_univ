@@ -8,8 +8,9 @@
     }
     if(!userHasRole('Amministratore'))
     {
-        $loginError = "Non sei Amministratore";
-        header("Location: index.php#login?$loginError");
+
+        $GLOBALS['loginError'] = "Non sei autorizzato ad accedere alla pagina di amministrazione";
+        include 'index.php';
     }
 ?>
 
