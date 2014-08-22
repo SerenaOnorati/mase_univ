@@ -1,7 +1,5 @@
 <?php
 
-    //include_once $_SERVER['DOCUMENT_ROOT'] .'configuration.php';
-
     function login()
     {
         include 'configuration.php';
@@ -11,8 +9,8 @@
         if (!isset($_POST['email']) or $_POST['email'] == '' or
             !isset($_POST['password']) or $_POST['password'] == '')
         {
-            $GLOBALS['loginError'] = 'Inserisci entrambi i campi';
-            include 'index.php';("Location: index.php#login");
+            $GLOBALS['loginError'];
+            include 'index.php';
             return FALSE;
         }
 
@@ -34,7 +32,7 @@
             unset($_SESSION['password']);
             $GLOBALS['loginError'] =
                 'Controlla se email e password sono corretti.';
-            include 'index.php';("Location: index.php#login");
+            include 'index.php';;
             return FALSE;
         }
     }
