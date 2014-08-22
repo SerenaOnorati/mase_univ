@@ -1,5 +1,8 @@
 <?php
 
+    $salt = 'wktxl';
+    $nome_sito = 'www.unipass.it/mase_univ/';
+
     $email_sito = "marzia.magheri@gmail.com";
     $oggetto_info = "Richiesta informazioni/commenti dal sito di Universitalia";
     $oggetto_stampe = "Invio file dal sito Universitalia per stampa";
@@ -10,22 +13,8 @@
     $formato_std =array('B/N A4','B/N A3','Colori A4','Colori A3');
 
 
-     // parametri per la connessione al database
-     $host = "sql41.securesites.it";
-     $db_name = "unipass_it";
-     $db_user = "root";
-     $db_psw = "";
 
-    /*
-     //parametri connessione al database
-     $host = "localhost";
-     $db_name = "unipass_it";
-     $db_user = "a_2632";
-     $db_psw = "aqT4wqbJ";
 
-    */
-
-     $salt = 'wktxl';
     //query
     $q_login = "SELECT email, password, id_ruolo FROM user WHERE email = ? AND password = ?";
     $q_news = "SELECT testo, immagine, data FROM news ORDER BY data";

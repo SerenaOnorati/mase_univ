@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="3398018313">
+  <component name="DataSourceManagerImpl" format="xml" hash="4102564710">
     <data-source source="LOCAL" name="MySQL - unipass_it@sql41.securesites.it" uuid="b22bfd89-b0bc-4c3f-a645-1a8792f2c5bd">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>

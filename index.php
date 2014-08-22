@@ -108,7 +108,7 @@
                                 </header>
                                 <form action="login.php" method="post">
                                     <div>
-                                        <input id="username" name="username" placeholder="e-mail" type="text" class="text" />
+                                        <input id="email" name="email" placeholder="e-mail" type="text" class="text" />
                                         <input id="password" name="password" placeholder="Password" type="password" class="text" />
 
                                     </div>

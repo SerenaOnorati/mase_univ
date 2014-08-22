@@ -1,7 +1,8 @@
 <!-- Nav -->
 <nav id="nav">
     <br>
-    <h1 id="logo"><a href="#">Universitalia</a></h1><br><br><br>
+    <h1 id="logo"><a href="#">Universitalia</a></h1>
+    <p><?php $_SESSION['email'] ?> </p><br><br><br>
     <ul id="icone">
         <li>
             <a href="" class="fa fa-book"><span>Libri</span></a>
