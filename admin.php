@@ -1,14 +1,15 @@
 <?php
     include 'access.inc.php';
+    include 'configuration.php';
+
     if(!IsLogged())
     {
         header("Location: index.php#login");
     }
     if(!userHasRole('Amministratore'))
     {
-        $GLOBALS['loginError'] = 'Non sei Amministratore';
-        echo $GLOBALS['loginError'];
-        //header("Location: index.php#login");
+        $loginError = "Non sei Amministratore";
+        header("Location: index.php#login?$loginError");
     }
 ?>
 

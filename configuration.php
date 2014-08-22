@@ -3,6 +3,8 @@
     $salt = 'wktxl';
     $nome_sito = 'www.unipass.it/mase_univ/';
 
+    global $loginError;
+
     $email_sito = "marzia.magheri@gmail.com";
     $oggetto_info = "Richiesta informazioni/commenti dal sito di Universitalia";
     $oggetto_stampe = "Invio file dal sito Universitalia per stampa";

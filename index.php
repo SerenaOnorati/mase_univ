@@ -1,11 +1,10 @@
+<?php
+    include 'access.inc.php';
+
+
+?>
+
 <!DOCTYPE HTML>
-<!--
-	Strongly Typed 1.1 by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-
-
 <html>
 <head>
     <title>Universitalia S.r.l</title>
@@ -111,8 +110,11 @@
                                         <input id="email" name="email" placeholder="e-mail" type="text" class="text" />
                                         <input id="password" name="password" placeholder="Password" type="password" class="text" />
 
-                                        <p>
-                                        </p>
+                                        <?php
+                                            echo "<p>";
+                                            echo $_GET['loginError'];
+                                            echo "</p>";
+                                        ?>
                                     </div>
                                     <br>
 

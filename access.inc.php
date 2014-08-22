@@ -12,6 +12,7 @@
             !isset($_POST['password']) or $_POST['password'] == '')
         {
             $GLOBALS['loginError'] = 'Inserisci entrambi i campi';
+            header("Location: index.php#login");
             return FALSE;
         }
 
@@ -33,6 +34,7 @@
             unset($_SESSION['password']);
             $GLOBALS['loginError'] =
                 'Controlla se email e password sono corretti.';
+            header("Location: index.php#login");
             return FALSE;
         }
     }
