@@ -1,52 +1,60 @@
 <?php
 
-    include_once $_SERVER['DOCUMENT_ROOT'] .'configuration.php';
-    function userIsLoggedIn()
+    //include_once $_SERVER['DOCUMENT_ROOT'] .'configuration.php';
+
+    function login()
     {
+        include 'configuration.php';
         //$salt = 'wktxl';
-        $nome_sito = 'www.unipass.it/mase_univ/';
+        //$nome_sito = 'www.unipass.it/mase_univ/';
 
-        if (isset($_POST['action']) and $_POST['action'] == 'login')
+        if (!isset($_POST['email']) or $_POST['email'] == '' or
+            !isset($_POST['password']) or $_POST['password'] == '')
         {
-            if (!isset($_POST['email']) or $_POST['email'] == '' or
-                !isset($_POST['password']) or $_POST['password'] == '')
-            {
-                $GLOBALS['loginError'] = 'Please fill in both fields';
-                return FALSE;
-            }
-
-            $password = md5($_POST['password'] .$salt);
-
-            if (databaseContainsUser($_POST['email'], $password))
-            {
-                session_start();
-                $_SESSION['loggedIn'] = TRUE;
-                $_SESSION['email'] = $_POST['email'];
-                $_SESSION['password'] = $password;
-                return TRUE;
-            }
-            else
-            {
-                session_start();
-                unset($_SESSION['loggedIn']);
-                unset($_SESSION['email']);
-                unset($_SESSION['password']);
-                $GLOBALS['loginError'] =
-                    'The specified email address or password was incorrect.';
-                return FALSE;
-            }
+            $GLOBALS['loginError'] = 'Inserisci entrambi i campi';
+            return FALSE;
         }
 
-        if (isset($_POST['action']) and $_POST['action'] == 'logout')
-        {
+        $password = md5($_POST['password'] .$salt);
 
-            session_start();
+        if (databaseContainsUser($_POST['email'], $password))
+        {
+            //session_start();
+            $_SESSION['loggedIn'] = TRUE;
+            $_SESSION['email'] = $_POST['email'];
+            $_SESSION['password'] = $password;
+            return TRUE;
+        }
+        else
+        {
+            //session_start();
             unset($_SESSION['loggedIn']);
             unset($_SESSION['email']);
             unset($_SESSION['password']);
-            header('Location:'.$nome_sito.'index.php');
-            exit();
+            $GLOBALS['loginError'] =
+                'Controlla se email e password sono corretti.';
+            return FALSE;
         }
+    }
+
+    function logout()
+    {
+        include 'configuration.php';
+
+        unset($_SESSION['loggedIn']);
+        unset($_SESSION['email']);
+        unset($_SESSION['password']);
+        echo
+        "<script>
+        document.location.href=\"index.php\";
+        </script>";
+        //header('Location:'.$nome_sito.'index.php');
+        exit();
+
+    }
+
+    function IsLogged()
+    {
 
         session_start();
         if (isset($_SESSION['loggedIn']))
@@ -58,7 +66,7 @@
     function databaseContainsUser($email, $password)
     {
         include 'db.inc.php';
-        //include_once $_SERVER['DOCUMENT_ROOT'] .'db.inc.php';
+
         try
         {
             $sql = 'SELECT COUNT(*) FROM user
@@ -95,19 +103,12 @@
 
         try
         {
-            $sql = "SELECT descrizione FROM ruolo
-            WHERE id_ruolo IN (SELECT id_ruolo FROM user WHERE email = :email)";
-
-            /*$sql = "SELECT COUNT(*) FROM user
-            INNER JOIN id_ruolo ON user.id_ruolo = id_ruolo
-            INNER JOIN ruolo ON id_ruolo = ruolo.id_ruolo
-            WHERE email = :email AND ruolo.id_ruolo = :roleId";
-            */
+            $sql = 'SELECT id_ruolo FROM user WHERE email = :email';
 
             $s = $pdo->prepare($sql);
             $s->bindValue(':email', $_SESSION['email']);
-            $s->bindValue(':roleId', $role);
             $s->execute();
+
         }
         catch (PDOException $e)
         {
@@ -120,12 +121,25 @@
 
         $row = $s->fetch();
 
-        if ($row['descrizione'] == $role)
+        if ($row['id_ruolo'] > 0)
         {
-            return TRUE;
+            $sql_1 = 'SELECT descrizione FROM ruolo
+            WHERE id_ruolo = :risultato';
+            $s = $pdo->prepare($sql_1);
+            $s->bindValue(':risultato', $row['id_ruolo']);
+            $s->execute();
+            $row_1 = $s->fetch();
+            if($row_1['descrizione'] == $role)
+                return TRUE;
+            else
+                return FALSE;
         }
         else
         {
-            return FALSE;
+            $error = 'Errore nella ricerca dell\' id_ruolo utente';
+            echo "<script language=\"JavaScript\">\n";
+            echo "alert(\"$error\");\n";
+            echo "</script>";
+            exit();
         }
     }

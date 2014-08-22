@@ -1,24 +1,19 @@
 <?php
-    //include("configuration.php");
-    session_start();
-    //se non c'è la sessione registrata
-    if(isset($_SESSION['autorizzato'])) {
-        echo "Area riservata, accesso negato.";
-        echo '<script language=javascript>document.location.href="index.php"</script>';
-        die;
+    include 'access.inc.php';
+    if(!IsLogged())
+    {
+        header("Location: index.php#login");
     }
-
-    //Altrimenti Prelevo il codice identificatico dell’utente loggato
-    $cod = $_SESSION['cod']; //id cod recuperato nel file di verifica
-
+    if(!userHasRole('Amministratore'))
+    {
+        $GLOBALS['loginError'] = 'Non sei Amministratore';
+        echo $GLOBALS['loginError'];
+        //header("Location: index.php#login");
+    }
 ?>
 
 <!DOCTYPE HTML>
-<!--
-	Strongly Typed 1.1 by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 <head>
     <title>Area Privata</title>

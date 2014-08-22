@@ -104,24 +104,28 @@
                             <!-- Highlight -->
                             <article class="is-highlight">
                                 <header>
-                                    <h3><a>Registrati o Accedi</a></h3><br>
+                                    <h3><a name = "login">Registrati o Accedi</a></h3><br>
                                 </header>
                                 <form action="login.php" method="post">
                                     <div>
                                         <input id="email" name="email" placeholder="e-mail" type="text" class="text" />
                                         <input id="password" name="password" placeholder="Password" type="password" class="text" />
 
+                                        <p>
+                                        </p>
                                     </div>
                                     <br>
 
                                     <ul class="actions">
                                         <li>
                                             <input type='submit' id="accedi" class="button button-icon fa fa-lock">
+
                                             <!--<a href="login.php" id="accedi" class="button button-icon fa fa-lock">Accedi</a>
                                             <br><br>
                                             <a href="#" class="button button-icon fa fa-edit">Registrati</a>-->
 
                                         </li>
+
                                     </ul>
                                 </form>
                             </article>
