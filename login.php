@@ -16,11 +16,5 @@
             /* else aggiungi ruoli */
         }
     }
-    else
-    {
-        logout();
-
-    }
-
 
 ?>

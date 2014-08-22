@@ -1,12 +1,16 @@
+<h1 id="logo"><a href="#">Universitalia</a></h1>
+<p style="text-align: right">
+    Benvenuto,
+    <a href="#">
+    <?php
+        echo $_SESSION['email'];
+    ?>
+    </a>
+    <a href="logout.php" class="fa fa-sign-out" title="Logout"></a>
+</p>
 <!-- Nav -->
 <nav id="nav">
     <br>
-    <h1 id="logo"><a href="#">Universitalia</a></h1>
-    <p><?php
-        session_start();
-        echo $_SESSION['email'];
-        ?>
-    </p><br><br><br>
     <ul id="icone">
         <li>
             <a href="" class="fa fa-book"><span>Libri</span></a>
