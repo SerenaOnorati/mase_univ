@@ -30,7 +30,7 @@
             <a href="" class="fa fa-user"><span>Utenti registrati</span></a>
         </li>
         <li>
-            <a href="" class="fa fa-edit"><span>News</span></a>
+            <a href="inserimento_news.php" class="fa fa-edit"><span>News</span></a>
         </li>
     </ul>
 </nav>
