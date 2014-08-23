@@ -6,10 +6,11 @@
         //$salt = 'wktxl';
         //$nome_sito = 'www.unipass.it/mase_univ/';
 
+        $GLOBALS['loginError'] = ' ';
         if (!isset($_POST['email']) or $_POST['email'] == '' or
             !isset($_POST['password']) or $_POST['password'] == '')
         {
-            $GLOBALS['loginError'];
+            $GLOBALS['loginError'] = 'Errore nella procedura di login';
             include 'index.php';
             return FALSE;
         }
@@ -120,7 +121,7 @@
         if ($row['id_ruolo'] > 0)
         {
             $sql_1 = 'SELECT descrizione FROM ruolo
-            WHERE id_ruolo = :risultato';
+        WHERE id_ruolo = :risultato';
             $s = $pdo->prepare($sql_1);
             $s->bindValue(':risultato', $row['id_ruolo']);
             $s->execute();

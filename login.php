@@ -3,6 +3,7 @@
     include 'configuration.php';
     include 'access.inc.php';
 
+    //verifico se l'utente è loggato
     if(!IsLogged())
     {
     //se l'utente non è loggato, allora login()
@@ -12,7 +13,6 @@
             include 'index.php';
         }
     }
-
     //dopo il login si verifica il ruolo dell'utente per i diversi permessi
     if( userHasRole('Amministratore') )
     {

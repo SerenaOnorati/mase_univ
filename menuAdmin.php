@@ -1,7 +1,7 @@
 <h1 id="logo"><a href="#">Universitalia</a></h1>
 <p style="text-align: right">
     Benvenuto,
-    <a href="#">
+    <a href="dati_utente.php">
     <?php
         echo $_SESSION['email'];
     ?>
