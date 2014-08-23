@@ -67,8 +67,8 @@
                             <li>
                                 <form action="" method="post">
                                     <div class="row">
-
-                                        <input type="hidden" name="id_news" value="<?php echo $new['id_news']; ?>"> <?php echo htmlspecialchars($new['id_news'], ENT_QUOTES, 'UTF-8'); ?>
+                                        <?php $id = htmlspecialchars($new['id_news'], ENT_QUOTES, 'UTF-8');?>
+                                        <input type="hidden" name="id_news" value="<?php echo $id?>">
                                         <input type="hidden" name="titolo" value="<?php echo $new['titolo']; ?>"> <?php echo htmlspecialchars($new['titolo'], ENT_QUOTES, 'UTF-8'); ?>
                                         <input type="hidden" name="testo" value="<?php echo $new['testo']; ?>"> <?php echo htmlspecialchars($new['testo'], ENT_QUOTES, 'UTF-8'); ?>
                                         <!--<input type="hidden" name="immagine" value="<?php echo $new['immagine']; ?>">-->
