@@ -19,8 +19,9 @@
             //recupera i dati delle news
             try
             {
-                $sql = 'SELECT * FROM news order BY data';
-                $s = $pdo->query($sql);
+                $sql = 'SELECT * FROM news order BY data DESC';
+                $s = $pdo->prepare($sql);
+                $s->execute();
 
             }
             catch (PDOException $e)
@@ -32,18 +33,17 @@
                 exit();
             }
             //dopo la query inserisco in un'array global il risultato
-            foreach($s as $row)
-            {
-                $news[] = array (
-                  'id_news' => $row['id_news'],
-                  'titolo' => $row['titolo'],
-                  'testo' => $row['testo'],
-                  'immagine' => $row['immagine'],
-                  'data' => $row['data']
-                );
+            $news = $s->fetchAll();
+            if(isset($news)){
+                $GLOBALS['news'] = $news;
             }
-            //header('Content-Type: image/jpeg');
-            $GLOBALS['news'] = $news;
+            else{
+                $error = 'Non sono state inserite news nel db';
+                echo "<script language=\"JavaScript\">\n";
+                echo "alert(\"$error\");\n";
+                echo "</script>";
+            }
+
             include 'inserimento_news.html.php';
         }
     }

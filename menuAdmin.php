@@ -27,7 +27,7 @@
             </ul>
         </li>
         <li>
-            <a href="" class="fa fa-user"><span>Utenti registrati</span></a>
+            <a href="utenti_registrati.php" class="fa fa-user"><span>Utenti registrati</span></a>
         </li>
         <li>
             <a href="inserimento_news.php" class="fa fa-edit"><span>News</span></a>

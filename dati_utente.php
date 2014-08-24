@@ -31,12 +31,11 @@
 
         $row = $s->fetch();
 
-        if ($row[0] > 0)
+        if (isset($row))
         {
             $GLOBALS['name'] = $row['name'];
             $GLOBALS['surname'] = $row['surname'];
             $GLOBALS['tel'] = $row['tel'];
-            include_once 'dati_utente.html.php';
         }
         else
         {
@@ -44,7 +43,7 @@
             echo "<script language=\"JavaScript\">\n";
             echo "alert(\"$error\");\n";
             echo "</script>";
-            exit();
         }
+        include 'dati_utente.html.php';
     }
 ?>

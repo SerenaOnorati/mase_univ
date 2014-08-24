@@ -26,31 +26,27 @@
         </noscript>
 	</head>
 	<body class="no-sidebar">
-
 		<!-- Header Wrapper -->
 			<div id="header-wrapper">
 						
 				<!-- Header -->
 					<div id="header" class="container">
                         <?php
-                        include 'menu.php';
+                            include 'menu.php';
                         ?>
 					</div>
-
 			</div>
-			
 		<!-- Main Wrapper -->
 			<div id="main-wrapper">
-
 				<!-- Main -->
 					<div id="main" class="container">
 						<div class="row">
-						
 							<!-- Content -->
 								<div id="content" class="12u skel-cell-important">
 
 									<!-- Post -->
 										<article class="is-post">
+
 											<header>
 												<h2>Rilegatura Tesi in <b>1 ORA</b></h2>
 											</header>
@@ -60,17 +56,13 @@
                                             <p>La rilegatura completa di incisione a 17&euro;, con l'offerta prendi 4 paghi 3 a 51&euro; </p>
 											<span class="image image-full"><img src="images/tesi.jpg" alt="" /></span>
 
-											</article>
-								
+										</article>
 								</div>
-								
 						</div>
 					</div>
-
 			</div>
-
         <?php
-        include 'footer.php';
+            include 'footer.php';
         ?>
 	</body>
 </html>

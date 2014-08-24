@@ -27,7 +27,7 @@
 	</head>
 	<body class="no-sidebar">
 
-		<!-- Header Wrapper -->
+		    <!-- Header Wrapper -->
 			<div id="header-wrapper">
 				<!-- Header -->
 					<div id="header" class="container">
@@ -37,17 +37,13 @@
 					</div>
 
 			</div>
-			
-		<!-- Main Wrapper -->
+		    <!-- Main Wrapper -->
 			<div id="main-wrapper">
-
 				<!-- Main -->
 					<div id="main" class="container">
 						<div class="row">
-						
 							<!-- Content -->
 								<div id="content" class="12u skel-cell-important">
-
 									<!-- Post -->
 										<article class="is-post">
 											<header>
@@ -57,7 +53,8 @@
                                             <span class="image-table">
                                                 <div class="row">
                                                     <div class="row half">
-                                                       <div class="6u"><span class="image"><img src="images/4911.gif"><p style="text-align: center"><strong>cod. 4911</strong> <br> Max. dimensioni piastra<br>
+                                                       <div class="6u">
+                                                           <span class="image"><img src="images/4911.gif"><p style="text-align: center"><strong>cod. 4911</strong> <br> Max. dimensioni piastra<br>
                                                                     di testo 38 x 14 mm</p></span></div>
                                                         <div class="6u"><span class="image"><img src="images/4912.gif"><p style="text-align: center"><strong>cod. 4912</strong> <br> Max. dimensioni piastra<br>
                                                                     di testo 47 x 18 mm</p></span></div>
@@ -78,12 +75,9 @@
                                                 </div>
                                             </span>
 										</article>
-								
 								</div>
-
 						</div>
 					</div>
-
 			</div>
         <?php
             include 'footer.php';
