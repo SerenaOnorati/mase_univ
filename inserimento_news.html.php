@@ -91,20 +91,16 @@
                                         <textarea type="text" name="testo" class="text" required="required" cols="30" rows="6" disabled> <?php echo htmlspecialchars($new['testo'], ENT_QUOTES, 'UTF-8'); ?> </textarea>
                                     </div>
                                     <div class="3u">
-                                        <!--<span class="image"><img src="<?php echo ($new['immagine']); ?>"></span>-->
-
+                                        <a href="" class="fa fa-picture-o" title="Visualizza immagine"> Visualizza immagine</a><br>
+                                        <!-- far in modo che se clicco su visualizza immagine vedo l'immagine associata alla news ad esempio in sovrapposizione alla pagina>
+                                        <!--<span class="image"><img src="<?php header("Content-type: image/jpeg"); echo ($new['immagine']); ?>"></span>-->
                                     </div>
-                                    <!--<input type="hidden" name="immagine" value="<?php echo $new['immagine']; ?>">-->
                                     <div class="2u">
                                         <input type="text" name="data" class="text" required="required" value=" <?php echo htmlspecialchars($new['data'], ENT_QUOTES, 'UTF-8'); ?>" disabled>
                                     </div>
-                                    <!--  <input type="submit" name="action" value="Edit">
-                                      <input type="submit" name="action" value="Delete">-->
                                     <div class="2u">
                                         <a href="" class="fa fa-edit" title="Modifica"> Modifica</a><br>
                                         <a href="" class="fa fa-times" title="Cancella"> Cancella</a>
-                                        <!--<button id="modifica" onclick="" class="button button-icon fa fa-cog">Modifica</button>-->
-                                        <!--<button id="elimina" onclick="" class="button button-icon fa fa-times">Cancella</button>-->
                                     </div>
                                 </div>
                             </form>
