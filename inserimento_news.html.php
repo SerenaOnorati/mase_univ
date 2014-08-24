@@ -58,31 +58,61 @@
 
                 <!-- Post -->
                 <article class="is-post" style="align-content: center">
-                    <header>
-                        <div><h2>News Inserite</h2></div>
-                    </header>
+                    <form action="" method="post">
+                        <header>
+                            <div><h2>News Inserite</h2></div>
+                        </header>
+                        <div class="row">
+                            <div class="3u">
+                                <input type="text" name="titolo" class="text" required="required" value="TITOLO" disabled>
+                            </div>
+                            <div class="3u">
+                                <input type="text" name="testo" class="text" required="required" value="TESTO" disabled>
+                            </div>
+                            <div class="3u">
+                                <input type="text" name="immagine" class="text"  required="required" value="IMMAGINE" disabled>
+                            </div>
+                            <!--<input type="hidden" name="immagine" value="<?php echo $new['immagine']; ?>">-->
+                            <div class="2u">
+                                <input type="text" name="data" class="text" required="required" value="DATA" disabled>
+                            </div>
+                            <div class="1u">
+                                <input type="hidden" name="data" class="text" required="required" value="OP" disabled>
+                            </div>
+                        </div>
 
-                    <div class="12u">
                         <?php foreach ($news as $new): ?>
-                            <li>
-                                <form action="" method="post">
-                                    <div class="row">
-                                        <?php $id = htmlspecialchars($new['id_news'], ENT_QUOTES, 'UTF-8');?>
-                                        <input type="hidden" name="id_news" value="<?php echo $id?>">
-                                        <input type="hidden" name="titolo" value="<?php echo $new['titolo']; ?>"> <?php echo htmlspecialchars($new['titolo'], ENT_QUOTES, 'UTF-8'); ?>
-                                        <input type="hidden" name="testo" value="<?php echo $new['testo']; ?>"> <?php echo htmlspecialchars($new['testo'], ENT_QUOTES, 'UTF-8'); ?>
-                                        <!--<input type="hidden" name="immagine" value="<?php echo $new['immagine']; ?>">-->
-                                        <input type="hidden" name="data" value="<?php echo $new['data']; ?>"> <?php echo htmlspecialchars($new['data'], ENT_QUOTES, 'UTF-8'); ?>
 
-                                        <input type="submit" name="action" value="Edit">
-                                        <input type="submit" name="action" value="Delete">
-                                    </div>
-                                </form>
-                            </li>
-                        <?php endforeach; ?>
-                    </div>
+                            <div class="row">
+
+                                            <?php $id = htmlspecialchars($new['id_news'], ENT_QUOTES, 'UTF-8');?>
+                                            <input type="hidden" name="id_news" value="<?php echo $id?>">
+                                            <div class="3u">
+                                                <input type="text" name="titolo" class="text" required="required" value="<?php echo htmlspecialchars($new['titolo'], ENT_QUOTES, 'UTF-8'); ?>" disabled>
+                                            </div>
+                                            <div class="3u">
+                                                <textarea type="text" name="testo" class="text" required="required" cols="30" rows="6" disabled> <?php echo htmlspecialchars($new['testo'], ENT_QUOTES, 'UTF-8'); ?> </textarea>
+                                            </div>
+                                            <div class="3u">
+                                                <!--<span class="image"><img src="<?php echo $new['immagine']; ?>"></span>-->
+
+                                            </div>
+                                            <!--<input type="hidden" name="immagine" value="<?php echo $new['immagine']; ?>">-->
+                                            <div class="2u">
+                                                <input type="text" name="data" class="text" required="required" value=" <?php echo htmlspecialchars($new['data'], ENT_QUOTES, 'UTF-8'); ?>" disabled>
+                                            </div>
+                                          <!--  <input type="submit" name="action" value="Edit">
+                                            <input type="submit" name="action" value="Delete">-->
+                                            <div class="1u">
+                                                <button id="modifica" onclick="" class="button button-icon fa fa-cog"></button>
+                                                <button id="elimina" onclick="" class="button button-icon fa fa-times"></button>
+                                            </div>
+
+                            </div>
+                            <?php endforeach; ?>
 
 
+                    </form>
                 </article>
 
             </div>

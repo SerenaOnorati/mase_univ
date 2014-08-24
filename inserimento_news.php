@@ -42,7 +42,7 @@
                   'data' => $row['data']
                 );
             }
-
+            //header('Content-Type: image/jpeg');
             $GLOBALS['news'] = $news;
             include 'inserimento_news.html.php';
         }
