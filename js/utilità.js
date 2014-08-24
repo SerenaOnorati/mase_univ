@@ -52,3 +52,5 @@ $(document).ready(function() {
         }
     )
 });
+
+/*funzione per visualizzare le immagini*/

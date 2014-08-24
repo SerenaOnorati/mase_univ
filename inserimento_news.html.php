@@ -91,7 +91,8 @@
                                         <textarea type="text" name="testo" class="text" required="required" cols="30" rows="6" disabled> <?php echo htmlspecialchars($new['testo'], ENT_QUOTES, 'UTF-8'); ?> </textarea>
                                     </div>
                                     <div class="3u">
-                                        <a href="" class="fa fa-picture-o" title="Visualizza immagine"> Visualizza immagine</a><br>
+                                        <a href="" class="fa fa-picture-o"> Visualizza immagine</a><br>
+
                                         <!-- far in modo che se clicco su visualizza immagine vedo l'immagine associata alla news ad esempio in sovrapposizione alla pagina>
                                         <!--<span class="image"><img src="<?php header("Content-type: image/jpeg"); echo ($new['immagine']); ?>"></span>-->
                                     </div>
