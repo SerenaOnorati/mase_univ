@@ -99,7 +99,7 @@
                                         <div class="specialBox" id="specialBox<?php echo ($new['id_news']); ?>">
 
                                             <p style="text-align: right"><img src="images/close.png" onmousedown="toggleOverlay(<?php echo ($new['id_news']); ?>)"/></p>
-                                            <span class="image">
+                                            <span class="image image-centered">
                                                 <?php
                                                     include 'configuration.php';
                                                     echo "<img src=".$image_news_path.$new['immagine'].">";
