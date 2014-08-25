@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c62a4eec-d582-4e13-b7e5-eef246bc66c3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utenti_registrati_modifica.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utenti_registrati.html.php" afterPath="$PROJECT_DIR$/utenti_registrati.html.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utenti_registrati_cancella.php" afterPath="$PROJECT_DIR$/utenti_registrati_cancella.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/utilità.js" afterPath="$PROJECT_DIR$/js/utilità.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -85,7 +81,7 @@
       <file leaf-file-name="utilità.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/utilità.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="201" column="78" selection-start="6653" selection-end="6653" vertical-scroll-proportion="0.6882591" vertical-offset="2907" max-vertical-offset="3808">
+            <state line="223" column="37" selection-start="7640" selection-end="7640" vertical-scroll-proportion="0.7705803" vertical-offset="3220" max-vertical-offset="3978">
               <folding />
             </state>
           </provider>
@@ -713,7 +709,11 @@
       <created>1408982841653</created>
       <updated>1408982841654</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="utente_registrato_modifica">
+      <created>1408985411917</created>
+      <updated>1408985411917</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -755,7 +755,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="generalizzato progetto con file php" />
     <MESSAGE value="inserito php in preventivo.php" />
     <MESSAGE value="controllo login" />
     <MESSAGE value="newsAdmin" />
@@ -780,7 +779,8 @@
     <MESSAGE value="correzione errori visualizzazione dati utente e news&#10;&#10;visualizzazione utenti registrati&#10;&#10;migliorie sia estetiche che a livello di codice&#10;&#10;identazione codice&#10;&#10;" />
     <MESSAGE value="altre modifiche varie 6" />
     <MESSAGE value="inserimento_news_aggiungi&#10;inserimento_news_cancella&#10;utenti_registrati_cancella" />
-    <option name="LAST_COMMIT_MESSAGE" value="inserimento_news_aggiungi&#10;inserimento_news_cancella&#10;utenti_registrati_cancella" />
+    <MESSAGE value="utente_registrato_modifica" />
+    <option name="LAST_COMMIT_MESSAGE" value="utente_registrato_modifica" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1116,7 +1116,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/utilità.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="201" column="78" selection-start="6653" selection-end="6653" vertical-scroll-proportion="0.6882591" vertical-offset="2907" max-vertical-offset="3808">
+        <state line="223" column="37" selection-start="7640" selection-end="7640" vertical-scroll-proportion="0.7705803" vertical-offset="3220" max-vertical-offset="3978">
           <folding />
         </state>
       </provider>

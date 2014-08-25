@@ -213,6 +213,16 @@ function modificaUtente(id)
                 }
             });
         }
+        else
+        {
+            document.getElementById('modificautente'+id).innerHTML = "Modifica";
+            document.getElementById('modificautente'+id).className = "fa fa-edit";
+            document.getElementById("name"+id).disabled = true;
+            document.getElementById("surname"+id).disabled = true;
+            document.getElementById("email"+id).disabled = true;
+            document.getElementById("tel"+id).disabled = true;
+            window.location.reload();
+        }
 
     }
 
