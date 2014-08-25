@@ -79,25 +79,39 @@
                             </div>
                         </div>
                         <br>
+
                         <?php foreach ($news as $new): ?>
                             <form action="" method="post">
                                 <div class="row">
-                                    <?php $id = htmlspecialchars($new['id_news'], ENT_QUOTES, 'UTF-8');?>
-                                    <input type="hidden" name="id_news" value="<?php echo $id?>">
+                                    <input id="id_news<?php echo ($new['id_news']); ?>" type="hidden" name="id_news" value="<?php echo ($new['id_news']);?>">
                                     <div class="2u">
-                                        <textarea type="text" name="titolo" class="text" required="required" cols="30" rows="6" disabled><?php echo htmlspecialchars($new['titolo'], ENT_QUOTES, 'UTF-8'); ?></textarea>
+                                        <textarea id="titolo<?php echo ($new['id_news']); ?>" type="text" name="titolo" class="text" required="required" cols="30" rows="6" disabled><?php echo htmlspecialchars($new['titolo'], ENT_QUOTES, 'UTF-8'); ?></textarea>
                                     </div>
                                     <div class="3u">
-                                        <textarea type="text" name="testo" class="text" required="required" cols="30" rows="6" disabled> <?php echo htmlspecialchars($new['testo'], ENT_QUOTES, 'UTF-8'); ?> </textarea>
+                                        <textarea id="testo<?php echo ($new['id_news']); ?>" type="text" name="testo" class="text" required="required" cols="30" rows="6" disabled> <?php echo htmlspecialchars($new['testo'], ENT_QUOTES, 'UTF-8'); ?> </textarea>
                                     </div>
                                     <div class="3u">
-                                        <a href="" class="fa fa-picture-o"> Visualizza immagine</a><br>
 
-                                        <!-- far in modo che se clicco su visualizza immagine vedo l'immagine associata alla news ad esempio in sovrapposizione alla pagina>
-                                        <!--<span class="image"><img src="<?php header("Content-type: image/jpeg"); echo ($new['immagine']); ?>"></span>-->
+                                        <!--<!-- Start Overlay -->
+                                        <div class="overlay" id="overlay<?php echo ($new['id_news']); ?>"></div>
+                                        <!-- End Overlay -->
+                                        <!-- Start Special Centered Box -->
+                                        <div class="specialBox" id="specialBox<?php echo ($new['id_news']); ?>">
+
+                                            <p style="text-align: right"><img src="images/close.png" onmousedown="toggleOverlay(<?php echo ($new['id_news']); ?>)"/></p>
+                                            <span class="image">
+                                                <?php
+                                                    include 'configuration.php';
+                                                    echo "<img src=".$image_news_path.$new['immagine'].">";
+                                                ?>
+
+                                            </span>
+                                        </div>
+                                        <a href="" onmousedown="toggleOverlay(<?php echo ($new['id_news']); ?>)" id="immagine<?php echo ($new['id_news']); ?>" class="fa fa-picture-o"> Visualizza immagine</a><br>
+
                                     </div>
                                     <div class="2u">
-                                        <input type="text" name="data" class="text" required="required" value=" <?php echo htmlspecialchars($new['data'], ENT_QUOTES, 'UTF-8'); ?>" disabled>
+                                        <input id="data<?php echo ($new['id_news']); ?>" type="text" name="data" class="text" required="required" value=" <?php echo htmlspecialchars($new['data'], ENT_QUOTES, 'UTF-8'); ?>" disabled>
                                     </div>
                                     <div class="2u">
                                         <a href="" class="fa fa-edit" title="Modifica"> Modifica</a><br>

@@ -54,3 +54,16 @@ $(document).ready(function() {
 });
 
 /*funzione per visualizzare le immagini*/
+function toggleOverlay(id)
+{
+    var overlay = document.getElementById('overlay'+id);
+    var specialBox = document.getElementById('specialBox'+id);
+    overlay.style.opacity = .8;
+    if(overlay.style.display == "block"){
+        overlay.style.display = "none";
+        specialBox.style.display = "none";
+    } else {
+        overlay.style.display = "block";
+        specialBox.style.display = "block";
+    }
+}
