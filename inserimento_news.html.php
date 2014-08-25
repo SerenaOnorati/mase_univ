@@ -121,6 +121,10 @@
                             </form>
                             <br>
                         <?php endforeach; ?>
+                        <form action="" method="post">
+                            <a href="" class="fa fa-plus-square" title="Aggiungi">Aggiungi news</a>
+
+                        </form>
                     </article>
                 </div>
             </div>
