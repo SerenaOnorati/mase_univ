@@ -67,3 +67,104 @@ function toggleOverlay(id)
         specialBox.style.display = "block";
     }
 }
+
+function aggiungiRigaNews()
+{
+    var aggiungi = document.getElementById('aggiungi');
+    if(aggiungi.style.display == "block")
+    {
+        aggiungi.style.display = 'none';
+    }
+    else
+    {
+        aggiungi.style.display = 'block';
+        //window.location.hash = "aggiungi";
+    }
+}
+
+//funzione che permette di aggiungere le nuove news nel db tramite chiamata AJAX
+function aggiungiNews()
+{
+
+    var titolo = $("#titolo_nuovo").val();
+    var testo = $("#testo_nuovo").val();
+    var path = $("#url").val();
+    var file = path.replace(/^.*\\/, "");
+    var data = $("#data_nuovo").val();
+    //alert(file);
+    if(titolo.length != 0 && testo.length != 0 && data.length != 0)
+    {
+        $.ajax({
+            type: 'POST',
+            url: 'inserimento_news_aggiungi.php',
+            data: "titolo="+titolo+"&testo="+testo+"&file="+file+"&data="+data,
+            dataType: "html",
+
+            success: function(response)
+            {
+                //Upload
+
+                window.location.reload();
+                alert(response);
+
+            },
+            error: function()
+            {
+                alert("Inserimento fallito");
+            }
+        });
+    }
+    else
+        //alert("lunghezza titolo"+titolo.length)
+        alert("Compilare tutti i campi");
+}
+
+function cancellaNews(id)
+{
+    var check = confirm("Sei sicuro di voler cancellare la news?");
+    if(check == true)
+    {
+        $.ajax({
+            type: 'POST',
+            url: 'inserimento_news_cancella.php',
+            data: "id_news="+id,
+            dataType: "html",
+
+            success: function(response)
+            {
+                window.location.reload();
+                alert(response);
+
+            },
+            error: function()
+            {
+                alert("Cancellazione fallita");
+            }
+        });
+    }
+}
+
+function cancellaUtente(id)
+{
+    var check = confirm("Sei sicuro di voler cancellare l'utente?");
+    if(check == true)
+    {
+        $.ajax({
+            type: 'POST',
+            url: 'utenti_registrati_cancella.php',
+            data: "id_user="+id,
+            dataType: "html",
+
+            success: function(response)
+            {
+                window.location.reload();
+                alert(response);
+
+            },
+            error: function()
+            {
+                alert("Cancellazione fallita");
+            }
+        });
+    }
+}

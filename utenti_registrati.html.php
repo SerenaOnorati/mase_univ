@@ -80,8 +80,7 @@
                             <?php foreach ($users as $user): ?>
                                 <form action="" method="post">
                                     <div class="row">
-                                        <?php $id = htmlspecialchars($user['id_user'], ENT_QUOTES, 'UTF-8');?>
-                                        <input type="hidden" name="id_user" value="<?php echo $id?>">
+                                        <input type="hidden" name="id_user" value="<?php echo $user['id_user']?>">
                                         <div class="3u">
                                             <input type="text" name="name" class="text" required="required" value=" <?php echo htmlspecialchars($user['name'], ENT_QUOTES, 'UTF-8'); ?>" disabled>
                                         </div>
@@ -96,7 +95,7 @@
                                         </div>
                                         <div class="2u">
                                             <a href="" class="fa fa-edit" title="Modifica"> Modifica</a><br>
-                                            <a href="" class="fa fa-times" title="Cancella"> Cancella</a>
+                                            <a href="javascript:cancellaUtente(<?php echo $user['id_user']?>)" class="fa fa-times" title="Cancella"> Cancella</a>
                                         </div>
                                     </div>
                                 </form>
