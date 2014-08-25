@@ -12,7 +12,9 @@
             $GLOBALS['loginError'] = 'Errore nella procedura di login.';
             include 'index.php';
         }
+
     }
+
     //dopo il login si verifica il ruolo dell'utente per i diversi permessi
     if( userHasRole('Amministratore') )
     {

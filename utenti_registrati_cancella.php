@@ -9,20 +9,25 @@ include 'access.inc.php';
         include 'index.php';
     }
     else{
-
-        try
+        if(userHasRole('Amministratore'))
         {
-            $sql = 'DELETE FROM user WHERE id_user = :id_user';
-            $s = $pdo->prepare($sql);
-            $s->bindValue(':id_user', $_POST['id_user']);
-            $s->execute();
-            echo 'Cancellazione avvenuta con successo';
+            try
+            {
+                $sql = 'DELETE FROM user WHERE id_user = :id_user';
+                $s = $pdo->prepare($sql);
+                $s->bindValue(':id_user', $_POST['id_user']);
+                $s->execute();
+                echo 'Cancellazione avvenuta con successo';
 
+            }
+            catch (PDOException $e)
+            {
+                $error = 'Errore cancellazione utente.';
+                echo $error;
+            }
         }
-        catch (PDOException $e)
-        {
-            $error = 'Errore cancellazione utente.';
-            echo $error;
-        }
+        else
+            echo 'Non sei amministratore';
+
     }
 ?>

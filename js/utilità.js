@@ -168,3 +168,52 @@ function cancellaUtente(id)
         });
     }
 }
+
+function modificaUtente(id)
+{
+
+    if(document.getElementById('modificautente'+id).innerText == 'Modifica')
+    {
+        document.getElementById('modificautente'+id).innerHTML = "Salva";
+        document.getElementById('modificautente'+id).className = "fa fa-save";
+        document.getElementById("name"+id).disabled = false;
+        document.getElementById("surname"+id).disabled = false;
+        document.getElementById("email"+id).disabled = false;
+        document.getElementById("tel"+id).disabled = false;
+    }
+    else
+    {
+        var check = confirm("Sei sicuro di voler salvare l\'utente?");
+        if(check == true)
+        {
+            var name = $("#name"+id).val();
+            var surname = $("#surname"+id).val();
+            var email = $("#email"+id).val();
+            var tel = $("#tel"+id).val();
+            $.ajax({
+                type: 'POST',
+                url: 'utenti_registrati_modifica.php',
+                data: "id_user="+id+"&name="+name+"&surname="+surname+"&email="+email+"&tel="+tel,
+                dataType: "html",
+
+                success: function(response)
+                {
+                    document.getElementById('modificautente'+id).innerHTML = "Modifica";
+                    document.getElementById('modificautente'+id).className = "fa fa-edit";
+                    document.getElementById("name"+id).disabled = true;
+                    document.getElementById("surname"+id).disabled = true;
+                    document.getElementById("email"+id).disabled = true;
+                    document.getElementById("tel"+id).disabled = true;
+                    alert(response);
+
+                },
+                error: function()
+                {
+                    alert("Modifica fallita");
+                }
+            });
+        }
+
+    }
+
+}
