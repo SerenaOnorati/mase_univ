@@ -75,7 +75,7 @@
         }
         catch (PDOException $e)
         {
-            $error = 'Errore nella ricerca utente.';
+            $error = 'Errore nella cricerca utente.';
             echo "<script language=\"JavaScript\">\n";
             echo "alert(\"$error\");\n";
             echo "</script>";

@@ -20,6 +20,13 @@
     {
         header("Location: admin.php");
     }
+    else
+    {
+        if(userHasRole('Utente'))
+        {
+            header("Location: user.php");
+        }
+    }
 
 
 ?>

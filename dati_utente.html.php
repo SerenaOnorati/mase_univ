@@ -35,9 +35,9 @@
                 {
                     include 'menuAdmin.php';
                 }
-                else if(userHasRole('Amministratore'))
+                else if(userHasRole('Utente'))
                 {
-                    include 'menuAdmin.php';
+                    include 'menuUser.php';
                 }
 
                 ?>

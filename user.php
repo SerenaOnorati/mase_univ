@@ -7,10 +7,10 @@
         $GLOBALS['loginError'] = "Non hai effettuato il login. Inserire email e password";
         include 'index.php';
     }
-    if(!userHasRole('Amministratore'))
+    if(!userHasRole('Utente'))
     {
 
-        $GLOBALS['loginError'] = "Non sei autorizzato ad accedere alla pagina di amministrazione";
+        $GLOBALS['loginError'] = "Non sei autorizzato ad accedere alla pagina di gestione dell'utente";
         include 'index.php';
     }
 ?>
@@ -18,7 +18,7 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Area Privata - Amministratore</title>
+        <title>Area Privata - Utente</title>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <meta name="description" content="" />
         <meta name="keywords" content="" />
@@ -36,6 +36,7 @@
             <link rel="stylesheet" href="css/style-desktop.css" />
         </noscript>
     </head>
+
     <body class="no-sidebar">
 
     <!-- Header Wrapper -->
@@ -43,7 +44,7 @@
         <!-- Header -->
         <div id="header" class="container">
             <?php
-                include 'menuAdmin.php'
+                    include 'menuUser.php'
             ?>
         </div>
         <!-- Main Wrapper -->
@@ -56,7 +57,7 @@
                         <!-- Post -->
                         <article class="is-post">
                             <header>
-                                <!-- includere la prima pagina che si vuole far visualizzare all'amministratore-->
+                                <!-- includere la prima pagina che si vuole far visualizzare all'utente-->
                             </header>
                         </article>
                     </div>
