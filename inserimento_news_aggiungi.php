@@ -3,7 +3,7 @@
 include 'db.inc.php';
 include 'access.inc.php';
 
-    if(!isset($_SESSION['loggedIn']))
+    if(!userIsLoggedIn())
     {
         $GLOBALS['loginError'] = "Non hai effettuato il login. Inserire email e password";
         include 'index.php';
@@ -25,9 +25,9 @@ include 'access.inc.php';
                 VALUES (:titolo, :testo, :immagine, :data)';
                 $s = $pdo->prepare($sql);
                 //$s->bindValue('4', $id_news);
-                $s->bindValue(':titolo', $titolo);
-                $s->bindValue(':testo', $testo);
-                $s->bindValue(':immagine', '\\'.$immagine);
+                $s->bindValue(':titolo', $titolo, PDO::PARAM_STR);
+                $s->bindValue(':testo', $testo, PDO::PARAM_STR);
+                $s->bindValue(':immagine', '\\'.$immagine, PDO::PARAM_STR);
                 $s->bindValue(':data', $data);
                 $s->execute();
                 echo 'Inserimento avvenuto con successo';

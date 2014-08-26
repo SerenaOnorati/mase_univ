@@ -2,7 +2,7 @@
     include 'access.inc.php';
     include 'configuration.php';
 
-    if(!isset($_SESSION['loggedIn']))
+    if(!userIsLoggedIn())
     {
         $GLOBALS['loginError'] = "Non hai effettuato il login. Inserire email e password";
         include 'index.php';

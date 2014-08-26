@@ -3,7 +3,7 @@
 include 'db.inc.php';
 include 'access.inc.php';
 
-    if(!isset($_SESSION['loggedIn']))
+    if(!userIsLoggedIn())
     {
         $GLOBALS['loginError'] = "Non hai effettuato il login. Inserire email e password";
         include 'index.php';
@@ -15,7 +15,7 @@ include 'access.inc.php';
             {
                 $sql = 'DELETE FROM user WHERE id_user = :id_user';
                 $s = $pdo->prepare($sql);
-                $s->bindValue(':id_user', $_POST['id_user']);
+                $s->bindValue(':id_user', $_POST['id_user'], PDO::PARAM_INT);
                 $s->execute();
                 echo 'Cancellazione avvenuta con successo';
 

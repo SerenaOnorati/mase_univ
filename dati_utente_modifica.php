@@ -3,7 +3,7 @@
     include 'db.inc.php';
     include 'access.inc.php';
 
-    if(!isset($_SESSION['loggedIn']))
+    if(!userIsLoggedIn())
     {
         $GLOBALS['loginError'] = "Non hai effettuato il login. Inserire email e password";
         include 'index.php';
@@ -21,8 +21,8 @@
             $sql = 'SELECT * FROM user
             WHERE email = :email AND password = :password';
             $s = $pdo->prepare($sql);
-            $s->bindValue(':email', $_SESSION['email']);
-            $s->bindValue(':password', $_SESSION['password']);
+            $s->bindValue(':email', $_SESSION['email'], PDO::PARAM_STR);
+            $s->bindValue(':password', $_SESSION['password'], PDO::PARAM_STR);
             $s->execute();
         }
         catch (PDOException $e)
@@ -51,11 +51,11 @@
                 {
                     $sql = 'UPDATE user SET name = :name, surname = :surname, email = :email, tel = :tel WHERE email = :email1';
                     $s = $pdo->prepare($sql);
-                    $s->bindValue(':name', $name);
-                    $s->bindValue(':surname', $surname);
-                    $s->bindValue(':email', $email);
-                    $s->bindValue(':email1', $_SESSION['email']);
-                    $s->bindValue(':tel', $tel);
+                    $s->bindValue(':name', $name, PDO::PARAM_STR);
+                    $s->bindValue(':surname', $surname, PDO::PARAM_STR);
+                    $s->bindValue(':email', $email, PDO::PARAM_STR);
+                    $s->bindValue(':email1', $_SESSION['email'], PDO::PARAM_STR);
+                    $s->bindValue(':tel', $tel, PDO::PARAM_STR);
                     $s->execute();
                 }
                 catch (PDOException $e)
