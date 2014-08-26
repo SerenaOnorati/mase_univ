@@ -1,3 +1,20 @@
+<?php
+    include 'access.inc.php';
+    include 'configuration.php';
+
+    if(!IsLogged())
+    {
+        $GLOBALS['loginError'] = "Non hai effettuato il login. Inserire email e password";
+        include 'index.php';
+    }
+    if(!userHasRole('Amministratore'))
+    {
+
+        $GLOBALS['loginError'] = "Non sei autorizzato ad accedere alla pagina di amministrazione";
+        include 'index.php';
+    }
+?>
+
 <!DOCTYPE HTML>
 
 <html>
@@ -31,15 +48,10 @@
             <div id="header" class="container">
 
                 <?php
-                if(userHasRole('Amministratore'))
-                {
-                    include 'menuAdmin.php';
-                }
-                else if(userHasRole('Amministratore'))
-                {
-                    include 'menuAdmin.php';
-                }
-
+                    if(userHasRole('Amministratore'))
+                    {
+                        include 'menuAdmin.php';
+                    }
                 ?>
             </div>
         </div>

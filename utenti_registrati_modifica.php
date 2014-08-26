@@ -41,7 +41,9 @@
             echo "Modifica eseguita con successo";
         }
         else
-            echo "Non sei amministratore";
+        {
+            echo "<script>alert(\"Non sei autorizzato ad accedere a questa pagina\")</script>";
+        }
 
     }
 ?>

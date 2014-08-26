@@ -9,20 +9,25 @@ include 'access.inc.php';
         include 'index.php';
     }
     else{
+        if(userHasRole('Amministratore')){
+            try
+            {
+                $sql = 'DELETE FROM news WHERE id_news = :id_news';
+                $s = $pdo->prepare($sql);
+                $s->bindValue(':id_news', $_POST['id_news']);
+                $s->execute();
+                echo 'Cancellazione avvenuta con successo';
 
-        try
-        {
-            $sql = 'DELETE FROM news WHERE id_news = :id_news';
-            $s = $pdo->prepare($sql);
-            $s->bindValue(':id_news', $_POST['id_news']);
-            $s->execute();
-            echo 'Cancellazione avvenuta con successo';
-
+            }
+            catch (PDOException $e)
+            {
+                $error = 'Errore cancellazione news.';
+                echo $error;
+            }
         }
-        catch (PDOException $e)
+        else
         {
-            $error = 'Errore cancellazione news.';
-            echo $error;
+            echo "<script>alert(\"Non sei autorizzato ad accedere a questa pagina\")</script>";
         }
     }
 ?>
