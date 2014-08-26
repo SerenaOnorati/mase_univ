@@ -16,6 +16,7 @@
 
         $password = md5($_POST['password'] .$salt);
 
+
         if (databaseContainsUser($_POST['email'], $password))
         {
             //session_start();
@@ -64,6 +65,7 @@
 
         try
         {
+
             $sql = 'SELECT COUNT(*) FROM user
             WHERE email = :email AND password = :password';
             $s = $pdo->prepare($sql);
@@ -77,12 +79,14 @@
             echo "<script language=\"JavaScript\">\n";
             echo "alert(\"$error\");\n";
             echo "</script>";
-            exit();
+            //exit();
         }
 
         $row = $s->fetch();
 
-        if ($row[0] > 0)
+        //echo "row ".$row[0];
+
+        if (isset($row[0]))
         {
             return TRUE;
         }
@@ -121,7 +125,7 @@
         echo "alert(\"id_ruolo: ".$row['id_ruolo']."\");";
         echo "</script>";
 
-        if ($row['id_ruolo'] > 0)
+        if (isset($row['id_ruolo']))
         {
             $sql_1 = 'SELECT descrizione FROM ruolo WHERE id_ruolo = :risultato';
             $s1 = $pdo->prepare($sql_1);

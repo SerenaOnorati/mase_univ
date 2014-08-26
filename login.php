@@ -7,23 +7,22 @@
     if(!isset($_SESSION['loggedIn']))
     {
         session_start();
-        login();
+        if(!login())
+            header("Location: index.php");
 
     }
-    else{
-        //dopo il login si verifica il ruolo dell'utente per i diversi permessi
-        if(userHasRole('Amministratore') )
+
+    //dopo il login si verifica il ruolo dell'utente per i diversi permessi
+    if(userHasRole('Amministratore') )
+    {
+        header("Location: admin.php");
+    }
+    else
+    {
+        if(userHasRole('Utente'))
         {
-            header("Location: admin.php");
-        }
-        else
-        {
-            if(userHasRole('Utente'))
-            {
-                header("Location: user.php");
-            }
+            header("Location: user.php");
         }
     }
-
 
 ?>
