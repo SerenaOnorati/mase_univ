@@ -3,10 +3,9 @@
     function login()
     {
         include 'configuration.php';
-        //$salt = 'wktxl';
-        //$nome_sito = 'www.unipass.it/mase_univ/';
 
         $GLOBALS['loginError'] = ' ';
+
         if (!isset($_POST['email']) or $_POST['email'] == '' or
             !isset($_POST['password']) or $_POST['password'] == '')
         {
@@ -27,11 +26,7 @@
         }
         else
         {
-            //session_start();
-            unset($_SESSION['loggedIn']);
-            unset($_SESSION['email']);
-            unset($_SESSION['password']);
-            $GLOBALS['loginError'] = 'Controlla se email e password sono corretti.';
+            $GLOBALS['loginError'] = 'Controlla se l\'email e password sono corretti.';
             include 'index.php';
             return FALSE;
         }
@@ -47,18 +42,21 @@
 
         header('Location: index.php');
 
-        exit();
+        //exit();
 
     }
 
-    function IsLogged()
+    /*function IsLogged()
     {
         session_start();
         if (isset($_SESSION['loggedIn']))
         {
             return databaseContainsUser($_SESSION['email'], $_SESSION['password']);
         }
-    }
+        else{
+            echo "non è settata";
+        }
+    }*/
 
     function databaseContainsUser($email, $password)
     {
@@ -100,6 +98,7 @@
 
         try
         {
+
             $sql = 'SELECT id_ruolo FROM user WHERE email = :email';
 
             $s = $pdo->prepare($sql);
@@ -118,14 +117,17 @@
 
         $row = $s->fetch();
 
+        echo "<script language=\"JavaScript\">\n";
+        echo "alert(\"id_ruolo: ".$row['id_ruolo']."\");";
+        echo "</script>";
+
         if ($row['id_ruolo'] > 0)
         {
-            $sql_1 = 'SELECT descrizione FROM ruolo
-        WHERE id_ruolo = :risultato';
-            $s = $pdo->prepare($sql_1);
-            $s->bindValue(':risultato', $row['id_ruolo']);
-            $s->execute();
-            $row_1 = $s->fetch();
+            $sql_1 = 'SELECT descrizione FROM ruolo WHERE id_ruolo = :risultato';
+            $s1 = $pdo->prepare($sql_1);
+            $s1->bindValue(':risultato', $row['id_ruolo']);
+            $s1->execute();
+            $row_1 = $s1->fetch();
             if($row_1['descrizione'] == $role)
                 return TRUE;
             else

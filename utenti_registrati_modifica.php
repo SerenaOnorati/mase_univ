@@ -3,7 +3,7 @@
     include 'db.inc.php';
     include 'access.inc.php';
 
-    if(!IsLogged())
+    if(!isset($_SESSION['loggedIn']))
     {
         $GLOBALS['loginError'] = "Non hai effettuato il login. Inserire email e password";
         include 'index.php';
@@ -42,7 +42,7 @@
         }
         else
         {
-            echo "<script>alert(\"Non sei autorizzato ad accedere a questa pagina\")</script>";
+            echo "<script language='JavaScript'>alert(\"Non sei autorizzato ad accedere a questa pagina\")</script>";
         }
 
     }

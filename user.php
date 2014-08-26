@@ -2,7 +2,7 @@
     include 'access.inc.php';
     include 'configuration.php';
 
-    if(!IsLogged())
+    if(!isset($_SESSION['loggedIn']))
     {
         $GLOBALS['loginError'] = "Non hai effettuato il login. Inserire email e password";
         include 'index.php';
@@ -44,7 +44,7 @@
         <!-- Header -->
         <div id="header" class="container">
             <?php
-                    include 'menuUser.php'
+                include 'menuUser.php'
             ?>
         </div>
         <!-- Main Wrapper -->

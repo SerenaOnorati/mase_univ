@@ -4,27 +4,24 @@
     include 'access.inc.php';
 
     //verifico se l'utente è loggato
-    if(!IsLogged())
+    if(!isset($_SESSION['loggedIn']))
     {
-    //se l'utente non è loggato, allora login()
-        if(!login())
+        session_start();
+        login();
+
+    }
+    else{
+        //dopo il login si verifica il ruolo dell'utente per i diversi permessi
+        if(userHasRole('Amministratore') )
         {
-            $GLOBALS['loginError'] = 'Errore nella procedura di login.';
-            include 'index.php';
+            header("Location: admin.php");
         }
-
-    }
-
-    //dopo il login si verifica il ruolo dell'utente per i diversi permessi
-    if( userHasRole('Amministratore') )
-    {
-        header("Location: admin.php");
-    }
-    else
-    {
-        if(userHasRole('Utente'))
+        else
         {
-            header("Location: user.php");
+            if(userHasRole('Utente'))
+            {
+                header("Location: user.php");
+            }
         }
     }
 

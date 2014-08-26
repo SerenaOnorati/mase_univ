@@ -3,9 +3,14 @@
     include 'configuration.php';
     include 'access.inc.php';
 
-    if(IsLogged())
+    if(!isset($_SESSION['loggedIn']))
     {
         logout();
-        header("Location: index.php");
     }
+    else
+    {
+        echo "<script language=\'JavaScript\'>alert(\"Hai gia\' effettuato il logout\")</script>";
+    }
+
+    header("Location: index.php");
 ?>

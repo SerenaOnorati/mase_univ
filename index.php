@@ -30,7 +30,7 @@
         <!-- Header -->
         <div id="header" class="container">
             <?php
-            include 'menu.php';
+                include 'menu.php';
             ?>
         </div>
 

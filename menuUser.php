@@ -3,7 +3,7 @@
     Benvenuto,
     <a href="dati_utente.php">
         <?php
-        echo $_SESSION['email'];
+            echo $_SESSION['email'];
         ?>
     </a>
     <a href="logout.php" class="fa fa-sign-out" title="Logout"></a>
