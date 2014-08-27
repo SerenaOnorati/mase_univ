@@ -1,21 +1,21 @@
 <?php
-include 'access.inc.php';
-include 'configuration.php';
+    include 'access.inc.php';
+    include 'configuration.php';
 
-if(!isset($ricarico))
-{
-    if(!userIsLoggedIn())
+    if(!isset($ricarico))
     {
-        $GLOBALS['loginError'] = "Non hai effettuato il login. Inserire email e password";
-        include 'index.php';
-    }
-    if(!userHasRole('Amministratore'))
-    {
+        if(!userIsLoggedIn())
+        {
+            $GLOBALS['loginError'] = "Non hai effettuato il login. Inserire email e password";
+            include 'index.php';
+        }
+        if(!userHasRole('Amministratore'))
+        {
 
-        $GLOBALS['loginError'] = "Non sei autorizzato ad accedere alla pagina di amministrazione";
-        include 'index.php';
+            $GLOBALS['loginError'] = "Non sei autorizzato ad accedere alla pagina di amministrazione";
+            include 'index.php';
+        }
     }
-}
 
 ?>
 
@@ -165,7 +165,7 @@ if(!isset($ricarico))
                                     <h3 style="color: #ed786a">Copertina</h3>
                                 </div>
                                 <div class="3u">
-                                    <label id="copertina" for="url" class="floated">Inserisci un file che vuoi inviare: </label>
+                                    <label id="copertina" for="url" class="floated">Inserisci la copertina del libro: </label>
                                     <input type="file" id="url" name="url" multiple><br>
                                 </div>
                             </div>
