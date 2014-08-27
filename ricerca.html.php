@@ -1,11 +1,10 @@
 <div class="row">
-
     <!-- Content -->
     <div id="content" class="12u skel-cell-important">
 
         <!-- Post -->
         <article class="is-post" style="align-content: center">
-            <form method="get" action="" name="ricerca" id="ricerca" target="_parent" onsubmit="return false" >
+            <form method="post" action="" name="ricerca" id="ricerca" target="_parent" onsubmit="return false" >
                 <header>
                     <div><br><h2>Ricerca</h2></div>
                 </header>
@@ -59,7 +58,7 @@
 
                 <div class="row" style="align-content: center !important">
                    <div class="12u" >
-                       <button class="button button-icon fa fa-search" onclick="ricerca()">Ricerca</button>
+                       <button id="ricerca" class="button button-icon fa fa-search" onclick="ricerca()">Ricerca</button>
                    </div>
                 </div>
             </form>
