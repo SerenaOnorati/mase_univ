@@ -51,8 +51,8 @@
                     }
                 ?>
 
-                <div class="row 12u" style="align-content: center !important">
-                   <div class="6u" >
+                <div class="row" style="align-content: center !important">
+                   <div class="12u" >
                        <button class="button button-icon fa fa-search">Ricerca</button>
                    </div>
                 </div>
