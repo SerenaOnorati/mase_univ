@@ -17,7 +17,7 @@
 
         //query di verifica se ci sono modifiche dei campi immessi
         try
-        {
+        { 
             $sql = 'SELECT * FROM user
             WHERE email = :email AND password = :password';
             $s = $pdo->prepare($sql);
