@@ -50,17 +50,9 @@
         <div id="main-wrapper">
             <!-- Main -->
             <div id="main" class="container">
-                <div class="row">
-                    <!-- Content -->
-                    <div id="content" class="12u skel-cell-important">
-                        <!-- Post -->
-                        <article class="is-post">
-                            <header>
-                                <!-- includere la prima pagina che si vuole far visualizzare all'amministratore-->
-                            </header>
-                        </article>
-                    </div>
-                </div>
+                <?php
+                    include 'ricerca.php';
+                ?>
             </div>
         </div>
     </body>
