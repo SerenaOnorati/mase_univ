@@ -10,47 +10,44 @@
     else
     {
         include 'db.inc.php';
-        //controllo se tutti i campi sono riempiti
-        if(isset($_POST['titolo']) && isset($_POST['autore']) && isset($_POST['casaeditrice']) && isset($_POST['locazione']))
-        {
-            try
-            {
-                $sql = 'SELECT * FROM libro
-                WHERE titolo LIKE :titolo AND autore LIKE :autore AND locazione LIKE :locazione';
-                $s = $pdo->prepare($sql);
-                $s->bindValue(':titolo', $_SESSION['titolo'], PDO::PARAM_STR);
-                $s->bindValue(':autore', $_SESSION['autore'], PDO::PARAM_STR);
-                $s->bindValue(':locazione', $_SESSION['locazione'], PDO::PARAM_STR);
 
-                $s->execute();
-            }
-            catch (PDOException $e)
-            {
-                $error = 'Errore nella ricerca dati utente.';
-                echo "<script language=\"JavaScript\">\n";
-                echo "alert(\"$error\");\n";
-                echo "</script>";
-                exit();
-            }
+        try
+        {
+            $titolo = "%".trim($_POST['titolo'])."%";
+            $autore = "%".trim($_POST['autore'])."%";
+            $casaeditrice = "%".trim($_POST['casaeditrice'])."%";
+            $locazione = "%".trim($_POST['locazione'])."%";
+
+            $sql = 'SELECT * FROM libro INNER JOIN casa_editrice on libro.id_casa_editrice = casa_editrice.id_casa_editrice
+            WHERE titolo LIKE :titolo AND autore LIKE :autore AND locazione LIKE :locazione AND nome LIKE :casaeditrice';
+            $s = $pdo->prepare($sql);
+            $s->bindValue(':titolo', $titolo, PDO::PARAM_STR);
+            $s->bindValue(':autore', $autore, PDO::PARAM_STR);
+            $s->bindValue(':locazione', $locazione, PDO::PARAM_STR);
+            $s->bindValue(':nome', $casaeditrice, PDO::PARAM_STR);
+
+            $s->execute();
+        }
+        catch (PDOException $e)
+        {
+            $error = 'Errore nella ricerca.';
+            echo "<script language=\"JavaScript\">\n";
+            echo "alert(\"$error\");\n";
+            echo "</script>";
+            exit();
         }
 
-
-
-        $row = $s->fetch();
-
-        if (isset($row))
+        $risultati = $s->fetchAll();
+        if(isset($risultati))
         {
-            $GLOBALS['name'] = $row['name'];
-            $GLOBALS['surname'] = $row['surname'];
-            $GLOBALS['tel'] = $row['tel'];
+            $GLOBALS['risultati'] = $risultati;
         }
-        else
-        {
-            $error = 'Errore nel recupero dei dati';
+        else{
+            $error = 'La ricerca non ha prodotto risultati';
             echo "<script language=\"JavaScript\">\n";
             echo "alert(\"$error\");\n";
             echo "</script>";
         }
-        include 'dati_utente.html.php';
+        include 'daordinare.html.php';
     }
 ?>
