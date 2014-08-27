@@ -126,6 +126,41 @@ if(!userHasRole('Amministratore'))
                         </div>
                     </form>
                 </article>
+
+                <section>
+                    <ul class="divided">
+
+                        <li>
+
+                            <!-- Highlight -->
+                            <article class="is-highlight">
+                                <header>
+                                    <h3>Titolo</h3>
+                                </header>
+                                <div class="row">
+                                    <div class="6u">
+                                        <img class="image image-left" src="images/pic07.jpg" alt="" />
+                                        <p id="autore" name="autore" >Autore</p>
+                                        <p id="casaeditrice" name="casaeditrice">Casa editrice</p>
+                                        <p id="distributore" name="distributore">distributore</p>
+                                        <p id="locazione" name="locazione">Locazione</p>
+                                        <p id="prezzo">Prezzo</p>
+                                        <p id="prezzoacquisto">Prezzo ac</p>
+                                        <p id="qtamag">10</p>
+                                        <input id="dataord" name="dataord" placeholder="0" type="text" class="text">
+                                        <div class="2u">
+                                            <a href="" class="fa fa-edit" id="modifica" title="Modifica">Modifica</a><br>
+                                            <a href="" class="fa fa-times" id="cancella" title="Cancella">Cancella</a><br>
+                                            <a href="" class="fa fa-plus" id="ordina" title="Ordina">Ordinato</a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </article>
+
+                        </li>
+                    </ul>
+                </section>
             </div>
         </div>
     </div>
