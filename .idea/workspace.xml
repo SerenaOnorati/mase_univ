@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c62a4eec-d582-4e13-b7e5-eef246bc66c3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/menuAdmin.php" afterPath="$PROJECT_DIR$/menuAdmin.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ricerca.php" afterPath="$PROJECT_DIR$/ricerca.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -73,7 +72,7 @@
       <file leaf-file-name="dati_utente.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dati_utente.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="76" selection-start="627" selection-end="627" vertical-scroll-proportion="-9.115385" vertical-offset="86" max-vertical-offset="935">
+            <state line="19" column="76" selection-start="627" selection-end="627" vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="935">
               <folding>
                 <marker date="1409124465381" expanded="true" signature="361:437" placeholder="SELECT * FRO..user..." />
               </folding>
@@ -93,21 +92,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ricerca.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ricerca.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ricerca.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="0" selection-start="1459" selection-end="1459" vertical-scroll-proportion="-17.0" vertical-offset="153" max-vertical-offset="1173">
+            <state line="53" column="34" selection-start="2400" selection-end="2400" vertical-scroll-proportion="0.8002937" vertical-offset="356" max-vertical-offset="1139">
               <folding>
                 <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#form#0;n#article#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h3#0;n#div#1;n#div#0;n#form#0;n#article#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <marker date="1409127928464" expanded="true" signature="1588:2015" placeholder="..." />
-                <marker date="1409127928464" expanded="true" signature="1635:1785" placeholder="..." />
-                <marker date="1409127928464" expanded="true" signature="1708:1722" placeholder="..." />
-                <marker date="1409127928464" expanded="true" signature="1832:1984" placeholder="..." />
-                <marker date="1409127928464" expanded="true" signature="1903:1917" placeholder="..." />
-                <marker date="1409127928464" expanded="true" signature="2059:2788" placeholder="..." />
-                <marker date="1409127928464" expanded="true" signature="2106:2403" placeholder="..." />
-                <marker date="1409127928464" expanded="true" signature="2450:2757" placeholder="..." />
+                <element signature="n#style#0;n#div#2;n#form#0;n#article#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <marker date="1409129095054" expanded="true" signature="1374:1777" placeholder="..." />
+                <marker date="1409129095054" expanded="true" signature="1421:1559" placeholder="..." />
+                <marker date="1409129095054" expanded="true" signature="1494:1508" placeholder="..." />
+                <marker date="1409129095054" expanded="true" signature="1606:1746" placeholder="..." />
+                <marker date="1409129095054" expanded="true" signature="1677:1691" placeholder="..." />
+                <marker date="1409129095054" expanded="true" signature="1821:2320" placeholder="..." />
+                <marker date="1409129095054" expanded="true" signature="1868:2050" placeholder="..." />
+                <marker date="1409129095054" expanded="true" signature="2097:2289" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -122,10 +122,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menuAdmin.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="menuAdmin.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/menuAdmin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="38" selection-start="823" selection-end="823" vertical-scroll-proportion="0.44956774" vertical-offset="130" max-vertical-offset="850">
+            <state line="33" column="29" selection-start="1007" selection-end="1007" vertical-scroll-proportion="-16.576923" vertical-offset="130" max-vertical-offset="850">
               <folding />
             </state>
           </provider>
@@ -143,7 +143,7 @@
       <file leaf-file-name="ordinato.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ordinato.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="34" selection-start="428" selection-end="428" vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="2312">
+            <state line="20" column="34" selection-start="428" selection-end="428" vertical-scroll-proportion="-5.230769" vertical-offset="204" max-vertical-offset="2312">
               <folding />
             </state>
           </provider>
@@ -152,7 +152,7 @@
       <file leaf-file-name="daordinare.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/daordinare.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="45" selection-start="3276" selection-end="3276" vertical-scroll-proportion="-14.384615" vertical-offset="1224" max-vertical-offset="2397">
+            <state line="123" column="62" selection-start="5062" selection-end="5153" vertical-scroll-proportion="-19.615385" vertical-offset="1581" max-vertical-offset="2397">
               <folding />
             </state>
           </provider>
@@ -230,8 +230,8 @@
         <option value="$PROJECT_DIR$/ordina.php" />
         <option value="$PROJECT_DIR$/ordinato.php" />
         <option value="$PROJECT_DIR$/daordinare.php" />
-        <option value="$PROJECT_DIR$/ricerca.php" />
         <option value="$PROJECT_DIR$/menuAdmin.php" />
+        <option value="$PROJECT_DIR$/ricerca.php" />
       </list>
     </option>
   </component>
@@ -741,7 +741,11 @@
       <created>1409126957798</created>
       <updated>1409126957798</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="ricerca in admin con controllo">
+      <created>1409128030721</created>
+      <updated>1409128030721</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1058,32 +1062,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ordinato.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="34" selection-start="428" selection-end="428" vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="2312">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ordina.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="32" selection-start="425" selection-end="425" vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="2227">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dati_utente.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="76" selection-start="627" selection-end="627" vertical-scroll-proportion="-9.115385" vertical-offset="86" max-vertical-offset="935">
-          <folding>
-            <marker date="1409124465381" expanded="true" signature="361:437" placeholder="SELECT * FRO..user..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/daordinare.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="45" selection-start="3276" selection-end="3276" vertical-scroll-proportion="-14.384615" vertical-offset="1224" max-vertical-offset="2397">
           <folding />
         </state>
       </provider>
@@ -1092,24 +1073,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="4" selection-start="10" selection-end="35" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="1122">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ricerca.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1459" selection-end="1459" vertical-scroll-proportion="-17.0" vertical-offset="153" max-vertical-offset="1173">
-          <folding>
-            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#form#0;n#article#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#1;n#div#0;n#form#0;n#article#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <marker date="1409127928464" expanded="true" signature="1588:2015" placeholder="..." />
-            <marker date="1409127928464" expanded="true" signature="1635:1785" placeholder="..." />
-            <marker date="1409127928464" expanded="true" signature="1708:1722" placeholder="..." />
-            <marker date="1409127928464" expanded="true" signature="1832:1984" placeholder="..." />
-            <marker date="1409127928464" expanded="true" signature="1903:1917" placeholder="..." />
-            <marker date="1409127928464" expanded="true" signature="2059:2788" placeholder="..." />
-            <marker date="1409127928464" expanded="true" signature="2106:2403" placeholder="..." />
-            <marker date="1409127928464" expanded="true" signature="2450:2757" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1122,8 +1085,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/menuAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="38" selection-start="823" selection-end="823" vertical-scroll-proportion="0.44956774" vertical-offset="130" max-vertical-offset="850">
+        <state line="33" column="29" selection-start="1007" selection-end="1007" vertical-scroll-proportion="-16.576923" vertical-offset="130" max-vertical-offset="850">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dati_utente.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="76" selection-start="627" selection-end="627" vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="935">
+          <folding>
+            <marker date="1409124465381" expanded="true" signature="361:437" placeholder="SELECT * FRO..user..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ordinato.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="34" selection-start="428" selection-end="428" vertical-scroll-proportion="-5.230769" vertical-offset="204" max-vertical-offset="2312">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/daordinare.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="62" selection-start="5062" selection-end="5153" vertical-scroll-proportion="-19.615385" vertical-offset="1581" max-vertical-offset="2397">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ricerca.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="34" selection-start="2400" selection-end="2400" vertical-scroll-proportion="0.8002937" vertical-offset="356" max-vertical-offset="1139">
+          <folding>
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#form#0;n#article#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#1;n#div#0;n#form#0;n#article#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#form#0;n#article#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1409129095054" expanded="true" signature="1374:1777" placeholder="..." />
+            <marker date="1409129095054" expanded="true" signature="1421:1559" placeholder="..." />
+            <marker date="1409129095054" expanded="true" signature="1494:1508" placeholder="..." />
+            <marker date="1409129095054" expanded="true" signature="1606:1746" placeholder="..." />
+            <marker date="1409129095054" expanded="true" signature="1677:1691" placeholder="..." />
+            <marker date="1409129095054" expanded="true" signature="1821:2320" placeholder="..." />
+            <marker date="1409129095054" expanded="true" signature="1868:2050" placeholder="..." />
+            <marker date="1409129095054" expanded="true" signature="2097:2289" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

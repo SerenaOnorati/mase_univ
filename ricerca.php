@@ -11,22 +11,18 @@
                 </header>
                 <div class="row">
                     <div class="6u">
-                        <h3 class="fa fa-user" style="color: #ed786a">Ricerca per Autore</h3>
+                        <h3 class="fa fa-user" style="color: #ed786a">Autore</h3>
                     </div>
                     <div class="6u">
-                        <h3 class="fa fa-book" style="color: #ed786a">Ricerca per Titolo</h3>
+                        <h3 class="fa fa-book" style="color: #ed786a">Titolo</h3>
                     </div>
                 </div>
                 <div class="row">
                     <div class="6u">
                         <input id="insautore" name="insautore" placeholder="Inserisci Autore" type="text" class="text"">
-                        <br>
-                        <a href="" class="fa fa-search">Cerca</a>
                     </div>
                     <div class="6u">
                         <input id="institolo" name="institolo" placeholder="Inserisci Titolo" type="text" class="text">
-                        <br>
-                        <a href="" class="fa fa-search">Cerca</a>
                     </div>
                 </div>
                 <br>
@@ -38,26 +34,28 @@
                     {
                             echo "<div class=\"row\">
                             <div class=\"6u\">
-                                <h3 class=\"fa fa-map-marker\" style=\"color: #ed786a\">Ricerca per Locazione</h3>
+                                <h3 class=\"fa fa-map-marker\" style=\"color: #ed786a\">Locazione</h3>
                             </div>
                             <div class=\"6u\">
-                                <h3 class=\"fa fa-building\" style=\"color: #ed786a\">Ricerca per Casa Editrice</h3>
+                                <h3 class=\"fa fa-building\" style=\"color: #ed786a\">Casa Editrice</h3>
                             </div>
                         </div>
                         <div class=\"row\">
                             <div class=\"6u\">
                                 <input id=\"inslocazione\" name=\"inslocazione\" placeholder=\"Inserisci Locazione\" type=\"text\" class=\"text\">
-                                <br>
-                                <a href=\"\" class=\"fa fa-search\">Cerca</a>
                             </div>
                             <div class=\"6u\">
                                 <input id=\"inscasaeditrice\" name=\"inscasaeditrice\" placeholder=\"Inserisci Casa Editrice\" type=\"text\" class=\"text\">
-                                <br>
-                                <a href=\"\" class=\"fa fa-search\">Cerca</a>
                             </div>
                         </div>";
                     }
                 ?>
+
+                <div class="row 12u" style="align-content: center !important">
+                   <div class="6u" >
+                       <button class="button button-icon fa fa-search">Ricerca</button>
+                   </div>
+                </div>
             </form>
         </article>
     </div>
