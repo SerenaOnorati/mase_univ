@@ -102,7 +102,7 @@
                                     <form action="login.php" method="post">
                                         <div>
                                             <input id="email" name="email" placeholder="e-mail" type="text" class="text"/><br>
-                                            <input id="password" name="password" placeholder="Password" type="password" class="text" />
+                                            <input id="password" name="password" placeholder="Password" type="password" class="text"/>
                                             <input type="hidden" name="action" value="login">
                                            <br>
                                             <p style=" text-align: center"><b style="color: red">

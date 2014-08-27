@@ -11,8 +11,6 @@
     {
         include 'db.inc.php';
 
-
-
         if(isset($_POST['institolo'])){
             $titolo = "%".trim($_POST['institolo'])."%";
 
@@ -22,7 +20,6 @@
             $titolo = "%%";
 
         }
-        echo "Titolo: ".$_POST['institolo'];
         if(isset($_POST['insautore']))
         {
             $autore = "%".$_POST['insautore']."%";
@@ -32,7 +29,6 @@
             $autore = "%%";
 
         }
-        echo "<br>Autore: ".$autore;
         if(isset($_POST['inscasaeditrice']))
         {
             $casaeditrice = "%".trim($_POST['inscasaeditrice'])."%";
@@ -42,7 +38,6 @@
         {
             $casaeditrice = "%%";
         }
-        echo "<br>CasaEditrice: ".$casaeditrice;
 
         if(isset($_POST['inslocazione']))
         {
@@ -53,7 +48,6 @@
             $locazione = "%%";
 
         }
-        echo "<br>Locazione: ".$locazione;
 
         if(isset($_POST['insisbn']))
         {
@@ -64,7 +58,6 @@
             $isbn = "%%";
 
         }
-        echo "<br>ISBN: ".$isbn;
 
         if(isset($_POST['insannoacquisto']))
         {
@@ -74,12 +67,9 @@
             $anno_acquisto = "%%";
 
         }
-        echo "<br>annoacquisto: ".$anno_acquisto;
         if($titolo == "%%" && $autore == "%%" && $locazione == "%%" && $casaeditrice == "%%" && $isbn == "%%" && $anno_acquisto == "%%")
         {
-
-
-            //header("Location: admin.php");
+            include 'admin.php';
 
             echo "<script language=\"JavaScript\">\n";
             echo "alert(\"Per favore inserire i parametri per la ricerca\");\n";
@@ -89,48 +79,41 @@
         {
             try
             {
-                $sql = 'SELECT * FROM libro INNER JOIN casa_editrice on libro.id_casa_editrice = casa_editrice.id_casa_editrice
-                WHERE titolo LIKE :titolo AND autore LIKE :autore AND locazione LIKE :locazione
-                AND nome LIKE :casaeditrice AND isbn LIKE :isbn AND anno_acquisto LIKE :anno_acquisto';
+                $sql = 'SELECT * FROM libro INNER JOIN casa_editrice on libro.id_casa_editrice = casa_editrice.id_casa_editrice INNER JOIN distributore on casa_editrice.id_distributore = distributore.id_distributore WHERE titolo LIKE :titolo AND autore LIKE :autore AND locazione LIKE :locazione
+                AND nome LIKE :nome AND isbn LIKE :isbn AND anno_acquisto LIKE :anno_acquisto';
 
                 $s = $pdo->prepare($sql);
+
                 $s->bindValue(':titolo', $titolo, PDO::PARAM_STR);
                 $s->bindValue(':autore', $autore, PDO::PARAM_STR);
                 $s->bindValue(':locazione', $locazione, PDO::PARAM_STR);
                 $s->bindValue(':nome', $casaeditrice, PDO::PARAM_STR);
-                $s->bindValue(':isbn', $isbn, PDO::PARAM_INT);
-                $s->bindValue(':anno_acquisto', $anno_acquisto, PDO::PARAM_INT);
+                //non hanno il terzo parametro in quanto con la %% non sarebbero interi.
+                $s->bindValue(':isbn', $isbn);
+                $s->bindValue(':anno_acquisto', $anno_acquisto);
 
                 $s->execute();
             }
 
             catch (PDOException $e)
             {
-                $error = 'Errore nella ricerca.';
-                echo "<script language=\"JavaScript\">\n";
-                echo "alert(\"$error\");\n";
-                echo "</script>";
+                $GLOBALS['error'] = $e->getMessage();
                 exit();
             }
 
             $risultati = $s->fetchAll();
 
-            if(isset($risultati))
+            if(!empty($risultati))
             {
                 $GLOBALS['risultati'] = $risultati;
+
             }
             else{
-                $error = 'La ricerca non ha prodotto risultati';
-                echo "<script language=\"JavaScript\">\n";
-                echo "alert(\"$error\");\n";
-                echo "</script>";
-            }
-            //include 'daordinare.html.php';
-            echo "<script language=\"JavaScript\">\n";
-            echo "alert(\"Ricerca andata a buon fine\");\n";
-            echo "</script>";
+                $GLOBALS['error'] = 'La ricerca non ha prodotto risultati';
 
-            //header("Location: ricerca.php");
+            }
+            include 'daordinare.html.php';
+
         }
     }
 ?>

@@ -97,7 +97,6 @@
                                 <br>
                             <?php endforeach; ?>
                         </article>
-                        <a href="" class="fa fa-angle-double-left"></a><a href="" class="fa fa-angle-double-right"></a>
                     </div>
                 </div>
             </div>

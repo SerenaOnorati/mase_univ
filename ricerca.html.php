@@ -1,56 +1,53 @@
 <div class="row">
     <!-- Content -->
     <div id="content" class="12u skel-cell-important">
-
         <!-- Post -->
         <article class="is-post" style="align-content: center">
-            <form method="post" action="ricerca.php" name="ricerca" id="ricerca" target="_parent">
+            <form method="post" action="ricerca.php" name="ricerca">
                 <header>
                     <div><br><h2>Ricerca</h2></div>
                 </header>
                 <div class="row">
                     <div class="3u">
-                        <h3 class="fa fa-user" style="color: #ed786a">Autore</h3>
+                        <h3 class="fa fa-user" style="color: #ed786a">&nbsp; Autore</h3>
                     </div>
                     <div class="3u">
-                        <input id="insautore" name="insautore" placeholder="Inserisci Autore" type="text" class="text"/>
+                        <input id="insautore" name="insautore" placeholder="Autore" type="text" class="text" value="">
                     </div>
 
                     <div class="3u">
-                        <h3 class="fa fa-barcode" style="color: #ed786a">ISBN</h3>
+                        <h3 class="fa fa-barcode" style="color: #ed786a">&nbsp; ISBN</h3>
                     </div>
                     <div class="3u">
-                        <input id="insisbn" name="institolo" placeholder="Inserisci ISBN" type="text" class="text"/>
+                        <input id="insisbn" name="insisbn" placeholder="ISBN" type="text" class="text" value="">
                     </div>
                 </div>
                 <div class="row">
                     <div class="3u">
-                        <h3 class="fa fa-book" style="color: #ed786a">Titolo</h3>
+                        <h3 class="fa fa-book" style="color: #ed786a">&nbsp; Titolo</h3>
                     </div>
                     <div class="3u">
-                        <input id="institolo" name="insautore" placeholder="Inserisci Titolo" type="text" class="text"/>
-                    </div>
-
-                    <div class="3u">
-                        <h3 class="fa fa-map-marker" style="color: #ed786a">Locazione</h3>
+                        <input id="institolo" name="institolo" placeholder="Titolo" type="text" class="text" value="">
                     </div>
                     <div class="3u">
-                        <input id="inslocazione" name="institolo" placeholder="Inserisci Locazione" type="text" class="text"/>
+                        <h3 class="fa fa-map-marker" style="color: #ed786a">&nbsp; Locazione</h3>
+                    </div>
+                    <div class="3u">
+                        <input id="inslocazione" name="inslocazione" placeholder="Locazione" type="text" class="text" value="">
                     </div>
                 </div>
                 <div class="row">
                     <div class="3u">
-                        <h3 class="fa fa-building" style="color: #ed786a">Casa Editrice</h3>
+                        <h3 class="fa fa-building" style="color: #ed786a">&nbsp; Casa Editrice</h3>
                     </div>
                     <div class="3u">
-                        <input id="inscasaeditrice" name="insautore" placeholder="Inserisci Casa Editrice" type="text" class="text"/>
-                    </div>
-
-                    <div class="3u">
-                        <h3 class="fa fa-calendar" style="color: #ed786a">Anno Acquisto</h3>
+                        <input id="inscasaeditrice" name="inscasaeditrice" placeholder="Casa Editrice" type="text" class="text" value="">
                     </div>
                     <div class="3u">
-                        <input id="insannoacquisto" name="insannoacquisto" placeholder="Inserisci Anno" type="text" class="text"/>
+                        <h3 class="fa fa-calendar" style="color: #ed786a">&nbsp; Anno Acquisto</h3>
+                    </div>
+                    <div class="3u">
+                        <input id="insannoacquisto" name="insannoacquisto" placeholder="Inserisci Anno" type="text" class="text" value="">
                     </div>
                 </div>
                 <script type="text/javascript">

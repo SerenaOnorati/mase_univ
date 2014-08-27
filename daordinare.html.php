@@ -1,157 +1,142 @@
-<?php
-include 'access.inc.php';
-include 'configuration.php';
-
-if(!userIsLoggedIn())
-{
-    $GLOBALS['loginError'] = "Non hai effettuato il login. Inserire email e password";
-    include 'index.php';
-}
-if(!userHasRole('Amministratore'))
-{
-
-    $GLOBALS['loginError'] = "Non sei autorizzato ad accedere alla pagina di amministrazione";
-    include 'index.php';
-}
-?>
 <!DOCTYPE HTML>
 
 <html>
-<head>
-    <title>Area Privata - Da ordinare</title>
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="viewport" content="width=1040" />
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Arvo:700" rel="stylesheet" type="text/css" />
-    <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.dropotron.min.js"></script>
-    <script src="js/config.js"></script>
-    <script src="js/skel.min.js"></script>
-    <script src="js/skel-panels.min.js"></script>
-    <script src="js/utente.js"></script>
-    <noscript>
-        <link rel="stylesheet" href="css/skel-noscript.css" />
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/style-desktop.css" />
-    </noscript>
-</head>
-<body class="no-sidebar">
-
-<!-- Header Wrapper -->
-<div id="header-wrapper">
-
-    <!-- Header -->
-    <div id="header" class="container">
-
-        <?php
-
-            include 'menuAdmin.php';
-
-        ?>
-
+    <head>
+        <title>Area Privata - Da ordinare</title>
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="viewport" content="width=1040" />
+        <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Arvo:700" rel="stylesheet" type="text/css" />
+        <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.dropotron.min.js"></script>
+        <script src="js/config.js"></script>
+        <script src="js/skel.min.js"></script>
+        <script src="js/skel-panels.min.js"></script>
+        <script src="js/utente.js"></script>
+        <noscript>
+            <link rel="stylesheet" href="css/skel-noscript.css" />
+            <link rel="stylesheet" href="css/style.css" />
+            <link rel="stylesheet" href="css/style-desktop.css" />
+        </noscript>
+    </head>
+    <body class="no-sidebar">
+    <!-- Header Wrapper -->
+    <div id="header-wrapper">
+        <!-- Header -->
+        <div id="header" class="container">
+            <?php
+                include 'menuAdmin.php';
+            ?>
+        </div>
     </div>
 
-</div>
+    <!-- Main Wrapper -->
+    <div id="main-wrapper">
 
-<!-- Main Wrapper -->
-<div id="main-wrapper">
+        <!-- Main -->
+        <div id="main" class="container">
+            <div class="row">
 
-    <!-- Main -->
-    <div id="main" class="container">
-        <div class="row">
+                <!-- Content -->
+                <div id="content" class="12u skel-cell-important">
 
-            <!-- Content -->
-            <div id="content" class="12u skel-cell-important">
+                    <!-- Post -->
+                    <article class="is-post" style="align-content: center !important">
+                        <form method="get" action="" name="dati_utente" id="dati_utente" target="_parent" onsubmit="return false" >
+                            <header>
+                                <div class="row">
+                                    <div class="10u">
+                                        <div><br><h2>Risultato ricerca titoli</h2></div>
+                                        <br>
+                                        <h2 style="text-align: left !important; color: #ed786a"><?php if(isset($error)) echo $error;?></h2>
+                                    </div>
+                                    <div class="2u">
+                                        <p>Ordina per</p>
+                                        <select name="ordinaper_daordinare">
+                                            <option value="Titolo">Titolo</option>
+                                            <option value="Autore">Autore</option>
+                                            <option value="CasaEditrice">Casa Editrice</option>
+                                            <option value="Locazione">Locazione</option>
+                                            <option value="Data">Data</option>
+                                            <option value="Isbn">ISBN</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </header>
 
-                <!-- Post -->
-                <article class="is-post" style="align-content: center !important">
-                    <form method="get" action="" name="dati_utente" id="dati_utente" target="_parent" onsubmit="return false" >
-                        <header>
+
                             <div class="row">
-                                <div class="10u">
-                                    <div><br><h2>Da ordinare</h2></div>
+                                <div class="5u">
+                                    <h3 style="color: #ed786a">Info Libro</h3>
+                                </div>
+                                <div class="3u">
+                                    <h3 style="color: #ed786a"></h3><br>
                                 </div>
                                 <div class="2u">
-                                    <p>Ordina per</p>
-                                    <select name="ordinaper_daordinare">
-                                        <option value="Titolo">Titolo</option>
-                                        <option value="Autore">Autore</option>
-                                        <option value="CasaEditrice">Casa Editrice</option>
-                                        <option value="Locazione">Locazione</option>
-                                        <option value="Data">Data</option>
-                                        <option value="Isbn">ISBN</option>
-                                    </select>
+                                    <h3 style="color: #ed786a">Qtà</h3>
                                 </div>
-                            </div>
-                        </header>
-
-
-                        <div class="row">
-                            <div class="5u">
-                                <h3 style="color: #ed786a">Info Libro</h3>
-                            </div>
-                            <div class="3u">
-                                <h3 style="color: #ed786a"></h3><br>
-                            </div>
-                            <div class="2u">
-                                <h3 style="color: #ed786a">Qtà</h3>
-                            </div>
-                            <div class="2u">
-                                <h3 style="color: #ed786a">Azioni</h3>
-                            </div>
-
-                        </div>
-                        <div class="row">
-                            <div class="5u">
-                                <!--<input id="total" type="text" class="text" value="Titolo" disabled>
-                                <input id="total" type="text" class="text" value="Casa Editrice Distributore" disabled>-->
-                                <label id="titolo" name="titolo" type="text" class="text">TITOLO:</label>
-                                <label id="autore" name="autore" type="text" class="text">AUTORE:</label>
-                                <label id="casaeditrice" name="casaeditrice" type="text" class="text">CASA ED.:</label>
-                                <label id="distributore" name="distributore" type="text" class="text">DISTR.:</label>
-                                <label id="isbn" name="isbn" type="text" class="text">ISBN:</label>
-
-                                <!--<input id="titolo" name="titolo" type="text" class="text">
-                                <input id="autore" name="autore" type="text" class="text">
-                                <input id="casaeditrice" name="casaeditrice" type="text" class="text">
-                                <input id="distributore" name="distributore" type="text" class="text">-->
-                            </div>
-                            <div class="3u">
-                                <label id="locazione" name="locazione" type="text" class="text">Locazione:</label>
-                                <label id="prezzo" name="prezzo" type="text" class="text">Prezzo:</label>
-                                <label id="prezzoacquisto" name="prezzoacquisto" type="text" class="text">Prezzo acq:</label>
-                                <label id="data" name="data" type="text" class="text">DATA:</label>
-                                <a href="" class="fa fa-file-o" id="modifica" title="Modifica">Immagine</a><br>
+                                <div class="2u">
+                                    <h3 style="color: #ed786a">Azioni</h3>
+                                </div>
 
                             </div>
-                            <div class="2u">
-                                <label id="qtamag" name="qtamag" type="text" class="text">Qta Mag</label>
-                                <input id="qtaord" name="qtaord" type="text" class="text" placeholder="Qta Ord">
-                            </div>
-                            <div class="2u">
-                                <a href="" class="fa fa-edit" id="modifica" title="Modifica">Modifica</a><br>
-                                <a href="" class="fa fa-times" id="cancella" title="Cancella">Cancella</a><br>
-                                <a href="" class="fa fa-plus" id="ordina" title="Ordina">Ordinato</a>
-                            </div>
+                            <?php foreach ($risultati as $risultato): ?>
+                                <form action="" method="post" onsubmit="return false">
+                                    <div class="row">
+                                        <div class="5u">
+                                            <label id="titolo" for="titolo<?php echo $risultato['isbn']; ?>" class="text">TITOLO:&nbsp;<?php echo $risultato['titolo']; ?></label>
+                                            <label id="autore" for="autore<?php echo $risultato['isbn']; ?>" class="text">AUTORE:&nbsp;<?php echo $risultato['autore']; ?></label>
+                                            <label id="casaeditrice" for="casaeditrice<?php echo $risultato['isbn']; ?>" class="text">CASA ED.:&nbsp;<?php echo $risultato['nome']; ?></label>
+                                            <label id="distributore" for="distributore<?php echo $risultato['isbn']; ?>" class="text">DISTR.:&nbsp;<?php echo $risultato['nome_distributore']; ?></label>
+                                            <label id="isbn" for="isbn<?php echo $risultato['isbn']; ?>" class="text">ISBN:&nbsp;<?php echo $risultato['isbn']; ?></label>
 
-                        </div>
-                        <br>
+                                            <!--<input id="titolo<?php echo $risultato['isbn']; ?>" name="titolo" type="text" class="text" value="<?php echo $risultato['titolo']; ?>">
+                                            <input id="autore<?php echo $risultato['isbn']; ?>" name="autore" type="text" class="text" value="<?php echo $risultato['autore']; ?>">
+                                            <input id="casaeditrice<?php echo $risultato['isbn']; ?>" name="casaeditrice" type="text" class="text" value="<?php echo $risultato['nome']; ?>">
+                                            <input id="distributore<?php echo $risultato['isbn']; ?>" name="distributore" type="text" class="text" value="<?php echo $risultato['isbn']; ?>">-->
 
-                        <div class="row">
-                            <button class="button button-icon fa fa-print">Stampa</button>
-                            <button class="button button-icon fa fa-trash-o">Svuota</button>
-                        </div>
-                    </form>
-                </article>
+                                        </div>
+                                        <div class="3u">
+                                            <label id="locazione<?php echo $risultato['isbn']; ?>" for="locazione<?php echo $risultato['isbn']; ?>" class="text">Locazione:&nbsp;<?php echo $risultato['locazione']; ?></label>
+                                            <label id="prezzo<?php echo $risultato['isbn']; ?>" for="prezzo<?php echo $risultato['isbn']; ?>" class="text">Prezzo:&nbsp;<?php echo $risultato['prezzo']; ?></label>
+                                            <label id="prezzoacquisto<?php echo $risultato['isbn']; ?>" for="prezzoacquisto<?php echo $risultato['isbn']; ?>" class="text">Prezzo acq:</label>
+                                            <label id="data<?php echo $risultato['isbn']; ?>" for="data<?php echo $risultato['isbn']; ?>" class="text">DATA:&nbsp;<?php echo $risultato['anno_acquisto']; ?></label>
+                                            <a href="upload/images/copertina<?php echo $risultato['copertina']; ?>" target="_blank" class="fa fa-file-o" id="copertina<?php echo $risultato['isbn']; ?>" title="Modifica">Copertina</a><br>
+
+                                        </div>
+                                        <div class="2u">
+                                            <label id="qtamag<?php echo $risultato['isbn']; ?>" for="qtamag<?php echo $risultato['isbn']; ?>">Qta Mag:&nbsp;<?php echo $risultato['quantita']; ?></label>
+                                            <input id="qtaord<?php echo $risultato['isbn']; ?>" name="qtaord" type="text" class="text" placeholder="Qta Ord">
+                                        </div>
+                                        <div class="2u">
+                                            <a href="" class="fa fa-edit" id="modifica" title="Modifica">Modifica</a><br>
+                                            <a href="" class="fa fa-times" id="cancella" title="Cancella">Cancella</a><br>
+                                            <a href="" class="fa fa-plus" id="ordina" title="Ordina">Ordinato</a>
+                                        </div>
+
+                                    </div>
+                                </form>
+                                <br>
+                            <?php endforeach; ?>
+
+                            <br>
+                            <ul class="actions" style="align-content: center!important">
+                                <li>
+                                    <a href="" class="button button-icon fa fa-print">Stampa</a>
+                                    <a href="" class="button button-icon fa fa-trash-o">svuota</a>
+                                </li>
+                            </ul>
+                        </form>
+                    </article>
 
 
+                </div>
             </div>
         </div>
     </div>
-</div>
-</body>
+    </body>
 </html>
 

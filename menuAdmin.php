@@ -25,6 +25,7 @@
             <a href="" class="fa fa-book"><span>Libri</span></a>
             <ul>
                 <li><a href="admin.php">Ricerca Libri</a></li>
+                <li><a href="">Inserisci Libri</a></li>
             </ul>
         </li>
 

@@ -2,17 +2,21 @@
     include 'access.inc.php';
     include 'configuration.php';
 
-    if(!userIsLoggedIn())
+    if(!isset($ricarico))
     {
-        $GLOBALS['loginError'] = "Non hai effettuato il login. Inserire email e password";
-        include 'index.php';
-    }
-    if(!userHasRole('Amministratore'))
-    {
+        if(!userIsLoggedIn())
+        {
+            $GLOBALS['loginError'] = "Non hai effettuato il login. Inserire email e password";
+            include 'index.php';
+        }
+        if(!userHasRole('Amministratore'))
+        {
 
-        $GLOBALS['loginError'] = "Non sei autorizzato ad accedere alla pagina di amministrazione";
-        include 'index.php';
+            $GLOBALS['loginError'] = "Non sei autorizzato ad accedere alla pagina di amministrazione";
+            include 'index.php';
+        }
     }
+
 ?>
 
 <!DOCTYPE HTML>
@@ -49,16 +53,15 @@
                 ?>
             </div>
         </div>
-    </div>
+
     <!-- Main Wrapper -->
     <div id="main-wrapper">
         <!-- Main -->
         <div id="main" class="container">
             <?php
                 include 'ricerca.html.php';
+
             ?>
         </div>
-    </div>
-
     </body>
 </html>
