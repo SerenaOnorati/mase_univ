@@ -1,4 +1,4 @@
-$(document).ready(function() {
+/*$(document).ready(function() {
 
     $("#ricerca").click(
         function ricerca()
@@ -28,4 +28,4 @@ $(document).ready(function() {
             });
         }
     )
-});
+});*/

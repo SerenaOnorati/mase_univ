@@ -17,6 +17,7 @@ else {
     {
         include 'db.inc.php';
         //recupera i dati delle news
+        //conto il numero degli utenti
         try
         {
             $sql = 'SELECT * FROM user';
@@ -34,6 +35,7 @@ else {
             exit();
 
         }
+
         //dopo la query inserisco in un'array global il risultato
         $users = $s->fetchAll();
         if(isset($users)){

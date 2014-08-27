@@ -40,13 +40,14 @@
     </head>
     <body class="no-sidebar">
 
-    <!-- Header Wrapper -->
-    <div id="header-wrapper">
-        <!-- Header -->
-        <div id="header" class="container">
-            <?php
-                include 'menuAdmin.php'
-            ?>
+        <!-- Header Wrapper -->
+        <div id="header-wrapper">
+            <!-- Header -->
+            <div id="header" class="container">
+                <?php
+                    include 'menuAdmin.php'
+                ?>
+            </div>
         </div>
     </div>
     <!-- Main Wrapper -->
