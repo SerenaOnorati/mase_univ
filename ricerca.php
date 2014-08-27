@@ -33,6 +33,7 @@
                 <br>
 
                 <?php
+
                     if(userHasRole('Amministratore'))
                     {
                             echo "<div class=\"row\">
