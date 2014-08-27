@@ -4,10 +4,13 @@ function ricerca()
     var titolo = document.getElementById('institolo').value;
     var casaeditrice = document.getElementById('inscasaeditrice').value;
     var locazione = document.getElementById('inslocazione').value;
+    var isbn = document.getElementById('insisbn').value;
+    var anno_acquisto = document.getElementById('insannoacquisto').value;
+
     $.ajax({
         type: 'POST',
         url: 'ricerca.php',
-        data: "autore="+autore+"&titolo="+titolo+"&locazione="+locazione+"&casaeditrice="+casaeditrice,
+        data: "autore="+autore+"&titolo="+titolo+"&locazione="+locazione+"&casaeditrice="+casaeditrice+"&isbn="+isbn+"&anno_acquisto"+anno_acquisto,
         dataType: "html",
 
         success: function(response)

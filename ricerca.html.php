@@ -49,10 +49,10 @@
                     </div>
 
                     <div class="3u">
-                        <h3 class="fa fa-calendar" style="color: #ed786a">Data</h3>
+                        <h3 class="fa fa-calendar" style="color: #ed786a">Anno Acquisto</h3>
                     </div>
                     <div class="3u">
-                        <input id="insdata" name="institolo" placeholder="Inserisci Data" type="text" class="text">
+                        <input id="insannoacquisto" name="institolo" placeholder="Inserisci Anno" type="text" class="text">
                     </div>
                 </div>
 

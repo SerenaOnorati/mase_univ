@@ -47,14 +47,16 @@
                 include 'menuAdmin.php'
             ?>
         </div>
-        <!-- Main Wrapper -->
-        <div id="main-wrapper">
-            <!-- Main -->
-            <div id="main" class="container">
-                <?php
-                    include 'ricerca.html.php';
-                ?>
-            </div>
+    </div>
+    <!-- Main Wrapper -->
+    <div id="main-wrapper">
+        <!-- Main -->
+        <div id="main" class="container">
+            <?php
+                include 'ricerca.html.php';
+            ?>
         </div>
+    </div>
+
     </body>
 </html>
