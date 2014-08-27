@@ -52,7 +52,7 @@
             <!-- Main -->
             <div id="main" class="container">
                 <?php
-                    include 'ricerca.php';
+                    include 'ricerca.html.php';
                 ?>
             </div>
         </div>
