@@ -10,10 +10,10 @@
     }
     else{
         //prelevo i nuovi campi dalla chiamata AJAX
-        $name = $_POST['name'];
-        $surname = $_POST['surname'];
-        $email = $_POST['email'];
-        $tel = $_POST['tel'];
+        $name = trim($_POST['name']);
+        $surname = trim($_POST['surname']);
+        $email = trim($_POST['email']);
+        $tel = trim($_POST['tel']);
 
         //query di verifica se ci sono modifiche dei campi immessi
         try
