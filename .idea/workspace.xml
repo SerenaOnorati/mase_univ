@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c62a4eec-d582-4e13-b7e5-eef246bc66c3" name="Default" comment="">
-      <change type="MOVED" beforePath="C:\Users\Serena Onorati\PhpstormProjects\mase_univ\daordinare.php" afterPath="$PROJECT_DIR$/daordinare.html.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ricerca.php" afterPath="$PROJECT_DIR$/ricerca.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configuration.php" afterPath="$PROJECT_DIR$/configuration.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mase_univ.iws" />
@@ -133,14 +132,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ricerca.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ricerca.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ricerca.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="32" selection-start="1738" selection-end="1738" vertical-scroll-proportion="0.87752163" vertical-offset="241" max-vertical-offset="1003">
+            <state line="50" column="32" selection-start="1738" selection-end="1738" vertical-scroll-proportion="-23.423077" vertical-offset="241" max-vertical-offset="1003">
               <folding>
                 <marker date="1409132800914" expanded="true" signature="551:716" placeholder="SELECT * FRO..libro..." />
                 <marker date="1409132800914" expanded="true" signature="551:774" placeholder="SELECT * FRO..libro..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="configuration.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/configuration.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="50" selection-start="805" selection-end="805" vertical-scroll-proportion="0.4164265" vertical-offset="0" max-vertical-offset="694">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -154,15 +162,6 @@
                 <marker date="1409124465331" expanded="true" signature="2344:2398" placeholder="SELECT id_ru..user..." />
                 <marker date="1409124465331" expanded="true" signature="2837:2893" placeholder="SELECT descr..ruolo..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="4" selection-start="10" selection-end="35" vertical-scroll-proportion="16.307692" vertical-offset="441" max-vertical-offset="1122">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -209,7 +208,6 @@
         <option value="$PROJECT_DIR$/timbri.php" />
         <option value="$PROJECT_DIR$/rilegaturaTesi.php" />
         <option value="$PROJECT_DIR$/stampe.php" />
-        <option value="$PROJECT_DIR$/configuration.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/inserimento_news_modifica.php" />
         <option value="$PROJECT_DIR$/inserimento_news.html.php" />
@@ -241,6 +239,7 @@
         <option value="$PROJECT_DIR$/js/ordini.js" />
         <option value="$PROJECT_DIR$/access.inc.php" />
         <option value="$PROJECT_DIR$/ricerca.php" />
+        <option value="$PROJECT_DIR$/configuration.php" />
       </list>
     </option>
   </component>
@@ -344,6 +343,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mase_univ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mase_univ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mase_univ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="upload" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mase_univ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mase_univ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="upload" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -788,12 +827,16 @@
       <created>1409131016386</created>
       <updated>1409131016386</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="ricerca.php">
+      <created>1409132827686</created>
+      <updated>1409132827686</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13580246" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15634218" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -802,7 +845,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.016224189" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
@@ -830,7 +873,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="modifica collegamenti ipertestuali A" />
     <MESSAGE value="cambiamenti layout" />
     <MESSAGE value="configuration" />
     <MESSAGE value="modifiche varie" />
@@ -855,7 +897,8 @@
     <MESSAGE value="ricerca button" />
     <MESSAGE value="ricerca button e refactor" />
     <MESSAGE value="ricerca() in ordini.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="ricerca() in ordini.js" />
+    <MESSAGE value="ricerca.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="ricerca.php" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1039,11 +1082,6 @@
         <state line="10" column="43" selection-start="425" selection-end="427" vertical-scroll-proportion="0.3045045" vertical-offset="1" max-vertical-offset="2975" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/configuration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="18" selection-start="20" selection-end="25" vertical-scroll-proportion="0.061261263" vertical-offset="0" max-vertical-offset="555" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dati_utente.html.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="39" selection-start="124" selection-end="124" vertical-scroll-proportion="-0.0" vertical-offset="85" max-vertical-offset="1904" />
@@ -1188,11 +1226,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ricerca.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="32" selection-start="1738" selection-end="1738" vertical-scroll-proportion="0.87752163" vertical-offset="241" max-vertical-offset="1003">
+        <state line="50" column="32" selection-start="1738" selection-end="1738" vertical-scroll-proportion="-23.423077" vertical-offset="241" max-vertical-offset="1003">
           <folding>
             <marker date="1409132800914" expanded="true" signature="551:716" placeholder="SELECT * FRO..libro..." />
             <marker date="1409132800914" expanded="true" signature="551:774" placeholder="SELECT * FRO..libro..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configuration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="50" selection-start="805" selection-end="805" vertical-scroll-proportion="0.4164265" vertical-offset="0" max-vertical-offset="694">
+          <folding />
         </state>
       </provider>
     </entry>

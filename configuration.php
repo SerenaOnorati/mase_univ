@@ -15,7 +15,7 @@
     $formato_std =array('B/N A4','B/N A3','Colori A4','Colori A3');
 
     $image_news_path = 'upload\images\news';
-
+    $image_libro_path = 'upload\images\copertina';
 
 ?>
 
