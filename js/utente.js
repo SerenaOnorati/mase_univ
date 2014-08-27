@@ -225,5 +225,4 @@ function modificaUtente(id)
         }
 
     }
-
 }

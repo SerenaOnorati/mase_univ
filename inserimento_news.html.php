@@ -15,7 +15,7 @@
         <script src="js/config.js"></script>
         <script src="js/skel.min.js"></script>
         <script src="js/skel-panels.min.js"></script>
-        <script src="js/utilità.js"></script>
+        <script src="js/utente.js"></script>
         <noscript>
             <link rel="stylesheet" href="css/skel-noscript.css" />
             <link rel="stylesheet" href="css/style.css" />
