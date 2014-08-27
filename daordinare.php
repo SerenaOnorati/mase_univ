@@ -1,8 +1,24 @@
+<?php
+include 'access.inc.php';
+include 'configuration.php';
+
+if(!userIsLoggedIn())
+{
+    $GLOBALS['loginError'] = "Non hai effettuato il login. Inserire email e password";
+    include 'index.php';
+}
+if(!userHasRole('Amministratore'))
+{
+
+    $GLOBALS['loginError'] = "Non sei autorizzato ad accedere alla pagina di amministrazione";
+    include 'index.php';
+}
+?>
 <!DOCTYPE HTML>
 
 <html>
 <head>
-    <title>Area Privata - Dati utente</title>
+    <title>Area Privata - Da ordinare</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="" />
@@ -76,7 +92,7 @@
                                 <h3 style="color: #ed786a">Azioni</h3>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row image">
                             <div class="3u">
                                 <input id="titolo" name="titolo" type="text" class="text">
                                 <input id="autore" name="autore" type="text" class="text">
