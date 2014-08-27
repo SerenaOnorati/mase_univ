@@ -18,7 +18,7 @@ if(!userHasRole('Amministratore'))
 
 <html>
 <head>
-    <title>Area Privata - Da ordinare</title>
+    <title>Area Privata - Arrivato</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="" />
@@ -68,15 +68,15 @@ if(!userHasRole('Amministratore'))
 
                 <!-- Post -->
                 <article class="is-post" style="align-content: center !important">
-                    <form method="get" action="" name="dati_utente" id="dati_utente" target="_parent" onsubmit="return false" >
+                    <form method="get" action="" name="ordinato" id="ordinato" target="_parent" onsubmit="return false" >
                         <header>
                             <div class="row">
                                 <div class="10u">
-                                    <div><br><h2>Da ordinare</h2></div>
+                                    <div><br><h2>Arrivato</h2></div>
                                 </div>
                                 <div class="2u">
                                     <p>Ordina per</p>
-                                    <select name="ordinaper_daordinare">
+                                    <select name="ordinaper_arrivato" style="text-align: right !important">
                                         <option value="Titolo">Titolo</option>
                                         <option value="Autore">Autore</option>
                                         <option value="CasaEditrice">Casa Editrice</option>
@@ -141,7 +141,6 @@ if(!userHasRole('Amministratore'))
                         <br>
 
                         <div class="row">
-                            <button class="button button-icon fa fa-print">Stampa</button>
                             <button class="button button-icon fa fa-trash-o">Svuota</button>
                         </div>
                     </form>
