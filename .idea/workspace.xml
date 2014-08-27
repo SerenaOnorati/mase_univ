@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c62a4eec-d582-4e13-b7e5-eef246bc66c3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configuration.php" afterPath="$PROJECT_DIR$/configuration.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/images/copertina/scudieri.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mase_univ.iws" />
@@ -383,6 +383,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="copertina" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -831,7 +835,11 @@
       <created>1409132827686</created>
       <updated>1409132827686</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="configuration">
+      <created>1409133052257</created>
+      <updated>1409133052257</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -874,7 +882,6 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="cambiamenti layout" />
-    <MESSAGE value="configuration" />
     <MESSAGE value="modifiche varie" />
     <MESSAGE value="messaggi di errore nella pagina index" />
     <MESSAGE value="messaggi di errore nella pagina index 2" />
@@ -898,7 +905,8 @@
     <MESSAGE value="ricerca button e refactor" />
     <MESSAGE value="ricerca() in ordini.js" />
     <MESSAGE value="ricerca.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="ricerca.php" />
+    <MESSAGE value="configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="configuration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
