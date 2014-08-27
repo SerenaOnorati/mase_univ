@@ -28,6 +28,7 @@
             $s->bindValue(':autore', $autore, PDO::PARAM_STR);
             $s->bindValue(':locazione', $locazione, PDO::PARAM_STR);
             $s->bindValue(':nome', $casaeditrice, PDO::PARAM_STR);
+            $s->bindValue(':anno_acquisto', $anno_acquisto, PDO::PARAM_INT);
 
             $s->execute();
         }

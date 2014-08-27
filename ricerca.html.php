@@ -5,7 +5,7 @@
 
         <!-- Post -->
         <article class="is-post" style="align-content: center">
-            <form method="get" action="" name="dati_utente" id="dati_utente" target="_parent" onsubmit="return false" >
+            <form method="get" action="" name="ricerca" id="ricerca" target="_parent" onsubmit="return false" >
                 <header>
                     <div><br><h2>Ricerca</h2></div>
                 </header>
@@ -52,22 +52,14 @@
                         <h3 class="fa fa-calendar" style="color: #ed786a">Anno Acquisto</h3>
                     </div>
                     <div class="3u">
-                        <input id="insannoacquisto" name="institolo" placeholder="Inserisci Anno" type="text" class="text">
+                        <input id="insannoacquisto" name="insannoacquisto" placeholder="Inserisci Anno" type="text" class="text">
                     </div>
                 </div>
 
-                <div class="row">
 
-
-                <!--<div class="input-group margin-bottom-sm"  style="color: #ed786a>
-                    <span class="input-group-addon fa fa-map-marker"><i class="fa fa-map-marker" ></i></span>
-                    <input type="text" placeholder="Email address">
-                </div>-->
-
-                </div>
                 <div class="row" style="align-content: center !important">
                    <div class="12u" >
-                       <button class="button button-icon fa fa-search">Ricerca</button>
+                       <button class="button button-icon fa fa-search" onclick="ricerca()">Ricerca</button>
                    </div>
                 </div>
             </form>
