@@ -78,7 +78,6 @@ function aggiungiRigaNews()
     else
     {
         aggiungi.style.display = 'block';
-        //window.location.hash = "aggiungi";
     }
 }
 

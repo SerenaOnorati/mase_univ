@@ -1,7 +1,7 @@
 <?php
 
-include 'db.inc.php';
-include 'access.inc.php';
+    include 'db.inc.php';
+    include 'access.inc.php';
 
     if(!userIsLoggedIn())
     {
@@ -17,14 +17,12 @@ include 'access.inc.php';
             $immagine = $_POST['file'];
             $data = $_POST['data'];
 
-            //echo "<a href=\upload\images\news\".$immagine.">";
             //inserimento della nuova news nel db
             try
             {
                 $sql = 'INSERT INTO news (titolo, testo, immagine, data)
                 VALUES (:titolo, :testo, :immagine, :data)';
                 $s = $pdo->prepare($sql);
-                //$s->bindValue('4', $id_news);
                 $s->bindValue(':titolo', $titolo, PDO::PARAM_STR);
                 $s->bindValue(':testo', $testo, PDO::PARAM_STR);
                 $s->bindValue(':immagine', '\\'.$immagine, PDO::PARAM_STR);
@@ -37,7 +35,6 @@ include 'access.inc.php';
             {
                 $error = 'Errore inserimento news.';
                 echo $e->getMessage();
-                //header("Location: inserimento_news.php");
             }
         }
         else

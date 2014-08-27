@@ -100,7 +100,6 @@
                                 </div>
                                 <div class="1u">
                                     <a href="javascript:aggiungiNews()"  class="fa fa-plus" title="Aggiungi"></a><br>
-
                                 </div>
                             </div>
                         </form>
