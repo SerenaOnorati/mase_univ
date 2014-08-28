@@ -9,16 +9,17 @@ function aggiungiLibro(nomeSelect)
     var copertina = path.replace(/^.*\\/, "");
     var locazione = $("#inslocazione").val();
     var prezzo = $("#insprezzo").val();
+    var prezzoa = $("#insprezzoa").val();
     var quantita = $("#insquantita").val();
     var anno = $("#insannoacquisto").val();
     var id_casa_editrice = nomeSelect.options[nomeSelect.selectedIndex].value;
 
-    if(autore.length != 0 && isbn.length != 0  && titolo.length != 0 && copertina.length != 0 && locazione.length != 0 && prezzo.length != 0 && quantita.length != 0 && anno.length != 0 && id_casa_editrice.length != 0)
+    if(autore.length != 0 && isbn.length != 0  && titolo.length != 0 && copertina.length != 0 && locazione.length != 0 && prezzo.length != 0 && prezzoa.length != 0 && quantita.length != 0 && anno.length != 0 && id_casa_editrice.length != 0)
     {
         $.ajax({
             type: 'POST',
             url: 'inserisci_libri.php',
-            data: "autore="+autore+"&isbn="+isbn+"&titolo="+titolo+"&copertina="+copertina+"&locazione="+locazione+"&prezzo="+prezzo+"&quantita="+quantita+"&anno="+anno+"&id_casa_editrice="+id_casa_editrice,
+            data: "autore="+autore+"&isbn="+isbn+"&titolo="+titolo+"&copertina="+copertina+"&locazione="+locazione+"&prezzo="+prezzo+"&prezzoa="+prezzoa+"&quantita="+quantita+"&anno="+anno+"&id_casa_editrice="+id_casa_editrice,
             dataType: "html",
 
             success: function(response)
@@ -68,6 +69,8 @@ function modificaLibroDaordinare(isbn)
 
 function modificaSalvaLibro(nomeSelect)
 {
+
+    var isbn = document.getElementsByName('isbn').vaue;
     var autore = document.getElementById('autore').value;
     var titolo = document.getElementById('titolo').value;
     var id_casa_editrice = nomeSelect.options[nomeSelect.selectedIndex].value;
@@ -79,8 +82,7 @@ function modificaSalvaLibro(nomeSelect)
     var quantita = document.getElementById('quantita').value;
     var locazione = document.getElementById('locazione').value;
 
-
-
+    var isbn_old = document.getElementsByName('isbn_old').vaue;
     var autore_old = document.getElementById('autore_old').value;
     var titolo_old = document.getElementById('titolo_old').value;
     var id_casa_editrice_old = nomeSelect.options[nomeSelect.selectedIndex].value;
@@ -91,12 +93,38 @@ function modificaSalvaLibro(nomeSelect)
     var quantita_old = document.getElementById('quantita_old').value;
     var locazione_old = document.getElementById('locazione').value;
 
-    //attivo le input
-    
 
-    if(autore == autore_old && titolo == titolo_old && id_casa_editrice == id_casa_editrice_old && prezzo == prezzo_old && prezzo_acquisto == prezzo_acquisto_old && anno_acquisto == anno_acquisto_old && copertina == copertina_old && quantita == quantita_old && locazione == locazione_old)
+    if(autore.length != 0 && isbn.length != 0  && titolo.length != 0 && copertina.length != 0 && locazione.length != 0 && prezzo.length != 0 && prezzoa.length != 0 && quantita.length != 0 && anno.length != 0 && id_casa_editrice.length != 0)
     {
-        alert("Non ci sono modifiche da salvare!");
+
+        if(autore == autore_old && titolo == titolo_old && id_casa_editrice == id_casa_editrice_old && prezzo == prezzo_old && prezzo_acquisto == prezzo_acquisto_old && anno_acquisto == anno_acquisto_old && copertina == copertina_old && quantita == quantita_old && locazione == locazione_old)
+        {
+            alert("Non ci sono modifiche da salvare!");
+        }
+
+        else
+        {
+            $.ajax({
+                type: 'POST',
+                url: 'modifica_salva_libro.php',
+                data: "autore="+autore+"&isbn="+isbn+"&isbn_old="+isbn+"&titolo="+titolo+"&copertina="+copertina+"&locazione="+locazione+"&prezzo="+prezzo+"&prezzo_acquisto="+prezzo_acquisto+"&quantita="+quantita+"&anno_acquisto="+anno_acquisto+"&id_casa_editrice="+id_casa_editrice,
+                dataType: "html",
+
+                success: function(response)
+                {
+                    alert(response);
+                    location.window.reload();
+                },
+                error: function()
+                {
+                    alert("Le modifiche non sono state salvate.");
+                }
+            });
+        }
+    }
+    else
+    {
+        alert("Per favore compilare tutti i campi.")
     }
 
 
