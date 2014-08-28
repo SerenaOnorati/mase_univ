@@ -69,8 +69,8 @@
         }
         if($titolo == "%%" && $autore == "%%" && $locazione == "%%" && $casaeditrice == "%%" && $isbn == "%%" && $anno_acquisto == "%%")
         {
-            $ricercafallita = 'Per favore inserire i parametri per la ricerca';
-            header("Location: admin.php?ricercafallita=$ricercafallita");
+            $ricercavuota = 'Per favore inserire i parametri per la ricerca';
+            header("Location: admin.php?ricercavuota=$ricercavuota");
             exit();
         }
         else

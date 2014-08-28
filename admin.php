@@ -60,6 +60,8 @@
             <?php
                 if(isset($_GET['ricercafallita']))
                     echo "<h3 style=\"color: #ed786a\">".$_GET['ricercafallita']."</h3>";
+                if(isset($_GET['ricercavuota']))
+                    echo "<h3 style=\"color: #ed786a\">".$_GET['ricercavuota']."</h3>";
                 include 'ricerca.html.php';
 
             ?>
