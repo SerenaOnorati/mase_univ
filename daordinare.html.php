@@ -105,7 +105,8 @@
                                             <label id="prezzo<?php echo $risultato['isbn']; ?>" for="prezzo<?php echo $risultato['isbn']; ?>" class="text">Prezzo&nbsp;:<?php echo $risultato['prezzo']; ?></label>
                                             <label id="prezzoacquisto<?php echo $risultato['isbn']; ?>" for="prezzoacquisto<?php echo $risultato['isbn']; ?>" class="text">Prezzo acq&nbsp;:<?php echo $risultato['prezzo_acquisto']; ?></label>
                                             <label id="data<?php echo $risultato['isbn']; ?>" for="data<?php echo $risultato['isbn']; ?>" class="text">DATA&nbsp;:<?php echo $risultato['anno_acquisto']; ?></label>
-                                            <a href="upload/images/copertina<?php echo $risultato['copertina']; ?>" target="_blank" class="fa fa-file-o" id="copertina<?php echo $risultato['isbn']; ?>" title="Modifica">Copertina</a><br>
+                                            <input type="hidden" id="copertina<?php echo $risultato['isbn']; ?>" value="<?php echo $risultato['copertina']; ?>">
+                                            <a href="upload/images/copertina<?php echo $risultato['copertina']; ?>" target="_blank" class="fa fa-file-o" id="copertinalink<?php echo $risultato['isbn']; ?>" title="Modifica">Copertina</a><br>
 
                                         </div>
                                         <div class="2u">

@@ -47,7 +47,7 @@ function modificaLibroDaordinare(isbn)
     var prezzo = document.getElementById('prezzo'+isbn).innerText;
     var prezzo_acquisto = document.getElementById('prezzoacquisto'+isbn).innerText;
     var anno_acquisto = document.getElementById('data'+isbn).innerText;
-    var copertina = document.getElementById('copertina'+isbn).innerText;
+    var copertina = document.getElementById('copertina'+isbn).value;
     var quantita = document.getElementById('qtamag'+isbn).innerText;
     var locazione = document.getElementById('locazione'+isbn).innerText;
 
@@ -59,11 +59,10 @@ function modificaLibroDaordinare(isbn)
     prezzo = prezzo.replace(/^.*:/, "");
     prezzo_acquisto = prezzo_acquisto.replace(/^.*:/, "");
     anno_acquisto = anno_acquisto.replace(/^.*:/, "");
-    copertina = copertina.replace(/^.*:/, "");
     quantita = quantita.replace(/^.*:/, "");
     locazione = locazione.replace(/^.*:/, "");
 
-    window.location.href = 'modifica_libro.html.php?isbn='+isbn+'&autore='+autore+'&titolo='+titolo+'&casa_editrice='+casa_editrice+'&prezzo='+prezzo+'&prezzo_acquisto='+prezzo_acquisto+'&anno_acquisto='+anno_acquisto+'&quantita='+quantita+'&locazione='+locazione;
+    window.location.href = 'modifica_libro.html.php?isbn='+isbn+'&autore='+autore+'&titolo='+titolo+'&casa_editrice='+casa_editrice+'&prezzo='+prezzo+'&prezzo_acquisto='+prezzo_acquisto+'&anno_acquisto='+anno_acquisto+'&quantita='+quantita+'&locazione='+locazione+"&copertina="+copertina;
 
 }
 
