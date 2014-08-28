@@ -71,6 +71,7 @@
                                         <h3 style="color: #ed786a">Autore</h3>
                                     </div>
                                     <div class="3u">
+                                        <input type="hidden" id="autore_old" value="<?php echo $_GET['autore']; ?>">
                                         <input id="autore" name="autore"  type="text" class="text" value="<?php echo $_GET['autore'] ?>">
                                     </div>
 
@@ -78,6 +79,7 @@
                                         <h3 style="color: #ed786a">ISBN</h3>
                                     </div>
                                     <div class="3u">
+                                        <input type="hidden" id="isbn_old" value="<?php echo $_GET['isbn']; ?>">
                                         <input id="isbn" name="isbn" type="text" class="text" value="<?php echo $_GET['isbn'] ?>">
                                     </div>
                                 </div>
@@ -86,12 +88,14 @@
                                         <h3 style="color: #ed786a">Titolo</h3>
                                     </div>
                                     <div class="3u">
+                                        <input type="hidden" id="titolo_old" value="<?php echo $_GET['titolo']; ?>">
                                         <input id="titolo" name="titolo" type="text" class="text" value="<?php echo $_GET['titolo'] ?>">
                                     </div>
                                     <div class="3u">
                                         <h3 style="color: #ed786a">Locazione</h3>
                                     </div>
                                     <div class="3u">
+                                        <input type="hidden" id="locazione_old" value="<?php echo $_GET['locazione']; ?>">
                                         <input id="locazione" name="locazione"  type="text" class="text" value="<?php echo $_GET['locazione'] ?>">
                                     </div>
                                 </div>
@@ -126,7 +130,10 @@
 
                                                 foreach ($case_editrici as $case_editrice):
                                                     if(strcmp($_GET['casa_editrice'],$case_editrice['nome']) == 0 )
+                                                    {
                                                         echo "<option value=\"".$case_editrice['id_casa_editrice']."\"selected=\"selected\" >".$case_editrice['nome']."</option>";
+                                                        echo "<input type=\"hidden\" id=\"casa_editrice_old\" value=\"".$case_editrice['id_casa_editrice']."\">";
+                                                    }
                                                     else
                                                         echo "<option value=\"".$case_editrice['id_casa_editrice']."\">".$case_editrice['nome']."</option>";
                                                 endforeach;
@@ -145,7 +152,8 @@
                                         <h3 style="color: #ed786a">Anno Acquisto</h3>
                                     </div>
                                     <div class="3u">
-                                        <input id="annoacquisto" name="annoacquisto" type="text" class="text" value="<?php echo $_GET['anno_acquisto'] ?>">
+                                        <input type="hidden" id="anno_acquisto_old" value="<?php echo $_GET['anno_acquisto']; ?>">
+                                        <input id="anno_acquisto" name="anno_acquisto" type="text" class="text" value="<?php echo $_GET['anno_acquisto'] ?>">
                                     </div>
                                 </div>
                                 <div class="row">
@@ -153,12 +161,14 @@
                                         <h3 style="color: #ed786a">Quantita'</h3>
                                     </div>
                                     <div class="3u">
+                                        <input type="hidden" id="quantita_old" value="<?php echo $_GET['quantita']; ?>">
                                         <input id="quantita" name="quantita" type="text" class="text" value="<?php echo $_GET['quantita'] ?>">
                                     </div>
                                     <div class="3u">
                                         <h3 style="color: #ed786a">Prezzo</h3>
                                     </div>
                                     <div class="3u">
+                                        <input type="hidden" id="prezzo_old" value="<?php echo $_GET['prezzo']; ?>">
                                         <input id="prezzo" name="prezzo" type="text" class="text" value="<?php echo $_GET['prezzo'] ?>">
                                     </div>
                                 </div>
@@ -167,6 +177,7 @@
                                         <h3 style="color: #ed786a">Prezzo Acquisto</h3>
                                     </div>
                                     <div class="3u">
+                                        <input type="hidden" id="prezzo_acquisto_old" value="<?php echo $_GET['prezzo_acquisto']; ?>">
                                         <input id="prezzoacquisto" name="prezzoacquisto" type="text" class="text" value="<?php echo $_GET['prezzo_acquisto']?>">
                                     </div>
                                     <div class="3u">
@@ -181,7 +192,7 @@
                                 <br>
                                 <ul class="actions" style="align-content: center!important">
                                     <li>
-                                        <a href="javascript: salvaModificaLibro(<?php echo $_GET['isbn'] ?>)" class="button button-icon fa fa-save">Salva Modifica</a>
+                                        <a href="javascript: salvaModificaLibro(case_editrici)" class="button button-icon fa fa-save">Salva Modifica</a>
                                     </li>
                                 </ul>
                             </form>

@@ -66,19 +66,32 @@ function modificaLibroDaordinare(isbn)
 
 }
 
-function modificaSalvaLibro(isbn)
+function modificaSalvaLibro(nomeSelect)
 {
     var autore = document.getElementById('autore').value;
     var titolo = document.getElementById('titolo').value;
-    var casa_editrice = document.getElementById('casaeditrice').value;
-    var prezzo = document.getElementById('prezzo').value;
-    var prezzo_acquisto = document.getElementById('prezzoacquisto').value;
-    var anno_acquisto = document.getElementById('data').value;
-    var copertina = document.getElementById('copertina').val();
-    var copertina_old = document.getElementById('copertina_old').val();
-    var quantita = document.getElementById('qtamag').value;
-    var locazione = document.getElementById('locazione').value;
     var id_casa_editrice = nomeSelect.options[nomeSelect.selectedIndex].value;
+    var prezzo = document.getElementById('prezzo').value;
+    var prezzo_acquisto = document.getElementById('prezzo_acquisto').value;
+    var anno_acquisto = document.getElementById('data').value;
+    var path = $("#url").val();
+    var copertina = path.replace(/^.*\\/, "");
+    var quantita = document.getElementById('quantita').value;
+    var locazione = document.getElementById('locazione').value;
 
-    
+
+
+    var autore_old = document.getElementById('autore_old').value;
+    var titolo_old = document.getElementById('titolo_old').value;
+    var casa_editrice_old = document.getElementById('casa_editrice_old').value;
+    var prezzo_old = document.getElementById('prezzo_old').value;
+    var prezzo_acquisto_old = document.getElementById('prezzo_acquisto_old').value;
+    var anno_acquisto_old = document.getElementById('data_old').value;
+    var copertina_old = document.getElementById('copertina_old').val();
+    var quantita_old = document.getElementById('quantita_old').value;
+    var locazione_old = document.getElementById('locazione').value;
+    var id_casa_editrice_old = nomeSelect.options[nomeSelect.selectedIndex].value;
+
+
+
 }
