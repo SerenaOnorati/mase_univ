@@ -88,11 +88,11 @@
                                 <form action="" method="post" onsubmit="return false">
                                     <div class="row">
                                         <div class="5u">
-                                            <label id="titolo" for="titolo<?php echo $risultato['isbn']; ?>" class="text">TITOLO:&nbsp;<?php echo $risultato['titolo']; ?></label>
-                                            <label id="autore" for="autore<?php echo $risultato['isbn']; ?>" class="text">AUTORE:&nbsp;<?php echo $risultato['autore']; ?></label>
-                                            <label id="casaeditrice" for="casaeditrice<?php echo $risultato['isbn']; ?>" class="text">CASA ED.:&nbsp;<?php echo $risultato['nome']; ?></label>
-                                            <label id="distributore" for="distributore<?php echo $risultato['isbn']; ?>" class="text">DISTR.:&nbsp;<?php echo $risultato['nome_distributore']; ?></label>
-                                            <label id="isbn" for="isbn<?php echo $risultato['isbn']; ?>" class="text">ISBN:&nbsp;<?php echo $risultato['isbn']; ?></label>
+                                            <label id="titolo<?php echo $risultato['isbn']; ?>" for="titolo<?php echo $risultato['isbn']; ?>" class="text">TITOLO:&nbsp;<?php echo $risultato['titolo']; ?></label>
+                                            <label id="autore<?php echo $risultato['isbn']; ?>" for="autore<?php echo $risultato['isbn']; ?>" class="text">AUTORE:&nbsp;<?php echo $risultato['autore']; ?></label>
+                                            <label id="casaeditrice<?php echo $risultato['isbn']; ?>" for="casaeditrice<?php echo $risultato['isbn']; ?>" class="text">CASA ED.:&nbsp;<?php echo $risultato['nome']; ?></label>
+                                            <label id="distributore<?php echo $risultato['isbn']; ?>" for="distributore<?php echo $risultato['isbn']; ?>" class="text">DISTR.:&nbsp;<?php echo $risultato['nome_distributore']; ?></label>
+                                            <label id="isbn<?php echo $risultato['isbn']; ?>" for="isbn<?php echo $risultato['isbn']; ?>" class="text">ISBN:&nbsp;<?php echo $risultato['isbn']; ?></label>
 
                                             <!--<input id="titolo<?php echo $risultato['isbn']; ?>" name="titolo" type="text" class="text" value="<?php echo $risultato['titolo']; ?>">
                                             <input id="autore<?php echo $risultato['isbn']; ?>" name="autore" type="text" class="text" value="<?php echo $risultato['autore']; ?>">

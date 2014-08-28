@@ -48,7 +48,7 @@
             <!-- Header -->
             <div id="header" class="container">
                 <?php
-                include 'menuAdmin.php'
+                    include 'menuAdmin.php'
                 ?>
             </div>
         </div>
@@ -71,14 +71,14 @@
                                         <h3 style="color: #ed786a">Autore</h3>
                                     </div>
                                     <div class="3u">
-                                        <input id="autore" name="autore" placeholder="" type="text" class="text" value="<?php echo $autore; ?>">
+                                        <input id="autore" name="autore"  type="text" class="text" value="<?php echo $_GET['autore'] ?>">
                                     </div>
 
                                     <div class="3u">
                                         <h3 style="color: #ed786a">ISBN</h3>
                                     </div>
                                     <div class="3u">
-                                        <input id="isbn" name="isbn" placeholder="<?php echo $isbn; ?>" type="text" class="text" value="">
+                                        <input id="isbn" name="isbn" type="text" class="text" value="<?php echo $_GET['isbn'] ?>">
                                     </div>
                                 </div>
                                 <div class="row">
@@ -86,13 +86,13 @@
                                         <h3 style="color: #ed786a">Titolo</h3>
                                     </div>
                                     <div class="3u">
-                                        <input id="titolo" name="titolo" placeholder="<?php echo $titolo; ?>" type="text" class="text" value="">
+                                        <input id="titolo" name="titolo" type="text" class="text" value="<?php echo $_GET['titolo'] ?>">
                                     </div>
                                     <div class="3u">
                                         <h3 style="color: #ed786a">Locazione</h3>
                                     </div>
                                     <div class="3u">
-                                        <input id="locazione" name="locazione" placeholder="<?php echo $locazione; ?>" type="text" class="text" value="">
+                                        <input id="locazione" name="locazione"  type="text" class="text" value="<?php echo $_GET['locazione'] ?>">
                                     </div>
                                 </div>
                                 <div class="row">
@@ -101,48 +101,47 @@
                                     </div>
                                     <div class="3u">
                                         <?php
-                                        include 'db.inc.php';
+                                            include 'db.inc.php';
+                                            try
+                                            {
+                                                $sql = 'SELECT * FROM casa_editrice';
+                                                $s = $pdo->prepare($sql);
+                                                $s->execute();
+                                            }
 
-                                        try
-                                        {
-                                            $sql = 'SELECT * FROM casa_editrice';
-                                            $s = $pdo->prepare($sql);
-                                            $s->execute();
-                                        }
+                                            catch (PDOException $e)
+                                            {
+                                                $error = 'Errore nella ricerca delle case editrici.';
+                                                echo "<script language=\"JavaScript\">\n";
+                                                echo "alert(\"$error\");\n";
+                                                echo "</script>";
+                                                exit();
+                                            }
 
-                                        catch (PDOException $e)
-                                        {
-                                            $error = 'Errore nella ricerca delle case editrici.';
-                                            echo "<script language=\"JavaScript\">\n";
-                                            echo "alert(\"$error\");\n";
-                                            echo "</script>";
-                                            exit();
-                                        }
+                                            $case_editrici = $s->fetchAll();
 
-                                        $case_editrici = $s->fetchAll();
-
-                                        if(!empty($case_editrici))
-                                        {
-                                            echo "<select id=\"case_editrici\" name=\"case_editrici\">";
-                                            foreach ($case_editrici as $case_editrice):
-                                                echo "<option value=\"".$case_editrice['id_casa_editrice']."\">".$case_editrice['nome']."</option>";
-                                            endforeach;
-                                            echo "</select>";
-                                        }
-                                        else{
-                                            $error = 'La ricerca delle case editrici non ha prodotto risultati.';
-                                            echo "<script language=\"JavaScript\">\n";
-                                            echo "alert(\"$error\");\n";
-                                            echo "</script>";
-                                            exit();
-                                        }
+                                            if(!empty($case_editrici))
+                                            {
+                                                echo "<select id=\"case_editrici\" name=\"case_editrici\">";
+                                                foreach ($case_editrici as $case_editrice):
+                                                    echo "<option value=\"".$case_editrice['id_casa_editrice']."\">".$case_editrice['nome']."</option>";
+                                                endforeach;
+                                                echo "</select>";
+                                            }
+                                            else{
+                                                $error = 'La ricerca delle case editrici non ha prodotto risultati.';
+                                                echo "<script language=\"JavaScript\">\n";
+                                                echo "alert(\"$error\");\n";
+                                                echo "</script>";
+                                                exit();
+                                            }
                                         ?>
                                     </div>
                                     <div class="3u">
                                         <h3 style="color: #ed786a">Anno Acquisto</h3>
                                     </div>
                                     <div class="3u">
-                                        <input id="annoacquisto" name="annoacquisto" placeholder="<?php echo $anno; ?>" type="text" class="text" value="">
+                                        <input id="annoacquisto" name="annoacquisto" type="text" class="text" value="<?php echo $_GET['anno_acquisto'] ?>">
                                     </div>
                                 </div>
                                 <div class="row">
@@ -150,17 +149,13 @@
                                         <h3 style="color: #ed786a">Quantita'</h3>
                                     </div>
                                     <div class="3u">
-                                        <input id="quantita" name="quantita" placeholder="<?php echo $quantita; ?>" type="text" class="text" value="">
+                                        <input id="quantita" name="quantita" type="text" class="text" value="<?php echo $_GET['quantita'] ?>">
                                     </div>
                                     <div class="3u">
                                         <h3 style="color: #ed786a">Prezzo</h3>
-
-
-
-
                                     </div>
                                     <div class="3u">
-                                        <input id="prezzo" name="prezzo" placeholder="<?php echo $prezzo; ?>" type="text" class="text" value="">
+                                        <input id="prezzo" name="prezzo" type="text" class="text" value="<?php echo $_GET['prezzo'] ?>">
                                     </div>
                                 </div>
                                 <div class="row">
