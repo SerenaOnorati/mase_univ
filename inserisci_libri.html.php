@@ -14,8 +14,6 @@
         $GLOBALS['loginError'] = "Non sei autorizzato ad accedere alla pagina di amministrazione";
         include 'index.php';
     }
-
-
 ?>
 
 <!DOCTYPE HTML>
