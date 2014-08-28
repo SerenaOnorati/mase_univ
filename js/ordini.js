@@ -11,14 +11,15 @@ function aggiungiLibro(nomeSelect)
     var prezzo = $("#insprezzo").val();
     var quantita = $("#insquantita").val();
     var anno = $("#insannoacquisto").val();
+    var prezzoa = $("#insprezzoa").val();
     var id_casa_editrice = nomeSelect.options[nomeSelect.selectedIndex].value;
 
-    if(autore.length != 0 && isbn.length != 0  && titolo.length != 0 && copertina.length != 0 && locazione.length != 0 && prezzo.length != 0 && quantita.length != 0 && anno.length != 0 && id_casa_editrice.length != 0)
+    if(autore.length != 0 && isbn.length != 0  && titolo.length != 0 && copertina.length != 0 && locazione.length != 0 && prezzo.length != 0 && quantita.length != 0 && anno.length != 0 && id_casa_editrice.length != 0 && prezzoa.length != 0)
     {
         $.ajax({
             type: 'POST',
             url: 'inserisci_libri.php',
-            data: "autore="+autore+"&isbn="+isbn+"&titolo="+titolo+"&copertina="+copertina+"&locazione="+locazione+"&prezzo="+prezzo+"&quantita="+quantita+"&anno="+anno+"&id_casa_editrice="+id_casa_editrice,
+            data: "autore="+autore+"&isbn="+isbn+"&titolo="+titolo+"&copertina="+copertina+"&locazione="+locazione+"&prezzo="+prezzo+"&prezzoa="+prezzoa+"&quantita="+quantita+"&anno="+anno+"&id_casa_editrice="+id_casa_editrice,
             dataType: "html",
 
             success: function(response)
@@ -53,15 +54,15 @@ function modificaLibroDaordinare(isbn)
 
 
 
-    autore = autore.replace(/^.*:/, "");
-    titolo = titolo.replace(/^.*:/, "");
-    casa_editrice = casa_editrice.replace(/^.*:/, "");
+    autore = autore.replace(/^.*:/,"");
+    titolo = titolo.replace(/^.*:/,"");
+    casa_editrice = casa_editrice.replace(/^.*:/,"");
     prezzo = prezzo.replace(/^.*:/, "");
-    prezzo_acquisto = prezzo_acquisto.replace(/^.*:/, "");
-    anno_acquisto = anno_acquisto.replace(/^.*:/, "");
-    copertina = copertina.replace(/^.*:/, "");
-    quantita = quantita.replace(/^.*:/, "");
-    locazione = locazione.replace(/^.*:/, "");
+    prezzo_acquisto = prezzo_acquisto.replace(/^.*:/,"");
+    anno_acquisto = anno_acquisto.replace(/^.*:/,"");
+    copertina = copertina.replace(/^.*:/,"");
+    quantita = quantita.replace(/^.*:/,"");
+    locazione = locazione.replace(/^.*:/,"");
 
     window.location.href = 'modifica_libro.html.php?isbn='+isbn+'&autore='+autore+'&titolo='+titolo+'&casa_editrice='+casa_editrice+'&prezzo='+prezzo+'&prezzo_acquisto='+prezzo_acquisto+'&anno_acquisto='+anno_acquisto+'&quantita='+quantita+'&locazione='+locazione;
 

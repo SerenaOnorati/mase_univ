@@ -103,7 +103,7 @@
                                         <div class="3u">
                                             <label id="locazione<?php echo $risultato['isbn']; ?>" for="locazione<?php echo $risultato['isbn']; ?>" class="text">Locazione:&nbsp;<?php echo $risultato['locazione']; ?></label>
                                             <label id="prezzo<?php echo $risultato['isbn']; ?>" for="prezzo<?php echo $risultato['isbn']; ?>" class="text">Prezzo:&nbsp;<?php echo $risultato['prezzo']; ?></label>
-                                            <label id="prezzoacquisto<?php echo $risultato['isbn']; ?>" for="prezzoacquisto<?php echo $risultato['isbn']; ?>" class="text">Prezzo acq:</label>
+                                            <label id="prezzoacquisto<?php echo $risultato['isbn']; ?>" for="prezzoacquisto<?php echo $risultato['isbn']; ?>" class="text">Prezzo acq:&nbsp;<?php echo $risultato['prezzo_acquisto']; ?></label>
                                             <label id="data<?php echo $risultato['isbn']; ?>" for="data<?php echo $risultato['isbn']; ?>" class="text">DATA:&nbsp;<?php echo $risultato['anno_acquisto']; ?></label>
                                             <a href="upload/images/copertina<?php echo $risultato['copertina']; ?>" target="_blank" class="fa fa-file-o" id="copertina<?php echo $risultato['isbn']; ?>" title="Modifica">Copertina</a><br>
 

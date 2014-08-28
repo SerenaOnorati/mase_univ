@@ -161,6 +161,12 @@
                             </div>
                             <div class="row">
                                 <div class="3u">
+                                    <h3 style="color: #ed786a">Prezzo Acquisto</h3>
+                                </div>
+                                <div class="3u">
+                                    <input id="insprezzoa" name="insprezzoa" placeholder="Inserisci Prezzo acquisto" type="text" class="text" value="">
+                                </div>
+                                <div class="3u">
                                     <h3 style="color: #ed786a">Copertina</h3>
                                 </div>
                                 <div class="3u">

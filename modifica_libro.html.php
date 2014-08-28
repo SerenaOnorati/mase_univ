@@ -124,7 +124,14 @@
                                             {
                                                 echo "<select id=\"case_editrici\" name=\"case_editrici\">";
                                                 foreach ($case_editrici as $case_editrice):
-                                                    echo "<option value=\"".$case_editrice['id_casa_editrice']."\">".$case_editrice['nome']."</option>";
+                                                    $error  = strcmp(trim($_GET['casa_editrice']), $case_editrice['nome']);
+                                                    echo "<script language=\"JavaScript\">\n";
+                                                    echo "alert(\"$error\");\n";
+                                                    echo "</script>";
+                                                    if(strcmp($_GET['casa_editrice'],$case_editrice['nome']) == 0 )
+                                                        echo "<option value=\"".$case_editrice['id_casa_editrice']."\"selected=\"selected\" >".$case_editrice['nome']."</option>";
+                                                    else
+                                                        echo "<option value=\"".$case_editrice['id_casa_editrice']."\">".$case_editrice['nome']."</option>";
                                                 endforeach;
                                                 echo "</select>";
                                             }
@@ -159,6 +166,12 @@
                                     </div>
                                 </div>
                                 <div class="row">
+                                    <div class="3u">
+                                        <h3 style="color: #ed786a">Prezzo Acquisto</h3>
+                                    </div>
+                                    <div class="3u">
+                                        <input id="prezzoa" name="prezzoa" type="text" class="text" value="<?php echo $_GET['prezzo_acquisto']?>">
+                                    </div>
                                     <div class="3u">
                                         <h3 style="color: #ed786a">Copertina</h3>
                                     </div>
