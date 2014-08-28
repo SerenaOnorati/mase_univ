@@ -2,7 +2,7 @@
 <form action="logout.php" method="post" id="formlogout">
     <p style="text-align: right">
         <script type="text/javascript">
-            function submitform()
+            function submitformLogout()
             {
                 this.document.forms["formlogout"].submit();
             }
@@ -14,7 +14,7 @@
             ?>
         </a>
         <input type="hidden" name="action" value="logout">
-        <a href="javascript: submitform()" class="fa fa-sign-out" title="Logout">Logout</a><br>
+        <a href="javascript: submitformLogout()" class="fa fa-sign-out" title="Logout">Logout</a><br>
     </p>
 </form>
 <!-- Nav -->

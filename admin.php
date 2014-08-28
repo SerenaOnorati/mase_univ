@@ -58,8 +58,8 @@
         <!-- Main -->
         <div id="main" class="container">
             <?php
-                if(isset($_GET['risultato']))
-                    echo "<h3 style=\"color: #ed786a\">".$_GET['risultato']."</h3>";
+                if(isset($_GET['ricercafallita']))
+                    echo "<h3 style=\"color: #ed786a\">".$_GET['ricercafallita']."</h3>";
                 include 'ricerca.html.php';
 
             ?>

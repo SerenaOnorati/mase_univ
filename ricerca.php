@@ -69,8 +69,9 @@
         }
         if($titolo == "%%" && $autore == "%%" && $locazione == "%%" && $casaeditrice == "%%" && $isbn == "%%" && $anno_acquisto == "%%")
         {
-            $risultato = 'Per favore inserire i parametri per la ricerca';
-            header("Location: admin.php?risultato=$risultato");
+            $ricercafallita = 'Per favore inserire i parametri per la ricerca';
+            header("Location: admin.php?ricercafallita=$ricercafallita");
+            exit();
         }
         else
         {
@@ -103,13 +104,15 @@
             if(!empty($risultati))
             {
                 $GLOBALS['risultati'] = $risultati;
-                include 'daordinare.html.php';
 
             }
-            else{
-                $risultato = 'La ricerca non ha prodotto risultati';
-                header("Location: admin.php?risultato=$risultato");
+            else
+            {
+                $ricercafallita = 'La ricerca non ha prodotto risultati';
+                header("Location: admin.php?ricercafallita=$ricercafallita");
+                exit();
             }
+            include 'daordinare.html.php';
         }
     }
 ?>
