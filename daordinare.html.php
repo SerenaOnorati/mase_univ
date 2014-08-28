@@ -16,6 +16,8 @@
         <script src="js/skel.min.js"></script>
         <script src="js/skel-panels.min.js"></script>
         <script src="js/utente.js"></script>
+        <script src="js/ordini.js"></script>
+
         <noscript>
             <link rel="stylesheet" href="css/skel-noscript.css" />
             <link rel="stylesheet" href="css/style.css" />
@@ -111,7 +113,7 @@
                                             <input id="qtaord<?php echo $risultato['isbn']; ?>" name="qtaord" type="text" class="text" placeholder="Qta Ord">
                                         </div>
                                         <div class="2u">
-                                            <a href="" class="fa fa-edit" id="modifica" title="Modifica">Modifica</a><br>
+                                            <a href="javascript: modificaLibroDaordinare(<?php echo $risultato['isbn']; ?>)" class="fa fa-edit" id="modifica" title="Modifica">Modifica</a><br>
                                             <a href="" class="fa fa-times" id="cancella" title="Cancella">Cancella</a><br>
                                             <a href="" class="fa fa-plus" id="ordina" title="Ordina">Ordinato</a>
                                         </div>
@@ -125,7 +127,7 @@
                             <ul class="actions" style="align-content: center!important">
                                 <li>
                                     <a href="" class="button button-icon fa fa-print">Stampa</a>
-                                    <a href="" class="button button-icon fa fa-trash-o">svuota</a>
+                                    <a href="" class="button button-icon fa fa-trash-o">Svuota</a>
                                 </li>
                             </ul>
                         </form>
