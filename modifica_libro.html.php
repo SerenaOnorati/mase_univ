@@ -124,10 +124,6 @@
                                             {
                                                 echo "<select id=\"case_editrici\" name=\"case_editrici\">";
                                                 foreach ($case_editrici as $case_editrice):
-                                                    $error  = strcmp(trim($_GET['casa_editrice']), $case_editrice['nome']);
-                                                    echo "<script language=\"JavaScript\">\n";
-                                                    echo "alert(\"$error\");\n";
-                                                    echo "</script>";
                                                     if(strcmp($_GET['casa_editrice'],$case_editrice['nome']) == 0 )
                                                         echo "<option value=\"".$case_editrice['id_casa_editrice']."\"selected=\"selected\" >".$case_editrice['nome']."</option>";
                                                     else

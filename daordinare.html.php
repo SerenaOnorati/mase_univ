@@ -88,11 +88,11 @@
                                 <form action="" method="post" onsubmit="return false">
                                     <div class="row">
                                         <div class="5u">
-                                            <label id="titolo<?php echo $risultato['isbn']; ?>" for="titolo<?php echo $risultato['isbn']; ?>" class="text">TITOLO:&nbsp;<?php echo $risultato['titolo']; ?></label>
-                                            <label id="autore<?php echo $risultato['isbn']; ?>" for="autore<?php echo $risultato['isbn']; ?>" class="text">AUTORE:&nbsp;<?php echo $risultato['autore']; ?></label>
-                                            <label id="casaeditrice<?php echo $risultato['isbn']; ?>" for="casaeditrice<?php echo $risultato['isbn']; ?>" class="text">CASA ED.:&nbsp;<?php echo $risultato['nome']; ?></label>
-                                            <label id="distributore<?php echo $risultato['isbn']; ?>" for="distributore<?php echo $risultato['isbn']; ?>" class="text">DISTR.:&nbsp;<?php echo $risultato['nome_distributore']; ?></label>
-                                            <label id="isbn<?php echo $risultato['isbn']; ?>" for="isbn<?php echo $risultato['isbn']; ?>" class="text">ISBN:&nbsp;<?php echo $risultato['isbn']; ?></label>
+                                            <label id="titolo<?php echo $risultato['isbn']; ?>" for="titolo<?php echo $risultato['isbn']; ?>" class="text">TITOLO&nbsp;:<?php echo $risultato['titolo']; ?></label>
+                                            <label id="autore<?php echo $risultato['isbn']; ?>" for="autore<?php echo $risultato['isbn']; ?>" class="text">AUTORE&nbsp;:<?php echo $risultato['autore']; ?></label>
+                                            <label id="casaeditrice<?php echo $risultato['isbn']; ?>" for="casaeditrice<?php echo $risultato['isbn']; ?>" class="text">CASA ED.&nbsp;:<?php echo $risultato['nome']; ?></label>
+                                            <label id="distributore<?php echo $risultato['isbn']; ?>" for="distributore<?php echo $risultato['isbn']; ?>" class="text">DISTR.&nbsp;:<?php echo $risultato['nome_distributore']; ?></label>
+                                            <label id="isbn<?php echo $risultato['isbn']; ?>" for="isbn<?php echo $risultato['isbn']; ?>" class="text">ISBN&nbsp;:<?php echo $risultato['isbn']; ?></label>
 
                                             <!--<input id="titolo<?php echo $risultato['isbn']; ?>" name="titolo" type="text" class="text" value="<?php echo $risultato['titolo']; ?>">
                                             <input id="autore<?php echo $risultato['isbn']; ?>" name="autore" type="text" class="text" value="<?php echo $risultato['autore']; ?>">
@@ -101,15 +101,15 @@
 
                                         </div>
                                         <div class="3u">
-                                            <label id="locazione<?php echo $risultato['isbn']; ?>" for="locazione<?php echo $risultato['isbn']; ?>" class="text">Locazione:&nbsp;<?php echo $risultato['locazione']; ?></label>
-                                            <label id="prezzo<?php echo $risultato['isbn']; ?>" for="prezzo<?php echo $risultato['isbn']; ?>" class="text">Prezzo:&nbsp;<?php echo $risultato['prezzo']; ?></label>
-                                            <label id="prezzoacquisto<?php echo $risultato['isbn']; ?>" for="prezzoacquisto<?php echo $risultato['isbn']; ?>" class="text">Prezzo acq:&nbsp;<?php echo $risultato['prezzo_acquisto']; ?></label>
-                                            <label id="data<?php echo $risultato['isbn']; ?>" for="data<?php echo $risultato['isbn']; ?>" class="text">DATA:&nbsp;<?php echo $risultato['anno_acquisto']; ?></label>
+                                            <label id="locazione<?php echo $risultato['isbn']; ?>" for="locazione<?php echo $risultato['isbn']; ?>" class="text">Locazione&nbsp;:<?php echo $risultato['locazione']; ?></label>
+                                            <label id="prezzo<?php echo $risultato['isbn']; ?>" for="prezzo<?php echo $risultato['isbn']; ?>" class="text">Prezzo&nbsp;:<?php echo $risultato['prezzo']; ?></label>
+                                            <label id="prezzoacquisto<?php echo $risultato['isbn']; ?>" for="prezzoacquisto<?php echo $risultato['isbn']; ?>" class="text">Prezzo acq&nbsp;:<?php echo $risultato['prezzo_acquisto']; ?></label>
+                                            <label id="data<?php echo $risultato['isbn']; ?>" for="data<?php echo $risultato['isbn']; ?>" class="text">DATA&nbsp;:<?php echo $risultato['anno_acquisto']; ?></label>
                                             <a href="upload/images/copertina<?php echo $risultato['copertina']; ?>" target="_blank" class="fa fa-file-o" id="copertina<?php echo $risultato['isbn']; ?>" title="Modifica">Copertina</a><br>
 
                                         </div>
                                         <div class="2u">
-                                            <label id="qtamag<?php echo $risultato['isbn']; ?>" for="qtamag<?php echo $risultato['isbn']; ?>">Qta Mag:&nbsp;<?php echo $risultato['quantita']; ?></label>
+                                            <label id="qtamag<?php echo $risultato['isbn']; ?>" for="qtamag<?php echo $risultato['isbn']; ?>">Qta Mag&nbsp;:<?php echo $risultato['quantita']; ?></label>
                                             <input id="qtaord<?php echo $risultato['isbn']; ?>" name="qtaord" type="text" class="text" placeholder="Qta Ord">
                                         </div>
                                         <div class="2u">
