@@ -62,7 +62,7 @@
                     <div id="content" class="12u skel-cell-important">
                         <!-- Post -->
                         <article class="is-post" style="align-content: center">
-                            <form method="get" action="modifica_libro.php" name="modifica_libro" onsubmit="return false">
+                            <form method="post" action="" name="modifica_libro" onsubmit="return false">
                                 <header>
                                     <div><br><h2>Modifica libro</h2></div>
                                 </header>
@@ -123,6 +123,7 @@
                                             if(!empty($case_editrici))
                                             {
                                                 echo "<select id=\"case_editrici\" name=\"case_editrici\">";
+
                                                 foreach ($case_editrici as $case_editrice):
                                                     $error  = strcmp(trim($_GET['casa_editrice']), $case_editrice['nome']);
                                                     echo "<script language=\"JavaScript\">\n";
@@ -183,7 +184,7 @@
                                 <br>
                                 <ul class="actions" style="align-content: center!important">
                                     <li>
-                                        <a href="" class="button button-icon fa fa-plus">Modifica</a>
+                                        <a href="javascript: salvaModificaLibro(<?php echo $_GET['isbn'] ?>)" class="button button-icon fa fa-save">Salva Modifica</a>
                                     </li>
                                 </ul>
                             </form>
