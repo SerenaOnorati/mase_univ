@@ -167,12 +167,13 @@
                                         <h3 style="color: #ed786a">Prezzo Acquisto</h3>
                                     </div>
                                     <div class="3u">
-                                        <input id="prezzoa" name="prezzoa" type="text" class="text" value="<?php echo $_GET['prezzo_acquisto']?>">
+                                        <input id="prezzoacquisto" name="prezzoacquisto" type="text" class="text" value="<?php echo $_GET['prezzo_acquisto']?>">
                                     </div>
                                     <div class="3u">
                                         <h3 style="color: #ed786a">Copertina</h3>
                                     </div>
                                     <div class="3u">
+                                        <input type="hidden" id="copertina_old" value="<?php echo $_GET['copertina']; ?>">
                                         <label id="copertina" for="url" class="floated">Inserisci la copertina del libro: </label>
                                         <input type="file" id="url" name="url" multiple><br>
                                     </div>

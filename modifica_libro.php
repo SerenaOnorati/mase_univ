@@ -32,7 +32,7 @@
             }
             catch (PDOException $e)
             {
-                $error = 'Errore in modifica dati utente.';
+                $error = 'Errore in modifica campi libro.';
                 echo $error;
                 exit();
             }
