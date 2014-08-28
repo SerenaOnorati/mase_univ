@@ -51,7 +51,6 @@
                                     <div class="10u">
                                         <div><br><h2>Risultato ricerca titoli</h2></div>
                                         <br>
-                                        <h2 style="text-align: left !important; color: #ed786a"><?php if(isset($error)) echo $error;?></h2>
                                     </div>
                                     <div class="2u">
                                         <p>Ordina per</p>

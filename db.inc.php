@@ -8,7 +8,7 @@
 
 
      //parametri connessione al database
-    /* $host = "sql41.securesites.it";
+     /*$host = "sql41.securesites.it";
      $db_name = "unipass_it";
      $db_user = "a_2632";
      $db_psw = "aqT4wqbJ";*/
