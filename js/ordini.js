@@ -73,7 +73,7 @@ function modificaSalvaLibro(nomeSelect)
     var id_casa_editrice = nomeSelect.options[nomeSelect.selectedIndex].value;
     var prezzo = document.getElementById('prezzo').value;
     var prezzo_acquisto = document.getElementById('prezzo_acquisto').value;
-    var anno_acquisto = document.getElementById('data').value;
+    var anno_acquisto = document.getElementById('anno_acquisto').value;
     var path = $("#url").val();
     var copertina = path.replace(/^.*\\/, "");
     var quantita = document.getElementById('quantita').value;
@@ -83,14 +83,21 @@ function modificaSalvaLibro(nomeSelect)
 
     var autore_old = document.getElementById('autore_old').value;
     var titolo_old = document.getElementById('titolo_old').value;
-    var casa_editrice_old = document.getElementById('casa_editrice_old').value;
+    var id_casa_editrice_old = nomeSelect.options[nomeSelect.selectedIndex].value;
     var prezzo_old = document.getElementById('prezzo_old').value;
     var prezzo_acquisto_old = document.getElementById('prezzo_acquisto_old').value;
-    var anno_acquisto_old = document.getElementById('data_old').value;
+    var anno_acquisto_old = document.getElementById('anno_acquisto_old').value;
     var copertina_old = document.getElementById('copertina_old').val();
     var quantita_old = document.getElementById('quantita_old').value;
     var locazione_old = document.getElementById('locazione').value;
-    var id_casa_editrice_old = nomeSelect.options[nomeSelect.selectedIndex].value;
+
+    //attivo le input
+    
+
+    if(autore == autore_old && titolo == titolo_old && id_casa_editrice == id_casa_editrice_old && prezzo == prezzo_old && prezzo_acquisto == prezzo_acquisto_old && anno_acquisto == anno_acquisto_old && copertina == copertina_old && quantita == quantita_old && locazione == locazione_old)
+    {
+        alert("Non ci sono modifiche da salvare!");
+    }
 
 
 

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c62a4eec-d582-4e13-b7e5-eef246bc66c3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modifica_libro.html.php" afterPath="$PROJECT_DIR$/modifica_libro.html.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/ordini.js" afterPath="$PROJECT_DIR$/js/ordini.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -73,7 +72,7 @@
       <file leaf-file-name="ordini.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/ordini.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="52" selection-start="3408" selection-end="3408" vertical-scroll-proportion="0.25137615" vertical-offset="1189" max-vertical-offset="1734">
+            <state line="94" column="4" selection-start="4176" selection-end="4176" vertical-scroll-proportion="0.906422" vertical-offset="1104" max-vertical-offset="1853">
               <folding />
             </state>
           </provider>
@@ -204,8 +203,8 @@
         <option value="$PROJECT_DIR$/ricerca.php" />
         <option value="$PROJECT_DIR$/modifica_libro.php" />
         <option value="$PROJECT_DIR$/daordinare.html.php" />
-        <option value="$PROJECT_DIR$/js/ordini.js" />
         <option value="$PROJECT_DIR$/modifica_libro.html.php" />
+        <option value="$PROJECT_DIR$/js/ordini.js" />
       </list>
     </option>
   </component>
@@ -927,7 +926,11 @@
       <created>1409237106330</created>
       <updated>1409237106330</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="variabili">
+      <created>1409238595000</created>
+      <updated>1409238595000</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -969,7 +972,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="altre modifiche varie 6" />
     <MESSAGE value="inserimento_news_aggiungi&#10;inserimento_news_cancella&#10;utenti_registrati_cancella" />
     <MESSAGE value="utente_registrato_modifica" />
     <MESSAGE value="menuUser e pagina user per il logout" />
@@ -994,7 +996,8 @@
     <MESSAGE value="implementatato l'inserimento dei libri" />
     <MESSAGE value="ricerca corretta" />
     <MESSAGE value="copertina" />
-    <option name="LAST_COMMIT_MESSAGE" value="copertina" />
+    <MESSAGE value="variabili" />
+    <option name="LAST_COMMIT_MESSAGE" value="variabili" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1284,7 +1287,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/ordini.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="52" selection-start="3408" selection-end="3408" vertical-scroll-proportion="0.25137615" vertical-offset="1189" max-vertical-offset="1734">
+        <state line="94" column="4" selection-start="4176" selection-end="4176" vertical-scroll-proportion="0.906422" vertical-offset="1104" max-vertical-offset="1853">
           <folding />
         </state>
       </provider>
