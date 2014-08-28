@@ -132,7 +132,7 @@
                                                     if(strcmp($_GET['casa_editrice'],$case_editrice['nome']) == 0 )
                                                     {
                                                         echo "<option value=\"".$case_editrice['id_casa_editrice']."\"selected=\"selected\" >".$case_editrice['nome']."</option>";
-                                                        echo "<input type=\"hidden\" id=\"casa_editrice_old\" value=\"".$case_editrice['id_casa_editrice']."\">";
+                                                        echo "<input type = \"hidden\" id=\"id_casa_editrice_old\" value=\"".$case_editrice['id_casa_editrice']."\">";
                                                     }
                                                     else
                                                         echo "<option value=\"".$case_editrice['id_casa_editrice']."\">".$case_editrice['nome']."</option>";
@@ -178,21 +178,24 @@
                                     </div>
                                     <div class="3u">
                                         <input type="hidden" id="prezzo_acquisto_old" value="<?php echo $_GET['prezzo_acquisto']; ?>">
-                                        <input id="prezzoacquisto" name="prezzoacquisto" type="text" class="text" value="<?php echo $_GET['prezzo_acquisto']?>">
+                                        <input id="prezzo_acquisto" name="prezzo_acquisto" type="text" class="text" value="<?php echo $_GET['prezzo_acquisto']?>">
                                     </div>
                                     <div class="3u">
                                         <h3 style="color: #ed786a">Copertina</h3>
                                     </div>
                                     <div class="3u">
-                                        <input type="hidden" id="copertina_old" value="<?php echo $_GET['copertina']; ?>">
+                                        <!--<input type="hidden" id="copertina_old" value="<?php echo $_GET['copertina']; ?>">
                                         <label id="copertina" for="url" class="floated">Inserisci la copertina del libro: </label>
-                                        <input type="file" id="url" name="url" multiple><br>
+                                        <input type="file" id="<?php echo $_GET['copertina']; ?>" name="url" multiple><br>-->
                                     </div>
                                 </div>
                                 <br>
                                 <ul class="actions" style="align-content: center!important">
                                     <li>
-                                        <a href="javascript: salvaModificaLibro(case_editrici)" class="button button-icon fa fa-save">Salva Modifica</a>
+                                        <a href="javascript: modificaSalvaLibro(case_editrici)" class="button button-icon fa fa-save">Salva Modifica</a>
+                                    </li>
+                                    <li>
+                                        <a href="admin.php" class="button button-icon fa fa-backward">Indietro</a>
                                     </li>
                                 </ul>
                             </form>

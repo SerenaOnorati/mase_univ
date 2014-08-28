@@ -70,33 +70,32 @@ function modificaLibroDaordinare(isbn)
 function modificaSalvaLibro(nomeSelect)
 {
 
-    var isbn = document.getElementsByName('isbn').vaue;
-    var autore = document.getElementById('autore').value;
-    var titolo = document.getElementById('titolo').value;
+    var isbn = $("#isbn").val();
+    var autore = $("#autore").val();
+    var titolo = $("#titolo").val();
     var id_casa_editrice = nomeSelect.options[nomeSelect.selectedIndex].value;
-    var prezzo = document.getElementById('prezzo').value;
-    var prezzo_acquisto = document.getElementById('prezzo_acquisto').value;
-    var anno_acquisto = document.getElementById('anno_acquisto').value;
-    var path = $("#url").val();
-    var copertina = path.replace(/^.*\\/, "");
-    var quantita = document.getElementById('quantita').value;
-    var locazione = document.getElementById('locazione').value;
+    var prezzo = $("#prezzo").val();
+    var prezzo_acquisto = $("#prezzo_acquisto").val();
+    var anno_acquisto = $("#anno_acquisto").val();
+    //var path = $("#url").val();
+    //var copertina = path.replace(/^.*\\/, "");
+    var quantita = $("#quantita").val();
+    var locazione = $("#locazione").val();
 
-    var isbn_old = document.getElementsByName('isbn_old').vaue;
-    var autore_old = document.getElementById('autore_old').value;
-    var titolo_old = document.getElementById('titolo_old').value;
-    var id_casa_editrice_old = nomeSelect.options[nomeSelect.selectedIndex].value;
-    var prezzo_old = document.getElementById('prezzo_old').value;
-    var prezzo_acquisto_old = document.getElementById('prezzo_acquisto_old').value;
-    var anno_acquisto_old = document.getElementById('anno_acquisto_old').value;
-    var copertina_old = document.getElementById('copertina_old').val();
-    var quantita_old = document.getElementById('quantita_old').value;
-    var locazione_old = document.getElementById('locazione').value;
+    var isbn_old = $("#isbn_old").val();
+    var autore_old = $("#autore_old").val();
+    var titolo_old = $("#titolo_old").val();
+    var id_casa_editrice_old = $("#id_casa_editrice_old").val();
+    var prezzo_old = $("#prezzo_old").val();
+    var prezzo_acquisto_old = $("#prezzo_acquisto_old").val();
+    var anno_acquisto_old = $("#anno_acquisto_old").val();
+    //var copertina_old = $("#copertina_old").val();
+    var quantita_old = $("#quantita_old").val();
+    var locazione_old = $("#locazione_old").val();
 
 
-    if(autore.length != 0 && isbn.length != 0  && titolo.length != 0 && copertina.length != 0 && locazione.length != 0 && prezzo.length != 0 && prezzoa.length != 0 && quantita.length != 0 && anno.length != 0 && id_casa_editrice.length != 0)
+    if(autore.length != 0 && isbn.length != 0 && titolo.length != 0 && locazione.length != 0 && prezzo.length != 0 && prezzo_acquisto.length != 0 && quantita.length != 0 && anno_acquisto.length != 0 && id_casa_editrice.length != 0)
     {
-
         if(autore == autore_old && titolo == titolo_old && id_casa_editrice == id_casa_editrice_old && prezzo == prezzo_old && prezzo_acquisto == prezzo_acquisto_old && anno_acquisto == anno_acquisto_old && copertina == copertina_old && quantita == quantita_old && locazione == locazione_old)
         {
             alert("Non ci sono modifiche da salvare!");
@@ -104,29 +103,69 @@ function modificaSalvaLibro(nomeSelect)
 
         else
         {
-            $.ajax({
-                type: 'POST',
-                url: 'modifica_salva_libro.php',
-                data: "autore="+autore+"&isbn="+isbn+"&isbn_old="+isbn+"&titolo="+titolo+"&copertina="+copertina+"&locazione="+locazione+"&prezzo="+prezzo+"&prezzo_acquisto="+prezzo_acquisto+"&quantita="+quantita+"&anno_acquisto="+anno_acquisto+"&id_casa_editrice="+id_casa_editrice,
-                dataType: "html",
+            var check = confirm("Sei sicuro di voler salvare le modifiche?");
+            if(check == true)
+            {
+                $.ajax({
+                    type: 'POST',
+                    url: 'modifica_salva_libro.php',
+                    data: "autore="+autore+"&isbn="+isbn+"&isbn_old="+isbn+"&titolo="+titolo+"&locazione="+locazione+"&prezzo="+prezzo+"&prezzo_acquisto="+prezzo_acquisto+"&quantita="+quantita+"&anno_acquisto="+anno_acquisto+"&id_casa_editrice="+id_casa_editrice,
+                    dataType: "html",
 
-                success: function(response)
-                {
-                    alert(response);
-                    location.window.reload();
-                },
-                error: function()
-                {
-                    alert("Le modifiche non sono state salvate.");
-                }
-            });
+                    success: function(response)
+                    {
+                        alert(response);
+                    },
+                    error: function()
+                    {
+                        alert("Le modifiche non sono state salvate.");
+                    }
+                });
+            }
+            else
+            {
+                isbn = isbn_old;
+                autore = autore_old;
+                titolo = titolo_old;
+                id_casa_editrice = id_casa_editrice_old;
+                prezzo = prezzo_old;
+                prezzo_acquisto = prezzo_acquisto_old;
+                anno_acquisto = anno_acquisto_old;
+                quantita = quantita_old;
+                locazione = locazione_old;
+                window.location.reload();
+
+            }
         }
     }
     else
     {
-        alert("Per favore compilare tutti i campi.")
+        alert("Alcuni o tutti i campi sono vuoti, completare i campi.");
     }
+}
 
+function cancellaLibro(isbn)
+{
+    var check = confirm("Sei sicuro di voler cancellare il libro?");
+    if(check == true)
+    {
+        $.ajax({
+            type: 'POST',
+            url: 'cancella_libri.php',
+            data: "isbn="+isbn,
+            dataType: "html",
 
+            success: function(response)
+            {
+                var riga = document.getElementById('row'+isbn);
+                riga.style.display = 'none';
+                alert(response);
 
+            },
+            error: function()
+            {
+                alert("La cancellazione non è andata a buon fine.");
+            }
+        });
+    }
 }

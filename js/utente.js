@@ -162,7 +162,7 @@ function cancellaUtente(id)
             },
             error: function()
             {
-                alert("Cancellazione fallita");
+                alert("La cancellazione non è andata a buon fine.");
             }
         });
     }
