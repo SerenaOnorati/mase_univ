@@ -10,7 +10,7 @@
         Benvenuto,
         <a href="dati_utente.php">
             <?php
-                echo $_SESSION['email'];
+            echo $_SESSION['email'];
             ?>
         </a>
         <input type="hidden" name="action" value="logout">

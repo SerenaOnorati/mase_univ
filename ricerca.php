@@ -69,11 +69,12 @@
         }
         if($titolo == "%%" && $autore == "%%" && $locazione == "%%" && $casaeditrice == "%%" && $isbn == "%%" && $anno_acquisto == "%%")
         {
-            include 'admin.php';
 
-            echo "<script language=\"JavaScript\">\n";
+            /*echo "<script language=\"JavaScript\">\n";
             echo "alert(\"Per favore inserire i parametri per la ricerca\");\n";
-            echo "</script>";
+            echo "</script>";*/
+            $risultato = 'Per favore inserire i parametri per la ricerca';
+            header("Location: admin.php?risultato=$risultato");
         }
         else
         {

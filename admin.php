@@ -2,20 +2,19 @@
     include 'access.inc.php';
     include 'configuration.php';
 
-    if(!isset($ricarico))
-    {
-        if(!userIsLoggedIn())
-        {
-            $GLOBALS['loginError'] = "Non hai effettuato il login. Inserire email e password";
-            include 'index.php';
-        }
-        if(!userHasRole('Amministratore'))
-        {
 
-            $GLOBALS['loginError'] = "Non sei autorizzato ad accedere alla pagina di amministrazione";
-            include 'index.php';
-        }
+    if(!userIsLoggedIn())
+    {
+        $GLOBALS['loginError'] = "Non hai effettuato il login. Inserire email e password";
+        include 'index.php';
     }
+    if(!userHasRole('Amministratore'))
+    {
+
+        $GLOBALS['loginError'] = "Non sei autorizzato ad accedere alla pagina di amministrazione";
+        include 'index.php';
+    }
+
 
 ?>
 
@@ -59,6 +58,8 @@
         <!-- Main -->
         <div id="main" class="container">
             <?php
+                if(isset($_GET['risultato']))
+                    echo "<h3 style=\"color: #ed786a\">".$_GET['risultato']."</h3>";
                 include 'ricerca.html.php';
 
             ?>
