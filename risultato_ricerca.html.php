@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>Area Privata - Risultato Ricerca</title>
+        <title>Area Privata - Da ordinare</title>
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <meta name="description" content="" />
@@ -88,25 +88,25 @@
                                             <input type="hidden" id="copertina<?php echo $risultato['isbn']; ?>" value="<?php echo $risultato['copertina']; ?>">
                                             <div id="copertinalink<?php echo $risultato['isbn']; ?>"  class="image">
                                                 <?php
-                                                    $slash = "\\";
-                                                    $copertina = $risultato['copertina'];
-                                                    if(strcmp($copertina, $slash) != 0)
-                                                    {
-                                                        echo "
-                                                            <a href=\"upload/images/copertina".$copertina."\" target=\"_blank\">
-                                                                <img src=\"upload/images/copertina".$copertina."\">
-                                                            </a>
-                                                            ";
-                                                    }
-                                                    else
-                                                    {
-                                                        $copertina = "\\non_trovata.jpg" ;
-                                                        echo "
-                                                            <a href=\"upload/images/copertina".$copertina."\" target=\"_blank\">
-                                                                <img src=\"upload/images/copertina".$copertina."\">
-                                                            </a>
-                                                            ";
-                                                    }
+                                                $slash = "\\";
+                                                $copertina = $risultato['copertina'];
+                                                if(strcmp($copertina, $slash) != 0)
+                                                {
+                                                    echo "
+                                                                <a href=\"upload/images/copertina".$copertina."\" target=\"_blank\">
+                                                                    <img src=\"upload/images/copertina".$copertina."\">
+                                                                </a>
+                                                                ";
+                                                }
+                                                else
+                                                {
+                                                    $copertina = "\\non_trovata.jpg" ;
+                                                    echo "
+                                                                <a href=\"upload/images/copertina".$copertina."\" target=\"_blank\">
+                                                                    <img src=\"upload/images/copertina".$copertina."\">
+                                                                </a>
+                                                                ";
+                                                }
                                                 ?>
 
                                             </div>
@@ -123,7 +123,6 @@
                                             <label id="prezzo<?php echo $risultato['isbn']; ?>" for="prezzo<?php echo $risultato['isbn']; ?>" class="text"><strong style="color: lightseagreen">Prezzo&nbsp;:</strong><?php echo $risultato['prezzo']; ?></label>
                                             <label id="prezzoacquisto<?php echo $risultato['isbn']; ?>" for="prezzoacquisto<?php echo $risultato['isbn']; ?>" class="text"><strong style="color: lightseagreen">Prezzo acq&nbsp;:</strong><?php echo $risultato['prezzo_acquisto']; ?></label>
                                             <label id="data<?php echo $risultato['isbn']; ?>" for="data<?php echo $risultato['isbn']; ?>" class="text"><strong style="color: lightseagreen">DATA&nbsp;:</strong><?php echo $risultato['anno_acquisto']; ?></label>
-
 
                                         </div>
                                         <div class="2u">
@@ -158,4 +157,3 @@
     </div>
     </body>
 </html>
-

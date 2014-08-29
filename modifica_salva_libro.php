@@ -31,8 +31,8 @@
             try
             {
                 $sql = 'UPDATE libro SET isbn =:isbn, autore =:autore, titolo =:titolo, copertina =:copertina, locazione =:locazione,
-                 prezzo =:prezzo, prezzo_acquisto =:prezzo_acquisto, quantita =:quantita, anno_acquisto =:anno_acquisto,
-                id_casa_editrice =:id_casa_editrice WHERE isbn= :isbn_old';
+                     prezzo =:prezzo, prezzo_acquisto =:prezzo_acquisto, quantita =:quantita, anno_acquisto =:anno_acquisto,
+                    id_casa_editrice =:id_casa_editrice WHERE isbn= :isbn_old';
 
                 $s = $pdo->prepare($sql);
                 $s->bindValue(':isbn', $isbn, PDO::PARAM_INT);
