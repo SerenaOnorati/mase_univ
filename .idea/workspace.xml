@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c62a4eec-d582-4e13-b7e5-eef246bc66c3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modifica_libro.html.php" afterPath="$PROJECT_DIR$/modifica_libro.html.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modifica_salva_libro.php" afterPath="$PROJECT_DIR$/modifica_salva_libro.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/ordini.js" afterPath="$PROJECT_DIR$/js/ordini.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/risultato_ricerca.html.php" afterPath="$PROJECT_DIR$/risultato_ricerca.html.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mase_univ.iws" />
@@ -98,19 +94,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ordini.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ordini.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/ordini.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="147" column="41" selection-start="6243" selection-end="6243" vertical-scroll-proportion="0.0" vertical-offset="1785" max-vertical-offset="5185">
+            <state line="147" column="41" selection-start="6243" selection-end="6243" vertical-scroll-proportion="-0.008474576" vertical-offset="2504" max-vertical-offset="5185">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="modifica_salva_libro.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="modifica_salva_libro.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modifica_salva_libro.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="5" selection-start="11" selection-end="2705" vertical-scroll-proportion="0.9116118" vertical-offset="545" max-vertical-offset="1190">
+            <state line="43" column="50" selection-start="1949" selection-end="1949" vertical-scroll-proportion="-7.1538463" vertical-offset="545" max-vertical-offset="1190">
               <folding />
             </state>
           </provider>
@@ -831,7 +827,11 @@
       <created>1409321217801</created>
       <updated>1409321217801</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="terminato da ordinare - risultati ricerca">
+      <created>1409326677727</created>
+      <updated>1409326677727</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -896,7 +896,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="php vari" />
     <MESSAGE value="ricerca in admin" />
     <MESSAGE value="ricerca in admin con controllo" />
     <MESSAGE value="ricerca button" />
@@ -921,7 +920,8 @@
     <MESSAGE value="slash" />
     <MESSAGE value="immagine non_trovata" />
     <MESSAGE value="tasto indietro completato" />
-    <option name="LAST_COMMIT_MESSAGE" value="tasto indietro completato" />
+    <MESSAGE value="terminato da ordinare - risultati ricerca" />
+    <option name="LAST_COMMIT_MESSAGE" value="terminato da ordinare - risultati ricerca" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1212,13 +1212,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/ordini.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="41" selection-start="6243" selection-end="6243" vertical-scroll-proportion="0.0" vertical-offset="1785" max-vertical-offset="5185">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modifica_libro.html.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="187" column="0" selection-start="10892" selection-end="10892" vertical-scroll-proportion="-4.1153846" vertical-offset="3072" max-vertical-offset="3808">
@@ -1232,7 +1225,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modifica_salva_libro.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="5" selection-start="11" selection-end="2705" vertical-scroll-proportion="0.9116118" vertical-offset="545" max-vertical-offset="1190">
+        <state line="43" column="50" selection-start="1949" selection-end="1949" vertical-scroll-proportion="-7.1538463" vertical-offset="545" max-vertical-offset="1190">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/ordini.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="147" column="41" selection-start="6243" selection-end="6243" vertical-scroll-proportion="-0.008474576" vertical-offset="2504" max-vertical-offset="5185">
           <folding />
         </state>
       </provider>
