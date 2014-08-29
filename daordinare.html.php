@@ -88,20 +88,24 @@
                                             <input type="hidden" id="copertina<?php echo $risultato['isbn']; ?>" value="<?php echo $risultato['copertina']; ?>">
                                             <div id="copertinalink<?php echo $risultato['isbn']; ?>"  class="image">
                                                 <?php
-                                                    $slash = "\";
-                                                    if(strcmp($risultato['copertina'], $slash) != 0)
+                                                    $slash = "\\";
+                                                    $copertina = $risultato['copertina'];
+                                                    if(strcmp($copertina, $slash) != 0)
                                                     {
                                                         echo "
-                                                            <a href=\"upload/images/copertina".$risultato['copertina']."\" target=\"_blank\">
-                                                                <img src=\"upload/images/copertina".$risultato['copertina']."\">
-                                                            </a>";
+                                                            <a href=\"upload/images/copertina".$copertina."\" target=\"_blank\">
+                                                                <img src=\"upload/images/copertina".$copertina."\">
+                                                            </a>
+                                                            ";
                                                     }
                                                     else
                                                     {
+                                                        $copertina = "\\non_trovata.jpg" ;
                                                         echo "
-                                                        <a href=\"upload/images/copertina/non_trovata.gif\" target=\"_blank\">
-                                                            <img src=\"upload/images/copertina/non_trovata.gif\">
-                                                        </a>";
+                                                            <a href=\"upload/images/copertina".$copertina."\" target=\"_blank\">
+                                                                <img src=\"upload/images/copertina".$copertina."\">
+                                                            </a>
+                                                            ";
                                                     }
                                                 ?>
 
