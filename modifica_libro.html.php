@@ -195,7 +195,7 @@
                                         <a href="javascript: modificaSalvaLibro(case_editrici)" class="button button-icon fa fa-save">Salva Modifica</a>
                                     </li>
                                     <li>
-                                        <a href="admin.php" class="button button-icon fa fa-backward">Indietro</a>
+                                        <a href="javascript: indietro()" class="button button-icon fa fa-backward">Indietro</a>
                                     </li>
                                 </ul>
                             </form>

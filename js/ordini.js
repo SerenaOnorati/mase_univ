@@ -39,7 +39,7 @@ function aggiungiLibro(nomeSelect)
 }
 
 
-function modificaLibroDaordinare(isbn, risultati)
+function modificaLibroDaordinare(isbn)
 {
 
     var autore = document.getElementById('autore'+isbn).innerText;
@@ -96,7 +96,7 @@ function modificaSalvaLibro(nomeSelect)
 
     if(autore.length != 0 && isbn.length != 0 && titolo.length != 0 && locazione.length != 0 && prezzo.length != 0 && prezzo_acquisto.length != 0 && quantita.length != 0 && anno_acquisto.length != 0 && id_casa_editrice.length != 0)
     {
-        if(autore == autore_old && titolo == titolo_old && id_casa_editrice == id_casa_editrice_old && prezzo == prezzo_old && prezzo_acquisto == prezzo_acquisto_old && anno_acquisto == anno_acquisto_old && copertina == copertina_old && quantita == quantita_old && locazione == locazione_old)
+        if(autore == autore_old && titolo == titolo_old && id_casa_editrice == id_casa_editrice_old && prezzo == prezzo_old && prezzo_acquisto == prezzo_acquisto_old && anno_acquisto == anno_acquisto_old && quantita == quantita_old && locazione == locazione_old)
         {
             alert("Non ci sono modifiche da salvare!");
         }
@@ -168,4 +168,24 @@ function cancellaLibro(isbn)
             }
         });
     }
+}
+
+function indietro(isbn, titolo, autore, casa_editrice, locazione, anno_acquisto)
+{
+    $.ajax({
+        type: 'POST',
+        url: 'ricerca.php',
+        data: "insisbn="+isbn+"institolo="+titolo+"insautore="+autore+"inscasaeditrice="+casa_editrice+"inslocazione="+locazione+"insannoacquisto="+anno_acquisto,
+        dataType: "html",
+
+        success: function(response)
+        {
+            alert("Tutto ok");
+
+        },
+        error: function()
+        {
+            alert("La cancellazione non è andata a buon fine.");
+        }
+    });
 }

@@ -105,6 +105,13 @@
             {
                 $GLOBALS['risultati'] = $risultati;
 
+                $_SESSION['autore'] = $autore;
+                $_SESSION['titolo'] = $titolo;
+                $_SESSION['casa_editrice'] = $casaeditrice;
+                $_SESSION['locazione'] = $locazione;
+                $_SESSION['isbn'] = $isbn;
+                $_SESSION['anno_acquisto'] = $anno_acquisto;
+
             }
             else
             {

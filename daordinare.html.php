@@ -117,10 +117,7 @@
                                             <input id="qtaord<?php echo $risultato['isbn']; ?>" name="qtaord" type="text" class="text" placeholder="Qta Ord">
                                         </div>
                                         <div class="2u">
-                                            <script type="text/javascript">
-                                                var risultati = <?php echo json_encode($risultati); ?>;
-                                            </script>
-                                            <a href="javascript: modificaLibroDaordinare(<?php echo $risultato['isbn']; ?>, risultati)" class="fa fa-edit" id="modifica" title="Modifica">Modifica</a><br>
+                                            <a href="javascript: modificaLibroDaordinare(<?php echo $risultato['isbn']; ?>)" class="fa fa-edit" id="modifica" title="Modifica">Modifica</a><br>
                                             <a href="javascript: cancellaLibro(<?php echo $risultato['isbn']; ?>)" class="fa fa-times" id="cancella" title="Cancella">Cancella</a><br>
                                             <a href="" class="fa fa-plus" id="ordina" title="Ordina">Ordinato</a>
                                         </div>
