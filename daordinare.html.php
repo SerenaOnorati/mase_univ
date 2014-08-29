@@ -87,9 +87,24 @@
                                         <div class="2u">
                                             <input type="hidden" id="copertina<?php echo $risultato['isbn']; ?>" value="<?php echo $risultato['copertina']; ?>">
                                             <div id="copertinalink<?php echo $risultato['isbn']; ?>"  class="image">
-                                                <a href="upload/images/copertina<?php echo $risultato['copertina']; ?>" target="_blank">
-                                                    <img src="upload/images/copertina<?php echo $risultato['copertina']; ?>">
-                                                </a>
+                                                <?php
+                                                    $slash = "\";
+                                                    if(strcmp($risultato['copertina'], $slash) != 0)
+                                                    {
+                                                        echo "
+                                                            <a href=\"upload/images/copertina".$risultato['copertina']."\" target=\"_blank\">
+                                                                <img src=\"upload/images/copertina".$risultato['copertina']."\">
+                                                            </a>";
+                                                    }
+                                                    else
+                                                    {
+                                                        echo "
+                                                        <a href=\"upload/images/copertina/non_trovata.gif\" target=\"_blank\">
+                                                            <img src=\"upload/images/copertina/non_trovata.gif\">
+                                                        </a>";
+                                                    }
+                                                ?>
+
                                             </div>
                                         </div>
                                         <div class="4u">
