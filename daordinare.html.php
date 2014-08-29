@@ -70,11 +70,8 @@
 
 
                             <div class="row">
-                                <div class="5u">
+                                <div class="8u">
                                     <h3 style="color: #ed786a">Info Libro</h3>
-                                </div>
-                                <div class="3u">
-                                    <h3 style="color: #ed786a"></h3><br>
                                 </div>
                                 <div class="2u">
                                     <h3 style="color: #ed786a">Qtà</h3>
@@ -87,7 +84,15 @@
                             <?php foreach ($risultati as $risultato): ?>
                                 <form action="" method="post" onsubmit="return false">
                                     <div class="row" id="row<?php echo $risultato['isbn']; ?>">
-                                        <div class="5u">
+                                        <div class="2u">
+                                            <input type="hidden" id="copertina<?php echo $risultato['isbn']; ?>" value="<?php echo $risultato['copertina']; ?>">
+                                            <div id="copertinalink<?php echo $risultato['isbn']; ?>"  class="image">
+                                                <a href="upload/images/copertina<?php echo $risultato['copertina']; ?>" target="_blank">
+                                                    <img src="upload/images/copertina<?php echo $risultato['copertina']; ?>">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="4u">
                                             <label id="titolo<?php echo $risultato['isbn']; ?>" for="titolo<?php echo $risultato['isbn']; ?>" class="text"><strong style="color: lightseagreen">TITOLO&nbsp;:</strong><?php echo $risultato['titolo']; ?></label>
                                             <label id="autore<?php echo $risultato['isbn']; ?>" for="autore<?php echo $risultato['isbn']; ?>" class="text"><strong style="color: lightseagreen">AUTORE&nbsp;:</strong><?php echo $risultato['autore']; ?></label>
                                             <label id="casaeditrice<?php echo $risultato['isbn']; ?>" for="casaeditrice<?php echo $risultato['isbn']; ?>" class="text"><strong style="color: lightseagreen">CASA ED.&nbsp;:</strong><?php echo $risultato['nome']; ?></label>
@@ -100,13 +105,11 @@
                                             <input id="distributore<?php echo $risultato['isbn']; ?>" name="distributore" type="text" class="text" value="<?php echo $risultato['isbn']; ?>">-->
 
                                         </div>
-                                        <div class="3u">
+                                        <div class="2u">
                                             <label id="locazione<?php echo $risultato['isbn']; ?>" for="locazione<?php echo $risultato['isbn']; ?>" class="text"><strong style="color: lightseagreen">Locazione&nbsp;:</strong><?php echo $risultato['locazione']; ?></label>
                                             <label id="prezzo<?php echo $risultato['isbn']; ?>" for="prezzo<?php echo $risultato['isbn']; ?>" class="text"><strong style="color: lightseagreen">Prezzo&nbsp;:</strong><?php echo $risultato['prezzo']; ?></label>
                                             <label id="prezzoacquisto<?php echo $risultato['isbn']; ?>" for="prezzoacquisto<?php echo $risultato['isbn']; ?>" class="text"><strong style="color: lightseagreen">Prezzo acq&nbsp;:</strong><?php echo $risultato['prezzo_acquisto']; ?></label>
                                             <label id="data<?php echo $risultato['isbn']; ?>" for="data<?php echo $risultato['isbn']; ?>" class="text"><strong style="color: lightseagreen">DATA&nbsp;:</strong><?php echo $risultato['anno_acquisto']; ?></label>
-                                            <input type="hidden" id="copertina<?php echo $risultato['isbn']; ?>" value="<?php echo $risultato['copertina']; ?>">
-                                            <a href="upload/images/copertina<?php echo $risultato['copertina']; ?>" target="_blank" class="fa fa-file-o" id="copertinalink<?php echo $risultato['isbn']; ?>" title="Modifica">Copertina</a><br>
 
                                         </div>
                                         <div class="2u">
@@ -114,7 +117,10 @@
                                             <input id="qtaord<?php echo $risultato['isbn']; ?>" name="qtaord" type="text" class="text" placeholder="Qta Ord">
                                         </div>
                                         <div class="2u">
-                                            <a href="javascript: modificaLibroDaordinare(<?php echo $risultato['isbn']; ?>)" class="fa fa-edit" id="modifica" title="Modifica">Modifica</a><br>
+                                            <script type="text/javascript">
+                                                var risultati = <?php echo json_encode($risultati); ?>;
+                                            </script>
+                                            <a href="javascript: modificaLibroDaordinare(<?php echo $risultato['isbn']; ?>, risultati)" class="fa fa-edit" id="modifica" title="Modifica">Modifica</a><br>
                                             <a href="javascript: cancellaLibro(<?php echo $risultato['isbn']; ?>)" class="fa fa-times" id="cancella" title="Cancella">Cancella</a><br>
                                             <a href="" class="fa fa-plus" id="ordina" title="Ordina">Ordinato</a>
                                         </div>

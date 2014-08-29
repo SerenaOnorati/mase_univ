@@ -39,7 +39,7 @@ function aggiungiLibro(nomeSelect)
 }
 
 
-function modificaLibroDaordinare(isbn)
+function modificaLibroDaordinare(isbn, risultati)
 {
 
     var autore = document.getElementById('autore'+isbn).innerText;
