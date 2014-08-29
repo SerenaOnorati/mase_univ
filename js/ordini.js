@@ -14,7 +14,7 @@ function aggiungiLibro(nomeSelect)
     var anno = $("#insannoacquisto").val();
     var id_casa_editrice = nomeSelect.options[nomeSelect.selectedIndex].value;
 
-    if(autore.length != 0 && isbn.length != 0  && titolo.length != 0 && copertina.length != 0 && locazione.length != 0 && prezzo.length != 0 && prezzoa.length != 0 && quantita.length != 0 && anno.length != 0 && id_casa_editrice.length != 0)
+    if(autore.length != 0 && isbn.length != 0  && titolo.length != 0 && locazione.length != 0 && prezzo.length != 0 && prezzoa.length != 0 && quantita.length != 0 && anno.length != 0 && id_casa_editrice.length != 0)
     {
         $.ajax({
             type: 'POST',
@@ -170,7 +170,7 @@ function cancellaLibro(isbn)
     }
 }
 
-function ordinaLibro(isbn)
+function preparaOrdina(isbn)
 {
     //prelevo la quantita da ordinare
     var quantita = $("#qtaord"+isbn).val();

@@ -119,7 +119,7 @@
                 header("Location: admin.php?ricercafallita=$ricercafallita");
                 exit();
             }
-            include 'daordinare.html.php';
+            include 'risultato_ricerca.html.php';
         }
     }
 ?>

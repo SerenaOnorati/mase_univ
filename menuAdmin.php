@@ -32,8 +32,9 @@
         <li>
             <a href="" class="fa fa-truck"><span>Ordini</span></a>
             <ul>
-                <li><a href="ordinato.html.php">Ordinato</a></li>
-                <li><a href="arrivato.html.php">Arrivato</a></li>
+                <li><a href="daordinare.php">Da Ordinare</a></li>
+                <li><a href="ordinato.php">Ordinato</a></li>
+                <li><a href="arrivato.php">Arrivato</a></li>
             </ul>
         </li>
         <li>
