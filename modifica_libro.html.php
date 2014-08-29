@@ -203,10 +203,6 @@
                                         var anno_acquistoi = "<?php echo $_SESSION['anno_acquisto']; ?>";
                                     </script>
                                     <li>
-                                        <script language="JavaScript">
-                                            alert(isbni);
-                                            alert("<?php echo $_SESSION['titolo']; ?>");
-                                        </script>
                                         <a href="javascript: back_Ricerca(isbni, titoloi, autorei, casa_editricei, locazionei, anno_acquistoi)" class="button button-icon fa fa-backward">Indietro</a>
                                     </li>
                                 </ul>

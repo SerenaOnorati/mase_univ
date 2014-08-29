@@ -33,7 +33,7 @@ else{
 
             $id = $pdo->lastInsertId();
 
-            $sql = 'INSERT INTO ordine_libro (isbn, quantita, data_ordine, id_ordine)
+            $sql = 'INSERT INTO ordine_libro (isbn, quantita_ordine, data_ordine, id_ordine)
                     VALUES (:isbn, :quantita, :data_ordine, :id_ordine)';
             $s = $pdo->prepare($sql);
             $s->bindValue(':isbn', $isbn, PDO::PARAM_INT);

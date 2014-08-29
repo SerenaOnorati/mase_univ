@@ -205,12 +205,10 @@ function preparaOrdina(isbn)
 
 function back_Ricerca(isbn, titolo, autore, casa_editrice, locazione, anno_acquisto)
 {
-    alert("inizio");
     var post = '';
-    /*if(isbn != "%%")
+    if(isbn != "%%")
     {
-        isbn = isbn.delete(1, isbn.length-1);
-        alert(isbn);
+        isbn = isbn.slice(1, isbn.length-1);
         if(post == '')
             post = post+"insisbn="+isbn;
         else
@@ -218,8 +216,7 @@ function back_Ricerca(isbn, titolo, autore, casa_editrice, locazione, anno_acqui
     }
     if(titolo != "%%")
     {
-        titolo = titolo.delete(1, titolo.length-1);
-        alert(titolo);
+        titolo = titolo.slice(1, titolo.length-1);
         if(post == '')
             post = post+"institolo="+titolo;
         else
@@ -227,8 +224,7 @@ function back_Ricerca(isbn, titolo, autore, casa_editrice, locazione, anno_acqui
     }
     if(autore != "%%")
     {
-        autore = autore.delete(1, autore.length-1);
-        alert(autore);
+        autore = autore.slice(1, autore.length-1);
         if(post == '')
             post = post+"insautore="+autore;
         else
@@ -236,8 +232,7 @@ function back_Ricerca(isbn, titolo, autore, casa_editrice, locazione, anno_acqui
     }
     if(casa_editrice != "%%")
     {
-        casa_editrice = casa_editrice.delete(1, casa_editrice.length-1);
-        alert(casa_editrice);
+        casa_editrice = casa_editrice.slice(0, casa_editrice.length-1);
         if(post == '')
             post = post+"inscasaeditrice="+casa_editrice;
         else
@@ -245,8 +240,7 @@ function back_Ricerca(isbn, titolo, autore, casa_editrice, locazione, anno_acqui
     }
     if(locazione != "%%")
     {
-        locazione = locazione.delete(1, locazione.length-1);
-        alert(locazione);
+        locazione = locazione.slice(1, locazione.length-1);
         if(post == '')
             post = post+"inslocazione="+locazione;
         else
@@ -254,29 +248,29 @@ function back_Ricerca(isbn, titolo, autore, casa_editrice, locazione, anno_acqui
     }
     if(anno_acquisto != "%%")
     {
-        post = anno_acquisto.delete(1, anno_acquisto.length-1);
+        anno_acquisto = anno_acquisto.slice(1, anno_acquisto.length-1);
         alert(anno_acquisto);
         if(post == '')
             post = post+"insannoacquisto="+anno_acquisto;
         else
             post = post+"&insannoacquisto="+anno_acquisto;
     }
-    alert(post);
-    /*$.ajax({
+    $.ajax({
 
         type: 'POST',
         url: 'ricerca.php',
-        data: "insisbn="+isbn+"&institolo="+titolo+"&insautore="+autore+"&inscasaeditrice="+casa_editrice+"&inslocazione="+locazione+"&insannoacquisto="+anno_acquisto,
+        data: post,
         dataType: "html",
 
         success: function(response)
         {
-            alert("Tutto ok");
+
+            document.write(response);
 
         },
         error: function()
         {
             alert("La cancellazione non è andata a buon fine.");
         }
-    });*/
+    });
 }
