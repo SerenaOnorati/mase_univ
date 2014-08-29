@@ -77,8 +77,8 @@ function modificaSalvaLibro(nomeSelect)
     var prezzo = $("#prezzo").val();
     var prezzo_acquisto = $("#prezzo_acquisto").val();
     var anno_acquisto = $("#anno_acquisto").val();
-    var path = $("#url").val();
-    var copertina = "\\"+path.replace(/^.*\\/, "");
+    //var path = $("#url").val();
+    //var copertina = path.replace(/^.*\\/, "");
     var quantita = $("#quantita").val();
     var locazione = $("#locazione").val();
 
@@ -89,38 +89,27 @@ function modificaSalvaLibro(nomeSelect)
     var prezzo_old = $("#prezzo_old").val();
     var prezzo_acquisto_old = $("#prezzo_acquisto_old").val();
     var anno_acquisto_old = $("#anno_acquisto_old").val();
-    var copertina_old = $("#copertina_old").val();
+    //var copertina_old = $("#copertina_old").val();
     var quantita_old = $("#quantita_old").val();
     var locazione_old = $("#locazione_old").val();
 
 
     if(autore.length != 0 && isbn.length != 0 && titolo.length != 0 && locazione.length != 0 && prezzo.length != 0 && prezzo_acquisto.length != 0 && quantita.length != 0 && anno_acquisto.length != 0 && id_casa_editrice.length != 0)
     {
-        var check;
-        if(copertina == "\\")
-        {
-            check = confirm("Nessuna copertina selezionata, mantenere quella precedente?");
-            if(check == true)
-            {
-                copertina = copertina_old;
-            }
-
-        }
-
-        if(autore == autore_old && titolo == titolo_old && id_casa_editrice == id_casa_editrice_old && copertina == copertina_old && prezzo == prezzo_old && prezzo_acquisto == prezzo_acquisto_old && anno_acquisto == anno_acquisto_old && quantita == quantita_old && locazione == locazione_old)
+        if(autore == autore_old && titolo == titolo_old && id_casa_editrice == id_casa_editrice_old && prezzo == prezzo_old && prezzo_acquisto == prezzo_acquisto_old && anno_acquisto == anno_acquisto_old && quantita == quantita_old && locazione == locazione_old)
         {
             alert("Non ci sono modifiche da salvare!");
         }
 
         else
         {
-            check = confirm("Sei sicuro di voler salvare le modifiche?");
+            var check = confirm("Sei sicuro di voler salvare le modifiche?");
             if(check == true)
             {
                 $.ajax({
                     type: 'POST',
                     url: 'modifica_salva_libro.php',
-                    data: "autore="+autore+"&isbn="+isbn+"&isbn_old="+isbn_old+"&titolo="+titolo+"&copertina="+copertina+"&locazione="+locazione+"&prezzo="+prezzo+"&prezzo_acquisto="+prezzo_acquisto+"&quantita="+quantita+"&anno_acquisto="+anno_acquisto+"&id_casa_editrice="+id_casa_editrice,
+                    data: "autore="+autore+"&isbn="+isbn+"&isbn_old="+isbn+"&titolo="+titolo+"&locazione="+locazione+"&prezzo="+prezzo+"&prezzo_acquisto="+prezzo_acquisto+"&quantita="+quantita+"&anno_acquisto="+anno_acquisto+"&id_casa_editrice="+id_casa_editrice,
                     dataType: "html",
 
                     success: function(response)
@@ -144,8 +133,8 @@ function modificaSalvaLibro(nomeSelect)
                 anno_acquisto = anno_acquisto_old;
                 quantita = quantita_old;
                 locazione = locazione_old;
-                copertina = copertina_old;
                 window.location.reload();
+
             }
         }
     }
@@ -216,10 +205,12 @@ function preparaOrdina(isbn)
 
 function back_Ricerca(isbn, titolo, autore, casa_editrice, locazione, anno_acquisto)
 {
+    alert("inizio");
     var post = '';
-    if(isbn != "%%")
+    /*if(isbn != "%%")
     {
-        isbn = isbn.slice(1, isbn.length-1);
+        isbn = isbn.delete(1, isbn.length-1);
+        alert(isbn);
         if(post == '')
             post = post+"insisbn="+isbn;
         else
@@ -227,7 +218,8 @@ function back_Ricerca(isbn, titolo, autore, casa_editrice, locazione, anno_acqui
     }
     if(titolo != "%%")
     {
-        titolo = titolo.slice(1, titolo.length-1);
+        titolo = titolo.delete(1, titolo.length-1);
+        alert(titolo);
         if(post == '')
             post = post+"institolo="+titolo;
         else
@@ -235,7 +227,8 @@ function back_Ricerca(isbn, titolo, autore, casa_editrice, locazione, anno_acqui
     }
     if(autore != "%%")
     {
-        autore = autore.slice(1, autore.length-1);
+        autore = autore.delete(1, autore.length-1);
+        alert(autore);
         if(post == '')
             post = post+"insautore="+autore;
         else
@@ -243,7 +236,8 @@ function back_Ricerca(isbn, titolo, autore, casa_editrice, locazione, anno_acqui
     }
     if(casa_editrice != "%%")
     {
-        casa_editrice = casa_editrice.slice(0, casa_editrice.length-1);
+        casa_editrice = casa_editrice.delete(1, casa_editrice.length-1);
+        alert(casa_editrice);
         if(post == '')
             post = post+"inscasaeditrice="+casa_editrice;
         else
@@ -251,7 +245,8 @@ function back_Ricerca(isbn, titolo, autore, casa_editrice, locazione, anno_acqui
     }
     if(locazione != "%%")
     {
-        locazione = locazione.slice(1, locazione.length-1);
+        locazione = locazione.delete(1, locazione.length-1);
+        alert(locazione);
         if(post == '')
             post = post+"inslocazione="+locazione;
         else
@@ -259,42 +254,29 @@ function back_Ricerca(isbn, titolo, autore, casa_editrice, locazione, anno_acqui
     }
     if(anno_acquisto != "%%")
     {
-        anno_acquisto = anno_acquisto.slice(1, anno_acquisto.length-1);
+        post = anno_acquisto.delete(1, anno_acquisto.length-1);
         alert(anno_acquisto);
         if(post == '')
             post = post+"insannoacquisto="+anno_acquisto;
         else
             post = post+"&insannoacquisto="+anno_acquisto;
     }
-    $.ajax({
+    alert(post);
+    /*$.ajax({
 
         type: 'POST',
         url: 'ricerca.php',
-        data: post,
+        data: "insisbn="+isbn+"&institolo="+titolo+"&insautore="+autore+"&inscasaeditrice="+casa_editrice+"&inslocazione="+locazione+"&insannoacquisto="+anno_acquisto,
         dataType: "html",
 
         success: function(response)
         {
-
-            document.write(response);
+            alert("Tutto ok");
 
         },
         error: function()
         {
             alert("La cancellazione non è andata a buon fine.");
         }
-    });
-}
-
-function cambiaCopertina()
-{
-    var cambia = document.getElementById('div_copertina');
-    if(cambia.style.display == "block")
-    {
-        cambia.style.display = 'none';
-    }
-    else
-    {
-        cambia.style.display = 'block';
-    }
+    });*/
 }

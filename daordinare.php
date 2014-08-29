@@ -1,1 +1,53 @@
 <?php
+    include 'access.inc.php';
+    include 'configuration.php';
+
+    if(!userIsLoggedIn())
+    {
+        $GLOBALS['loginError'] = "Non hai effettuato il login. Inserire email e password";
+        include 'index.php';
+    }
+    else
+    {
+        include 'db.inc.php';
+        //seleziono i libri che non sono stati ne ordinati ne arrivati
+        try
+        {
+            $sql = 'SELECT * FROM libro
+                    INNER JOIN ordine_libro on libro.isbn=ordine_libro.isbn
+                    INNER JOIN ordine on ordine_libro.id_ordine=ordine.id_ordine
+                    INNER JOIN casa_editrice on libro.id_casa_editrice = casa_editrice.id_casa_editrice
+                    INNER JOIN distributore on casa_editrice.id_distributore = distributore.id_distributore
+                    WHERE ordinato = 0 AND arrivato = 0';
+
+            $s = $pdo->prepare($sql);
+
+            $s->execute();
+        }
+        catch (PDOException $e)
+        {
+            $error = 'Errore nella ricerca libri da ordinare.';
+            echo "<script language=\"JavaScript\">\n";
+            echo "alert(\"$error\");\n";
+            echo "</script>";
+            exit();
+        }
+
+        $risultati = $s->fetchAll();
+        if(!empty($risultati))
+        {
+            $GLOBALS['risultati'] = $risultati;
+            $id_ordini_array = array();
+            foreach( $risultati as $id_ordini)
+            {
+                array_push($id_ordini_array, $id_ordini['id_ordine']);
+            }
+            $GLOBALS['id_ordini_array'] = $id_ordini_array;
+
+        }
+        else
+            $GLOBALS['no_ordini'] = "Non ci sono libri da ordinare";
+
+        include 'daordinare.html.php';
+    }
+?>

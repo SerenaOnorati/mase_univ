@@ -40,6 +40,10 @@
 
         <!-- Main -->
         <div id="main" class="container">
+            <?php
+            if(isset($no_ordini))
+                echo "<h3 style=\"color: #ed786a\">".$no_ordini."</h3>";
+            ?>
             <div class="row">
 
                 <!-- Content -->
@@ -51,7 +55,7 @@
                             <header>
                                 <div class="row">
                                     <div class="10u">
-                                        <div><br><h2>Risultato ricerca titoli</h2></div>
+                                        <div><br><h2>Libri da ordinare</h2></div>
                                         <br>
                                     </div>
                                     <div class="2u">
@@ -81,78 +85,85 @@
                                 </div>
 
                             </div>
-                            <?php foreach ($risultati as $risultato): ?>
-                                <form action="" method="post" onsubmit="return false">
-                                    <div class="row" id="row<?php echo $risultato['isbn']; ?>">
-                                        <div class="2u">
-                                            <input type="hidden" id="copertina<?php echo $risultato['isbn']; ?>" value="<?php echo $risultato['copertina']; ?>">
-                                            <div id="copertinalink<?php echo $risultato['isbn']; ?>"  class="image">
-                                                <?php
-                                                    $slash = "\\";
-                                                    $copertina = $risultato['copertina'];
-                                                    if(strcmp($copertina, $slash) != 0)
-                                                    {
-                                                        echo "
-                                                            <a href=\"upload/images/copertina".$copertina."\" target=\"_blank\">
-                                                                <img src=\"upload/images/copertina".$copertina."\">
-                                                            </a>
-                                                            ";
-                                                    }
-                                                    else
-                                                    {
-                                                        $copertina = "\\non_trovata.jpg" ;
-                                                        echo "
-                                                            <a href=\"upload/images/copertina".$copertina."\" target=\"_blank\">
-                                                                <img src=\"upload/images/copertina".$copertina."\">
-                                                            </a>
-                                                            ";
-                                                    }
-                                                ?>
 
+                            <?php
+                            if(!isset($no_ordini))
+                            {
+                                foreach ($risultati as $risultato): ?>
+                                    <?php
+                                        $id = $risultato['isbn'].$risultato['id_ordine'];
+                                    ?>
+                                    <form action="" method="post" onsubmit="return false">
+                                        <div class="row" id="row<?php echo $id; ?>">
+                                            <div class="2u">
+                                                <input type="hidden" id="copertina<?php echo $id; ?>" value="<?php echo $risultato['copertina']; ?>">
+                                                <div id="copertinalink<?php echo $id; ?>"  class="image">
+                                                    <?php
+                                                        $slash = "\\";
+                                                        $copertina = $risultato['copertina'];
+                                                        if(strcmp($copertina, $slash) != 0)
+                                                        {
+                                                            echo "
+                                                                <a href=\"upload/images/copertina".$copertina."\" target=\"_blank\">
+                                                                    <img src=\"upload/images/copertina".$copertina."\">
+                                                                </a>
+                                                                ";
+                                                        }
+                                                        else
+                                                        {
+                                                            $copertina = "\\non_trovata.jpg" ;
+                                                            echo "
+                                                                <a href=\"upload/images/copertina".$copertina."\" target=\"_blank\">
+                                                                    <img src=\"upload/images/copertina".$copertina."\">
+                                                                </a>
+                                                                ";
+                                                        }
+                                                    ?>
+
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="4u">
-                                            <label id="titolo<?php echo $risultato['isbn']; ?>" for="titolo<?php echo $risultato['isbn']; ?>" class="text"><strong style="color: lightseagreen">TITOLO&nbsp;:</strong><?php echo $risultato['titolo']; ?></label>
-                                            <label id="autore<?php echo $risultato['isbn']; ?>" for="autore<?php echo $risultato['isbn']; ?>" class="text"><strong style="color: lightseagreen">AUTORE&nbsp;:</strong><?php echo $risultato['autore']; ?></label>
-                                            <label id="casaeditrice<?php echo $risultato['isbn']; ?>" for="casaeditrice<?php echo $risultato['isbn']; ?>" class="text"><strong style="color: lightseagreen">CASA ED.&nbsp;:</strong><?php echo $risultato['nome']; ?></label>
-                                            <label id="distributore<?php echo $risultato['isbn']; ?>" for="distributore<?php echo $risultato['isbn']; ?>" class="text"><strong style="color: lightseagreen">DISTR.&nbsp;:</strong><?php echo $risultato['nome_distributore']; ?></label>
-                                            <label id="isbn<?php echo $risultato['isbn']; ?>" for="isbn<?php echo $risultato['isbn']; ?>" class="text"><strong style="color: lightseagreen">ISBN&nbsp;:</strong><?php echo $risultato['isbn']; ?></label>
+                                            <div class="4u">
+                                                <label id="titolo<?php echo $id; ?>" for="titolo<?php echo $id; ?>" class="text"><strong style="color: lightseagreen">TITOLO&nbsp;:</strong><?php echo $risultato['titolo']; ?></label>
+                                                <label id="autore<?php echo $id; ?>" for="autore<?php echo $id; ?>" class="text"><strong style="color: lightseagreen">AUTORE&nbsp;:</strong><?php echo $risultato['autore']; ?></label>
+                                                <label id="casaeditrice<?php echo $id; ?>" for="casaeditrice<?php echo $id; ?>" class="text"><strong style="color: lightseagreen">CASA ED.&nbsp;:</strong><?php echo $risultato['nome']; ?></label>
+                                                <label id="distributore<?php echo $id; ?>" for="distributore<?php echo $id; ?>" class="text"><strong style="color: lightseagreen">DISTR.&nbsp;:</strong><?php echo $risultato['nome_distributore']; ?></label>
+                                                <label id="isbn<?php echo $id; ?>" for="isbn<?php echo $id; ?>" class="text"><strong style="color: lightseagreen">ISBN&nbsp;:</strong><?php echo $risultato['isbn']; ?></label>
+                                            </div>
+                                            <div class="2u">
+                                                <label id="locazione<?php echo $id; ?>" for="locazione<?php echo $id; ?>" class="text"><strong style="color: lightseagreen">Locazione&nbsp;:</strong><?php echo $risultato['locazione']; ?></label>
+                                                <label id="prezzo<?php echo $id; ?>" for="prezzo<?php echo $id; ?>" class="text"><strong style="color: lightseagreen">Prezzo&nbsp;:</strong><?php echo $risultato['prezzo']; ?></label>
+                                                <label id="prezzoacquisto<?php echo $id; ?>" for="prezzoacquisto<?php echo $id; ?>" class="text"><strong style="color: lightseagreen">Prezzo acq&nbsp;:</strong><?php echo $risultato['prezzo_acquisto']; ?></label>
+                                                <label id="data<?php echo $id; ?>" for="data<?php echo $id; ?>" class="text"><strong style="color: lightseagreen">DATA&nbsp;:</strong><?php echo $risultato['anno_acquisto']; ?></label>
+                                                <label id="dataordina<?php echo $id; ?>" for="data<?php echo $id; ?>" class="text"><strong style="color: lightseagreen">DATA ORD&nbsp;:</strong><?php echo $risultato['data_ordine']; ?></label>
+                                            </div>
+                                            <div class="2u">
+                                                <label id="qtamag<?php echo $id; ?>" for="qtamag<?php echo $id; ?>"><strong style="color: lightseagreen">Qta Mag&nbsp;:</strong><?php echo $risultato['quantita']; ?></label>
+                                                <input id="qtaord<?php echo $id; ?>" name="qtaord<?php echo $id; ?>" type="text" class="text" placeholder="Qta Ord" value="<?php echo $risultato['quantita_ordine']; ?>" disabled>
+                                            </div>
+                                            <div class="2u">
+                                                <a href="javascript: modificaLibroDaordinare(<?php echo $risultato['isbn']; ?>)" class="fa fa-edit" id="modifica" title="Modifica">Modifica Ordine</a><br>
+                                                <a href="javascript: cancellaOrdine(<?php echo $risultato['id_ordine']; ?>)" class="fa fa-times" id="cancella" title="Cancella">Cancella Ordine</a><br>
+                                                <a href="javascript: preparaOrdina(<?php echo $risultato['isbn']; ?>)" class="fa fa-plus" id="daordinare" title="Da Ordinare">Ordinato</a>
+                                            </div>
 
-                                            <!--<input id="titolo<?php echo $risultato['isbn']; ?>" name="titolo" type="text" class="text" value="<?php echo $risultato['titolo']; ?>">
-                                            <input id="autore<?php echo $risultato['isbn']; ?>" name="autore" type="text" class="text" value="<?php echo $risultato['autore']; ?>">
-                                            <input id="casaeditrice<?php echo $risultato['isbn']; ?>" name="casaeditrice" type="text" class="text" value="<?php echo $risultato['nome']; ?>">
-                                            <input id="distributore<?php echo $risultato['isbn']; ?>" name="distributore" type="text" class="text" value="<?php echo $risultato['isbn']; ?>">-->
-
                                         </div>
-                                        <div class="2u">
-                                            <label id="locazione<?php echo $risultato['isbn']; ?>" for="locazione<?php echo $risultato['isbn']; ?>" class="text"><strong style="color: lightseagreen">Locazione&nbsp;:</strong><?php echo $risultato['locazione']; ?></label>
-                                            <label id="prezzo<?php echo $risultato['isbn']; ?>" for="prezzo<?php echo $risultato['isbn']; ?>" class="text"><strong style="color: lightseagreen">Prezzo&nbsp;:</strong><?php echo $risultato['prezzo']; ?></label>
-                                            <label id="prezzoacquisto<?php echo $risultato['isbn']; ?>" for="prezzoacquisto<?php echo $risultato['isbn']; ?>" class="text"><strong style="color: lightseagreen">Prezzo acq&nbsp;:</strong><?php echo $risultato['prezzo_acquisto']; ?></label>
-                                            <label id="data<?php echo $risultato['isbn']; ?>" for="data<?php echo $risultato['isbn']; ?>" class="text"><strong style="color: lightseagreen">DATA&nbsp;:</strong><?php echo $risultato['anno_acquisto']; ?></label>
-
-                                        </div>
-                                        <div class="2u">
-                                            <label id="qtamag<?php echo $risultato['isbn']; ?>" for="qtamag<?php echo $risultato['isbn']; ?>"><strong style="color: lightseagreen">Qta Mag&nbsp;:</strong><?php echo $risultato['quantita']; ?></label>
-                                            <input id="qtaord<?php echo $risultato['isbn']; ?>" name="qtaord<?php echo $risultato['isbn']; ?>" type="text" class="text" placeholder="Qta Ord">
-                                        </div>
-                                        <div class="2u">
-                                            <a href="javascript: modificaLibroDaordinare(<?php echo $risultato['isbn']; ?>)" class="fa fa-edit" id="modifica" title="Modifica">Modifica</a><br>
-                                            <a href="javascript: cancellaLibro(<?php echo $risultato['isbn']; ?>)" class="fa fa-times" id="cancella" title="Cancella">Cancella</a><br>
-                                            <a href="javascript: preparaOrdina(<?php echo $risultato['isbn']; ?>)" class="fa fa-plus" id="daordinare" title="Da Ordinare">Da Ordinare</a>
-                                        </div>
-
-                                    </div>
-                                </form>
-                                <br>
-                            <?php endforeach; ?>
+                                    </form>
+                                    <br>
+                                <?php endforeach;
+                                }
+                            ?>
 
                             <br>
-                            <!--<ul class="actions" style="align-content: center!important">
+
+                            <script language="JavaScript">
+                                var id_ordini = <?php echo json_encode($id_ordini_array); ?>;
+                            </script>
+                            <ul class="actions" style="align-content: center!important">
                                 <li>
                                     <a href="" class="button button-icon fa fa-print">Stampa</a>
-                                    <a href="" class="button button-icon fa fa-trash-o">Svuota</a>
+                                    <a href="javascript: svuotaDaOrdinare(id_ordini)" class="button button-icon fa fa-trash-o">Svuota</a>
                                 </li>
-                            </ul>-->
+                            </ul>
                         </form>
                     </article>
 

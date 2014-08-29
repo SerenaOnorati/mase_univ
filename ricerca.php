@@ -77,8 +77,11 @@
         {
             try
             {
-                $sql = 'SELECT * FROM libro INNER JOIN casa_editrice on libro.id_casa_editrice = casa_editrice.id_casa_editrice INNER JOIN distributore on casa_editrice.id_distributore = distributore.id_distributore WHERE titolo LIKE :titolo AND autore LIKE :autore AND locazione LIKE :locazione
-                AND nome LIKE :nome AND isbn LIKE :isbn AND anno_acquisto LIKE :anno_acquisto';
+                $sql = 'SELECT * FROM libro
+                        INNER JOIN casa_editrice on libro.id_casa_editrice = casa_editrice.id_casa_editrice
+                        INNER JOIN distributore on casa_editrice.id_distributore = distributore.id_distributore
+                        WHERE titolo LIKE :titolo AND autore LIKE :autore AND locazione LIKE :locazione
+                        AND nome LIKE :nome AND isbn LIKE :isbn AND anno_acquisto LIKE :anno_acquisto';
 
                 $s = $pdo->prepare($sql);
 
