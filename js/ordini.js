@@ -298,3 +298,29 @@ function cambiaCopertina()
         cambia.style.display = 'block';
     }
 }
+
+function cancellaOrdine(id)
+{
+    var check = confirm("Sei sicuro di voler cancellare questo libro ancora da ordinare?");
+
+    if(check == true)
+    {
+        $.ajax({
+
+            type: 'POST',
+            url: 'cancella_ordine.php',
+            data: "id="+id,
+            dataType: "html",
+
+            success: function(response)
+            {
+                window.location.reload();
+                alert(response);
+            },
+            error: function()
+            {
+                alert("La cancellazione non è andata a buon fine.");
+            }
+        });
+    }
+}
