@@ -11,7 +11,7 @@
     else{
         if(userHasRole('Amministratore'))
         {
-            //prelevo i nuovi campi della nuova news dalla chiamata AJAX
+            //prelevo i nuovi campi del nuovo libro dalla chiamata AJAX
             $autore = $_POST['autore'];
             $isbn = $_POST['isbn'];
             $titolo = $_POST['titolo'];
@@ -53,7 +53,7 @@
         }
         else
         {
-            echo "<script language=\'JavaScript\'>alert(\"Non sei autorizzato ad accedere a questa pagina\")</script>";
+            echo "<script language=\'JavaScript\'>alert(\"Non sei autorizzato ad accedere a questa pagina.\")</script>";
         }
 
     }

@@ -129,12 +129,12 @@
                                         </div>
                                         <div class="2u">
                                             <label id="qtamag<?php echo $risultato['isbn']; ?>" for="qtamag<?php echo $risultato['isbn']; ?>"><strong style="color: lightseagreen">Qta Mag&nbsp;:</strong><?php echo $risultato['quantita']; ?></label>
-                                            <input id="qtaord<?php echo $risultato['isbn']; ?>" name="qtaord" type="text" class="text" placeholder="Qta Ord">
+                                            <input id="qtaord<?php echo $risultato['isbn']; ?>" name="qtaord<?php echo $risultato['isbn']; ?>" type="text" class="text" placeholder="Qta Ord">
                                         </div>
                                         <div class="2u">
                                             <a href="javascript: modificaLibroDaordinare(<?php echo $risultato['isbn']; ?>)" class="fa fa-edit" id="modifica" title="Modifica">Modifica</a><br>
                                             <a href="javascript: cancellaLibro(<?php echo $risultato['isbn']; ?>)" class="fa fa-times" id="cancella" title="Cancella">Cancella</a><br>
-                                            <a href="" class="fa fa-plus" id="ordina" title="Ordina">Ordinato</a>
+                                            <a href="javascript: ordinaLibro(<?php echo $risultato['isbn']; ?>)" class="fa fa-plus" id="ordina" title="Ordina">Ordina</a>
                                         </div>
 
                                     </div>
