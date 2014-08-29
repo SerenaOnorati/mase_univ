@@ -170,12 +170,70 @@ function cancellaLibro(isbn)
     }
 }
 
-function indietro(isbn, titolo, autore, casa_editrice, locazione, anno_acquisto)
+function back_Ricerca(isbn, titolo, autore, casa_editrice, locazione, anno_acquisto)
 {
-    $.ajax({
+    alert("inizio");
+    var post = '';
+    /*if(isbn != "%%")
+    {
+        isbn = isbn.delete(1, isbn.length-1);
+        alert(isbn);
+        if(post == '')
+            post = post+"insisbn="+isbn;
+        else
+            post = post+"&insisbn="+isbn;
+    }
+    if(titolo != "%%")
+    {
+        titolo = titolo.delete(1, titolo.length-1);
+        alert(titolo);
+        if(post == '')
+            post = post+"institolo="+titolo;
+        else
+            post = post+"&institolo="+titolo;
+    }
+    if(autore != "%%")
+    {
+        autore = autore.delete(1, autore.length-1);
+        alert(autore);
+        if(post == '')
+            post = post+"insautore="+autore;
+        else
+            post = post+"&insautore="+autore;
+    }
+    if(casa_editrice != "%%")
+    {
+        casa_editrice = casa_editrice.delete(1, casa_editrice.length-1);
+        alert(casa_editrice);
+        if(post == '')
+            post = post+"inscasaeditrice="+casa_editrice;
+        else
+            post = post+"&inscasaeditrice="+casa_editrice;
+    }
+    if(locazione != "%%")
+    {
+        locazione = locazione.delete(1, locazione.length-1);
+        alert(locazione);
+        if(post == '')
+            post = post+"inslocazione="+locazione;
+        else
+            post = post+"&inslocazione="+locazione;
+    }
+    if(anno_acquisto != "%%")
+    {
+        post = anno_acquisto.delete(1, anno_acquisto.length-1);
+        alert(anno_acquisto);
+        if(post == '')
+            post = post+"insannoacquisto="+anno_acquisto;
+        else
+            post = post+"&insannoacquisto="+anno_acquisto;
+    }
+    alert(post);
+    /*$.ajax({
+
         type: 'POST',
         url: 'ricerca.php',
-        data: "insisbn="+isbn+"institolo="+titolo+"insautore="+autore+"inscasaeditrice="+casa_editrice+"inslocazione="+locazione+"insannoacquisto="+anno_acquisto,
+        data: "insisbn="+isbn+"&institolo="+titolo+"&insautore="+autore+"&inscasaeditrice="+casa_editrice+"&inslocazione="+locazione+"&insannoacquisto="+anno_acquisto,
         dataType: "html",
 
         success: function(response)
@@ -187,5 +245,5 @@ function indietro(isbn, titolo, autore, casa_editrice, locazione, anno_acquisto)
         {
             alert("La cancellazione non è andata a buon fine.");
         }
-    });
+    });*/
 }
