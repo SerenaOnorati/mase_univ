@@ -170,6 +170,39 @@ function cancellaLibro(isbn)
     }
 }
 
+function ordinaLibro(isbn)
+{
+    //prelevo la quantita da ordinare
+    var quantita = $("#qtaord"+isbn).val();
+
+    if(quantita <= 0)
+    {
+        alert("Per ordinare inserire una quantita' positiva.");
+    }
+    else
+    {
+        var check = confirm("Sei sicuro di voler ordinare il libro?");
+        if(check == true)
+        {
+            $.ajax({
+                type: 'POST',
+                url: 'ordina_libri.php',
+                data: "isbn="+isbn+"&quantita="+quantita,
+                dataType: "html",
+
+                success: function(response)
+                {
+                    alert(response);
+                },
+                error: function()
+                {
+                    alert("L'ordine non è andato a buon fine.");
+                }
+            });
+        }
+    }
+}
+
 function back_Ricerca(isbn, titolo, autore, casa_editrice, locazione, anno_acquisto)
 {
     alert("inizio");
