@@ -77,8 +77,8 @@ function modificaSalvaLibro(nomeSelect)
     var prezzo = $("#prezzo").val();
     var prezzo_acquisto = $("#prezzo_acquisto").val();
     var anno_acquisto = $("#anno_acquisto").val();
-    //var path = $("#url").val();
-    //var copertina = path.replace(/^.*\\/, "");
+    var path = $("#url").val();
+    var copertina = "\\"+path.replace(/^.*\\/, "");
     var quantita = $("#quantita").val();
     var locazione = $("#locazione").val();
 
@@ -89,27 +89,38 @@ function modificaSalvaLibro(nomeSelect)
     var prezzo_old = $("#prezzo_old").val();
     var prezzo_acquisto_old = $("#prezzo_acquisto_old").val();
     var anno_acquisto_old = $("#anno_acquisto_old").val();
-    //var copertina_old = $("#copertina_old").val();
+    var copertina_old = $("#copertina_old").val();
     var quantita_old = $("#quantita_old").val();
     var locazione_old = $("#locazione_old").val();
 
 
     if(autore.length != 0 && isbn.length != 0 && titolo.length != 0 && locazione.length != 0 && prezzo.length != 0 && prezzo_acquisto.length != 0 && quantita.length != 0 && anno_acquisto.length != 0 && id_casa_editrice.length != 0)
     {
-        if(autore == autore_old && titolo == titolo_old && id_casa_editrice == id_casa_editrice_old && prezzo == prezzo_old && prezzo_acquisto == prezzo_acquisto_old && anno_acquisto == anno_acquisto_old && quantita == quantita_old && locazione == locazione_old)
+        var check;
+        if(copertina == "\\")
+        {
+            check = confirm("Nessuna copertina selezionata, mantenere quella precedente?");
+            if(check == true)
+            {
+                copertina = copertina_old;
+            }
+
+        }
+
+        if(autore == autore_old && titolo == titolo_old && id_casa_editrice == id_casa_editrice_old && copertina == copertina_old && prezzo == prezzo_old && prezzo_acquisto == prezzo_acquisto_old && anno_acquisto == anno_acquisto_old && quantita == quantita_old && locazione == locazione_old)
         {
             alert("Non ci sono modifiche da salvare!");
         }
 
         else
         {
-            var check = confirm("Sei sicuro di voler salvare le modifiche?");
+            check = confirm("Sei sicuro di voler salvare le modifiche?");
             if(check == true)
             {
                 $.ajax({
                     type: 'POST',
                     url: 'modifica_salva_libro.php',
-                    data: "autore="+autore+"&isbn="+isbn+"&isbn_old="+isbn+"&titolo="+titolo+"&locazione="+locazione+"&prezzo="+prezzo+"&prezzo_acquisto="+prezzo_acquisto+"&quantita="+quantita+"&anno_acquisto="+anno_acquisto+"&id_casa_editrice="+id_casa_editrice,
+                    data: "autore="+autore+"&isbn="+isbn+"&isbn_old="+isbn_old+"&titolo="+titolo+"&copertina="+copertina+"&locazione="+locazione+"&prezzo="+prezzo+"&prezzo_acquisto="+prezzo_acquisto+"&quantita="+quantita+"&anno_acquisto="+anno_acquisto+"&id_casa_editrice="+id_casa_editrice,
                     dataType: "html",
 
                     success: function(response)
@@ -133,8 +144,8 @@ function modificaSalvaLibro(nomeSelect)
                 anno_acquisto = anno_acquisto_old;
                 quantita = quantita_old;
                 locazione = locazione_old;
+                copertina = copertina_old;
                 window.location.reload();
-
             }
         }
     }
@@ -273,4 +284,17 @@ function back_Ricerca(isbn, titolo, autore, casa_editrice, locazione, anno_acqui
             alert("La cancellazione non è andata a buon fine.");
         }
     });
+}
+
+function cambiaCopertina()
+{
+    var cambia = document.getElementById('div_copertina');
+    if(cambia.style.display == "block")
+    {
+        cambia.style.display = 'none';
+    }
+    else
+    {
+        cambia.style.display = 'block';
+    }
 }

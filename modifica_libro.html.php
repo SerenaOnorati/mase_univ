@@ -184,9 +184,12 @@
                                         <h3 style="color: #ed786a">Copertina</h3>
                                     </div>
                                     <div class="3u">
-                                        <!--<input type="hidden" id="copertina_old" value="<?php echo $_GET['copertina']; ?>">
-                                        <label id="copertina" for="url" class="floated">Inserisci la copertina del libro: </label>
-                                        <input type="file" id="<?php echo $_GET['copertina']; ?>" name="url" multiple><br>-->
+                                        <input type="hidden" id="copertina_old" value="<?php echo $_GET['copertina']; ?>"><br>
+                                        <a href="javascript: cambiaCopertina()" class="fa fa-picture-o">Cambia</a>
+                                        <div id="div_copertina" style="display: none">
+                                            <label id="copertina" for="url" class="floated">Inserisci la copertina del libro: </label>
+                                            <input type="file" id="url" name="url" multiple><br>
+                                        </div>
                                     </div>
                                 </div>
                                 <br>
