@@ -22,7 +22,7 @@
     <br>
     <ul id="icone">
         <li>
-            <a href="" class="fa fa-book"><span>Libri</span></a>
+            <a id="menu_ricerca" class="fa fa-book"><span>Libri</span></a>
             <ul>
                 <li><a href="admin.php">Ricerca Libri</a></li>
                 <li><a href="inserisci_libri.html.php">Inserisci Libri</a></li>
@@ -30,7 +30,7 @@
         </li>
 
         <li>
-            <a href="" class="fa fa-truck"><span>Ordini</span></a>
+            <a id="menu_ordini" class="fa fa-truck"><span>Ordini</span></a>
             <ul>
                 <li><a href="daordinare.php">Da Ordinare</a></li>
                 <li><a href="ordinato.php">Ordinati</a></li>

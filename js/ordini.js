@@ -189,25 +189,33 @@ function preparaOrdina(isbn)
     }
     else
     {
-        var check = confirm("Sei sicuro di voler ordinare il libro?");
-        if(check == true)
+        if(quantita > 0)
         {
-            $.ajax({
-                type: 'POST',
-                url: 'ordina_libri.php',
-                data: "isbn="+isbn+"&quantita="+quantita,
-                dataType: "html",
+            var check = confirm("Sei sicuro di voler ordinare il libro?");
+            if(check == true)
+            {
+                $.ajax({
+                    type: 'POST',
+                    url: 'ordina_libri.php',
+                    data: "isbn="+isbn+"&quantita="+quantita,
+                    dataType: "html",
 
-                success: function(response)
-                {
-                    alert(response);
-                },
-                error: function()
-                {
-                    alert("L'ordine non è andato a buon fine.");
-                }
-            });
+                    success: function(response)
+                    {
+                        alert(response);
+                    },
+                    error: function()
+                    {
+                        alert("L'ordine non è andato a buon fine.");
+                    }
+                });
+            }
+            else
+            {
+                alert("Quantità non accettata.");
+            }
         }
+
     }
 }
 
@@ -274,7 +282,8 @@ function back_Ricerca(isbn, titolo, autore, casa_editrice, locazione, anno_acqui
         {
 
             document.write(response);
-
+            document.getElementById('menu_ricerca').href = 'admin.php';
+            document.getElementById('menu_ordini').href = 'daordinare.php';
         },
         error: function()
         {

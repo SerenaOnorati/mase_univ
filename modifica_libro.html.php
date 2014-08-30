@@ -1,21 +1,19 @@
 <?php
-include 'access.inc.php';
-include 'configuration.php';
+    include 'access.inc.php';
+    include 'configuration.php';
 
 
-if(!userIsLoggedIn())
-{
-    $GLOBALS['loginError'] = "Non hai effettuato il login. Inserire email e password";
-    include 'index.php';
-}
-if(!userHasRole('Amministratore'))
-{
+    if(!userIsLoggedIn())
+    {
+        $GLOBALS['loginError'] = "Non hai effettuato il login. Inserire email e password";
+        include 'index.php';
+    }
+    if(!userHasRole('Amministratore'))
+    {
 
-    $GLOBALS['loginError'] = "Non sei autorizzato ad accedere alla pagina di amministrazione";
-    include 'index.php';
-}
-
-
+        $GLOBALS['loginError'] = "Non sei autorizzato ad accedere alla pagina di amministrazione";
+        include 'index.php';
+    }
 ?>
 
 <!DOCTYPE HTML>
