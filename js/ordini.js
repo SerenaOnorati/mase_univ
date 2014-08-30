@@ -349,47 +349,6 @@ function svuotaDaOrdinare(id_ordini)
         });
     }
 }
-function modificaOrdineDaordinare(isbn, id_ordine)
-{
-    if(document.getElementById("modifica"+isbn+id_ordine).innerHTML == "Modifica Ordine")
-    {
-        var check = confirm("Sei sicuro di voler modificare l'ordine?");
-        if(check == true)
-        {
-            document.getElementById("modifica"+isbn+id_ordine).innerHTML = "Salva Ordine";
-            document.getElementById("modifica"+isbn+id_ordine).className = "fa fa-save";
-            document.getElementById("qtaord"+isbn+id_ordine).disabled = false;
-        }
-    }
-    //altrimenti, prelevo i campi modificati e li invio con AJAX
-    else
-    {
-        var quantita_ordine = $('#qtaord'+isbn+id_ordine).val();
-        if(quantita_ordine > 0)
-        {
-            $.ajax({
-                type: 'POST',
-                url: 'modifica_ordine_daordinare.php',
-                data: "isbn="+isbn+"&id_ordine="+id_ordine+"&quantita_ordine="+quantita_ordine,
-                dataType: "html",
-
-                success: function(response)
-                {
-                    alert(response);
-                    document.getElementById("modifica"+isbn+id_ordine).innerHTML = "Modifica Ordine";
-                    document.getElementById("modifica"+isbn+id_ordine).className = "fa fa-edit";
-                    document.getElementById("qtaord"+isbn+id_ordine).disabled = true;
-                },
-                error: function()
-                {
-                    alert("L'ordine non è stato modificato.");
-                }
-            });
-        }
-        else
-            alert("Inserisci una quantita' positiva");
-    }
-}
 
 /*permette di stampare un'array di oggetti in javascript(mi serviva per il debug)*/
 function print_r(o,level,max) {
@@ -420,10 +379,8 @@ function modificaOrdineDaordinare(isbn, id_ordine)
 {
     var old = $('#qtaord_old'+isbn+id_ordine);
     var quantita_ordine_old = old.val();
-    alert("quantita-ordine_old"+quantita_ordine_old);
     if(document.getElementById("modifica"+isbn+id_ordine).innerHTML == "Modifica Ordine")
     {
-        //document.getElementById("modificato").innerHTML = " ";
         document.getElementById("modifica"+isbn+id_ordine).innerHTML = "Salva Ordine";
         document.getElementById("modifica"+isbn+id_ordine).className = "fa fa-save";
         document.getElementById("qtaord"+isbn+id_ordine).disabled = false;
@@ -431,9 +388,7 @@ function modificaOrdineDaordinare(isbn, id_ordine)
     //altrimenti, prelevo i campi modificati e li invio con AJAX
     else
     {
-        //var quantita_ordine  = document.getElementById('qtaord'+isbn+id_ordine).value;
         var quantita_ordine = $('#qtaord'+isbn+id_ordine).val();
-        alert(quantita_ordine);
         if(quantita_ordine <= 0)
         {
             alert("Inserisci una quantita' positiva");
@@ -456,12 +411,10 @@ function modificaOrdineDaordinare(isbn, id_ordine)
                 success: function(response)
                 {
                     alert(response);
-                    //document.getElementById("modificato").innerHTML = response;
                     document.getElementById("modifica"+isbn+id_ordine).innerHTML = "Modifica Ordine";
                     document.getElementById("modifica"+isbn+id_ordine).className = "fa fa-edit";
                     document.getElementById("qtaord"+isbn+id_ordine).disabled = true;
                     old.value = quantita_ordine;
-                    window.location.reload();
                 },
                 error: function()
                 {
