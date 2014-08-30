@@ -327,25 +327,22 @@ function cancellaOrdine(id)
 
 function svuotaDaOrdinare(id_ordini)
 {
-    alert(print_r(id_ordini));
 
-    var check = confirm("Sei sicuro di voler cancellare tutti i libro ancora da ordinare?");
+    var check = confirm("Sei sicuro di voler cancellare tutti i libri ancora da ordinare?");
 
     if(check == true)
     {
         $.ajax({
 
-            type: "POST",
-
-            dataType: "json",
-            data: id_ordini,
-
+            type: 'POST',
             url: 'svuota_daordinare.php',
+            data: id_ordini,
+            dataType: "html",
 
             success: function(response)
             {
-                //window.location.reload();
                 alert(response);
+                window.location.reload();
             },
             error: function()
             {

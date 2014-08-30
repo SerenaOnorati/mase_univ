@@ -12,19 +12,12 @@
         if(userHasRole('Amministratore'))
         {
 
-            //$id_ordini = json_decode($_POST['id'], true);
+            /* Inizio la transazione */
+            $pdo->beginTransaction();
 
-            echo print_r($_POST['id']) ;
-            /*try
-            {
+            foreach ( $_POST['id'] as $chiave => $id) {
 
-                $id_ordini = json_decode($_POST['id_ordini']);
-
-                echo $id_ordini;
-
-                /* Inizio la transazione */
-                /*$pdo->beginTransaction();
-                foreach($id_ordini as $id)
+                try
                 {
                     $sql = 'DELETE FROM ordine WHERE id_ordine = :id_ordine';
 
@@ -33,28 +26,28 @@
 
                     $s->execute();
 
-                    //$id = $pdo->lastInsertId();
-
                     $sql = 'DELETE FROM ordine_libro WHERE id_ordine = :id_ordine';
 
                     $s = $pdo->prepare($sql);
                     $s->bindValue(':id_ordine', $id, PDO::PARAM_INT);
 
                     $s->execute();
+
+
                 }
 
-                /*Eseguo le operazioni della transazione*/
-                /*$pdo->commit();
+                catch (PDOException $e)
+                {
+                    $pdo->rollBack();
+                    $error = 'Errore nella cancellazione dei libri ancora da ordinare.';
+                    echo $error;
+                }
 
-                echo 'Cancellazione ordine avvenuto con successo.';
 
             }
-            catch (PDOException $e)
-            {
-                $pdo->rollBack();
-                $error = 'Errore cancellazione ordine.';
-                echo $error;
-            }*/
+            /*Eseguo le operazioni della transazione*/
+            $pdo->commit();
+            echo 'Tutti i libri da ordinare sono stati cancellati con successo!';
         }
         else
         {

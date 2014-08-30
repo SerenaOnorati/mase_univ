@@ -152,19 +152,19 @@
                                 <?php endforeach;
                                 }
                             ?>
-
                             <br>
-
-                            <script language="JavaScript">
-                                var id_ordini = <?php
-                                                   if(isset($id_ordini_array))
-                                                        echo json_encode(array('id' => $id_ordini_array));
-                                                ?>
-                            </script>
                             <ul class="actions" style="align-content: center!important">
                                 <li>
-                                    <a href="" class="button button-icon fa fa-print">Stampa</a>
-                                    <a href="javascript: svuotaDaOrdinare(id_ordini)" class="button button-icon fa fa-trash-o">Svuota</a>
+                                    <?php
+                                        if(isset($id_ordini_array))
+                                        {
+                                            echo "<a href=\"\" class=\"button button-icon fa fa-print\">Stampa</a>&nbsp;";
+                                            echo "<script language=\"JavaScript\">
+                                                  var id_ordini =". json_encode(array('id' => $id_ordini_array)).";
+                                                    </script>";
+                                            echo "<a href=\"javascript: svuotaDaOrdinare(id_ordini)\" class=\"button button-icon fa fa-trash-o\">Svuota</a>";
+                                        }
+                                    ?>
                                 </li>
                             </ul>
                         </form>
