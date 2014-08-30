@@ -324,3 +324,40 @@ function cancellaOrdine(id)
         });
     }
 }
+
+function svuotaDaOrdinare(id_ordini)
+{
+
+    var lung = id_ordini.length;
+    var id_ordini_json = [];
+    for(var i = 0; i < lung; i++)
+    {
+          id_ordini_json.push({
+              id: id_ordini[i].value
+          });
+    }
+    alert(id_ordini_json);
+
+    var check = confirm("Sei sicuro di voler cancellare tutti i libro ancora da ordinare?");
+
+    if(check == true)
+    {
+        $.ajax({
+
+            type: 'POST',
+            url: 'svuota_daordinare.php',
+            data: {id : id_ordini},
+            dataType: 'JSON',
+
+            success: function(response)
+            {
+                //window.location.reload();
+                alert(response);
+            },
+            error: function()
+            {
+                alert("La cancellazione non è andata a buon fine.");
+            }
+        });
+    }
+}
