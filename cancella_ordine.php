@@ -35,7 +35,7 @@ else{
             /*Eseguo le operazioni della transazione*/
             $pdo->commit();
 
-            echo 'Cancellazione ordine avvenuto con successo.';
+            echo 'Cancellazione dell\'ordine avvenuta con successo.';
 
         }
         catch (PDOException $e)
@@ -46,7 +46,7 @@ else{
     }
     else
     {
-        echo "<script>alert(\"Non sei autorizzato ad accedere a questa pagina\")</script>";
+        echo "<script>alert(\"Non sei autorizzato ad accedere a questa pagina.\")</script>";
     }
 }
 ?>

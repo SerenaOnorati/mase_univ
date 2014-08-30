@@ -12,9 +12,9 @@
         if(userHasRole('Amministratore'))
         {
 
-            $id_ordini = var_dump(json_decode($_POST['id_ordini'], true));
+            $id_ordini = json_decode($_POST['id'], true);
 
-            print_r($id_ordini) ;
+            echo print_r($id_ordini) ;
             /*try
             {
 
@@ -58,7 +58,7 @@
         }
         else
         {
-            echo "<script>alert(\"Non sei autorizzato ad accedere a questa pagina\")</script>";
+            echo "<script>alert(\"Non sei autorizzato ad accedere a questa pagina.\")</script>";
         }
     }
 ?>

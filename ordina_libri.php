@@ -46,7 +46,7 @@ else{
             /*Eseguo le operazioni della transazione*/
             $pdo->commit();
 
-            echo 'Inserimento avvenuto con successo.';
+            echo 'Il libro è stato inserito nell\'elenco dei libri da ordinare.';
 
         }
         catch (PDOException $e)

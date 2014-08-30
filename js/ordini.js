@@ -327,16 +327,7 @@ function cancellaOrdine(id)
 
 function svuotaDaOrdinare(id_ordini)
 {
-
-    var lung = id_ordini.length;
-    var id_ordini_json = [];
-    for(var i = 0; i < lung; i++)
-    {
-          id_ordini_json.push({
-              id: id_ordini[i].value
-          });
-    }
-    alert(id_ordini_json);
+    alert(print_r(id_ordini));
 
     var check = confirm("Sei sicuro di voler cancellare tutti i libro ancora da ordinare?");
 
@@ -346,7 +337,7 @@ function svuotaDaOrdinare(id_ordini)
 
             type: 'POST',
             url: 'svuota_daordinare.php',
-            data: {id : id_ordini},
+            data: id_ordini,
             dataType: 'JSON',
 
             success: function(response)
@@ -360,4 +351,28 @@ function svuotaDaOrdinare(id_ordini)
             }
         });
     }
+}
+
+/*permette di stampare un'array di oggetti in javascript(mi serviva per il debug)*/
+function print_r(o,level,max) {
+    var output = "";
+    if(!level) level = 0;
+    var padding = "";
+    for(var j=0;j<level+1;j++) padding += "    ";
+    if(!max) max = 10;
+    if(level==max) return padding + "Max level ["+level+"] reached\n";
+    if(typeof(o) == 'object') {
+        for(var item in o) {
+            var value = o[item];
+            if(typeof(value) == 'object') {
+                output += padding + "[" + item + "] => Array\n";
+                output += print_r(value,level+1,max);
+            } else {
+                output += padding + "[" + item + "] => \"" + value + "\"\n";
+            }
+        }
+    } else {
+        output = "("+typeof(o)+") => "+o;
+    }
+    return output;
 }

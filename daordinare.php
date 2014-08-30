@@ -38,15 +38,12 @@
         {
             $GLOBALS['risultati'] = $risultati;
             $id_ordini_array = array();
-            /*foreach( $risultati as $id_ordini)
+            foreach( $risultati as $id_ordini)
             {
                 $id = $id_ordini['id_ordine'];
-                array_push($id_ordini_array, 'id'."=>".$id);
-            }*/
-            for($i = 0; $i < count($risultati); $i++)
-            {
-                $id_ordini_array('id'=>$risultati[$i]['id_ordini']);
+                array_push($id_ordini_array, $id);
             }
+
             $GLOBALS['id_ordini_array'] = $id_ordini_array;
 
         }
