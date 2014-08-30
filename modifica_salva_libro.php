@@ -53,7 +53,7 @@
             catch (PDOException $e)
             {
                 $error = 'Errore aggiornamento del libro.';
-                echo $e->getMessage();
+                echo $e->$error;
             }
         }
         else

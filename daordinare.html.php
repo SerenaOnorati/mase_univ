@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>Area Privata - Da ordinare</title>
+        <title>Area Privata - Libri da ordinare</title>
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <meta name="description" content="" />
@@ -85,6 +85,7 @@
                                 </div>
 
                             </div>
+                            <br>
                             <div id="daordinare">
                             <?php
                             if(!isset($no_ordini))
@@ -145,7 +146,7 @@
                                             <div class="2u">
                                                 <a href="javascript: modificaOrdineDaordinare(<?php echo $risultato['isbn']; ?>, <?php echo $risultato['id_ordine']; ?>)" class="fa fa-edit" id="modifica<?php echo $risultato['isbn']; ?><?php echo $risultato['id_ordine']; ?>" title="Modifica">Modifica Ordine</a><br>
                                                 <a href="javascript: cancellaOrdine(<?php echo $risultato['id_ordine']; ?>)" class="fa fa-times" id="cancella<?php echo $id; ?>" title="Cancella">Cancella Ordine</a><br>
-                                                <a href="javascript: preparaOrdina(<?php echo $risultato['isbn']; ?>)" class="fa fa-plus" id="ordina<?php echo $id; ?>" title="Ordina">Ordina</a>
+                                                <a href="javascript: ordinaLibro(<?php echo $risultato['id_ordine']; ?>,<?php echo $id; ?>)" class="fa fa-plus" id="ordina<?php echo $id; ?>" title="Libro Ordinato">Libro Ordinato</a>
                                             </div>
 
                                         </div>
@@ -162,10 +163,11 @@
                                         if(isset($id_ordini_array))
                                         {
                                             echo "<a href=\"\" class=\"button button-icon fa fa-print\">Stampa</a>&nbsp;";
+                                            echo "<a href=\"javascript: OrdinaTuttiDaOrdinare(id_ordini)\" class=\"button button-icon fa fa-shopping-cart\">Ordina tutti</a>&nbsp;";
                                             echo "<script language=\"JavaScript\">
                                                   var id_ordini =". json_encode(array('id' => $id_ordini_array)).";
                                                     </script>";
-                                            echo "<a href=\"javascript: svuotaDaOrdinare(id_ordini)\" class=\"button button-icon fa fa-trash-o\">Svuota</a>";
+                                            echo "<a href=\"javascript: svuota(id_ordini)\" class=\"button button-icon fa fa-trash-o\">Svuota</a>";
                                         }
                                     ?>
                                 </li>

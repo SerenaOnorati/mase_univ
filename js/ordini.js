@@ -322,7 +322,7 @@ function cancellaOrdine(id)
     }
 }
 
-function svuotaDaOrdinare(id_ordini)
+function svuota(id_ordini)
 {
 
     var check = confirm("Sei sicuro di voler cancellare tutti i libri ancora da ordinare?");
@@ -418,9 +418,115 @@ function modificaOrdineDaordinare(isbn, id_ordine)
                 },
                 error: function()
                 {
-                    alert("Modifica fallita");
+                    alert("La modifica dell'ordine non è andata a buon fine.");
                 }
             });
         }
+    }
+}
+
+function ordinaLibro(id_ordine, id_riga)
+{
+    var check = confirm("Aggiornare lo stato del libro a ordinato?");
+
+    if(check == true)
+    {
+        $.ajax({
+            type: 'POST',
+            url: 'ordina_libro_daordinare.php',
+            data: "id_ordine="+id_ordine,
+            dataType: "html",
+
+            success: function(response)
+            {
+                alert(response);
+                var riga_ordine = document.getElementById('row'+id_riga);
+                riga_ordine.style.display = 'none';
+            },
+            error: function()
+            {
+                alert("L'aggiornamento dello stato dell'ordine non è andato a buon fine.");
+            }
+        });
+    }
+}
+
+function OrdinaTuttiDaOrdinare(id_ordini)
+{
+    var check = confirm("Aggiornare lo stato di tutti i libri a ordinato?");
+
+    if(check == true)
+    {
+        $.ajax({
+
+            type: 'POST',
+            url: 'ordina_tutti_daordinare.php',
+            data: id_ordini,
+            dataType: "html",
+
+            success: function(response)
+            {
+                alert(response);
+                var content = document.getElementById('daordinare');
+                content.style.display = 'none';
+            },
+            error: function()
+            {
+                alert("L'aggiornamento di tutti gli stati non è andato a buon fine.");
+            }
+        });
+    }
+}
+
+function arrivatoLibro(id_ordine, id_riga)
+{
+    var check = confirm("Aggiornare lo stato del libro ad arrivato?");
+
+    if(check == true)
+    {
+        $.ajax({
+            type: 'POST',
+            url: 'arrivato_libro_ordinato.php',
+            data: "id_ordine="+id_ordine,
+            dataType: "html",
+
+            success: function(response)
+            {
+                alert(response);
+                var riga_ordine = document.getElementById('row'+id_riga);
+                riga_ordine.style.display = 'none';
+            },
+            error: function()
+            {
+                alert("L'aggiornamento dello stato dell'ordine non è andato a buon fine.");
+            }
+        });
+    }
+}
+
+function ArrivatiTuttiOrdinati(id_ordini)
+{
+    var check = confirm("Aggiornare lo stato di tutti i libri ad arrivato?");
+
+    if(check == true)
+    {
+        $.ajax({
+
+            type: 'POST',
+            url: 'arrivati_tutti_ordinati.php',
+            data: id_ordini,
+            dataType: "html",
+
+            success: function(response)
+            {
+                alert(response);
+                var content = document.getElementById('ordinati');
+                content.style.display = 'none';
+            },
+            error: function()
+            {
+                alert("L'aggiornamento di tutti gli stati non è andato a buon fine.");
+            }
+        });
     }
 }

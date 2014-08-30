@@ -18,7 +18,7 @@
                     INNER JOIN ordine on ordine_libro.id_ordine=ordine.id_ordine
                     INNER JOIN casa_editrice on libro.id_casa_editrice = casa_editrice.id_casa_editrice
                     INNER JOIN distributore on casa_editrice.id_distributore = distributore.id_distributore
-                    WHERE ordinato = 0 AND arrivato = 0';
+                    WHERE ordinato = false AND arrivato = false';
 
             $s = $pdo->prepare($sql);
 
