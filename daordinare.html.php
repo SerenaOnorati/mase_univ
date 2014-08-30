@@ -157,9 +157,9 @@
 
                             <script language="JavaScript">
                                 var id_ordini = <?php
-                                                    //if(isset($id_ordini_array))
+                                                   if(isset($id_ordini_array))
                                                         echo json_encode(array('id' => $id_ordini_array));
-                                                ?>;
+                                                ?>
                             </script>
                             <ul class="actions" style="align-content: center!important">
                                 <li>

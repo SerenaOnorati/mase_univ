@@ -329,16 +329,23 @@ function svuotaDaOrdinare(id_ordini)
 {
     alert(print_r(id_ordini));
 
-    var check = confirm("Sei sicuro di voler cancellare tutti i libro ancora da ordinare?");
+    /*var check = confirm("Sei sicuro di voler cancellare tutti i libro ancora da ordinare?");
 
     if(check == true)
     {
         $.ajax({
 
-            type: 'POST',
-            url: 'svuota_daordinare.php',
+            type: "POST",
+
+            dataType: "json",
             data: id_ordini,
-            dataType: 'JSON',
+            beforeSend: function(x) {
+                if(x && x.overrideMimeType) {
+                    x.overrideMimeType("application/json;charset=UTF-8");
+                }
+            },
+
+            url: 'svuota_daordinare.php',
 
             success: function(response)
             {
@@ -350,7 +357,7 @@ function svuotaDaOrdinare(id_ordini)
                 alert("La cancellazione non è andata a buon fine.");
             }
         });
-    }
+    }*/
 }
 
 /*permette di stampare un'array di oggetti in javascript(mi serviva per il debug)*/
