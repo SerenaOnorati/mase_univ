@@ -384,7 +384,7 @@ function print_r(o,level,max) {
 }
 
 
-function modificaOrdineDaordinare(isbn, id_ordine)
+function modificaOrdine(isbn, id_ordine)
 {
     var old = $('#qtaord_old'+isbn+id_ordine);
     var quantita_ordine_old = old.val();
