@@ -49,7 +49,7 @@ else
 
     }
     else
-        $GLOBALS['no_ordini'] = "Nessun libro è stato ordinato.";
+        $GLOBALS['no_ordini'] = "Nessun libro è arrivato.";
 
     include 'arrivato.html.php';
 }

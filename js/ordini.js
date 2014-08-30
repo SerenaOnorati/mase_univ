@@ -322,7 +322,7 @@ function cancellaOrdine(id)
     }
 }
 
-function svuota(id_ordini)
+function svuota(id_ordini, id_div)
 {
 
     var check = confirm("Sei sicuro di voler cancellare tutti i libri ancora da ordinare?");
@@ -339,7 +339,7 @@ function svuota(id_ordini)
             success: function(response)
             {
                 alert(response);
-                var content = document.getElementById('daordinare');
+                var content = document.getElementById(id_div);
                 content.style.display = 'none';
             },
             error: function()

@@ -167,7 +167,7 @@
                                             echo "<script language=\"JavaScript\">
                                                   var id_ordini =". json_encode(array('id' => $id_ordini_array)).";
                                                     </script>";
-                                            echo "<a href=\"javascript: svuota(id_ordini)\" class=\"button button-icon fa fa-trash-o\">Svuota</a>";
+                                            echo "<a href=\"javascript: svuota(id_ordini, 'daordinare')\" class=\"button button-icon fa fa-trash-o\">Svuota</a>";
                                         }
                                     ?>
                                 </li>
