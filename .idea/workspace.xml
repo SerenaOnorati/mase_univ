@@ -4,7 +4,6 @@
     <list default="true" id="c62a4eec-d582-4e13-b7e5-eef246bc66c3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daordinare.html.php" afterPath="$PROJECT_DIR$/daordinare.html.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/ordini.js" afterPath="$PROJECT_DIR$/js/ordini.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/svuota_daordinare.php" afterPath="$PROJECT_DIR$/svuota_daordinare.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mase_univ.iws" />
@@ -65,20 +64,8 @@
       <file leaf-file-name="ordini.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/ordini.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="354" column="83" selection-start="11182" selection-end="11184" vertical-scroll-proportion="0.3614865" vertical-offset="5804" max-vertical-offset="6511">
+            <state line="387" column="59" selection-start="12646" selection-end="12646" vertical-scroll-proportion="1.0287162" vertical-offset="5970" max-vertical-offset="7225">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="svuota_daordinare.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/svuota_daordinare.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="85" selection-start="1130" selection-end="1130" vertical-scroll-proportion="-13.076923" vertical-offset="357" max-vertical-offset="1054">
-              <folding>
-                <marker date="1409391849995" expanded="true" signature="487:534" placeholder="DELETE FROM ..." />
-                <marker date="1409391849995" expanded="true" signature="719:772" placeholder="DELETE FROM ..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -86,22 +73,23 @@
       <file leaf-file-name="daordinare.html.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/daordinare.html.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="160" column="120" selection-start="11077" selection-end="11077" vertical-scroll-proportion="-15.692307" vertical-offset="2312" max-vertical-offset="3162">
+            <state line="143" column="272" selection-start="10045" selection-end="10045" vertical-scroll-proportion="-4.576923" vertical-offset="2312" max-vertical-offset="3179">
               <folding>
+                <element signature="n#style#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h3#0;n#div#1;n#div#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h3#0;n#div#2;n#div#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#strong#0;n#label#0;n#div#1;n#div#0;n#form#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#strong#0;n#label#1;n#div#1;n#div#0;n#form#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#strong#0;n#label#2;n#div#1;n#div#0;n#form#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#strong#0;n#label#3;n#div#1;n#div#0;n#form#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#strong#0;n#label#4;n#div#1;n#div#0;n#form#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#strong#0;n#label#0;n#div#2;n#div#0;n#form#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#strong#0;n#label#1;n#div#2;n#div#0;n#form#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#strong#0;n#label#2;n#div#2;n#div#0;n#form#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#strong#0;n#label#3;n#div#2;n#div#0;n#form#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#strong#0;n#label#4;n#div#2;n#div#0;n#form#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#strong#0;n#label#0;n#div#3;n#div#0;n#form#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#strong#0;n#label#0;n#div#1;n#div#0;n#form#0;n#div#1;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#strong#0;n#label#1;n#div#1;n#div#0;n#form#0;n#div#1;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#strong#0;n#label#2;n#div#1;n#div#0;n#form#0;n#div#1;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#strong#0;n#label#3;n#div#1;n#div#0;n#form#0;n#div#1;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#strong#0;n#label#4;n#div#1;n#div#0;n#form#0;n#div#1;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#strong#0;n#label#0;n#div#2;n#div#0;n#form#0;n#div#1;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#strong#0;n#label#1;n#div#2;n#div#0;n#form#0;n#div#1;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#strong#0;n#label#2;n#div#2;n#div#0;n#form#0;n#div#1;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#strong#0;n#label#3;n#div#2;n#div#0;n#form#0;n#div#1;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#strong#0;n#label#4;n#div#2;n#div#0;n#form#0;n#div#1;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#strong#0;n#label#0;n#div#3;n#div#0;n#form#0;n#div#1;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ul#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -170,8 +158,8 @@
         <option value="$PROJECT_DIR$/ordina_libri.php" />
         <option value="$PROJECT_DIR$/cancella_ordine.php" />
         <option value="$PROJECT_DIR$/daordinare.php" />
-        <option value="$PROJECT_DIR$/daordinare.html.php" />
         <option value="$PROJECT_DIR$/svuota_daordinare.php" />
+        <option value="$PROJECT_DIR$/daordinare.html.php" />
         <option value="$PROJECT_DIR$/js/ordini.js" />
       </list>
     </option>
@@ -825,7 +813,11 @@
       <created>1409388433652</created>
       <updated>1409388433652</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="svuota completato">
+      <created>1409391919473</created>
+      <updated>1409391919473</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -890,7 +882,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="ricerca button" />
     <MESSAGE value="ricerca button e refactor" />
     <MESSAGE value="ricerca() in ordini.js" />
     <MESSAGE value="ricerca.php" />
@@ -915,7 +906,8 @@
     <MESSAGE value="ripristino" />
     <MESSAGE value="passo id_ordini in modo corretto" />
     <MESSAGE value="per serena" />
-    <option name="LAST_COMMIT_MESSAGE" value="per serena" />
+    <MESSAGE value="svuota completato" />
+    <option name="LAST_COMMIT_MESSAGE" value="svuota completato" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1181,42 +1173,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/daordinare.html.php">
+    <entry file="file://$PROJECT_DIR$/svuota_daordinare.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="160" column="120" selection-start="11077" selection-end="11077" vertical-scroll-proportion="-15.692307" vertical-offset="2312" max-vertical-offset="3162">
+        <state line="41" column="85" selection-start="1130" selection-end="1130" vertical-scroll-proportion="-20.923077" vertical-offset="153" max-vertical-offset="1054">
           <folding>
-            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#1;n#div#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#2;n#div#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#label#0;n#div#1;n#div#0;n#form#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#label#1;n#div#1;n#div#0;n#form#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#label#2;n#div#1;n#div#0;n#form#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#label#3;n#div#1;n#div#0;n#form#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#label#4;n#div#1;n#div#0;n#form#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#label#0;n#div#2;n#div#0;n#form#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#label#1;n#div#2;n#div#0;n#form#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#label#2;n#div#2;n#div#0;n#form#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#label#3;n#div#2;n#div#0;n#form#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#label#4;n#div#2;n#div#0;n#form#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#label#0;n#div#3;n#div#0;n#form#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1409391849995" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1409391849995" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/svuota_daordinare.php">
+    <entry file="file://$PROJECT_DIR$/daordinare.html.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="85" selection-start="1130" selection-end="1130" vertical-scroll-proportion="-13.076923" vertical-offset="357" max-vertical-offset="1054">
+        <state line="143" column="272" selection-start="10045" selection-end="10045" vertical-scroll-proportion="-4.576923" vertical-offset="2312" max-vertical-offset="3179">
           <folding>
-            <marker date="1409391849995" expanded="true" signature="487:534" placeholder="DELETE FROM ..." />
-            <marker date="1409391849995" expanded="true" signature="719:772" placeholder="DELETE FROM ..." />
+            <element signature="n#style#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#1;n#div#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#2;n#div#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#label#0;n#div#1;n#div#0;n#form#0;n#div#1;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#label#1;n#div#1;n#div#0;n#form#0;n#div#1;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#label#2;n#div#1;n#div#0;n#form#0;n#div#1;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#label#3;n#div#1;n#div#0;n#form#0;n#div#1;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#label#4;n#div#1;n#div#0;n#form#0;n#div#1;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#label#0;n#div#2;n#div#0;n#form#0;n#div#1;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#label#1;n#div#2;n#div#0;n#form#0;n#div#1;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#label#2;n#div#2;n#div#0;n#form#0;n#div#1;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#label#3;n#div#2;n#div#0;n#form#0;n#div#1;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#label#4;n#div#2;n#div#0;n#form#0;n#div#1;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#label#0;n#div#3;n#div#0;n#form#0;n#div#1;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/ordini.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="354" column="83" selection-start="11182" selection-end="11184" vertical-scroll-proportion="0.3614865" vertical-offset="5804" max-vertical-offset="6511">
+        <state line="387" column="59" selection-start="12646" selection-end="12646" vertical-scroll-proportion="1.0287162" vertical-offset="5970" max-vertical-offset="7225">
           <folding />
         </state>
       </provider>

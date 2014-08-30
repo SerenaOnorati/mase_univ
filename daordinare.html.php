@@ -51,7 +51,7 @@
 
                     <!-- Post -->
                     <article class="is-post" style="align-content: center !important">
-                        <form method="get" action="" name="dati_utente" id="dati_utente" target="_parent" onsubmit="return false" >
+                        <form method="get" action="" name="form_daordinare" id="form_daordinare" target="_parent" onsubmit="return false" >
                             <header>
                                 <div class="row">
                                     <div class="10u">
@@ -85,7 +85,7 @@
                                 </div>
 
                             </div>
-
+                            <div id="daordinare">
                             <?php
                             if(!isset($no_ordini))
                             {
@@ -141,7 +141,7 @@
                                                 <input id="qtaord<?php echo $id; ?>" name="qtaord<?php echo $id; ?>" type="text" class="text" placeholder="Qta Ord" value="<?php echo $risultato['quantita_ordine']; ?>" disabled>
                                             </div>
                                             <div class="2u">
-                                                <a href="javascript: modificaLibroDaordinare(<?php echo $risultato['isbn']; ?>, <?php echo $risultato['id_ordine']; ?> )" class="fa fa-edit" id="modifica" title="Modifica">Modifica Ordine</a><br>
+                                                <a href="javascript: modificaOrdineDaordinare(<?php echo $risultato['isbn']; ?>, <?php echo $risultato['id_ordine']; ?>)" class="fa fa-edit" id="modifica<?php echo $risultato['isbn']; ?><?php echo $risultato['id_ordine']; ?>" title="Modifica">Modifica Ordine</a><br>
                                                 <a href="javascript: cancellaOrdine(<?php echo $risultato['id_ordine']; ?>)" class="fa fa-times" id="cancella" title="Cancella">Cancella Ordine</a><br>
                                                 <a href="javascript: preparaOrdina(<?php echo $risultato['isbn']; ?>)" class="fa fa-plus" id="daordinare" title="Da Ordinare">Ordinato</a>
                                             </div>
@@ -152,6 +152,7 @@
                                 <?php endforeach;
                                 }
                             ?>
+                            </div>
                             <br>
                             <ul class="actions" style="align-content: center!important">
                                 <li>
