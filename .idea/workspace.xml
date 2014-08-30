@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c62a4eec-d582-4e13-b7e5-eef246bc66c3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/menuAdmin.php" afterPath="$PROJECT_DIR$/menuAdmin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modifica_libro.html.php" afterPath="$PROJECT_DIR$/modifica_libro.html.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/ordini.js" afterPath="$PROJECT_DIR$/js/ordini.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mase_univ.iws" />
@@ -85,7 +82,7 @@
       <file leaf-file-name="menuAdmin.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/menuAdmin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="43" selection-start="1114" selection-end="1128" vertical-scroll-proportion="0.49317408" vertical-offset="289" max-vertical-offset="935">
+            <state line="49" column="6" selection-start="1671" selection-end="1671" vertical-scroll-proportion="0.9283276" vertical-offset="289" max-vertical-offset="935">
               <folding />
             </state>
           </provider>
@@ -869,7 +866,11 @@
       <created>1409410482500</created>
       <updated>1409410482500</updated>
     </task>
-    <option name="localTasksCounter" value="115" />
+    <task id="LOCAL-00115" summary="menuAdmin">
+      <created>1409414652111</created>
+      <updated>1409414652111</updated>
+    </task>
+    <option name="localTasksCounter" value="116" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -934,7 +935,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="configuration" />
     <MESSAGE value="images" />
     <MESSAGE value="libro daordinare.html.php" />
     <MESSAGE value="font" />
@@ -959,7 +959,8 @@
     <MESSAGE value="modifica_ordine_daordine" />
     <MESSAGE value="modifica_ordine_daordine  e js" />
     <MESSAGE value="completati:&#10;da ordinare&#10;&#10;ordinati&#10;&#10;parziale:&#10;&#10;arrivati (si attendono le specifiche)" />
-    <option name="LAST_COMMIT_MESSAGE" value="completati:&#10;da ordinare&#10;&#10;ordinati&#10;&#10;parziale:&#10;&#10;arrivati (si attendono le specifiche)" />
+    <MESSAGE value="menuAdmin" />
+    <option name="LAST_COMMIT_MESSAGE" value="menuAdmin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1286,7 +1287,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/menuAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="43" selection-start="1114" selection-end="1128" vertical-scroll-proportion="0.49317408" vertical-offset="289" max-vertical-offset="935">
+        <state line="49" column="6" selection-start="1671" selection-end="1671" vertical-scroll-proportion="0.9283276" vertical-offset="289" max-vertical-offset="935">
           <folding />
         </state>
       </provider>
