@@ -89,7 +89,7 @@
                                             <input id="tel<?php echo $user['id_user']?>" type="text" name="tel" class="text" required="required" value=" <?php echo htmlspecialchars($user['tel'], ENT_QUOTES, 'UTF-8'); ?>" disabled>
                                         </div>
                                         <div class="2u">
-                                            <a id="modificautente<?php echo $user['id_user']?>" href="javascript:modificaUtente(<?php echo $user['id_user']?>)" class="fa fa-edit" title="Modifica">Modifica</a><br>
+                                            <a id="modificautente<?php echo $user['id_user']?>" href="javascript: modificaUtente(<?php echo $user['id_user']?>)" class="fa fa-edit" title="Modifica">Modifica</a><br>
                                             <a href="javascript:cancellaUtente(<?php echo $user['id_user']?>)" class="fa fa-times" title="Cancella"> Cancella</a>
                                         </div>
                                     </div>

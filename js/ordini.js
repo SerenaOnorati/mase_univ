@@ -41,7 +41,6 @@ function aggiungiLibro(nomeSelect)
 
 function modificaLibroDaordinare(isbn)
 {
-
     var autore = document.getElementById('autore'+isbn).innerText;
     var titolo = document.getElementById('titolo'+isbn).innerText;
     var casa_editrice = document.getElementById('casaeditrice'+isbn).innerText;
@@ -51,7 +50,6 @@ function modificaLibroDaordinare(isbn)
     var copertina = document.getElementById('copertina'+isbn).value;
     var quantita = document.getElementById('qtamag'+isbn).innerText;
     var locazione = document.getElementById('locazione'+isbn).innerText;
-
 
 
     autore = autore.replace(/^.*:/, "");
@@ -64,7 +62,6 @@ function modificaLibroDaordinare(isbn)
     locazione = locazione.replace(/^.*:/, "");
 
     window.location.href = 'modifica_libro.html.php?isbn='+isbn+'&autore='+autore+'&titolo='+titolo+'&casa_editrice='+casa_editrice+'&prezzo='+prezzo+'&prezzo_acquisto='+prezzo_acquisto+'&anno_acquisto='+anno_acquisto+'&quantita='+quantita+'&locazione='+locazione+"&copertina="+copertina;
-
 }
 
 function modificaSalvaLibro(nomeSelect)
@@ -416,4 +413,50 @@ function print_r(o,level,max) {
         output = "("+typeof(o)+") => "+o;
     }
     return output;
+}
+
+
+function modificaOrdineDaordinare(isbn, id_ordine)
+{
+    if(document.getElementById("modifica"+isbn+id_ordine).innerHTML == "Modifica Ordine")
+    {
+        var check = confirm("Sei sicuro di voler modificare l'ordine?");
+        if(check == true)
+        {
+            //document.getElementById("modificato").innerHTML = " ";
+            document.getElementById("modifica"+isbn+id_ordine).innerHTML = "Salva Ordine";
+            document.getElementById("modifica"+isbn+id_ordine).className = "fa fa-save";
+            document.getElementById("qtaord"+isbn+id_ordine).disabled = false;
+        }
+    }
+    //altrimenti, prelevo i campi modificati e li invio con AJAX
+    else
+    {
+        //var quantita_ordine  = document.getElementById('qtaord'+isbn+id_ordine).value;
+        var quantita_ordine = $('#qtaord'+isbn+id_ordine).val();
+        if(quantita_ordine > 0)
+        {
+            $.ajax({
+                type: 'POST',
+                url: 'modifica_ordine_daordinare.php',
+                data: "isbn="+isbn+"&id_ordine="+id_ordine+"&quantita_ordine="+quantita_ordine,
+                dataType: "html",
+
+                success: function(response)
+                {
+                    alert(response);
+                    //document.getElementById("modificato").innerHTML = response;
+                    document.getElementById("modifica"+isbn+id_ordine).innerHTML = "Modifica Ordine";
+                    document.getElementById("modifica"+isbn+id_ordine).className = "fa fa-edit";
+                    document.getElementById("qtaord"+isbn+id_ordine).disabled = true;
+                },
+                error: function()
+                {
+                    alert("Modifica fallita");
+                }
+            });
+        }
+       else
+        alert("Inserisci una quantita' positiva");
+    }
 }
