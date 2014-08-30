@@ -418,23 +418,34 @@ function print_r(o,level,max) {
 
 function modificaOrdineDaordinare(isbn, id_ordine)
 {
+    var old = $('#qtaord_old'+isbn+id_ordine);
+    var quantita_ordine_old = old.val();
+    alert("quantita-ordine_old"+quantita_ordine_old);
     if(document.getElementById("modifica"+isbn+id_ordine).innerHTML == "Modifica Ordine")
     {
-        var check = confirm("Sei sicuro di voler modificare l'ordine?");
-        if(check == true)
-        {
-            //document.getElementById("modificato").innerHTML = " ";
-            document.getElementById("modifica"+isbn+id_ordine).innerHTML = "Salva Ordine";
-            document.getElementById("modifica"+isbn+id_ordine).className = "fa fa-save";
-            document.getElementById("qtaord"+isbn+id_ordine).disabled = false;
-        }
+        //document.getElementById("modificato").innerHTML = " ";
+        document.getElementById("modifica"+isbn+id_ordine).innerHTML = "Salva Ordine";
+        document.getElementById("modifica"+isbn+id_ordine).className = "fa fa-save";
+        document.getElementById("qtaord"+isbn+id_ordine).disabled = false;
     }
     //altrimenti, prelevo i campi modificati e li invio con AJAX
     else
     {
         //var quantita_ordine  = document.getElementById('qtaord'+isbn+id_ordine).value;
         var quantita_ordine = $('#qtaord'+isbn+id_ordine).val();
-        if(quantita_ordine > 0)
+        alert(quantita_ordine);
+        if(quantita_ordine <= 0)
+        {
+            alert("Inserisci una quantita' positiva");
+        }
+        else if(quantita_ordine_old == quantita_ordine)
+        {
+            alert("Non ci sono modifiche da fare");
+            document.getElementById("modifica"+isbn+id_ordine).innerHTML = "Modifica Ordine";
+            document.getElementById("modifica"+isbn+id_ordine).className = "fa fa-edit";
+            document.getElementById("qtaord"+isbn+id_ordine).disabled = true;
+        }
+        else
         {
             $.ajax({
                 type: 'POST',
@@ -449,6 +460,8 @@ function modificaOrdineDaordinare(isbn, id_ordine)
                     document.getElementById("modifica"+isbn+id_ordine).innerHTML = "Modifica Ordine";
                     document.getElementById("modifica"+isbn+id_ordine).className = "fa fa-edit";
                     document.getElementById("qtaord"+isbn+id_ordine).disabled = true;
+                    old.value = quantita_ordine;
+                    window.location.reload();
                 },
                 error: function()
                 {
@@ -456,7 +469,5 @@ function modificaOrdineDaordinare(isbn, id_ordine)
                 }
             });
         }
-       else
-        alert("Inserisci una quantita' positiva");
     }
 }
