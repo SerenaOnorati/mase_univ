@@ -870,7 +870,11 @@
       <created>1409414652111</created>
       <updated>1409414652111</updated>
     </task>
-    <option name="localTasksCounter" value="116" />
+    <task id="LOCAL-00116" summary="menu Admin">
+      <created>1409414742779</created>
+      <updated>1409414742779</updated>
+    </task>
+    <option name="localTasksCounter" value="117" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -935,7 +939,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="images" />
     <MESSAGE value="libro daordinare.html.php" />
     <MESSAGE value="font" />
     <MESSAGE value="ordini.js (isbn e anno acquisto)" />
@@ -960,7 +963,8 @@
     <MESSAGE value="modifica_ordine_daordine  e js" />
     <MESSAGE value="completati:&#10;da ordinare&#10;&#10;ordinati&#10;&#10;parziale:&#10;&#10;arrivati (si attendono le specifiche)" />
     <MESSAGE value="menuAdmin" />
-    <option name="LAST_COMMIT_MESSAGE" value="menuAdmin" />
+    <MESSAGE value="menu Admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="menu Admin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
