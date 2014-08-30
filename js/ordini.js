@@ -414,7 +414,7 @@ function modificaOrdineDaordinare(isbn, id_ordine)
                     document.getElementById("modifica"+isbn+id_ordine).innerHTML = "Modifica Ordine";
                     document.getElementById("modifica"+isbn+id_ordine).className = "fa fa-edit";
                     document.getElementById("qtaord"+isbn+id_ordine).disabled = true;
-                    old.value = quantita_ordine;
+                    document.getElementById("qtaord_old"+isbn+id_ordine).value = quantita_ordine;
                 },
                 error: function()
                 {
