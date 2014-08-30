@@ -12,9 +12,9 @@
         if(userHasRole('Amministratore'))
         {
 
-            $id_ordini = json_decode($_POST['id'], true);
+            //$id_ordini = json_decode($_POST['id'], true);
 
-            echo print_r($id_ordini) ;
+            echo print_r($_POST['id']) ;
             /*try
             {
 
