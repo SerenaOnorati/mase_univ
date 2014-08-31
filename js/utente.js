@@ -18,6 +18,9 @@ $(document).ready(function() {
                 document.getElementById("surname").disabled = false;
                 document.getElementById("email").disabled = false;
                 document.getElementById("tel").disabled = false;
+                document.getElementById("password_old").disabled = false;
+                document.getElementById("password_new").disabled = false;
+                document.getElementById("password_new1").disabled = false;
 
             }
             //altrimenti, prelevo i campi modificati e li invio con AJAX
@@ -27,27 +30,92 @@ $(document).ready(function() {
                     var surname = $("#surname").val();
                     var email = $("#email").val();
                     var tel = $("#tel").val();
-                    $.ajax({
-                        type: 'POST',
-                        url: 'dati_utente_modifica.php',
-                        data: "name="+name+"&surname="+surname+"&email="+email+"&tel="+tel,
-                        dataType: "html",
+                    var psw_old = $("#password_old").val();
+                    var psw_new = $("#password_new").val();
+                    var psw_new1 = $("#password_new1").val();
 
-                        success: function(response)
+
+                    if(document.getElementById("cambia_psw").className == "fa fa-toggle-right")
+                    {
+                        var check = confirm("Attenzione i campi riguardanti il cambiamento della password sono compilati, mantenerli?");
+                        if(check == false)
                         {
-                            document.getElementById("modificato").innerHTML = response;
-                            document.getElementById("modificasalva").innerHTML = "Modifica";
-                            document.getElementById("modificasalva").className = "button button-icon fa fa-edit";
-                            document.getElementById("name").disabled = true;
-                            document.getElementById("surname").disabled = true;
-                            document.getElementById("email").disabled = true;
-                            document.getElementById("tel").disabled = true;
-                        },
-                        error: function()
-                        {
-                            alert("Modifica fallita");
+                            document.getElementById('password_old').value = "";
+                            document.getElementById('password_new').value = "";
+                            document.getElementById('password_new1').value = "";
                         }
-                    });
+                    }
+
+                    if(psw_old.length != 0 && psw_new.length != 0 && psw_new1.length != 0)
+                    {
+
+                        if(psw_new == psw_new1)
+                        {
+                            $.ajax({
+                                type: 'POST',
+                                url: 'dati_utente_modifica.php',
+                                data: "name="+name+"&surname="+surname+"&email="+email+"&tel="+tel+"&password="+psw_new+"&password_old="+psw_old,
+                                dataType: "html",
+
+                                success: function(response)
+                                {
+                                    document.getElementById("modificato").innerHTML = response;
+                                    document.getElementById("modificasalva").innerHTML = "Modifica";
+                                    document.getElementById("modificasalva").className = "button button-icon fa fa-edit";
+                                    document.getElementById("name").disabled = true;
+                                    document.getElementById("surname").disabled = true;
+                                    document.getElementById("email").disabled = true;
+                                    document.getElementById("tel").disabled = true;
+                                    document.getElementById("password_old").disabled = true;
+                                    document.getElementById("password_new").disabled = true;
+                                    document.getElementById("password_new1").disabled = true;
+                                },
+                                error: function()
+                                {
+                                    alert("La modifica dei dati non è andata a buon fine.");
+                                }
+                            });
+                        }
+                        else
+                        {
+                            alert("Le password non coincidono, si prega di reinserirle.")
+                        }
+
+                    }
+                    else
+                    {
+                        if(psw_old.length == 0 && psw_new.length == 0 && psw_new1.length ==0)
+                        {
+                            $.ajax({
+                                type: 'POST',
+                                url: 'dati_utente_modifica.php',
+                                data: "name="+name+"&surname="+surname+"&email="+email+"&tel="+tel,
+                                dataType: "html",
+
+                                success: function(response)
+                                {
+                                    document.getElementById("modificato").innerHTML = response;
+                                    document.getElementById("modificasalva").innerHTML = "Modifica";
+                                    document.getElementById("modificasalva").className = "button button-icon fa fa-edit";
+                                    document.getElementById("name").disabled = true;
+                                    document.getElementById("surname").disabled = true;
+                                    document.getElementById("email").disabled = true;
+                                    document.getElementById("tel").disabled = true;
+                                    document.getElementById("password_old").disabled = true;
+                                    document.getElementById("password_new").disabled = true;
+                                    document.getElementById("password_new1").disabled = true;
+                                },
+                                error: function()
+                                {
+                                    alert("La modifica dei dati non è andata a buon fine.");
+                                }
+                            });
+                        }
+                        else
+                        {
+                            alert('Se si vuole modificare la password occorre compilare tutti i campi.');
+                        }
+                    }
             }
         }
     )
@@ -223,5 +291,27 @@ function modificaUtente(id)
             window.location.reload();
         }
 
+    }
+}
+
+function cambiaPassword()
+{
+    var old_psw = document.getElementById('row_password_old');
+    var new_psw = document.getElementById('row_password_new');
+    var new1_psw = document.getElementById('row_password_new1');
+
+    if(old_psw.style.display == "block" && new_psw.style.display == "block" && new1_psw.style.display == "block")
+    {
+        document.getElementById("cambia_psw").className = "fa fa-toggle-right";
+        old_psw.style.display = 'none';
+        new_psw.style.display = 'none';
+        new1_psw.style.display = 'none';
+    }
+    else
+    {
+        document.getElementById("cambia_psw").className = "fa fa-toggle-down";
+        old_psw.style.display = 'block';
+        new_psw.style.display = 'block';
+        new1_psw.style.display = 'block';
     }
 }
