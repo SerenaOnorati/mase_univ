@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c62a4eec-d582-4e13-b7e5-eef246bc66c3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dati_utente.html.php" afterPath="$PROJECT_DIR$/dati_utente.html.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/utente.js" afterPath="$PROJECT_DIR$/js/utente.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -88,7 +87,7 @@
       <file leaf-file-name="utente.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/utente.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="16" selection-start="1877" selection-end="1877" vertical-scroll-proportion="0.87979966" vertical-offset="136" max-vertical-offset="5355">
+            <state line="39" column="28" selection-start="1845" selection-end="1845" vertical-scroll-proportion="0.87979966" vertical-offset="136" max-vertical-offset="5355">
               <folding />
             </state>
           </provider>
@@ -883,7 +882,11 @@
       <created>1409491978964</created>
       <updated>1409491978965</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="inserita la modifica della password nei dati utente">
+      <created>1409494737289</created>
+      <updated>1409494737289</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1264,7 +1267,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/utente.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="16" selection-start="1877" selection-end="1877" vertical-scroll-proportion="0.87979966" vertical-offset="136" max-vertical-offset="5355">
+        <state line="39" column="28" selection-start="1845" selection-end="1845" vertical-scroll-proportion="0.87979966" vertical-offset="136" max-vertical-offset="5355">
           <folding />
         </state>
       </provider>

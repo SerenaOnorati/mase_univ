@@ -35,9 +35,9 @@ function ModificaSalva()
                 document.getElementById("password_old").value = "";
                 document.getElementById("password_new").value = "";
                 document.getElementById("password_new1").value = "";
-                psw_old = $("#password_old").val();
-                psw_new = $("#password_new").val();
-                psw_new1 = $("#password_new1").val();
+                psw_old = "";
+                psw_new = "";
+                psw_new1 = "";
             }
         }
 
