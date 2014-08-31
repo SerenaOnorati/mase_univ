@@ -16,12 +16,14 @@ else{
         $testo = $_POST['testo'];
         $immagine = $_POST['immagine'];
         $data = $_POST['data'];
+        $id_news = $_POST['id_news'];
 
         //inserimento della nuova news nel db
         try
         {
-            $sql = 'UPDATE news SET titolo =:titolo, testo =:testo, immagine =:immagine, data_news =:data_news';
+            $sql = 'UPDATE news SET titolo =:titolo, testo =:testo, immagine =:immagine, data_news =:data_news WHERE id_news =:id_news';
             $s = $pdo->prepare($sql);
+            $s->bindValue(':id_news', $id_news, PDO::PARAM_INT);
             $s->bindValue(':titolo', $titolo, PDO::PARAM_STR);
             $s->bindValue(':testo', $testo, PDO::PARAM_STR);
             $s->bindValue(':immagine',$immagine, PDO::PARAM_STR);
