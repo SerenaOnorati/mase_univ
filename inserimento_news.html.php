@@ -140,7 +140,7 @@
                                             }
                                             else
                                             {
-                                                echo "<p>La news non contiene immagine</p>";
+                                                echo "<p><strong style=\"color: lightseagreen\">La news non contiene immagine</strong></p>";
                                             }
 
                                         ?>
