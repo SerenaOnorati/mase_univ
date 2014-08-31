@@ -94,25 +94,28 @@
                                 <div class="row" id="row_password_old" style="display: none">
                                     <div class="6u">
                                         <p>Inserisci la password attuale</p>
-                                        <input id="password_old" name="password_old" placeholder="Inserisci la password attuale" type="password" class="text" disabled/>
+                                        <input id="password_old" name="password_old" placeholder="Inserisci la password attuale" type="password" class="text" value="" disabled/>
                                     </div>
                                 </div>
                                 <div class="row" id="row_password_new" style="display: none">
                                     <div class="6u">
                                         <p>Inserisci la nuova password</p>
-                                        <input id="password_new" name="password_new" placeholder="Inserisci la nuova password" type="password" class="text" disabled/>
+                                        <input id="password_new" name="password_new" placeholder="Inserisci la nuova password" type="password" class="text" value="" disabled/>
                                     </div>
                                 </div>
                                 <div class="row" id="row_password_new1" style="display: none">
                                     <div class="6u">
-                                        <p>Inserisci un'altra volta la nuova password</p>
-                                        <input id="password_new1" name="password_new1" placeholder="Inserisci un'altra volta la nuova password" type="password" class="text" disabled/>
+                                        <p>Inserisci nuovamente la nuova password</p>
+                                        <input id="password_new1" name="password_new1" placeholder="Inserisci nuovamente la nuova password" type="password" class="text" value="" disabled/>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="3u">
-                                        <button id="modificasalva" onclick="ModificaSalva()" class="button button-icon fa fa-edit">Modifica</button>
-                                    </div>
+                                    <ul class="actions">
+                                        <li>
+                                            <a id ="modificasalva" href="javascript: ModificaSalva()" class="button button-icon fa fa-edit">Modifica</a>
+                                        </li>
+                                    </ul>
+
                                     <div class="6u">
                                         <p style="color: #ed786a" id="modificato"></p>
                                     </div>

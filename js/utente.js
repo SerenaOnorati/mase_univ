@@ -1,125 +1,118 @@
-$(document).ready(function() {
+function ModificaSalva()
+{
+    //Se "Modifica", allora "Salva" e disabilito l'input text
+    if(document.getElementById("modificasalva").innerHTML == "Modifica")
+    {
+        document.getElementById("modificato").innerHTML = " ";
+        document.getElementById("modificasalva").innerHTML = "Salva";
+        document.getElementById("modificasalva").className = "button button-icon fa fa-save";
+        document.getElementById("name").disabled = false;
+        document.getElementById("surname").disabled = false;
+        document.getElementById("email").disabled = false;
+        document.getElementById("tel").disabled = false;
+        document.getElementById("password_old").disabled = false;
+        document.getElementById("password_new").disabled = false;
+        document.getElementById("password_new1").disabled = false;
 
-    $("#modificasalva").click(
-        /*
-        Funzione che permette di modificare il testo del bottone,
-        attivare/disabilitare l'input text e inviare da javascript a php mediante ajax i campi modificati
-        dall'utente.
-         */
-        function ModificaSalva()
+    }
+    //altrimenti, prelevo i campi modificati e li invio con AJAX
+    else
+    {
+        var name = $("#name").val();
+        var surname = $("#surname").val();
+        var email = $("#email").val();
+        var tel = $("#tel").val();
+        var psw_old = $("#password_old").val();
+        var psw_new = $("#password_new").val();
+        var psw_new1 = $("#password_new1").val();
+
+
+        if(document.getElementById("cambia_psw").className == "fa fa-toggle-right" && psw_old.length != 0 && psw_new.length != 0 && psw_new1.length != 0)
         {
-            //Se "Modifica", allora "Salva" e disabilito l'input text
-            if(document.getElementById("modificasalva").innerHTML == "Modifica")
+            var check = confirm("Attenzione i campi riguardanti il cambiamento della password sono compilati, mantenerli?");
+            if(check == false)
             {
-                document.getElementById("modificato").innerHTML = " ";
-                document.getElementById("modificasalva").innerHTML = "Salva";
-                document.getElementById("modificasalva").className = "button button-icon fa fa-save";
-                document.getElementById("name").disabled = false;
-                document.getElementById("surname").disabled = false;
-                document.getElementById("email").disabled = false;
-                document.getElementById("tel").disabled = false;
-                document.getElementById("password_old").disabled = false;
-                document.getElementById("password_new").disabled = false;
-                document.getElementById("password_new1").disabled = false;
-
-            }
-            //altrimenti, prelevo i campi modificati e li invio con AJAX
-            else
-            {
-                    var name = $("#name").val();
-                    var surname = $("#surname").val();
-                    var email = $("#email").val();
-                    var tel = $("#tel").val();
-                    var psw_old = $("#password_old").val();
-                    var psw_new = $("#password_new").val();
-                    var psw_new1 = $("#password_new1").val();
-
-
-                    if(document.getElementById("cambia_psw").className == "fa fa-toggle-right")
-                    {
-                        var check = confirm("Attenzione i campi riguardanti il cambiamento della password sono compilati, mantenerli?");
-                        if(check == false)
-                        {
-                            document.getElementById('password_old').value = "";
-                            document.getElementById('password_new').value = "";
-                            document.getElementById('password_new1').value = "";
-                        }
-                    }
-
-                    if(psw_old.length != 0 && psw_new.length != 0 && psw_new1.length != 0)
-                    {
-
-                        if(psw_new == psw_new1)
-                        {
-                            $.ajax({
-                                type: 'POST',
-                                url: 'dati_utente_modifica.php',
-                                data: "name="+name+"&surname="+surname+"&email="+email+"&tel="+tel+"&password="+psw_new+"&password_old="+psw_old,
-                                dataType: "html",
-
-                                success: function(response)
-                                {
-                                    document.getElementById("modificato").innerHTML = response;
-                                    document.getElementById("modificasalva").innerHTML = "Modifica";
-                                    document.getElementById("modificasalva").className = "button button-icon fa fa-edit";
-                                    document.getElementById("name").disabled = true;
-                                    document.getElementById("surname").disabled = true;
-                                    document.getElementById("email").disabled = true;
-                                    document.getElementById("tel").disabled = true;
-                                    document.getElementById("password_old").disabled = true;
-                                    document.getElementById("password_new").disabled = true;
-                                    document.getElementById("password_new1").disabled = true;
-                                },
-                                error: function()
-                                {
-                                    alert("La modifica dei dati non è andata a buon fine.");
-                                }
-                            });
-                        }
-                        else
-                        {
-                            alert("Le password non coincidono, si prega di reinserirle.")
-                        }
-
-                    }
-                    else
-                    {
-                        if(psw_old.length == 0 && psw_new.length == 0 && psw_new1.length ==0)
-                        {
-                            $.ajax({
-                                type: 'POST',
-                                url: 'dati_utente_modifica.php',
-                                data: "name="+name+"&surname="+surname+"&email="+email+"&tel="+tel,
-                                dataType: "html",
-
-                                success: function(response)
-                                {
-                                    document.getElementById("modificato").innerHTML = response;
-                                    document.getElementById("modificasalva").innerHTML = "Modifica";
-                                    document.getElementById("modificasalva").className = "button button-icon fa fa-edit";
-                                    document.getElementById("name").disabled = true;
-                                    document.getElementById("surname").disabled = true;
-                                    document.getElementById("email").disabled = true;
-                                    document.getElementById("tel").disabled = true;
-                                    document.getElementById("password_old").disabled = true;
-                                    document.getElementById("password_new").disabled = true;
-                                    document.getElementById("password_new1").disabled = true;
-                                },
-                                error: function()
-                                {
-                                    alert("La modifica dei dati non è andata a buon fine.");
-                                }
-                            });
-                        }
-                        else
-                        {
-                            alert('Se si vuole modificare la password occorre compilare tutti i campi.');
-                        }
-                    }
+                document.getElementById("password_old").value = "";
+                document.getElementById("password_new").value = "";
+                document.getElementById("password_new1").value = "";
+                psw_old = $("#password_old").val();
+                psw_new = $("#password_new").val();
+                psw_new1 = $("#password_new1").val();
             }
         }
-    )
-});
+
+        if(psw_old.length != 0 && psw_new.length != 0 && psw_new1.length != 0)
+        {
+
+            if(psw_new == psw_new1)
+            {
+                $.ajax({
+                    type: 'POST',
+                    url: 'dati_utente_modifica.php',
+                    data: "name="+name+"&surname="+surname+"&email="+email+"&tel="+tel+"&password="+psw_new+"&password_old="+psw_old,
+                    dataType: "html",
+
+                    success: function(response)
+                    {
+                        document.getElementById("modificato").innerHTML = response;
+                        document.getElementById("modificasalva").innerHTML = "Modifica";
+                        document.getElementById("modificasalva").className = "button button-icon fa fa-edit";
+                        document.getElementById("name").disabled = true;
+                        document.getElementById("surname").disabled = true;
+                        document.getElementById("email").disabled = true;
+                        document.getElementById("tel").disabled = true;
+                        document.getElementById("password_old").disabled = true;
+                        document.getElementById("password_new").disabled = true;
+                        document.getElementById("password_new1").disabled = true;
+                    },
+                    error: function()
+                    {
+                        alert("La modifica dei dati non è andata a buon fine.");
+                    }
+                });
+            }
+            else
+            {
+                alert("Le password non coincidono, si prega di reinserirle.")
+            }
+
+        }
+        else
+        {
+            if(psw_old.length == 0 && psw_new.length == 0 && psw_new1.length ==0)
+            {
+                $.ajax({
+                    type: 'POST',
+                    url: 'dati_utente_modifica.php',
+                    data: "name="+name+"&surname="+surname+"&email="+email+"&tel="+tel,
+                    dataType: "html",
+
+                    success: function(response)
+                    {
+                        document.getElementById("modificato").innerHTML = response;
+                        document.getElementById("modificasalva").innerHTML = "Modifica";
+                        document.getElementById("modificasalva").className = "button button-icon fa fa-edit";
+                        document.getElementById("name").disabled = true;
+                        document.getElementById("surname").disabled = true;
+                        document.getElementById("email").disabled = true;
+                        document.getElementById("tel").disabled = true;
+                        document.getElementById("password_old").disabled = true;
+                        document.getElementById("password_new").disabled = true;
+                        document.getElementById("password_new1").disabled = true;
+                    },
+                    error: function()
+                    {
+                        alert("La modifica dei dati non è andata a buon fine.");
+                    }
+                });
+            }
+            else
+            {
+                alert('Se si vuole modificare la password occorre compilare tutti i campi.');
+            }
+        }
+    }
+}
 
 /*funzione per visualizzare le immagini*/
 function toggleOverlay(id)
