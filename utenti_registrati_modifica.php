@@ -17,17 +17,19 @@
             $email = trim($_POST['email']);
             $tel = trim($_POST['tel']);
             $id_user = trim($_POST['id_user']);
+            $id_ruolo = trim($_POST['id_ruolo']);
 
 
             //effettuo UPDATE sul db dei campi modificati
             try
             {
-                $sql = 'UPDATE user SET name = :name, surname =:surname, email =:email, tel =:tel WHERE id_user =:id_user';
+                $sql = 'UPDATE user SET name = :name, surname =:surname, email =:email, tel =:tel, id_ruolo =:id_ruolo WHERE id_user =:id_user';
                 $s = $pdo->prepare($sql);
                 $s->bindValue(':name', $name, PDO::PARAM_STR);
                 $s->bindValue(':surname', $surname, PDO::PARAM_STR);
                 $s->bindValue(':email', $email, PDO::PARAM_STR);
                 $s->bindValue(':id_user', $id_user, PDO::PARAM_INT);
+                $s->bindValue(':id_ruolo', $id_ruolo, PDO::PARAM_INT);
                 $s->bindValue(':tel', $tel, PDO::PARAM_STR);
                 $s->execute();
             }

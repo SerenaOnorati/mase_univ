@@ -241,6 +241,7 @@ function modificaUtente(id, nomeSelect)
         document.getElementById("surname"+id).disabled = false;
         document.getElementById("email"+id).disabled = false;
         document.getElementById("tel"+id).disabled = false;
+        document.getElementById("ruolo_mod"+id).style.display = 'block';
     }
     else
     {
@@ -248,21 +249,15 @@ function modificaUtente(id, nomeSelect)
         var surname_old = $("#surname_old"+id).val();
         var email_old = $("#email_old"+id).val();
         var tel_old = $("#tel_old"+id).val();
-        var id_ruolo_old = $("#id_ruolo_old"+id).val();
+        var id_ruolo_old = $("#id_ruolo"+id).val();
 
         var name = $("#name"+id).val();
         var surname = $("#surname"+id).val();
         var email = $("#email"+id).val();
         var tel = $("#tel"+id).val();
-        var id_ruolo= $("#id_ruolo"+id).val();
+        var id_ruolo_name = nomeSelect.options[nomeSelect.selectedIndex].innerHTML;
 
-        if(id_ruolo_old == 1)
-            id_ruolo_old = "A";
-        else
-            if(id_ruolo_old == 2)
-                id_ruolo_old = "U";
-
-        if(name == name_old && surname == surname_old && email == email_old && tel == tel_old && id_ruolo == id_ruolo_old)
+        if(name == name_old && surname == surname_old && email == email_old && tel == tel_old && id_ruolo_name == id_ruolo_old)
         {
             alert("Non ci sono modifiche da fare.");
         }
@@ -271,11 +266,11 @@ function modificaUtente(id, nomeSelect)
             var check = confirm("Sei sicuro di voler salvare l\'utente?");
             if(check == true)
             {
-
+                var id_ruolo = nomeSelect.options[nomeSelect.selectedIndex].value;
                 $.ajax({
                     type: 'POST',
                     url: 'utenti_registrati_modifica.php',
-                    data: "id_user="+id+"&name="+name+"&surname="+surname+"&email="+email+"&tel="+tel,
+                    data: "id_user="+id+"&name="+name+"&surname="+surname+"&email="+email+"&tel="+tel+"&id_ruolo="+id_ruolo,
                     dataType: "html",
 
                     success: function(response)
@@ -286,8 +281,9 @@ function modificaUtente(id, nomeSelect)
                         document.getElementById("surname"+id).disabled = true;
                         document.getElementById("email"+id).disabled = true;
                         document.getElementById("tel"+id).disabled = true;
+                        document.getElementById("ruolo_mod"+id).style.display = 'none';
                         alert(response);
-
+                        window.location.reload();
                     },
                     error: function()
                     {
@@ -303,7 +299,7 @@ function modificaUtente(id, nomeSelect)
                 document.getElementById("surname"+id).disabled = true;
                 document.getElementById("email"+id).disabled = true;
                 document.getElementById("tel"+id).disabled = true;
-                window.location.reload();
+                document.getElementById("ruolo_mod"+id).style.display = 'none';
             }
         }
     }

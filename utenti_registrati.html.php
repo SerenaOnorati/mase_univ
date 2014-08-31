@@ -96,19 +96,21 @@
                                         </div>
                                         <div class="1u">
                                             <div id="ruolo_vis<?php echo $user['id_user']?>">
-                                                <input type="hidden" id="id_ruolo_old<?php echo $user['id_user']?>" value="<?php echo htmlspecialchars($user['id_ruolo'], ENT_QUOTES, 'UTF-8'); ?>">
                                                 <input id="id_ruolo<?php echo $user['id_user']?>" type="text" name="ruolo<?php echo $user['id_user']?>" class="text" required="required" value="<?php if($user['id_ruolo'] == 1) echo "A"; else echo "U"; ?>" disabled>
-                                            </div>
-                                            <div id="ruolo_mod<?php echo $user['id_user']?>" style="display: none">
-                                                <select id="select_ruolo<?php echo $user['id_user']?>" name="select_ruolo<?php echo $user['id_user']?>" style="display: none">
-                                                    <option value="1">A</option>
-                                                    <option value="2">U</option>
-                                                </select>
                                             </div>
                                         </div>
                                         <div class="2u">
                                             <a id="modificautente<?php echo $user['id_user']?>" href="javascript: modificaUtente(<?php echo $user['id_user']?>, select_ruolo<?php echo $user['id_user']?>)" class="fa fa-edit" title="Modifica">Modifica</a><br>
                                             <a href="javascript:cancellaUtente(<?php echo $user['id_user']?>)" class="fa fa-times" title="Cancella"> Cancella</a>
+                                        </div>
+                                    </div>
+                                    <div class="half row" id="ruolo_mod<?php echo $user['id_user']?>" style="display: none">
+                                        <label for="select_ruolo<?php echo $user['id_user']?>"><strong style="color: lightseagreen">Scegli il nuovo ruolo:&nbsp;</strong></label>
+                                        <div class="3u">
+                                            <select id="select_ruolo<?php echo $user['id_user']?>" name="select_ruolo<?php echo $user['id_user']?>">
+                                                <option value="1">A</option>
+                                                <option value="2">U</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </form>
