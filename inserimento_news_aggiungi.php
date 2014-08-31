@@ -28,18 +28,18 @@
                 $s->bindValue(':immagine', '\\'.$immagine, PDO::PARAM_STR);
                 $s->bindValue(':data', $data);
                 $s->execute();
-                echo 'Inserimento avvenuto con successo';
+                echo 'Inserimento avvenuto con successo.';
 
             }
             catch (PDOException $e)
             {
                 $error = 'Errore inserimento news.';
-                echo $e->getMessage();
+                echo $error;
             }
         }
         else
         {
-            echo "<script language=\'JavaScript\'>alert(\"Non sei autorizzato ad accedere a questa pagina\")</script>";
+            echo "<script language=\'JavaScript\'>alert(\"Non sei autorizzato ad accedere a questa pagina.\")</script>";
         }
 
     }

@@ -192,15 +192,105 @@ function cancellaNews(id)
 
             success: function(response)
             {
-                window.location.reload();
+                document.getElementById("row"+id).style.display = 'none';
                 alert(response);
-
             },
             error: function()
             {
-                alert("Cancellazione fallita");
+                alert("La cancellazione non è andata a buon fine.");
             }
         });
+    }
+}
+
+function modificaNews(id)
+{
+    if(document.getElementById('modificanews'+id).innerText == 'Modifica')
+    {
+        document.getElementById('modificanews'+id).innerHTML = "Salva";
+        document.getElementById('modificanews'+id).className = "fa fa-save";
+        document.getElementById("titolo"+id).disabled = false;
+        document.getElementById("testo"+id).disabled = false;
+        document.getElementById("data"+id).style.display = 'none';
+        document.getElementById("data_mod"+id).style.display = 'block';
+        document.getElementById("div_immagine"+id).style.display = 'block';
+
+    }
+    else
+    {
+        var titolo_old = $("#titolo_old"+id).val();
+        var testo_old = $("#testo_old"+id).val();
+        var data_old = $("#data"+id).val();
+        var immagine_old = $("#immagine_old"+id).val();
+
+        var titolo = $("#titolo"+id).val();
+        var testo = $("#testo"+id).val();
+        var data = $("#data_mod"+id).val();
+        var path = $("#url"+id).val();
+        var immagine = "\\"+path.replace(/^.*\\/, "");
+
+        var valuta_data = data == "" | data == data_old;
+
+        if(immagine == '\\')
+        {
+            var check;
+            check   = confirm("Non è stata inserita nessuna immagine, mantenere la precedente?");
+            if(check == true)
+                immagine = immagine_old;
+        }
+
+        if(titolo == titolo_old && testo == testo_old && valuta_data && immagine == immagine_old)
+        {
+            alert("Non ci sono modifiche da salvare.");
+            document.getElementById('modificanews'+id).innerHTML = "Modifica";
+            document.getElementById('modificanews'+id).className = "fa fa-edit";
+            document.getElementById("titolo"+id).disabled = true;
+            document.getElementById("testo"+id).disabled = true;
+            document.getElementById("data"+id).style.display = 'block';
+            document.getElementById("data_mod"+id).style.display = 'none';
+            document.getElementById("div_immagine"+id).style.display = 'none';
+        }
+        else
+        {
+            check = confirm("Sei sicuro di voler salvare le modifiche della news?");
+            if(check == true)
+            {
+                if(data.length == 0)
+                    data = data_old;
+                $.ajax({
+                    type: 'POST',
+                    url: 'news_modifica.php',
+                    data: "id_news="+id+"&titolo="+titolo+"&testo="+testo+"&data="+data+"&immagine="+immagine,
+                    dataType: "html",
+
+                    success: function(response)
+                    {
+                        document.getElementById('modificanews'+id).innerHTML = "Modifica";
+                        document.getElementById('modificanews'+id).className = "fa fa-edit";
+                        document.getElementById("titolo"+id).disabled = true;
+                        document.getElementById("testo"+id).disabled = true;
+                        document.getElementById("data"+id).style.display = 'block';
+                        document.getElementById("data_mod"+id).style.display = 'none';
+
+                        window.location.reload();
+                        alert(response);
+                    },
+                    error: function()
+                    {
+                        alert("La modifica dei dati dell\'utente non è andata a buon fine.");
+                    }
+                });
+            }
+            else
+            {
+                document.getElementById('modificanews'+id).innerHTML = "Modifica";
+                document.getElementById('modificanews'+id).className = "fa fa-edit";
+                document.getElementById("titolo"+id).disabled = true;
+                document.getElementById("testo"+id).disabled = true;
+                document.getElementById("data"+id).style.display = 'block';
+                document.getElementById("data_mod"+id).style.display = 'none';
+            }
+        }
     }
 }
 

@@ -19,7 +19,7 @@
             //recupera i dati delle news
             try
             {
-                $sql = 'SELECT * FROM news order BY data DESC';
+                $sql = 'SELECT * FROM news order BY data_news DESC';
                 $s = $pdo->prepare($sql);
                 $s->execute();
 

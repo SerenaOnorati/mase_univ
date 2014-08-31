@@ -59,7 +59,7 @@
                     <!-- Post -->
                     <article class="is-post">
                         <header>
-                            <div><br><h2 style="text-align: left !important">News Inserite</h2></div>
+                            <div><br><h2 style="text-align: left !important">Gestione delle news</h2></div>
                         </header>
                         <div class="row">
                             <div class="2u">
@@ -68,10 +68,10 @@
                             <div class="3u">
                                 <h3 style="color: #ed786a">Testo</h3>
                             </div>
-                            <div class="3u">
+                            <div class="2u">
                                 <h3 style="color: #ed786a">Immagine</h3>
                             </div>
-                            <div class="2u">
+                            <div class="3u">
                                 <h3 style="color: #ed786a">Data</h3>
                             </div>
                             <div class="2u">
@@ -107,16 +107,19 @@
                         <br>
                         <?php foreach ($news as $new): ?>
                             <form action="upload/images/news" method="post">
-                                <div class="row">
+                                <div class="row" id="row<?php echo ($new['id_news']); ?>">
                                     <input id="id_news<?php echo ($new['id_news']); ?>" type="hidden" name="id_news" value="<?php echo ($new['id_news']);?>">
                                     <div class="2u">
+                                        <input type="hidden" id="titolo_old<?php echo ($new['id_news']); ?>" value="<?php echo htmlspecialchars($new['titolo'], ENT_QUOTES, 'UTF-8'); ?>">
                                         <textarea id="titolo<?php echo ($new['id_news']); ?>" type="text" name="titolo" class="text" required="required" cols="30" rows="6" disabled><?php echo htmlspecialchars($new['titolo'], ENT_QUOTES, 'UTF-8'); ?></textarea>
                                     </div>
                                     <div class="3u">
-                                        <textarea id="testo<?php echo ($new['id_news']); ?>" type="text" name="testo" class="text" required="required" cols="30" rows="6" disabled> <?php echo htmlspecialchars($new['testo'], ENT_QUOTES, 'UTF-8'); ?> </textarea>
+                                        <input type="hidden" id="testo_old<?php echo ($new['id_news']); ?>" value="<?php echo htmlspecialchars($new['testo'], ENT_QUOTES, 'UTF-8'); ?>">
+                                        <textarea id="testo<?php echo ($new['id_news']); ?>" type="text" name="testo" class="text" required="required" cols="30" rows="6" disabled><?php echo htmlspecialchars($new['testo'], ENT_QUOTES, 'UTF-8'); ?></textarea>
                                     </div>
 
-                                    <div class="3u">
+                                    <div class="2u">
+                                        <input type="hidden" id="immagine_old<?php echo ($new['id_news']); ?>" value="<?php echo htmlspecialchars($new['immagine'], ENT_QUOTES, 'UTF-8'); ?>">
                                         <?php
                                             if($new['immagine'] != '\\')
                                             {
@@ -130,10 +133,10 @@
 
                                                     <p style=\"text-align: right\"><img src=\"images/close.png\" onmousedown=\"toggleOverlay(".$new['id_news'].")\"/></p>
                                                         <span class=\"image image-centered\">
-                                                            <img src=".$image_news_path.$new['immagine']."\">
+                                                            <img src=".$image_news_path.$new['immagine'].">
                                                         </span>
                                                 </div>
-                                                <a href=\"\" onmousedown=\"toggleOverlay(".$new['id_news'].")\" id=\"immagine".$new['id_news']."\" class=\"fa fa-picture-o\"> Visualizza immagine</a><br>                                                ";
+                                                <a href=\"\" onmousedown=\"toggleOverlay(".$new['id_news'].")\" id=\"immagine".$new['id_news']."\" class=\"fa fa-picture-o\"> Immagine</a><br>                                                ";
                                             }
                                             else
                                             {
@@ -141,13 +144,18 @@
                                             }
 
                                         ?>
+                                        <div id="div_immagine<?php echo ($new['id_news']); ?>" style="display: none"><br><br>
+                                            <label id="copertina" for="url" class="floated"><strong style="color: lightseagreen">Inserisci una nuova immagine per la news:</strong></label>
+                                            <input type="file" id="url<?php echo ($new['id_news']); ?>" name="url" multiple><br>
+                                        </div>
+                                    </div>
+                                    <div class="3u">
+                                        <input id="data_mod<?php echo ($new['id_news']); ?>" type="date" name="data_mod<?php echo ($new['id_news']); ?>" class="text" required="required" style="display: none">
+                                        <input id="data<?php echo ($new['id_news']); ?>" type="text" name="data<?php echo ($new['id_news']); ?>" class="text" required="required" value=" <?php echo htmlspecialchars($new['data_news'], ENT_QUOTES, 'UTF-8'); ?>" disabled>
                                     </div>
                                     <div class="2u">
-                                        <input id="data<?php echo ($new['id_news']); ?>" type="text" name="data" class="text" required="required" value=" <?php echo htmlspecialchars($new['data'], ENT_QUOTES, 'UTF-8'); ?>" disabled>
-                                    </div>
-                                    <div class="2u">
-                                        <a href="javascript:modificaNews(<?php echo ($new['id_news']); ?>)" class="fa fa-edit" title="Modifica"> Modifica</a><br>
-                                        <a href="javascript:cancellaNews(<?php echo ($new['id_news']); ?>)" class="fa fa-times" title="Cancella"> Cancella</a>
+                                        <a id="modificanews<?php echo ($new['id_news']); ?>" href="javascript:modificaNews(<?php echo ($new['id_news']); ?>)" class="fa fa-edit" title="Modifica">Modifica</a><br>
+                                        <a href="javascript:cancellaNews(<?php echo ($new['id_news']); ?>)" class="fa fa-times" title="Cancella">Cancella</a>
                                     </div>
                                 </div>
                             </form>
