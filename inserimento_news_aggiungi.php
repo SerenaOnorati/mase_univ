@@ -20,13 +20,13 @@
             //inserimento della nuova news nel db
             try
             {
-                $sql = 'INSERT INTO news (titolo, testo, immagine, data)
-                VALUES (:titolo, :testo, :immagine, :data)';
+                $sql = 'INSERT INTO news (titolo, testo, immagine, data_news)
+                VALUES (:titolo, :testo, :immagine, :data_news)';
                 $s = $pdo->prepare($sql);
                 $s->bindValue(':titolo', $titolo, PDO::PARAM_STR);
                 $s->bindValue(':testo', $testo, PDO::PARAM_STR);
                 $s->bindValue(':immagine', '\\'.$immagine, PDO::PARAM_STR);
-                $s->bindValue(':data', $data);
+                $s->bindValue(':data_news', $data);
                 $s->execute();
                 echo 'Inserimento avvenuto con successo.';
 
