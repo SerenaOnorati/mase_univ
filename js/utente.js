@@ -218,6 +218,7 @@ function cancellaUtente(id)
             success: function(response)
             {
                 window.location.reload();
+                document.getElementById("row"+id).style.display = 'none';
                 alert(response);
 
             },
@@ -229,7 +230,7 @@ function cancellaUtente(id)
     }
 }
 
-function modificaUtente(id)
+function modificaUtente(id, nomeSelect)
 {
 
     if(document.getElementById('modificautente'+id).innerText == 'Modifica')
@@ -243,47 +244,68 @@ function modificaUtente(id)
     }
     else
     {
-        var check = confirm("Sei sicuro di voler salvare l\'utente?");
-        if(check == true)
+        var name_old = $("#name_old"+id).val();
+        var surname_old = $("#surname_old"+id).val();
+        var email_old = $("#email_old"+id).val();
+        var tel_old = $("#tel_old"+id).val();
+        var id_ruolo_old = $("#id_ruolo_old"+id).val();
+
+        var name = $("#name"+id).val();
+        var surname = $("#surname"+id).val();
+        var email = $("#email"+id).val();
+        var tel = $("#tel"+id).val();
+        var id_ruolo= $("#id_ruolo"+id).val();
+
+        if(id_ruolo_old == 1)
+            id_ruolo_old = "A";
+        else
+            if(id_ruolo_old == 2)
+                id_ruolo_old = "U";
+
+        if(name == name_old && surname == surname_old && email == email_old && tel == tel_old && id_ruolo == id_ruolo_old)
         {
-            var name = $("#name"+id).val();
-            var surname = $("#surname"+id).val();
-            var email = $("#email"+id).val();
-            var tel = $("#tel"+id).val();
-            $.ajax({
-                type: 'POST',
-                url: 'utenti_registrati_modifica.php',
-                data: "id_user="+id+"&name="+name+"&surname="+surname+"&email="+email+"&tel="+tel,
-                dataType: "html",
-
-                success: function(response)
-                {
-                    document.getElementById('modificautente'+id).innerHTML = "Modifica";
-                    document.getElementById('modificautente'+id).className = "fa fa-edit";
-                    document.getElementById("name"+id).disabled = true;
-                    document.getElementById("surname"+id).disabled = true;
-                    document.getElementById("email"+id).disabled = true;
-                    document.getElementById("tel"+id).disabled = true;
-                    alert(response);
-
-                },
-                error: function()
-                {
-                    alert("Modifica fallita");
-                }
-            });
+            alert("Non ci sono modifiche da fare.");
         }
         else
         {
-            document.getElementById('modificautente'+id).innerHTML = "Modifica";
-            document.getElementById('modificautente'+id).className = "fa fa-edit";
-            document.getElementById("name"+id).disabled = true;
-            document.getElementById("surname"+id).disabled = true;
-            document.getElementById("email"+id).disabled = true;
-            document.getElementById("tel"+id).disabled = true;
-            window.location.reload();
-        }
+            var check = confirm("Sei sicuro di voler salvare l\'utente?");
+            if(check == true)
+            {
 
+                $.ajax({
+                    type: 'POST',
+                    url: 'utenti_registrati_modifica.php',
+                    data: "id_user="+id+"&name="+name+"&surname="+surname+"&email="+email+"&tel="+tel,
+                    dataType: "html",
+
+                    success: function(response)
+                    {
+                        document.getElementById('modificautente'+id).innerHTML = "Modifica";
+                        document.getElementById('modificautente'+id).className = "fa fa-edit";
+                        document.getElementById("name"+id).disabled = true;
+                        document.getElementById("surname"+id).disabled = true;
+                        document.getElementById("email"+id).disabled = true;
+                        document.getElementById("tel"+id).disabled = true;
+                        alert(response);
+
+                    },
+                    error: function()
+                    {
+                        alert("La modifica dei dati dell\'utente non è andata a buon fine.");
+                    }
+                });
+            }
+            else
+            {
+                document.getElementById('modificautente'+id).innerHTML = "Modifica";
+                document.getElementById('modificautente'+id).className = "fa fa-edit";
+                document.getElementById("name"+id).disabled = true;
+                document.getElementById("surname"+id).disabled = true;
+                document.getElementById("email"+id).disabled = true;
+                document.getElementById("tel"+id).disabled = true;
+                window.location.reload();
+            }
+        }
     }
 }
 

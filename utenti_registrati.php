@@ -16,12 +16,12 @@ else {
     else
     {
         include 'db.inc.php';
-        //recupera i dati delle news
         //conto il numero degli utenti
         try
         {
-            $sql = 'SELECT * FROM user';
+            $sql = 'SELECT * FROM user WHERE email != :email';
             $s = $pdo->prepare($sql);
+            $s->bindValue(':email', $_SESSION['email'], PDO::PARAM_STR);
             $s->execute();
 
         }

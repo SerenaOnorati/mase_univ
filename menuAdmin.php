@@ -19,7 +19,7 @@
 </form>
 <!-- Nav -->
 <nav id="nav">
-    <br>
+
     <ul id="icone">
         <li>
             <a id="menu_ricerca" class="fa fa-book"><span>Libri</span></a>
