@@ -1304,4 +1304,10 @@
     background: #FFF;
     color: #000;
 }
+
+.image-testata{
+    border: solid 0px #ffffff !important;
+    max-width: 100% !important;
+    height: auto;
+}
 /************************************************END_MYCSS**********************************/

@@ -1,4 +1,4 @@
-<h1 id="logo"><a href="#">Universitalia</a></h1>
+<h1 id="logo"><a href="index.php"><img class="image-testata" src="images/universitalia.png"></a></h1>
 <form action="logout.php" method="post" id="formlogout">
     <p style="text-align: right">
         <script type="text/javascript">

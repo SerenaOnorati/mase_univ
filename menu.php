@@ -1,5 +1,5 @@
 <!--<h1 id="logo"><a href="index.php">Universitalia</a></h1>-->
-<h1 id="logo"><a href="index.php"><img src="images/universitalia.png"></a></h1>
+<h1 id="logo"><a href="index.php"><img class="image-testata" src="images/universitalia.png"></a></h1>
 <!-- Nav -->
 <nav id="nav">
     <ul id="icone">
