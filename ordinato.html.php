@@ -124,21 +124,21 @@
                                                     </div>
                                                 </div>
                                                 <div class="4u">
-                                                    <label id="titolo<?php echo $id; ?>" for="titolo<?php echo $id; ?>" class="text"><strong style="color: lightseagreen">TITOLO&nbsp;:</strong><?php echo $risultato['titolo']; ?></label>
-                                                    <label id="autore<?php echo $id; ?>" for="autore<?php echo $id; ?>" class="text"><strong style="color: lightseagreen">AUTORE&nbsp;:</strong><?php echo $risultato['autore']; ?></label>
-                                                    <label id="casaeditrice<?php echo $id; ?>" for="casaeditrice<?php echo $id; ?>" class="text"><strong style="color: lightseagreen">CASA ED.&nbsp;:</strong><?php echo $risultato['nome']; ?></label>
-                                                    <label id="distributore<?php echo $id; ?>" for="distributore<?php echo $id; ?>" class="text"><strong style="color: lightseagreen">DISTR.&nbsp;:</strong><?php echo $risultato['nome_distributore']; ?></label>
-                                                    <label id="isbn<?php echo $id; ?>" for="isbn<?php echo $id; ?>" class="text"><strong style="color: lightseagreen">ISBN&nbsp;:</strong><?php echo $risultato['isbn']; ?></label>
+                                                    <label id="titolo<?php echo $id; ?>" for="titolo<?php echo $id; ?>" class="text">TITOLO&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['titolo']; ?></strong></label>
+                                                    <label id="autore<?php echo $id; ?>" for="autore<?php echo $id; ?>" class="text">AUTORE&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['autore']; ?></strong></label>
+                                                    <label id="casaeditrice<?php echo $id; ?>" for="casaeditrice<?php echo $id; ?>" class="text">CASA ED.&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['nome']; ?></strong></label>
+                                                    <label id="distributore<?php echo $id; ?>" for="distributore<?php echo $id; ?>" class="text">DISTR.&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['nome_distributore']; ?></strong></label>
+                                                    <label id="isbn<?php echo $id; ?>" for="isbn<?php echo $id; ?>" class="text">ISBN&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['isbn']; ?></strong></label>
                                                 </div>
                                                 <div class="2u">
-                                                    <label id="locazione<?php echo $id; ?>" for="locazione<?php echo $id; ?>" class="text"><strong style="color: lightseagreen">Locazione&nbsp;:</strong><?php echo $risultato['locazione']; ?></label>
-                                                    <label id="prezzo<?php echo $id; ?>" for="prezzo<?php echo $id; ?>" class="text"><strong style="color: lightseagreen">Prezzo&nbsp;:</strong><?php echo $risultato['prezzo']; ?></label>
-                                                    <label id="prezzoacquisto<?php echo $id; ?>" for="prezzoacquisto<?php echo $id; ?>" class="text"><strong style="color: lightseagreen">Prezzo acq&nbsp;:</strong><?php echo $risultato['prezzo_acquisto']; ?></label>
-                                                    <label id="data<?php echo $id; ?>" for="data<?php echo $id; ?>" class="text"><strong style="color: lightseagreen">DATA&nbsp;:</strong><?php echo $risultato['anno_acquisto']; ?></label>
-                                                    <label id="dataordina<?php echo $id; ?>" for="data<?php echo $id; ?>" class="text"><strong style="color: lightseagreen">DATA ORD&nbsp;:</strong><?php echo $risultato['data_ordine']; ?></label>
+                                                    <label id="locazione<?php echo $id; ?>" for="locazione<?php echo $id; ?>" class="text">Locazione&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['locazione']; ?></strong></label>
+                                                    <label id="prezzo<?php echo $id; ?>" for="prezzo<?php echo $id; ?>" class="text">Prezzo&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['prezzo']; ?></strong></label>
+                                                    <label id="prezzoacquisto<?php echo $id; ?>" for="prezzoacquisto<?php echo $id; ?>" class="text">Prezzo acq&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['prezzo_acquisto']; ?></strong></label>
+                                                    <label id="data<?php echo $id; ?>" for="data<?php echo $id; ?>" class="text">DATA&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['anno_acquisto']; ?></strong></label>
+                                                    <label id="dataordina<?php echo $id; ?>" for="data<?php echo $id; ?>" class="text">DATA ORD&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['data_ordine']; ?></strong></label>
                                                 </div>
                                                 <div class="2u">
-                                                    <label id="qtamag<?php echo $id; ?>" for="qtamag<?php echo $id; ?>"><strong style="color: lightseagreen">Qta Mag&nbsp;:</strong><?php echo $risultato['quantita']; ?></label>
+                                                    <label id="qtamag<?php echo $id; ?>" for="qtamag<?php echo $id; ?>">Qta Mag&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['quantita']; ?></strong></label>
                                                     <input id="qtaord<?php echo $id; ?>" name="qtaord<?php echo $id; ?>" type="text" class="text" placeholder="Qta Ord" value="<?php echo $risultato['quantita_ordine']; ?>" disabled>
                                                     <input id="qtaord_old<?php echo $id; ?>" name="qtaord_old<?php echo $id; ?>" type="hidden" class="text" placeholder="Qta Ord" value="<?php echo $risultato['quantita_ordine']; ?>" disabled>
 
