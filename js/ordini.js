@@ -539,3 +539,25 @@ function ArrivatiTuttiOrdinati(id_ordini)
         });
     }
 }
+
+
+function ordinaRicercaPerDistributore(nomeSelect)
+{
+    var nome_distributore = nomeSelect.options[nomeSelect.selectedIndex].text;
+    $.ajax({
+
+        type: 'POST',
+        url: 'ordinaPer_distributore.php',
+        data: "nome_distributore="+nome_distributore,
+        dataType: "html",
+
+        success: function(response)
+        {
+            window.location.reload();
+        },
+        error: function()
+        {
+            alert("La selezione per distributore non e' andata a buon fine.");
+        }
+    });
+}

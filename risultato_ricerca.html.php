@@ -54,17 +54,7 @@
                                         <div><br><h2>Risultato ricerca titoli</h2></div>
                                         <br>
                                     </div>
-                                    <div class="2u">
-                                        <p>Ordina per</p>
-                                        <select name="ordinaper_daordinare">
-                                            <option value="Titolo">Titolo</option>
-                                            <option value="Autore">Autore</option>
-                                            <option value="CasaEditrice">Casa Editrice</option>
-                                            <option value="Locazione">Locazione</option>
-                                            <option value="Data">Data</option>
-                                            <option value="Isbn">ISBN</option>
-                                        </select>
-                                    </div>
+
                                 </div>
                             </header>
 
