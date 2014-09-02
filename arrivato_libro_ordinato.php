@@ -14,28 +14,27 @@
             //prelevo i parametri dalla chiamata AJAX
             $id_ordine = trim($_POST['id_ordine']);
             $isbn = trim($_POST['isbn']);
+            $quantita = trim($_POST['quantita']);
 
             try
             {
                 $pdo->beginTransaction();
 
+                //aggiorno lo stato dell'ordine
                 $sql = 'UPDATE ordine SET arrivato = :arrivato
                             WHERE id_ordine = :id_ordine';
-
                 $s = $pdo->prepare($sql);
+
                 $s->bindValue(':arrivato', true, PDO::PARAM_BOOL);
                 $s->bindValue(':id_ordine', $id_ordine, PDO::PARAM_INT);
+
                 $s->execute();
 
-                $sql = 'SELCT quantita_ordine';
-                $s = $pdo->prepare($sql);
-                $s->bindValue(':quantita', true, PDO::PARAM_INT);
-                $s->bindValue(':isbn', $isbn, PDO::PARAM_INT);
-                $s->execute();
 
                 $sql = 'UPDATE libro SET quantita = quantita + :quantita WHERE isbn =:isbn';
                 $s = $pdo->prepare($sql);
-                $s->bindValue(':quantita', true, PDO::PARAM_INT);
+
+                $s->bindValue(':quantita', $quantita, PDO::PARAM_INT);
                 $s->bindValue(':isbn', $isbn, PDO::PARAM_INT);
                 $s->execute();
 

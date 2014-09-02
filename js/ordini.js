@@ -487,7 +487,7 @@ function OrdinaTuttiDaOrdinare(id_ordini)
     }
 }
 
-function arrivatoLibro(id_ordine,isbn,id_riga)
+function arrivatoLibro(id_ordine,isbn,quantita,id_riga)
 {
     var check = confirm("Aggiornare lo stato del libro ad arrivato?");
 
@@ -496,7 +496,7 @@ function arrivatoLibro(id_ordine,isbn,id_riga)
         $.ajax({
             type: 'POST',
             url: 'arrivato_libro_ordinato.php',
-            data: "id_ordine="+id_ordine+"&isbn="+isbn,
+            data: "id_ordine="+id_ordine+"&isbn="+isbn+"&quantita="+quantita,
             dataType: "html",
 
             success: function(response)
