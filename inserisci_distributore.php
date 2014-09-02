@@ -23,7 +23,6 @@ else{
         $codice_libreria = $_POST['codicelib'];
         $preferenza = $_POST['preferenza'];
 
-        //inserimento della nuova news nel db
         try
         {
             $pdo->beginTransaction();
@@ -72,8 +71,8 @@ else{
         catch (PDOException $e)
         {
             $pdo->rollBack();
-            //$error = 'Si è verificato un errore nell\'inserimento del distributore.';
-            echo $e->getMessage();
+            $error = 'Si è verificato un errore nell\'inserimento del distributore.';
+            echo $error;
         }
     }
     else

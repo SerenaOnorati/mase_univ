@@ -24,7 +24,6 @@
             $id_casa_editrice = $_POST['id_casa_editrice'];
             $nome_casa_editrice = $_POST['nome_casa_editrice'];
 
-            //inserimento della nuova news nel db
             try
             {
                 $sql = 'INSERT INTO libro (isbn, autore, titolo, copertina, locazione, prezzo, prezzo_acquisto ,quantita, anno_acquisto, id_casa_editrice)

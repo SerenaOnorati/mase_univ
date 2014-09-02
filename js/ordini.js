@@ -600,3 +600,34 @@ function aggiungiDistributore(nomeSelect)
     else
         alert("Per favore compilare tutti i campi.");
 }
+
+function aggiungiCasaEditrice(nomeSelect)
+{
+
+    var nome = $("#insnome").val();
+    var sito = $("#inssitoweb").val();
+    var id_distributore = nomeSelect.options[nomeSelect.selectedIndex].value;
+
+    if(nome.length != 0 && sito.length != 0)
+    {
+        $.ajax({
+            type: 'POST',
+            url: 'inserisci_casa_editrice.php',
+            data: "nome="+nome+"&sito="+sito+"&id_distributore="+id_distributore,
+            dataType: "html",
+
+            success: function(response)
+            {
+                window.location.reload();
+                alert(response);
+
+            },
+            error: function()
+            {
+                alert("L'inserimento del distributore non è andato a buon fine");
+            }
+        });
+    }
+    else
+        alert("Per favore compilare tutti i campi.");
+}
