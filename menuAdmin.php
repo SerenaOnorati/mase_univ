@@ -1,4 +1,3 @@
-<!--<h1 id="logo"><a href="#">Universitalia</a></h1>-->
 <h1 id="logo">
     <a href="index.php">
         <img class="image-testata" src="images/universitalia.png">
@@ -31,6 +30,8 @@
             <a id="menu_ricerca" class="fa fa-book"><span>Libri</span></a>
             <ul>
                 <li><a href="admin.php">Ricerca Libri</a></li>
+                <li><a href="inserisci_distributore.html.php">Inserisci Distributore</a></li>
+                <li><a href="inserisci_casa_editrice.html.php">Inserisci Casa Editrice</a></li>
                 <li><a href="inserisci_libri.html.php">Inserisci Libri</a></li>
             </ul>
         </li>
