@@ -48,7 +48,7 @@
             }
             catch (PDOException $e)
             {
-                $error = 'Errore inserimento news.';
+                $error = 'Si è verificato un errore nell\'inserimento del libro';
                 echo $error;
             }
         }

@@ -587,7 +587,7 @@ function aggiungiDistributore(nomeSelect)
 
             success: function(response)
             {
-                window.location.reload();
+                //window.location.reload();
                 alert(response);
 
             },

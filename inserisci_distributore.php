@@ -13,49 +13,72 @@ else{
     {
         //prelevo i nuovi campi del nuovo libro dalla chiamata AJAX
         $nome = $_POST['nome'];
-        $isbn = $_POST['isbn'];
-        $titolo = $_POST['titolo'];
-        $copertina =$_POST['copertina'];
-        $locazione = $_POST['locazione'];
-        $prezzo = $_POST['prezzo'];
-        $prezzoa = $_POST['prezzoa'];
-        $quantita = $_POST['quantita'];
-        $anno = $_POST['anno'];
-        $id_casa_editrice = $_POST['id_casa_editrice'];
-        $nome_casa_editrice = $_POST['nome_casa_editrice'];
+        $indirizzo = $_POST['indirizzo'];
+        $citta = $_POST['citta'];
+        $telefono =$_POST['telefono'];
+        $fax = $_POST['fax'];
+        $email = $_POST['email'];
+        $cap = $_POST['cap'];
+        $sito_web = $_POST['sito'];
+        $codice_libreria = $_POST['codicelib'];
+        $preferenza = $_POST['preferenza'];
 
         //inserimento della nuova news nel db
         try
         {
-            $sql = 'INSERT INTO libro (isbn, autore, titolo, copertina, locazione, prezzo, prezzo_acquisto ,quantita, anno_acquisto, id_casa_editrice)
-                    VALUES (:isbn, :autore, :titolo, :copertina, :locazione, :prezzo, :prezzo_acquisto, :quantita, :anno, :id_casa_editrice)';
+            $pdo->beginTransaction();
+
+            $sql = 'SELECT COUNT(*) FROM distributore WHERE nome_distributore LIKE :nome AND indirizzo LIKE :indirizzo AND citta LIKE :citta AND telefono LIKE :telefono AND email LIKE :email AND cap LIKE :cap AND sito_web LIKE :sito_web';
             $s = $pdo->prepare($sql);
-            $s->bindValue(':isbn', $isbn, PDO::PARAM_INT);
-            $s->bindValue(':autore', $autore, PDO::PARAM_STR);
-            $s->bindValue(':titolo', $titolo, PDO::PARAM_STR);
-            $s->bindValue(':copertina', '\\'.$copertina, PDO::PARAM_STR);
-            $s->bindValue(':locazione', $locazione, PDO::PARAM_STR);
-            $s->bindValue(':prezzo', $prezzo);
-            $s->bindValue(':prezzo_acquisto', $prezzoa);
-            $s->bindValue(':quantita', $quantita, PDO::PARAM_INT);
-            $s->bindValue(':anno', $anno, PDO::PARAM_INT);
-            $s->bindValue(':id_casa_editrice', $id_casa_editrice, PDO::PARAM_INT);
+
+            $s->bindValue(':nome', $nome, PDO::PARAM_STR);
+            $s->bindValue(':indirizzo', $indirizzo, PDO::PARAM_STR);
+            $s->bindValue(':citta', $citta, PDO::PARAM_STR);
+            $s->bindValue(':telefono',$telefono, PDO::PARAM_STR);
+            $s->bindValue(':email', $email, PDO::PARAM_STR);
+            $s->bindValue(':cap', $cap, PDO::PARAM_INT);
+            $s->bindValue(':sito_web', $sito_web, PDO::PARAM_STR);
 
             $s->execute();
+            $row = $s->fetch();
 
-            echo 'Inserimento avvenuto con successo.';
+            if($row[0] > 0)
+            {
+                echo "Questo distributore è già stato inserito.";
+            }
+            else
+            {
+                $sql = 'INSERT INTO distributore (nome_distributore, indirizzo, citta, telefono, fax, email, cap, sito_web, codice_libreria, preferenza_ordine)
+                                          VALUES (:nome, :indirizzo, :citta, :telefono, :fax, :email, :cap, :sito_web, :codice_libreria, :preferenza)';
+                $s = $pdo->prepare($sql);
+                $s->bindValue(':nome', $nome, PDO::PARAM_STR);
+                $s->bindValue(':indirizzo', $indirizzo, PDO::PARAM_STR);
+                $s->bindValue(':citta', $citta, PDO::PARAM_STR);
+                $s->bindValue(':telefono',$telefono, PDO::PARAM_STR);
+                $s->bindValue(':fax',$fax, PDO::PARAM_STR);
+                $s->bindValue(':email', $email, PDO::PARAM_STR);
+                $s->bindValue(':cap', $cap, PDO::PARAM_INT);
+                $s->bindValue(':sito_web', $sito_web, PDO::PARAM_STR);
+                $s->bindValue(':codice_libreria', $codice_libreria, PDO::PARAM_STR);
+                $s->bindValue(':preferenza', $preferenza, PDO::PARAM_STR);
 
+                $s->execute();
+
+                echo 'Inserimento avvenuto con successo.';
+            }
+
+            $pdo->commit();
         }
         catch (PDOException $e)
         {
-            $error = 'Errore inserimento news.';
-            echo $error;
+            $pdo->rollBack();
+            //$error = 'Si è verificato un errore nell\'inserimento del distributore.';
+            echo $e->getMessage();
         }
     }
     else
     {
         echo "<script language=\'JavaScript\'>alert(\"Non sei autorizzato ad accedere a questa pagina.\")</script>";
     }
-
 }
 ?>
