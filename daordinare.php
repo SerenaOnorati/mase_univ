@@ -32,6 +32,7 @@
                     WHERE ordinato = :ordinato AND arrivato = :arrivato AND nome_distributore = :nome_distributore';
 
                     $s = $pdo->prepare($sql);
+
                     $s ->bindValue(':nome_distributore', $_SESSION['nome_distributore'], PDO::PARAM_STR);
                     $s->bindValue(':ordinato', false, PDO::PARAM_BOOL);
                     $s->bindValue(':arrivato', false, PDO::PARAM_BOOL);
@@ -44,8 +45,11 @@
                     INNER JOIN ordine on ordine_libro.id_ordine=ordine.id_ordine
                     INNER JOIN casa_editrice on libro.id_casa_editrice = casa_editrice.id_casa_editrice
                     INNER JOIN distributore on casa_editrice.id_distributore = distributore.id_distributore
-                    WHERE ordinato = false AND arrivato = false';
+                    WHERE ordinato = :ordinato AND arrivato = :arrivato';
+
                     unset($_SESSION['old_nome_distributore']);
+                    $s->bindValue(':ordinato', false, PDO::PARAM_BOOL);
+                    $s->bindValue(':arrivato', false, PDO::PARAM_BOOL);
 
                     $s = $pdo->prepare($sql);
                 }
