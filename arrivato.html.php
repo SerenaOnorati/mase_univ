@@ -59,14 +59,50 @@
                                     <br>
                                 </div>
                                 <div class="2u">
-                                    <p>Ordina per</p>
-                                    <select name="ordinaper_daordinare">
-                                        <option value="Titolo">Titolo</option>
-                                        <option value="Autore">Autore</option>
-                                        <option value="CasaEditrice">Casa Editrice</option>
-                                        <option value="Locazione">Locazione</option>
-                                        <option value="Data">Data</option>
-                                        <option value="Isbn">ISBN</option>
+                                    <p><strong style="color: lightseagreen">Seleziona per distributore</strong></p>
+                                    <select name ="select" id="select" onchange="ordinaRicercaPerDistributore(select)">
+                                        <!--<option selected="selected">Nome distributore</option>-->
+                                        <option value="id_none">...</option>
+                                        <?php
+                                        include 'db.inc.php';
+                                        try
+                                        {
+                                            $sql = 'SELECT * FROM distributore';
+                                            $s = $pdo->prepare($sql);
+                                            $s->execute();
+                                        }
+
+                                        catch (PDOException $e)
+                                        {
+                                            $error = 'Errore nella ricerca del distributore.';
+                                            echo "<script language=\"JavaScript\">\n";
+                                            echo "alert(\"$error\");\n";
+                                            echo "</script>";
+                                            exit();
+                                        }
+
+                                        $distributori = $s->fetchAll();
+
+                                        if(!empty($distributori))
+                                        {
+                                            foreach ($distributori as $distributore):
+                                                if(strcmp($_SESSION['old_nome_distributore'],$distributore['nome_distributore']) == 0 )
+                                                {
+                                                    echo "<option value=\"".$distributore['id_distributore']."\"selected=\"selected\" >".$distributore['nome_distributore']."</option>";
+                                                }
+                                                else
+                                                    echo "<option value=\"".$distributore['id_distributore']."\">".$distributore['nome_distributore']."</option>";
+                                            endforeach;
+                                        }
+                                        else{
+                                            $error = 'La ricerca dei distributori non ha prodotto risultati.';
+                                            echo "<script language=\"JavaScript\">\n";
+                                            echo "alert(\"$error\");\n";
+                                            echo "</script>";
+                                            exit();
+                                        }
+                                        ?>
+
                                     </select>
                                 </div>
                             </div>
