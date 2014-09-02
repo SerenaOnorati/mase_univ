@@ -13,6 +13,7 @@ function aggiungiLibro(nomeSelect)
     var quantita = $("#insquantita").val();
     var anno = $("#insannoacquisto").val();
     var id_casa_editrice = nomeSelect.options[nomeSelect.selectedIndex].value;
+    //var nome_casa_editrice = nomeSelect.options[nomeSelect.selectedIndex].text;
 
     if(autore.length != 0 && isbn.length != 0  && titolo.length != 0 && locazione.length != 0 && prezzo.length != 0 && prezzoa.length != 0 && quantita.length != 0 && anno.length != 0 && id_casa_editrice.length != 0)
     {

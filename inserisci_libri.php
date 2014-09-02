@@ -22,6 +22,7 @@
             $quantita = $_POST['quantita'];
             $anno = $_POST['anno'];
             $id_casa_editrice = $_POST['id_casa_editrice'];
+            $nome_casa_editrice = $_POST['nome_casa_editrice'];
 
             //inserimento della nuova news nel db
             try
@@ -48,7 +49,7 @@
             catch (PDOException $e)
             {
                 $error = 'Errore inserimento news.';
-                echo $e->getMessage();
+                echo $error;
             }
         }
         else
