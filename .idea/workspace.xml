@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c62a4eec-d582-4e13-b7e5-eef246bc66c3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arrivato_libro_ordinato.php" afterPath="$PROJECT_DIR$/arrivato_libro_ordinato.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arrivato.html.php" afterPath="$PROJECT_DIR$/arrivato.html.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daordinare.html.php" afterPath="$PROJECT_DIR$/daordinare.html.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ordinato.html.php" afterPath="$PROJECT_DIR$/ordinato.html.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/ordini.js" afterPath="$PROJECT_DIR$/js/ordini.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mase_univ.iws" />
@@ -62,13 +62,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="arrivato_libro_ordinato.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="arrivato_libro_ordinato.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/arrivato_libro_ordinato.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="16" selection-start="1095" selection-end="1095" vertical-scroll-proportion="0.62286687" vertical-offset="247" max-vertical-offset="1054">
+            <state line="37" column="16" selection-start="1166" selection-end="1166" vertical-scroll-proportion="-14.692307" vertical-offset="247" max-vertical-offset="1054">
               <folding>
                 <marker date="1409648793030" expanded="true" signature="628:723" placeholder="UPDATE ordin..." />
                 <marker date="1409648793030" expanded="true" signature="967:1033" placeholder="UPDATE libro..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="arrivato.html.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/arrivato.html.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="137" column="142" selection-start="8696" selection-end="8696" vertical-scroll-proportion="-6.8846154" vertical-offset="2150" max-vertical-offset="3179">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="daordinare.html.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/daordinare.html.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="173" column="142" selection-start="11613" selection-end="11613" vertical-scroll-proportion="-17.346153" vertical-offset="2490" max-vertical-offset="3859">
+              <folding>
+                <marker date="1409649320832" expanded="true" signature="3201:3227" placeholder="SELECT * FRO..distributore..." />
               </folding>
             </state>
           </provider>
@@ -83,10 +103,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ordinato.html.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ordinato.html.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ordinato.html.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="147" column="204" selection-start="10725" selection-end="10725" vertical-scroll-proportion="-11.923077" vertical-offset="2189" max-vertical-offset="3247">
+            <state line="137" column="146" selection-start="9174" selection-end="9174" vertical-scroll-proportion="0.2443281" vertical-offset="2189" max-vertical-offset="3247">
               <folding />
             </state>
           </provider>
@@ -148,9 +168,7 @@
         <option value="$PROJECT_DIR$/arrivati_tutti_ordinati.php" />
         <option value="$PROJECT_DIR$/arrivato.php" />
         <option value="$PROJECT_DIR$/modifica_libro.html.php" />
-        <option value="$PROJECT_DIR$/daordinare.html.php" />
         <option value="$PROJECT_DIR$/dati_utente_modifica.php" />
-        <option value="$PROJECT_DIR$/arrivato.html.php" />
         <option value="$PROJECT_DIR$/dati_utente.html.php" />
         <option value="$PROJECT_DIR$/utenti_registrati.php" />
         <option value="$PROJECT_DIR$/utenti_registrati.html.php" />
@@ -165,9 +183,11 @@
         <option value="$PROJECT_DIR$/menu.php" />
         <option value="$PROJECT_DIR$/menuAdmin.php" />
         <option value="$PROJECT_DIR$/menuUser.php" />
-        <option value="$PROJECT_DIR$/ordinato.html.php" />
         <option value="$PROJECT_DIR$/js/ordini.js" />
         <option value="$PROJECT_DIR$/arrivato_libro_ordinato.php" />
+        <option value="$PROJECT_DIR$/daordinare.html.php" />
+        <option value="$PROJECT_DIR$/arrivato.html.php" />
+        <option value="$PROJECT_DIR$/ordinato.html.php" />
       </list>
     </option>
   </component>
@@ -906,7 +926,11 @@
       <created>1409648369067</created>
       <updated>1409648369067</updated>
     </task>
-    <option name="localTasksCounter" value="128" />
+    <task id="LOCAL-00128" summary="aumentata la quantita del magazzino quando il libro è arrivato">
+      <created>1409648875245</created>
+      <updated>1409648875245</updated>
+    </task>
+    <option name="localTasksCounter" value="129" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -971,7 +995,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="implementatato l'inserimento dei libri" />
     <MESSAGE value="ricerca corretta" />
     <MESSAGE value="copertina" />
     <MESSAGE value="variabili" />
@@ -996,7 +1019,8 @@
     <MESSAGE value="completata la modifica delle news" />
     <MESSAGE value="logo univ" />
     <MESSAGE value="libro ordi" />
-    <option name="LAST_COMMIT_MESSAGE" value="libro ordi" />
+    <MESSAGE value="aumentata la quantita del magazzino quando il libro è arrivato" />
+    <option name="LAST_COMMIT_MESSAGE" value="aumentata la quantita del magazzino quando il libro è arrivato" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1102,11 +1126,6 @@
         <state line="48" column="78" selection-start="1206" selection-end="1206" vertical-scroll-proportion="0.7389079" vertical-offset="383" max-vertical-offset="969" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/arrivato.html.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="173" column="26" selection-start="11482" selection-end="11482" vertical-scroll-proportion="0.94066316" vertical-offset="2402" max-vertical-offset="3179" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="148" column="41" selection-start="6918" selection-end="7177" vertical-scroll-proportion="-15.5" vertical-offset="2113" max-vertical-offset="2924" />
@@ -1125,11 +1144,6 @@
     <entry file="file://$PROJECT_DIR$/modifica_salva_libro.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="55" column="31" selection-start="2521" selection-end="2521" vertical-scroll-proportion="0.0" vertical-offset="935" max-vertical-offset="1190" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/daordinare.html.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="49" selection-start="2568" selection-end="3163" vertical-scroll-proportion="0.68237346" vertical-offset="782" max-vertical-offset="3247" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/timbri.php">
@@ -1287,13 +1301,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ordinato.html.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="204" selection-start="10725" selection-end="10725" vertical-scroll-proportion="-11.923077" vertical-offset="2189" max-vertical-offset="3247">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/ordini.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="492" column="0" selection-start="15906" selection-end="15906" vertical-scroll-proportion="0.0" vertical-offset="8233" max-vertical-offset="9656">
@@ -1303,11 +1310,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/arrivato_libro_ordinato.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="16" selection-start="1095" selection-end="1095" vertical-scroll-proportion="0.62286687" vertical-offset="247" max-vertical-offset="1054">
+        <state line="37" column="16" selection-start="1166" selection-end="1166" vertical-scroll-proportion="-14.692307" vertical-offset="247" max-vertical-offset="1054">
           <folding>
             <marker date="1409648793030" expanded="true" signature="628:723" placeholder="UPDATE ordin..." />
             <marker date="1409648793030" expanded="true" signature="967:1033" placeholder="UPDATE libro..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/daordinare.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="173" column="142" selection-start="11613" selection-end="11613" vertical-scroll-proportion="-17.346153" vertical-offset="2490" max-vertical-offset="3859">
+          <folding>
+            <marker date="1409649320832" expanded="true" signature="3201:3227" placeholder="SELECT * FRO..distributore..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arrivato.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="137" column="142" selection-start="8696" selection-end="8696" vertical-scroll-proportion="-6.8846154" vertical-offset="2150" max-vertical-offset="3179">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ordinato.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="137" column="146" selection-start="9174" selection-end="9174" vertical-scroll-proportion="0.2443281" vertical-offset="2189" max-vertical-offset="3247">
+          <folding />
         </state>
       </provider>
     </entry>

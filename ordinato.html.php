@@ -135,7 +135,7 @@
                                                     <label id="prezzo<?php echo $id; ?>" for="prezzo<?php echo $id; ?>" class="text">Prezzo&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['prezzo']; ?></strong></label>
                                                     <label id="prezzoacquisto<?php echo $id; ?>" for="prezzoacquisto<?php echo $id; ?>" class="text">Prezzo acq&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['prezzo_acquisto']; ?></strong></label>
                                                     <label id="data<?php echo $id; ?>" for="data<?php echo $id; ?>" class="text">DATA&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['anno_acquisto']; ?></strong></label>
-                                                    <label id="dataordina<?php echo $id; ?>" for="data<?php echo $id; ?>" class="text">DATA ORD&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['data_ordine']; ?></strong></label>
+                                                    <label id="dataordina<?php echo $id; ?>" for="data<?php echo $id; ?>" class="text">DATA ORDINE&nbsp;:<br><strong style="color: lightseagreen"><?php echo $risultato['data_ordine']; ?></strong></label>
                                                 </div>
                                                 <div class="2u">
                                                     <label id="qtamag<?php echo $id; ?>" for="qtamag<?php echo $id; ?>">Qta Mag&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['quantita']; ?></strong></label>
