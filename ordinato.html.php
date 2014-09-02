@@ -145,7 +145,7 @@
                                                 </div>
                                                 <div class="2u">
                                                     <a href="javascript: modificaOrdine(<?php echo $risultato['isbn']; ?>, <?php echo $risultato['id_ordine']; ?>)" class="fa fa-edit" id="modifica<?php echo $risultato['isbn']; ?><?php echo $risultato['id_ordine']; ?>" title="Modifica">Modifica Ordine</a><br>
-                                                    <a href="javascript: arrivatoLibro(<?php echo $risultato['id_ordine']; ?>,<?php echo $id; ?>)" class="fa fa-plus" id="arrivato<?php echo $id; ?>" title="Libro Arrivato">Libro Arrivato</a><br>
+                                                    <a href="javascript: arrivatoLibro(<?php echo $risultato['id_ordine']; ?>,<?php echo $risultato['isbn']; ?>,<?php echo $id; ?>)" class="fa fa-plus" id="arrivato<?php echo $id; ?>" title="Libro Arrivato">Libro Arrivato</a><br>
                                                     <a href="javascript: cancellaOrdine(<?php echo $risultato['id_ordine']; ?>)" class="fa fa-times" id="cancella<?php echo $id; ?>" title="Cancella">Cancella Ordine</a>
                                                 </div>
 
