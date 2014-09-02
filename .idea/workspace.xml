@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c62a4eec-d582-4e13-b7e5-eef246bc66c3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arrivato.html.php" afterPath="$PROJECT_DIR$/arrivato.html.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arrivato.php" afterPath="$PROJECT_DIR$/arrivato.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daordinare.php" afterPath="$PROJECT_DIR$/daordinare.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mase_univ.iws" />
@@ -949,7 +946,11 @@
       <created>1409650884818</created>
       <updated>1409650884818</updated>
     </task>
-    <option name="localTasksCounter" value="130" />
+    <task id="LOCAL-00130" summary="arrivato e ordina per distributore arrivato">
+      <created>1409653190126</created>
+      <updated>1409653190126</updated>
+    </task>
+    <option name="localTasksCounter" value="131" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1014,7 +1015,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="copertina" />
     <MESSAGE value="variabili" />
     <MESSAGE value="modificato ordini.js" />
     <MESSAGE value="modifica libro" />
@@ -1039,7 +1039,8 @@
     <MESSAGE value="libro ordi" />
     <MESSAGE value="aumentata la quantita del magazzino quando il libro è arrivato" />
     <MESSAGE value="ordina per distributore a ordinato" />
-    <option name="LAST_COMMIT_MESSAGE" value="ordina per distributore a ordinato" />
+    <MESSAGE value="arrivato e ordina per distributore arrivato" />
+    <option name="LAST_COMMIT_MESSAGE" value="arrivato e ordina per distributore arrivato" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
