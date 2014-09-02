@@ -13,16 +13,40 @@
         //seleziono i libri che non sono stati ne ordinati ne arrivati
         try
         {
-            $sql = 'SELECT * FROM libro
+            if(isset($_SESSION['nome_distributore']) && $_SESSION['nome_distributore'] != '...')
+            {
+                $sql = 'SELECT * FROM libro
+                        INNER JOIN ordine_libro on libro.isbn=ordine_libro.isbn
+                        INNER JOIN ordine on ordine_libro.id_ordine=ordine.id_ordine
+                        INNER JOIN casa_editrice on libro.id_casa_editrice = casa_editrice.id_casa_editrice
+                        INNER JOIN distributore on casa_editrice.id_distributore = distributore.id_distributore
+                        WHERE ordinato = :ordinato AND arrivato = :arrivato AND nome_distributore = :nome_distributore';
+
+                $s = $pdo->prepare($sql);
+                $s ->bindValue(':nome_distributore', $_SESSION['nome_distributore'], PDO::PARAM_STR);
+                $s->bindValue(':ordinato', true, PDO::PARAM_BOOL);
+                $s->bindValue(':arrivato', false, PDO::PARAM_BOOL);
+
+            }
+            else
+            {
+                $sql = 'SELECT * FROM libro
                         INNER JOIN ordine_libro on libro.isbn=ordine_libro.isbn
                         INNER JOIN ordine on ordine_libro.id_ordine=ordine.id_ordine
                         INNER JOIN casa_editrice on libro.id_casa_editrice = casa_editrice.id_casa_editrice
                         INNER JOIN distributore on casa_editrice.id_distributore = distributore.id_distributore
                         WHERE ordinato = true AND arrivato = false';
 
-            $s = $pdo->prepare($sql);
+                unset($_SESSION['old_nome_distributore']);
+                $s = $pdo->prepare($sql);
+            }
 
+            if(isset($_SESSION['nome_distributore']))
+            {
+                unset($_SESSION['nome_distributore']);
+            }
             $s->execute();
+
         }
         catch (PDOException $e)
         {
