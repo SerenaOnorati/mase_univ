@@ -164,6 +164,7 @@
                                                     <label id="autore<?php echo $id; ?>" for="autore<?php echo $id; ?>" class="text">AUTORE&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['autore']; ?></strong></label>
                                                     <label id="casaeditrice<?php echo $id; ?>" for="casaeditrice<?php echo $id; ?>" class="text">CASA ED.&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['nome']; ?></strong></label>
                                                     <label id="distributore<?php echo $id; ?>" for="distributore<?php echo $id; ?>" class="text">DISTR.&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['nome_distributore']; ?></strong></label>
+                                                    <label id="preferenza<?php echo $id; ?>" for="preferenza<?php echo $id; ?>" class="text">Preferenza invio ordine&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['preferenza_ordine']; ?></strong></label>
                                                     <label id="isbn<?php echo $id; ?>" for="isbn<?php echo $id; ?>" class="text">ISBN&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['isbn']; ?></strong></label>
                                                 </div>
                                                 <div class="2u">
