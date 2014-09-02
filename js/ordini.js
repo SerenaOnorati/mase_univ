@@ -562,3 +562,41 @@ function ordinaRicercaPerDistributore(nomeSelect)
         }
     });
 }
+
+function aggiungiDistributore(nomeSelect)
+{
+
+    var nome = $("#insnome").val();
+    var indirizzo = $("#insindirizzo").val();
+    var citta = $("#inscitta").val();
+    var telefono = $("#instelefono").val();
+    var fax = $("#insfax").val();
+    var email = $("#insemail").val();
+    var cap = $("#inscap").val();
+    var sito = $("#inssitoweb").val();
+    var preferenza = nomeSelect.options[nomeSelect.selectedIndex].text;
+    var codicelib = $("#inscodlibreria").val();
+
+    if(nome.length != 0 && indirizzo.length != 0  && citta.length != 0 && telefono.length != 0 && email.length != 0 && cap.length != 0 && sito.length != 0 && preferenza.length != 0)
+    {
+        $.ajax({
+            type: 'POST',
+            url: 'inserisci_distributore.php',
+            data: "nome="+nome+"&indirizzo="+indirizzo+"&citta="+citta+"&telefono="+telefono+"&fax="+fax+"&email="+email+"&cap="+cap+"&sito="+sito+"&preferenza="+preferenza+"&codicelib="+codicelib,
+            dataType: "html",
+
+            success: function(response)
+            {
+                window.location.reload();
+                alert(response);
+
+            },
+            error: function()
+            {
+                alert("L'inserimento del distributore non è andato a buon fine");
+            }
+        });
+    }
+    else
+        alert("Per favore compilare tutti i campi.");
+}
