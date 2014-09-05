@@ -11,10 +11,9 @@
         <li>
             <a class="fa fa-home" href=""><span>Home</span></a>
             <ul>
-                <li><a href="index.php#chisiamo">Chi siamo</a></li>
                 <li><a href="index.php#dovesiamo">Dove siamo</a></li>
                 <li><a href="index.php#rilegaturatesi">Rilegature Tesi</a></li>
-                <li><a href="index.php#news">News</a></li>
+                <li><a href="visualizza_tutte_le_news.php"> Tutte le news</a></li>
 
             </ul>
 
