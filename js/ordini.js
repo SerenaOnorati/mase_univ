@@ -306,11 +306,34 @@ function cambiaCopertina()
     }
 }
 
-function cancellaOrdine(id)
+function cancellaOrdine(id, controllo)
 {
-    var check = confirm("Sei sicuro di voler cancellare questo libro ancora da ordinare?");
+    if(controllo == true)
+    {
+        var check = confirm("Sei sicuro di voler cancellare questo libro ancora da ordinare?");
 
-    if(check == true)
+        if(check == true)
+        {
+            $.ajax({
+
+                type: 'POST',
+                url: 'cancella_ordine.php',
+                data: "id="+id,
+                dataType: "html",
+
+                success: function(response)
+                {
+                    window.location.reload();
+                    alert(response);
+                },
+                error: function()
+                {
+                    alert("La cancellazione non è andata a buon fine.");
+                }
+            });
+        }
+    }
+    else
     {
         $.ajax({
 
@@ -335,7 +358,7 @@ function cancellaOrdine(id)
 function svuota(id_ordini, id_div)
 {
 
-    var check = confirm("Sei sicuro di voler cancellare tutti i libri ancora da ordinare?");
+    var check = confirm("Sei sicuro di voler cancellare tutti i libri?");
 
     if(check == true)
     {
@@ -630,4 +653,60 @@ function aggiungiCasaEditrice(nomeSelect)
     }
     else
         alert("Per favore compilare tutti i campi.");
+}
+
+function modificaLibroArrivato(id_ordine,id_row, isbn)
+{
+    var old = $('#qtaord_old'+id_row);
+
+    var quantita_ordine_old = old.val();
+    if(document.getElementById("modificaarrivato"+id_row).innerHTML == "Modifica quantità arrivato")
+    {
+        document.getElementById("modificaarrivato"+id_row).innerHTML = "Salva Ordine";
+        document.getElementById("modificaarrivato"+id_row).className = "fa fa-save";
+        document.getElementById("qtaord"+id_row).disabled = false;
+    }
+    //altrimenti, prelevo i campi modificati e li invio con AJAX
+    else
+    {
+        var quantita_ordine = $('#qtaord'+id_row).val();
+        var check;
+        if(quantita_ordine <= 0)
+        {
+            alert("Inserisci una quantita' positiva.");
+        }
+        else if(quantita_ordine_old == quantita_ordine)
+        {
+            check = confirm("La quantità arrivata è uguale a quella ordinata, cancellare l'ordine?");
+            if(check == true)
+            {
+                cancellaOrdine(id_ordine, false);
+            }
+            document.getElementById("modifica"+isbn+id_ordine).innerHTML = "Modifica Ordine";
+            document.getElementById("modifica"+isbn+id_ordine).className = "fa fa-edit";
+            document.getElementById("qtaord"+isbn+id_ordine).disabled = true;
+        }
+        else
+        {
+            check = confirm("La quantità arrivata è diversa da qualle ordinata, mandare in riordino?");
+            if(check == true)
+            {
+                $.ajax({
+                    type: 'POST',
+                    url: 'ordina_libri.php',
+                    data: "isbn="+isbn+"&quantita="+quantita,
+                    dataType: "html",
+
+                    success: function(response)
+                    {
+                        alert(response);
+                    },
+                    error: function()
+                    {
+                        alert("L'ordine non è andato a buon fine.");
+                    }
+                });
+            }
+        }
+    }
 }

@@ -48,7 +48,7 @@
 
                     <!-- Post -->
                     <article class="is-post">
-                        <a href="http://regularjane.deviantart.com/art/Write-354865228" class="image image-full"><img src="images/pic04.jpg" alt="" /></a>
+                        <a href="http://regularjane.deviantart.com/art/Write-354865228" class="image image-full"><img src="images/libri.jpg" alt="" /></a>
                         <p></p>
                     </article>
                     <article class="is-post">

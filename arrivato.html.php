@@ -177,13 +177,11 @@
                                             </div>
                                             <div class="2u">
                                                 <label id="qtamag<?php echo $id; ?>" for="qtamag<?php echo $id; ?>">Nuova Q.ta Mag&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['quantita']; ?></strong></label>
-                                                <input id="qtaord<?php echo $id; ?>" name="qtaord<?php echo $id; ?>" type="text" class="text" placeholder="Qta Ord" value="<?php echo $risultato['quantita_ordine']; ?>" disabled>
-                                                <input id="qtaord_old<?php echo $id; ?>" name="qtaord_old<?php echo $id; ?>" type="hidden" class="text" placeholder="Qta Ord" value="<?php echo $risultato['quantita_ordine']; ?>" disabled>
-
+                                                <input id="qtaord<?php echo $id; ?>" name="qtaord<?php echo $id; ?>" type="text" class="text" placeholder="Qta Riordino" value="">
                                             </div>
                                             <div class="2u">
-                                                <a href="javascript: arrivatoLibro(<?php echo $risultato['id_ordine']; ?>,<?php echo $id; ?>)" class="fa fa-plus" id="arrivato<?php echo $id; ?>" title="Libro Arrivato">Libro Arrivato</a><br>
-                                                <a href="javascript: cancellaOrdine(<?php echo $risultato['id_ordine']; ?>)" class="fa fa-times" id="cancella<?php echo $id; ?>" title="Cancella">Cancella Ordine</a>
+                                                <a href="javascript: preparaOrdine(<?php echo $risultato['isbn']; ?>)" class="fa fa-plus" id="modificaarrivato<?php echo $id; ?>" title="Riordina">Riordina</a><br>
+                                                <a href="javascript: cancellaOrdine(<?php echo $risultato['id_ordine']; ?>, true)" class="fa fa-times" id="cancella<?php echo $id; ?>" title="Cancella">Cancella Ordine</a>
                                             </div>
 
                                         </div>

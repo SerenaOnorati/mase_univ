@@ -1,7 +1,7 @@
 <h1 id="logo">
     <a href="index.php">
-        <img class="image-testata" src="images/universitalia.png">
         <img class="image-testata" src="images/Logo_u.png">
+        <img class="image-testata" src="images/universitalia.png">
     </a>
 </h1>
 
