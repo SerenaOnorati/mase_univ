@@ -416,3 +416,46 @@ function cambiaPassword()
         new1_psw.style.display = 'block';
     }
 }
+
+
+function aggiungiRigaDistributore()
+{
+    var aggiungi = document.getElementById('aggiungi');
+    if(aggiungi.style.display == "block")
+    {
+        aggiungi.style.display = 'none';
+    }
+    else
+    {
+        aggiungi.style.display = 'block';
+    }
+}
+
+function modificaDistributore()
+{
+
+}
+
+function cancellaDistributore(id)
+{
+    var check = confirm("Sei sicuro di voler cancellare il distributore?");
+    if(check == true)
+    {
+        $.ajax({
+            type: 'POST',
+            url: 'inserisci_distributore_cancella.php',
+            data: "id_distributore="+id,
+            dataType: "html",
+
+            success: function(response)
+            {
+                document.getElementById("row"+id).style.display = 'none';
+                alert(response);
+            },
+            error: function()
+            {
+                alert("La cancellazione non è andata a buon fine.");
+            }
+        });
+    }
+}
