@@ -164,16 +164,18 @@
                                     <header>
                                         <h3 style="color: #ed786a"><a name="libreriaonline">Libreria on-line</a></h3><br>
                                     </header>
-                                    <div>
-                                        <input id="titolo" name="titolo" placeholder="Titolo" type="text" class="text" />
-                                        <input id="autore" name="autore" placeholder="Autore" type="password" class="text" />
-                                    </div>
-                                    <br>
-                                    <ul class="actions">
-                                        <li>
-                                            <a href="#" class="button button-icon fa fa-search">Cerca</a>
-                                        </li>
-                                    </ul>
+                                    <form>
+                                        <div>
+                                            <input id="titolo" name="titolo" placeholder="Titolo" type="text" class="text" /><br>
+                                            <input id="autore" name="autore" placeholder="Autore" type="text" class="text" />
+                                        </div>
+                                        <br>
+                                        <ul class="actions">
+                                            <li>
+                                                <a href="#" class="button button-icon fa fa-search">Cerca</a>
+                                            </li>
+                                        </ul>
+                                    </form>
                                 </article>
                             </li>
 

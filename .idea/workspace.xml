@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c62a4eec-d582-4e13-b7e5-eef246bc66c3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/mail.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/footer.php" afterPath="$PROJECT_DIR$/footer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mail.php" afterPath="$PROJECT_DIR$/mail.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plotter.php" afterPath="$PROJECT_DIR$/plotter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rilegaturaTesi.php" afterPath="$PROJECT_DIR$/rilegaturaTesi.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stampe.php" afterPath="$PROJECT_DIR$/stampe.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timbri.php" afterPath="$PROJECT_DIR$/timbri.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/visualizza_tutte_le_news.php" afterPath="$PROJECT_DIR$/visualizza_tutte_le_news.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mase_univ.iws" />
@@ -68,40 +60,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="136" column="60" selection-start="6574" selection-end="6574" vertical-scroll-proportion="-6.5384617" vertical-offset="2142" max-vertical-offset="3383">
+            <state line="168" column="129" selection-start="8751" selection-end="8751" vertical-scroll-proportion="0.6230366" vertical-offset="2499" max-vertical-offset="3417">
               <folding>
-                <marker date="1410902971126" expanded="true" signature="2196:2274" placeholder="SELECT id_ne..news..." />
+                <marker date="1410903584105" expanded="true" signature="2196:2274" placeholder="SELECT id_ne..news..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mail.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/mail.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="33" selection-start="1471" selection-end="1471" vertical-scroll-proportion="0.9166667" vertical-offset="255" max-vertical-offset="1020">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mail.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mail.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="57" selection-start="399" selection-end="399" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="884">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/footer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="69" selection-start="776" selection-end="776" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="1683">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -167,10 +132,10 @@
         <option value="$PROJECT_DIR$/rilegaturaTesi.php" />
         <option value="$PROJECT_DIR$/plotter.php" />
         <option value="$PROJECT_DIR$/visualizza_tutte_le_news.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/footer.php" />
         <option value="$PROJECT_DIR$/mail.php" />
         <option value="$PROJECT_DIR$/js/mail.js" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -923,13 +888,18 @@
       <created>1410544562312</created>
       <updated>1410544562312</updated>
     </task>
-    <option name="localTasksCounter" value="135" />
+    <task id="LOCAL-00135" summary="modificato l'invio dell'email con l'informativa sulla provacy">
+      <created>1410903327260</created>
+      <updated>1410903327260</updated>
+    </task>
+    <option name="localTasksCounter" value="136" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13580246" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15634218" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -947,7 +917,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3285528" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13580246" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -988,7 +957,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="slash" />
     <MESSAGE value="immagine non_trovata" />
     <MESSAGE value="tasto indietro completato" />
     <MESSAGE value="ripristino" />
@@ -1013,7 +981,8 @@
     <MESSAGE value="aggiunta preferenza distributore nella visualizzazione del libro" />
     <MESSAGE value="visualizzazione notizie sul sito." />
     <MESSAGE value="Cancellazione distributore da finire" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cancellazione distributore da finire" />
+    <MESSAGE value="modificato l'invio dell'email con l'informativa sulla provacy" />
+    <option name="LAST_COMMIT_MESSAGE" value="modificato l'invio dell'email con l'informativa sulla provacy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1321,15 +1290,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="60" selection-start="6574" selection-end="6574" vertical-scroll-proportion="-6.5384617" vertical-offset="2142" max-vertical-offset="3383">
-          <folding>
-            <marker date="1410902971126" expanded="true" signature="2196:2274" placeholder="SELECT id_ne..news..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mail.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="57" selection-start="399" selection-end="399" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="884">
@@ -1339,8 +1299,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/mail.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="33" selection-start="1471" selection-end="1471" vertical-scroll-proportion="0.9166667" vertical-offset="255" max-vertical-offset="1020">
+        <state line="48" column="33" selection-start="1471" selection-end="1471" vertical-scroll-proportion="0.6666667" vertical-offset="408" max-vertical-offset="1020">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="168" column="129" selection-start="8751" selection-end="8751" vertical-scroll-proportion="0.6230366" vertical-offset="2499" max-vertical-offset="3417">
+          <folding>
+            <marker date="1410903584105" expanded="true" signature="2196:2274" placeholder="SELECT id_ne..news..." />
+          </folding>
         </state>
       </provider>
     </entry>
