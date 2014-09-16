@@ -9,27 +9,33 @@
         <div class="row">
             <div class="6u">
                 <section>
-                    <form method="post" action="mail.php" name="contactform" id="contact" target="_parent">
+                    <form method="post" action="" name="contactform" id="contactform" onsubmit="return false" target="_parent">
                         <div class="row half">
                             <div class="6u">
-                                <input id="name" name="name" placeholder="Nome" type="text" class="text" required="required"/>
+                                <input id="name" name="name" placeholder="Nome" type="text" class="text"/>
                             </div>
                             <div class="6u">
-                                <input id="email" name="email" placeholder="Email" type="text" class="text" required="required"/>
+                                <input id="emailform" name="emailform" placeholder="Email" type="text" class="text"/>
                             </div>
                         </div>
                         <div class="row half">
                             <div class="12u">
-                                <textarea id="message" name="message" placeholder="Messaggio" required="required"></textarea>
+                                <textarea id="message" name="message" placeholder="Messaggio"></textarea>
                             </div>
                         </div>
-                        <!--<div class="row half">
-                            <label for="url" class="floated">Inserisci un file che vuoi inviare: </label>
-                            <input type="file" id="url" name="url" multiple><br>
-                        </div>-->
+                        <div class="row half">
+                            <div class="1u">
+                                <input type="checkbox" id="privacy" value="">
+                            </div>
+                            <div class="11u">
+                                <label for="privacy">Con l'invio del presente modulo acconsento al trattamento dei dati personali trasmessi. Consenso esplicito secondo il D.Lgs 196/2003.</label>
+                            </div>
+                        </div>
+                        <br>
+                        <input type="hidden" id="control" name="control" value="">
                         <div class="row half">
                             <div class="12u">
-                                <button class="button button-icon fa fa-envelope">Invia</button>
+                                <button class="button button-icon fa fa-envelope" onclick="checkAndSend()">Invia</button>
                             </div>
                         </div>
                     </form>
@@ -37,7 +43,6 @@
             </div>
             <div class="6u">
                 <section>
-
                     <div class="row">
                         <ul class="icons 6u">
                             <li class="fa fa-home">
