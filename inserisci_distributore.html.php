@@ -144,24 +144,24 @@
                                     <br>
 
                                     <div class="3u">
-                                        <label id="titolo<?php echo $risultato['id_distributore']; ?>" for="titolo<?php echo $risultato['id_distributore']; ?>" class="text">NOME&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['nome_distributore']; ?></strong></label>
-                                        <label id="autore<?php echo $risultato['id_distributore']; ?>" for="autore<?php echo $risultato['id_distributore']; ?>" class="text">SITO&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['sito_web']; ?></strong></label>
-                                        <label id="casaeditrice<?php echo $risultato['id_distributore']; ?>" for="casaeditrice<?php echo $risultato['id_distributore']; ?>" class="text">EMAIL&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['email']; ?></strong></label>
+                                        <label id="nome_distributore<?php echo $risultato['id_distributore']; ?>" for="titolo<?php echo $risultato['id_distributore']; ?>" class="text">NOME&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['nome_distributore']; ?></strong></label>
+                                        <label id="sito_web<?php echo $risultato['id_distributore']; ?>" for="autore<?php echo $risultato['id_distributore']; ?>" class="text">SITO&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['sito_web']; ?></strong></label>
+                                        <label id="email<?php echo $risultato['id_distributore']; ?>" for="casaeditrice<?php echo $risultato['id_distributore']; ?>" class="text">EMAIL&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['email']; ?></strong></label>
 
                                     </div>
                                     <div class="2u">
-                                        <label id="distributore<?php echo $risultato['id_distributore']; ?>" for="distributore<?php echo $risultato['id_distributore']; ?>" class="text">TELEFONO&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['telefono']; ?></strong></label>
-                                        <label id="preferenza<?php echo $risultato['id_distributore']; ?>" for="preferenza<?php echo $risultato['id_distributore']; ?>" class="text">FAX&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['fax']; ?></strong></label>
+                                        <label id="telefono<?php echo $risultato['id_distributore']; ?>" for="distributore<?php echo $risultato['id_distributore']; ?>" class="text">TELEFONO&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['telefono']; ?></strong></label>
+                                        <label id="fax<?php echo $risultato['id_distributore']; ?>" for="preferenza<?php echo $risultato['id_distributore']; ?>" class="text">FAX&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['fax']; ?></strong></label>
                                     </div>
                                     <div class="3u">
-                                        <label id="titolo<?php echo $risultato['id_distributore']; ?>" for="titolo<?php echo $risultato['id_distributore']; ?>" class="text">INDIRIZZO&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['indirizzo']; ?></strong></label>
-                                        <label id="autore<?php echo $risultato['id_distributore']; ?>" for="autore<?php echo $risultato['id_distributore']; ?>" class="text">CITTA'&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['citta']; ?></strong></label>
-                                        <label id="casaeditrice<?php echo $risultato['id_distributore']; ?>" for="casaeditrice<?php echo $risultato['id_distributore']; ?>" class="text">CAP&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['cap']; ?></strong></label>
+                                        <label id="indirizzo<?php echo $risultato['id_distributore']; ?>" for="titolo<?php echo $risultato['id_distributore']; ?>" class="text">INDIRIZZO&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['indirizzo']; ?></strong></label>
+                                        <label id="citta<?php echo $risultato['id_distributore']; ?>" for="autore<?php echo $risultato['id_distributore']; ?>" class="text">CITTA'&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['citta']; ?></strong></label>
+                                        <label id="cap<?php echo $risultato['id_distributore']; ?>" for="casaeditrice<?php echo $risultato['id_distributore']; ?>" class="text">CAP&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['cap']; ?></strong></label>
 
                                     </div>
                                     <div class="2u">
-                                        <label id="distributore<?php echo $risultato['id_distributore']; ?>" for="distributore<?php echo $risultato['id_distributore']; ?>" class="text">CODICE LIBRERIA&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['codice_libreria']; ?></strong></label>
-                                        <label id="preferenza<?php echo $risultato['id_distributore']; ?>" for="preferenza<?php echo $risultato['id_distributore']; ?>" class="text">PREFERENZA&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['preferenza_ordine']; ?></strong></label>
+                                        <label id="codice_libreria<?php echo $risultato['id_distributore']; ?>" for="distributore<?php echo $risultato['id_distributore']; ?>" class="text">CODICE LIBRERIA&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['codice_libreria']; ?></strong></label>
+                                        <label id="preferenza_ordine<?php echo $risultato['id_distributore']; ?>" for="preferenza<?php echo $risultato['id_distributore']; ?>" class="text">PREFERENZA&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['preferenza_ordine']; ?></strong></label>
                                     </div>
                                     <div class="2u">
                                         <a id="modificadistributore<?php echo ($risultato['id_distributore']); ?>" href="javascript:modificaDistributore(<?php echo ($risultato['id_distributore']); ?>)" class="fa fa-edit" title="Modifica">Modifica</a><br>

@@ -624,6 +624,154 @@ function aggiungiDistributore(nomeSelect)
         alert("Per favore compilare tutti i campi.");
 }
 
+
+function aggiungiRigaDistributore()
+{
+    var aggiungi = document.getElementById('aggiungi');
+    if(aggiungi.style.display == "block")
+    {
+        aggiungi.style.display = 'none';
+    }
+    else
+    {
+        aggiungi.style.display = 'block';
+    }
+}
+
+function modificaDistributore(id)
+{
+    var nome_distributore = document.getElementById('nome_distributore'+id).innerText;
+    var indirizzo = document.getElementById('indirizzo'+id).innerText;
+    var citta = document.getElementById('citta'+id).innerText;
+    var telefono = document.getElementById('telefono'+id).innerText;
+    var fax = document.getElementById('fax'+id).innerText;
+    var email = document.getElementById('email'+id).innerText;
+    var cap = document.getElementById('cap'+id).value;
+    var sito_web = document.getElementById('sito_web'+id).innerText;
+    var codice_libreria = document.getElementById('codice_libreria'+id).innerText;
+    var preferenza_ordine = document.getElementById('preferenza_ordine'+id).innerText;
+
+
+    nome_distributore = nome_distributore.replace(/^.*:/, "");
+    indirizzo = indirizzo.replace(/^.*:/, "");
+    citta = citta.replace(/^.*:/, "");
+    telefono = telefono.replace(/^.*:/, "");
+    fax = fax.replace(/^.*:/, "");
+    email = email.replace(/^.*:/, "");
+    /*cap = cap.replace(/^.*:/, "");*/
+    sito_web = sito_web.replace(/^.*:/, "");
+    codice_libreria = codice_libreria.replace(/^.*:/, "");
+    preferenza_ordine = preferenza_ordine.replace(/^.*:/, "");
+
+    window.location.href = 'modifica_distributore.html.php?nome_distributore='+nome_distributore+'&indirizzo='+indirizzo+'&citta='+citta+
+        '&telefono='+telefono+'&fax='+fax+'&email='+email+'&cap='+cap+'&sito_web='+sito_web+'&codice_libreria='+codice_libreria+
+        '&preferenza_ordine='+preferenza_ordine+'&id_distributore='+id;
+
+}
+
+function cancellaDistributore(id)
+{
+    var check = confirm("Sei sicuro di voler cancellare il distributore?");
+    if(check == true)
+    {
+        $.ajax({
+            type: 'POST',
+            url: 'inserisci_distributore_cancella.php',
+            data: "id_distributore="+id,
+            dataType: "html",
+
+            success: function(response)
+            {
+                document.getElementById("row"+id).style.display = 'none';
+                alert(response);
+            },
+            error: function()
+            {
+                alert("La cancellazione non è andata a buon fine.");
+            }
+        });
+    }
+}
+
+function modificaSalvaDistributore(nomeSelect)
+{
+    var id_distributore = $("#").val();
+    var nome_distributore = $("#nome_distributore").val();
+    var indirizzo = $("#indirizzo").val();
+    var citta = $("#citta").val();
+    var preferenza_ordine = nomeSelect.options[nomeSelect.selectedIndex].value;
+    var telefono = $("#telefono").val();
+    var fax = $("#fax").val();
+    var email = $("#email").val();
+    var cap = $("#cap").val();
+    var sito_web = $("#sito_web").val();
+    var codice_libreria = $("#codice_libreria").val();
+
+    var nome_distributore_old = $("#nome_distributore_old").val();
+    var indirizzo_old = $("#indirizzo_old").val();
+    var citta_old = $("#citta_old").val();
+    var preferenza_ordine_old = $("#preferenza_ordine_old").val();
+    var telefono_old = $("#telefono_old").val();
+    var fax_old = $("#fax_old").val();
+    var email_old = $("#email_old").val();
+    var cap_old = $("#cap_old").val();
+    var sito_web_old = $("#sito_web_old").val();
+    var codice_libreria_old = $("#codice_libreria_old").val();
+
+
+    if(nome_distributore.length != 0 && indirizzo.length != 0 && citta.length != 0 && preferenza_ordine.length != 0 && telefono.length != 0
+        && telefono.length != 0 && fax.length != 0 && email.length != 0 && cap.length != 0 && sito_web.length != 0 && codice_libreria.length != 0)
+    {
+        if(nome_distributore == nome_distributore_old && indirizzo == indirizzo_old && citta == citta_old && preferenza_ordine == preferenza_ordine_old
+            && telefono == telefono_old && fax == fax_old && email == email_old && cap == cap_old && sito_web == sito_web_old && codice_libreria == codice_libreria_old)
+        {
+            alert("Non ci sono modifiche da salvare!");
+        }
+
+        else
+        {
+            check = confirm("Sei sicuro di voler salvare le modifiche?");
+            if(check == true)
+            {
+                $.ajax({
+                    type: 'POST',
+                    url: 'modifica_salva_distributore.php',
+                    data: "nome_distributore="+nome_distributore+"&indirizzo="+indirizzo+"&citta="+citta+"&preferenza_ordine="+preferenza_ordine+
+                            "&telefono="+telefono+"&fax="+fax+"&email="+email+"&cap="+cap+"&sito_web="+sito_web+"&codice_libreria="+codice_libreria+"&id_distributore="+id_distributore,
+                    dataType: "html",
+
+                    success: function(response)
+                    {
+                        alert(response);
+                    },
+                    error: function()
+                    {
+                        alert("Le modifiche non sono state salvate.");
+                    }
+                });
+            }
+            else
+            {
+                nome_distributore = nome_distributore_old;
+                indirizzo = indirizzo_old;
+                citta = citta_old;
+                telefono = telefono_old;
+                fax = fax_old;
+                email = email_old;
+                cap = cap_old;
+                sito_web = sito_web_old;
+                codice_libreria = codice_libreria_old;
+                preferenza_ordine = preferenza_ordine_old;
+                window.location.reload();
+            }
+        }
+    }
+    else
+    {
+        alert("Alcuni o tutti i campi sono vuoti, completare i campi.");
+    }
+}
+
 function aggiungiCasaEditrice(nomeSelect)
 {
 
