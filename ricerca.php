@@ -99,7 +99,6 @@
 
             catch (PDOException $e)
             {
-                //echo $e->getMessage();
                 $GLOBALS['error'] = $e->getMessage();
             }
 

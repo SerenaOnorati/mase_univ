@@ -17,9 +17,9 @@
             }
         }
     }
-    else{
+    else
+    {
         $GLOBALS['loginError'] = 'Il login non è avvenuto con successo.';
         include 'index.php';
     }
-
 ?>

@@ -164,17 +164,26 @@
                                     <header>
                                         <h3 style="color: #ed786a"><a name="libreriaonline">Libreria on-line</a></h3><br>
                                     </header>
-                                    <form>
+                                    <form method="post" action="ricerca_sito.php">
                                         <div>
-                                            <input id="titolo" name="titolo" placeholder="Titolo" type="text" class="text" /><br>
-                                            <input id="autore" name="autore" placeholder="Autore" type="text" class="text" />
+                                            <input id="titolo" name="titolo" placeholder="Titolo" type="text" class="text"/><br>
+                                            <input id="autore" name="autore" placeholder="Autore" type="text" class="text"/>
                                         </div>
                                         <br>
                                         <ul class="actions">
                                             <li>
-                                                <a href="#" class="button button-icon fa fa-search">Cerca</a>
+                                                <input type='submit' id="cerca" class="button button-icon fa fa-search" value="Cerca">
                                             </li>
                                         </ul>
+                                        <br>
+                                        <p style=" text-align: center"><b style="color: red">
+                                                <?php
+                                                    if(isset($ricercaError))
+                                                    {
+                                                        echo $ricercaError;
+                                                    }
+                                                ?>
+                                        </b></p>
                                     </form>
                                 </article>
                             </li>
