@@ -162,16 +162,16 @@
                                 <li>
                                     <a href="javascript: modificaSalvaDistributore(preferenza)" class="button button-icon fa fa-save">Salva Modifica</a>
                                 </li>
-                                <script language="javascript">
+                                <!--<script language="javascript">
                                     var isbni = "<?php echo $_SESSION['isbn']; ?>";
                                     var titoloi = "<?php echo $_SESSION['titolo']; ?>";
                                     var autorei = "<?php echo $_SESSION['autore']; ?>";
                                     var casa_editricei = "<?php echo $_SESSION['casa_editrice']; ?>";
                                     var locazionei = "<?php echo $_SESSION['locazione']; ?>";
                                     var anno_acquistoi = "<?php echo $_SESSION['anno_acquisto']; ?>";
-                                </script>
+                                </script>-->
                                 <li>
-                                    <a href="javascript: back_Ricerca(isbni, titoloi, autorei, casa_editricei, locazionei, anno_acquistoi)" class="button button-icon fa fa-backward">Indietro</a>
+                                    <!--<a href="javascript: back_Ricerca(isbni, titoloi, autorei, casa_editricei, locazionei, anno_acquistoi)" class="button button-icon fa fa-backward">Indietro</a>-->
                                 </li>
                             </ul>
                         </form>

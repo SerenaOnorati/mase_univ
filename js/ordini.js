@@ -646,11 +646,10 @@ function modificaDistributore(id)
     var telefono = document.getElementById('telefono'+id).innerText;
     var fax = document.getElementById('fax'+id).innerText;
     var email = document.getElementById('email'+id).innerText;
-    var cap = document.getElementById('cap'+id).value;
+    var cap = document.getElementById('cap'+id).innerText;
     var sito_web = document.getElementById('sito_web'+id).innerText;
     var codice_libreria = document.getElementById('codice_libreria'+id).innerText;
     var preferenza_ordine = document.getElementById('preferenza_ordine'+id).innerText;
-
 
     nome_distributore = nome_distributore.replace(/^.*:/, "");
     indirizzo = indirizzo.replace(/^.*:/, "");
@@ -658,13 +657,13 @@ function modificaDistributore(id)
     telefono = telefono.replace(/^.*:/, "");
     fax = fax.replace(/^.*:/, "");
     email = email.replace(/^.*:/, "");
-    /*cap = cap.replace(/^.*:/, "");*/
+    cap = cap.replace(/^.*:/, "");
     sito_web = sito_web.replace(/^.*:/, "");
     codice_libreria = codice_libreria.replace(/^.*:/, "");
     preferenza_ordine = preferenza_ordine.replace(/^.*:/, "");
 
     window.location.href = 'modifica_distributore.html.php?nome_distributore='+nome_distributore+'&indirizzo='+indirizzo+'&citta='+citta+
-        '&telefono='+telefono+'&fax='+fax+'&email='+email+'&cap='+cap+'&sito_web='+sito_web+'&codice_libreria='+codice_libreria+
+        '&cap='+cap+'&telefono='+telefono+'&fax='+fax+'&email='+email+'&sito_web='+sito_web+'&codice_libreria='+codice_libreria+
         '&preferenza_ordine='+preferenza_ordine+'&id_distributore='+id;
 
 }

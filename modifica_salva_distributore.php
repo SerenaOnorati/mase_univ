@@ -27,7 +27,7 @@
             //inserimento della nuova news nel db
             try
             {
-                $sql = 'UPDATE distributore SET nome_distributore =:$nome_distributore, indirizzo =:indirizzo, citta =:citta, telefono =:telefono, fax =:fax,
+                $sql = 'UPDATE distributore SET nome_distributore =:nome_distributore, indirizzo =:indirizzo, citta =:citta, telefono =:telefono, fax =:fax,
                      email =:email, cap =:cap, sito_web =:sito_web, codice_libreria =:codice_libreria,
                     preferenza_ordine =:preferenza_ordine WHERE id_distributore= :id_distributore';
 
@@ -50,7 +50,7 @@
             catch (PDOException $e)
             {
                 $error = 'Errore aggiornamento del distributore.';
-                echo $e->$error;
+                echo $error;
             }
         }
         else

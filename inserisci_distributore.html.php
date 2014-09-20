@@ -154,9 +154,9 @@
                                         <label id="fax<?php echo $risultato['id_distributore']; ?>" for="preferenza<?php echo $risultato['id_distributore']; ?>" class="text">FAX&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['fax']; ?></strong></label>
                                     </div>
                                     <div class="3u">
-                                        <label id="indirizzo<?php echo $risultato['id_distributore']; ?>" for="titolo<?php echo $risultato['id_distributore']; ?>" class="text">INDIRIZZO&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['indirizzo']; ?></strong></label>
-                                        <label id="citta<?php echo $risultato['id_distributore']; ?>" for="autore<?php echo $risultato['id_distributore']; ?>" class="text">CITTA'&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['citta']; ?></strong></label>
-                                        <label id="cap<?php echo $risultato['id_distributore']; ?>" for="casaeditrice<?php echo $risultato['id_distributore']; ?>" class="text">CAP&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['cap']; ?></strong></label>
+                                        <label id="indirizzo<?php echo $risultato['id_distributore']; ?>" for="indirizzo<?php echo $risultato['id_distributore']; ?>" class="text">INDIRIZZO&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['indirizzo']; ?></strong></label>
+                                        <label id="citta<?php echo $risultato['id_distributore']; ?>" for="citta<?php echo $risultato['id_distributore']; ?>" class="text">CITTA'&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['citta']; ?></strong></label>
+                                        <label id="cap<?php echo $risultato['id_distributore']; ?>" for="cap<?php echo $risultato['id_distributore']; ?>" class="text">CAP&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['cap']; ?></strong></label>
 
                                     </div>
                                     <div class="2u">
