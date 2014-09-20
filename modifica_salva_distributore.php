@@ -50,7 +50,7 @@
             catch (PDOException $e)
             {
                 $error = 'Errore aggiornamento del distributore.';
-                echo $error;
+                echo $e->getMessage();
             }
         }
         else

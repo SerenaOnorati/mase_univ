@@ -128,7 +128,7 @@
                                     <h3 style="color: #ed786a">Preferenza Ordine</h3>
                                 </div>
                                 <div class="3u">
-                                    <input type="hidden" id="prefereza_ordine_old" value="<?php echo $_GET['preferenza_ordine']; ?>">
+                                    <input type="hidden" id="preferenza_ordine_old" value="<?php echo $_GET['preferenza_ordine']; ?>">
                                     <select name="preferenza" id="preferenza">
                                         <option value="1">Nessuna</option>
                                         <option value="2">Email</option>
@@ -162,16 +162,21 @@
                                 <li>
                                     <a href="javascript: modificaSalvaDistributore(preferenza)" class="button button-icon fa fa-save">Salva Modifica</a>
                                 </li>
-                                <!--<script language="javascript">
-                                    var isbni = "<?php echo $_SESSION['isbn']; ?>";
-                                    var titoloi = "<?php echo $_SESSION['titolo']; ?>";
-                                    var autorei = "<?php echo $_SESSION['autore']; ?>";
-                                    var casa_editricei = "<?php echo $_SESSION['casa_editrice']; ?>";
-                                    var locazionei = "<?php echo $_SESSION['locazione']; ?>";
-                                    var anno_acquistoi = "<?php echo $_SESSION['anno_acquisto']; ?>";
-                                </script>-->
+                                <script language="javascript">
+                                    var id_distributorei = "<?php echo $_SESSION['id_distributore']; ?>";
+                                    var nome_distributorei = "<?php echo $_SESSION['nome_distributore']; ?>";
+                                    var indirizzoi = "<?php echo $_SESSION['indirizzo']; ?>";
+                                    var cittai = "<?php echo $_SESSION['citta']; ?>";
+                                    var telefonoi = "<?php echo $_SESSION['telefono']; ?>";
+                                    var faxi = "<?php echo $_SESSION['fax']; ?>";
+                                    var emaili = "<?php echo $_SESSION['email']; ?>";
+                                    var capi = "<?php echo $_SESSION['cap']; ?>";
+                                    var sito_webi = "<?php echo $_SESSION['sito_web']; ?>";
+                                    var codice_libreriai = "<?php echo $_SESSION['codice_libreria']; ?>";
+                                    var preferenza_ordinei = "<?php echo $_SESSION['preferenza_ordine']; ?>";
+                                </script>
                                 <li>
-                                    <!--<a href="javascript: back_Ricerca(isbni, titoloi, autorei, casa_editricei, locazionei, anno_acquistoi)" class="button button-icon fa fa-backward">Indietro</a>-->
+                                    <a href="javascript: back_Distributore(id_distributorei, nome_distributorei, indirizzoi, cittai, telefonoi, faxi, emaili, capi, sito_webi, codice_libreriai, preferenza_ordinei)" class="button button-icon fa fa-backward">Indietro</a>
                                 </li>
                             </ul>
                         </form>
