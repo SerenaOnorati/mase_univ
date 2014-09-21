@@ -29,7 +29,7 @@
 <nav id="nav">
     <ul id="icone">
         <li>
-            <a class="fa fa-home" href=""><span>Home</span></a>
+            <a class="fa fa-home" href="index.php"><span>Home</span></a>
             <ul>
                 <li><a href="index.php#dovesiamo">Dove siamo</a></li>
                 <li><a href="index.php#rilegaturatesi">Rilegature Tesi</a></li>

@@ -1,21 +1,21 @@
 <?php
+    session_start();
     include 'db.inc.php';
 
-    try
-    {
-        $sql = 'SELECT id_news, data_news, titolo FROM news';
-        $s = $pdo->prepare($sql);
-        $s->execute();
+        try
+        {
+            $sql = 'SELECT id_news, data_news, titolo FROM news';
+            $s = $pdo->prepare($sql);
+            $s->execute();
 
-        $news = $s->fetchAll();
+            $news = $s->fetchAll();
 
-    }
-    catch (PDOException $e)
-    {
-        $error = 'Errore nel caricamento delle news.';
-        echo "<p>".$error."</p>";
-    }
-
+        }
+        catch (PDOException $e)
+        {
+            $error = 'Errore nel caricamento delle news.';
+            echo "<p>".$error."</p>";
+        }
 ?>
 <html>
     <head>
