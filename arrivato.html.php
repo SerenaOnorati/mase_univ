@@ -17,6 +17,7 @@
     <script src="js/skel-panels.min.js"></script>
     <script src="js/utente.js"></script>
     <script src="js/ordini.js"></script>
+    <script src="js/stampa.js"></script>
 
     <noscript>
         <link rel="stylesheet" href="css/skel-noscript.css" />
@@ -55,7 +56,7 @@
                         <header>
                             <div class="row">
                                 <div class="10u">
-                                    <div><br><h2>Libri arrivati</h2></div>
+                                    <div><br><h2 id="titolo_stampa">Libri arrivati</h2></div>
                                     <br>
                                 </div>
                                 <div class="2u">
@@ -197,7 +198,7 @@
                                 <?php
                                 if(isset($id_ordini_array))
                                 {
-                                    echo "<a href=\"\" class=\"button button-icon fa fa-print\">Stampa</a>&nbsp;";
+                                    echo "<a href=\"javascript: stampa()\" class=\"button button-icon fa fa-print\">Stampa</a>&nbsp;";
                                     echo "<script language=\"JavaScript\">
                                                       var id_ordini =". json_encode(array('id' => $id_ordini_array)).";
                                                         </script>";
