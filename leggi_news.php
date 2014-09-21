@@ -76,13 +76,6 @@
                             }
                         ?>
                     </article>
-                    <br><br>
-                    <ul class="actions" style="text-align: right!important">
-                        <li>
-                            <a href="index.php" id="vis_news" class="button button-icon fa fa-home">Torna alla home</a>&nbsp;
-                            <a href="visualizza_tutte_le_news.php" id="all_news" class="button button-icon fa fa-envelope">Riepilogo news</a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
