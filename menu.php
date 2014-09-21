@@ -13,10 +13,11 @@
             <ul>
                 <li><a href="index.php#dovesiamo">Dove siamo</a></li>
                 <li><a href="index.php#rilegaturatesi">Rilegature Tesi</a></li>
-                <li><a href="visualizza_tutte_le_news.php"> Tutte le news</a></li>
-
             </ul>
 
+        </li>
+        <li>
+            <a class="fa fa-bullhorn" href="visualizza_tutte_le_news.php"><span>News</span></a>
         </li>
         <li>
             <a href="" class="fa fa-book"><span>Libri</span></a>
@@ -29,7 +30,7 @@
         </li>
 
         <li>
-            <a href="" class="fa fa-print"><span>Stampe Digitali</span></a>
+            <a href="" class="fa fa-print"><span>Stampe</span></a>
             <ul>
                 <li><a href="plotter.php">Plotter</a></li>
                 <li><a href="stampe.php">Stampe</a></li>
