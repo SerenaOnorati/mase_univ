@@ -35,7 +35,7 @@
                         INNER JOIN ordine on ordine_libro.id_ordine=ordine.id_ordine
                         INNER JOIN casa_editrice on libro.id_casa_editrice = casa_editrice.id_casa_editrice
                         INNER JOIN distributore on casa_editrice.id_distributore = distributore.id_distributore
-                        WHERE ordinato = true AND arrivato = false';
+                        WHERE ordinato = true AND arrivato = false  ORDER BY distributore.id_distributore';
 
                 unset($_SESSION['old_nome_distributore']);
                 $s = $pdo->prepare($sql);

@@ -162,11 +162,27 @@
                                                 </div>
                                                 <div class="4u">
                                                     <label id="titolo<?php echo $id; ?>" for="titolo<?php echo $id; ?>" class="text">TITOLO&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['titolo']; ?></strong></label>
+                                                    <input id="titolo<?php echo $risultato['id_ordine']; ?>" name="titolo<?php echo $risultato['id_ordine'];; ?>" type="hidden" class="text" value="<?php echo $risultato['titolo']; ?>" disabled>
                                                     <label id="autore<?php echo $id; ?>" for="autore<?php echo $id; ?>" class="text">AUTORE&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['autore']; ?></strong></label>
+                                                    <input id="autore<?php echo $risultato['id_ordine']; ?>" name="autore<?php echo $risultato['id_ordine'];; ?>" type="hidden" class="text" value="<?php echo $risultato['autore']; ?>" disabled>
                                                     <label id="casaeditrice<?php echo $id; ?>" for="casaeditrice<?php echo $id; ?>" class="text">CASA ED.&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['nome']; ?></strong></label>
+                                                    <input id="casa_editrice<?php echo $risultato['id_ordine']; ?>" name="casa_editrice<?php echo $risultato['id_ordine'];; ?>" type="hidden" class="text" value="<?php echo $risultato['nome']; ?>" disabled>
                                                     <label id="distributore<?php echo $id; ?>" for="distributore<?php echo $id; ?>" class="text">DISTR.&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['nome_distributore']; ?></strong></label>
+                                                    <input id="distributoreval<?php echo $risultato['id_ordine']; ?>" name="distributoreval<?php echo $risultato['id_ordine'];; ?>" type="hidden" class="text" value="<?php echo $risultato['nome_distributore']; ?>" disabled>
+                                                    <input id="indirizzo<?php echo $risultato['id_ordine']; ?>" name="indirizzo<?php echo $risultato['id_ordine'];; ?>" type="hidden" class="text" value="<?php echo $risultato['indirizzo']; ?>" disabled>
+                                                    <input id="citta<?php echo $risultato['id_ordine']; ?>" name="citta<?php echo $risultato['id_ordine'];; ?>" type="hidden" class="text" value="<?php echo $risultato['citta']; ?>" disabled>
+                                                    <input id="telefono<?php echo $risultato['id_ordine']; ?>" name="telefono<?php echo $risultato['id_ordine'];; ?>" type="hidden" class="text" value="<?php echo $risultato['telefono']; ?>" disabled>
+                                                    <input id="fax<?php echo $risultato['id_ordine']; ?>" name="fax<?php echo $risultato['id_ordine'];; ?>" type="hidden" class="text" value="<?php if(isset($risultato['fax']))echo $risultato['fax']; ?>" disabled>
+                                                    <input id="email<?php echo $risultato['id_ordine']; ?>" name="email<?php echo $risultato['id_ordine'];; ?>" type="hidden" class="text" value="<?php echo $risultato['email']; ?>" disabled>
+                                                    <input id="cap<?php echo $risultato['id_ordine']; ?>" name="cap<?php echo $risultato['id_ordine'];; ?>" type="hidden" class="text" value="<?php if(isset($risultato['cap']))echo $risultato['cap']; ?>" disabled>
+                                                    <input id="sito_web<?php echo $risultato['id_ordine']; ?>" name="sito_web<?php echo $risultato['id_ordine'];; ?>" type="hidden" class="text" value="<?php if(isset($risultato['sito_web']))echo $risultato['sito_web']; ?>" disabled>
+                                                    <input id="codice_libreria<?php echo $risultato['id_ordine']; ?>" name="codice_libreria<?php echo $risultato['id_ordine'];; ?>" type="hidden" class="text" value="<?php if(isset($risultato['codice_libreria']))echo $risultato['codice_libreria']; ?>" disabled>
+                                                    <input id="preferenza_ordine<?php echo $risultato['id_ordine']; ?>" name="preferenza_ordine<?php echo $risultato['id_ordine'];; ?>" type="hidden" class="text" value="<?php if(isset($risultato['preferenza_ordine']))echo $risultato['preferenza_ordine']; ?>" disabled>
+
                                                     <label id="preferenza<?php echo $id; ?>" for="preferenza<?php echo $id; ?>" class="text">Preferenza invio ordine&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['preferenza_ordine']; ?></strong></label>
                                                     <label id="isbn<?php echo $id; ?>" for="isbn<?php echo $id; ?>" class="text">ISBN&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['isbn']; ?></strong></label>
+                                                    <input id="isbn<?php echo $risultato['id_ordine']; ?>" name="isbn<?php echo $risultato['id_ordine'];; ?>" type="hidden" class="text" value="<?php echo $risultato['isbn']; ?>" disabled>
+
                                                 </div>
                                                 <div class="2u">
                                                     <label id="locazione<?php echo $id; ?>" for="locazione<?php echo $id; ?>" class="text">Locazione&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['locazione']; ?></strong></label>
@@ -178,6 +194,7 @@
                                                 <div class="2u">
                                                     <label id="qtamag<?php echo $id; ?>" for="qtamag<?php echo $id; ?>">Qta Mag&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['quantita']; ?></strong></label>
                                                     <input id="qtaord<?php echo $id; ?>" name="qtaord<?php echo $id; ?>" type="text" class="text" placeholder="Qta Ord" value="<?php echo $risultato['quantita_ordine']; ?>" disabled>
+                                                    <input id="qtaord<?php echo $risultato['id_ordine']; ?>" name="qtaord<?php echo $risultato['id_ordine'];; ?>" type="hidden" class="text" value="<?php echo $risultato['quantita_ordine']; ?>" disabled>
                                                     <input id="qtaord_old<?php echo $id; ?>" name="qtaord_old<?php echo $id; ?>" type="hidden" class="text" placeholder="Qta Ord" value="<?php echo $risultato['quantita_ordine']; ?>" disabled>
 
                                                 </div>
@@ -200,11 +217,11 @@
                                     <?php
                                     if(isset($id_ordini_array))
                                     {
-                                        echo "<a href=\"javascript: stampa()\" class=\"button button-icon fa fa-print\">Stampa</a>&nbsp;";
-                                        echo "<a href=\"javascript: ArrivatiTuttiOrdinati(id_ordini)\" class=\"button button-icon fa fa-truck\">Arrivati tutti</a>&nbsp;";
                                         echo "<script language=\"JavaScript\">
                                                       var id_ordini =". json_encode(array('id' => $id_ordini_array)).";
                                                         </script>";
+                                        echo "<a href=\"javascript: stampa(id_ordini)\" class=\"button button-icon fa fa-print\">Stampa</a>&nbsp;";
+                                        echo "<a href=\"javascript: ArrivatiTuttiOrdinati(id_ordini)\" class=\"button button-icon fa fa-truck\">Arrivati tutti</a>&nbsp;";
                                         echo "<a href=\"javascript: svuota(id_ordini, 'ordinati')\" class=\"button button-icon fa fa-trash-o\">Svuota</a>";
                                     }
                                     ?>
