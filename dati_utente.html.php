@@ -23,29 +23,22 @@
         </noscript>
     </head>
     <body class="no-sidebar">
-
         <!-- Header Wrapper -->
         <div id="header-wrapper">
-
             <!-- Header -->
             <div id="header" class="container">
-
                 <?php
-                if(userHasRole('Amministratore'))
-                {
-                    include 'menuAdmin.php';
-                }
-                else if(userHasRole('Utente'))
-                {
-                    include 'menuUser.php';
-                }
-
+                    if(userHasRole('Amministratore'))
+                    {
+                        include 'menuAdmin.php';
+                    }
+                    else if(userHasRole('Utente'))
+                    {
+                        include 'menuUser.php';
+                    }
                 ?>
-
             </div>
-
         </div>
-
         <!-- Main Wrapper -->
         <div id="main-wrapper">
 

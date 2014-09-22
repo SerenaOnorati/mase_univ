@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c62a4eec-d582-4e13-b7e5-eef246bc66c3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/leggi_news.php" afterPath="$PROJECT_DIR$/leggi_news.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/menu.php" afterPath="$PROJECT_DIR$/menu.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/stampa.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arrivato.html.php" afterPath="$PROJECT_DIR$/arrivato.html.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daordinare.html.php" afterPath="$PROJECT_DIR$/daordinare.html.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.inc.php" afterPath="$PROJECT_DIR$/db.inc.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ordinato.html.php" afterPath="$PROJECT_DIR$/ordinato.html.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mase_univ.iws" />
@@ -64,52 +67,29 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="1028" selection-end="1028" vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="3570">
-              <folding>
-                <marker date="1411297106126" expanded="true" signature="2196:2274" placeholder="SELECT id_ne..news..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/menu.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="55" selection-start="1098" selection-end="1098" vertical-scroll-proportion="-20.923077" vertical-offset="0" max-vertical-offset="986">
+            <state line="23" column="27" selection-start="967" selection-end="967" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="3689">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="leggi_news.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/leggi_news.php">
+      <file leaf-file-name="stampa.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/stampa.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="0" selection-start="2958" selection-end="2958" vertical-scroll-proportion="0.8512397" vertical-offset="914" max-vertical-offset="1598">
+            <state line="13" column="104" selection-start="906" selection-end="906" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="425">
               <folding>
-                <marker date="1411297258868" expanded="true" signature="63:105" placeholder="SELECT * FRO..news..." />
+                <marker date="1411326977159" expanded="true" signature="325:343" placeholder="..." />
+                <marker date="1411326977159" expanded="true" signature="547:573" placeholder="..." />
+                <marker date="1411326977159" expanded="true" signature="771:796" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ricerca_sito.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ricerca_sito.php">
+      <file leaf-file-name="daordinare.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/daordinare.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="0" selection-start="2987" selection-end="2987" vertical-scroll-proportion="0.0" vertical-offset="1785" max-vertical-offset="1938">
-              <folding>
-                <marker date="1411210808285" expanded="true" signature="797:974" placeholder="SELECT * FRO..libro..." />
-                <marker date="1411210808285" expanded="true" signature="1442:1619" placeholder="SELECT * FRO..libro..." />
-                <marker date="1411210808285" expanded="true" signature="1442:1643" placeholder="SELECT * FRO..libro..." />
-                <marker date="1411210808285" expanded="true" signature="2191:2368" placeholder="SELECT * FRO..libro..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ricerca_sito.html.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ricerca_sito.html.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="34" selection-start="2966" selection-end="2966" vertical-scroll-proportion="-19.615385" vertical-offset="680" max-vertical-offset="2380">
+            <state line="47" column="63" selection-start="1643" selection-end="2095" vertical-scroll-proportion="0.28498295" vertical-offset="632" max-vertical-offset="1632">
               <folding />
             </state>
           </provider>
@@ -129,15 +109,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/modifica_salva_libro.php" />
-        <option value="$PROJECT_DIR$/ordinato.php" />
-        <option value="$PROJECT_DIR$/ordina_libro_daordinare.php" />
-        <option value="$PROJECT_DIR$/ordina_tutti_daordinare.php" />
-        <option value="$PROJECT_DIR$/arrivati_tutti_ordinati.php" />
-        <option value="$PROJECT_DIR$/modifica_libro.html.php" />
-        <option value="$PROJECT_DIR$/dati_utente_modifica.php" />
-        <option value="$PROJECT_DIR$/dati_utente.html.php" />
-        <option value="$PROJECT_DIR$/utenti_registrati.php" />
         <option value="$PROJECT_DIR$/utenti_registrati.html.php" />
         <option value="$PROJECT_DIR$/utenti_registrati_modifica.php" />
         <option value="$PROJECT_DIR$/inserimento_news_aggiungi.php" />
@@ -153,9 +124,6 @@
         <option value="$PROJECT_DIR$/risultato_ricerca.html.php" />
         <option value="$PROJECT_DIR$/inserimento_news.php" />
         <option value="$PROJECT_DIR$/menuUser.php" />
-        <option value="$PROJECT_DIR$/daordinare.html.php" />
-        <option value="$PROJECT_DIR$/ordinato.html.php" />
-        <option value="$PROJECT_DIR$/arrivato.html.php" />
         <option value="$PROJECT_DIR$/menuAdmin.php" />
         <option value="$PROJECT_DIR$/visualizza_distributore.php" />
         <option value="$PROJECT_DIR$/inserimento_news_cancella.php" />
@@ -165,11 +133,6 @@
         <option value="$PROJECT_DIR$/modifica_distributore.html.php" />
         <option value="$PROJECT_DIR$/js/ordini.js" />
         <option value="$PROJECT_DIR$/modifica_salva_distributore.php" />
-        <option value="$PROJECT_DIR$/timbri.php" />
-        <option value="$PROJECT_DIR$/stampe.php" />
-        <option value="$PROJECT_DIR$/rilegaturaTesi.php" />
-        <option value="$PROJECT_DIR$/plotter.php" />
-        <option value="$PROJECT_DIR$/visualizza_tutte_le_news.php" />
         <option value="$PROJECT_DIR$/footer.php" />
         <option value="$PROJECT_DIR$/mail.php" />
         <option value="$PROJECT_DIR$/js/mail.js" />
@@ -177,9 +140,26 @@
         <option value="$PROJECT_DIR$/ricerca.php" />
         <option value="$PROJECT_DIR$/ricerca_sito.php" />
         <option value="$PROJECT_DIR$/ricerca_sito.html.php" />
+        <option value="$PROJECT_DIR$/leggi_news.php" />
+        <option value="$PROJECT_DIR$/access.inc.php" />
+        <option value="$PROJECT_DIR$/admin.php" />
+        <option value="$PROJECT_DIR$/dati_utente.html.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/menu.php" />
-        <option value="$PROJECT_DIR$/leggi_news.php" />
+        <option value="$PROJECT_DIR$/css/style-desktop.css" />
+        <option value="$PROJECT_DIR$/css/style-mobile.css" />
+        <option value="$PROJECT_DIR$/rilegaturaTesi.php" />
+        <option value="$PROJECT_DIR$/right-sidebar.html" />
+        <option value="$PROJECT_DIR$/timbri.php" />
+        <option value="$PROJECT_DIR$/plotter.php" />
+        <option value="$PROJECT_DIR$/preventivo.php" />
+        <option value="$PROJECT_DIR$/stampe.php" />
+        <option value="$PROJECT_DIR$/visualizza_tutte_le_news.php" />
+        <option value="$PROJECT_DIR$/db.inc.php" />
+        <option value="$PROJECT_DIR$/daordinare.html.php" />
+        <option value="$PROJECT_DIR$/arrivato.html.php" />
+        <option value="$PROJECT_DIR$/ordinato.html.php" />
+        <option value="$PROJECT_DIR$/js/stampa.js" />
       </list>
     </option>
   </component>
@@ -295,7 +275,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -328,7 +308,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="898" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/maseal" />
     <property name="dynamic.classpath" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="SearchEverywhereHistory" value="" />
@@ -348,121 +328,6 @@
       <recent name="C:\Users\Serena Onorati\mase_univ" />
       <recent name="C:\Users\Serena Onorati\mase_univ\images" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree">
-    <UpdateInfo date="Moments ago" ActionInfo="_Update">
-      <UpdatedFiles>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated from server" />
-          <option name="myStatusName" value="Changed on server" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CHANGED_ON_SERVER" />
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Updated" />
-            <option name="myStatusName" value="Changed" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="UPDATED" />
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/inserisci_distributore.html.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/js/ordini.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/modifica_distributore.html.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/modifica_salva_distributore.php</PATH>
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Created" />
-            <option name="myStatusName" value="Created" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="CREATED" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Deleted" />
-            <option name="myStatusName" value="Deleted" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="true" />
-            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Restored" />
-            <option name="myStatusName" value="Will be restored" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="RESTORED" />
-          </FILE-GROUP>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Modified" />
-          <option name="myStatusName" value="Modified" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MODIFIED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Skipped" />
-          <option name="myStatusName" value="Skipped" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SKIPPED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with conflicts" />
-          <option name="myStatusName" value="Will be merged with conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_CONFLICTS" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with tree conflicts" />
-          <option name="myStatusName" value="Merged with tree conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with property conflicts" />
-          <option name="myStatusName" value="Will be merged with property conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged" />
-          <option name="myStatusName" value="Will be merged" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Not in repository" />
-          <option name="myStatusName" value="Not in repository" />
-          <option name="mySupportsDeletion" value="true" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UNKNOWN" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally added" />
-          <option name="myStatusName" value="Locally added" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_ADDED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally removed" />
-          <option name="myStatusName" value="Locally removed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_REMOVED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Switched" />
-          <option name="myStatusName" value="Switched" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SWITCHED" />
-        </FILE-GROUP>
-      </UpdatedFiles>
-    </UpdateInfo>
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -1059,35 +924,70 @@
       <created>1411211208821</created>
       <updated>1411211208821</updated>
     </task>
-    <option name="localTasksCounter" value="138" />
+    <task id="LOCAL-00138" summary="modificato news del sito">
+      <created>1411297515514</created>
+      <updated>1411297515514</updated>
+    </task>
+    <task id="LOCAL-00139" summary="index modificato in modo da visualizzare l'accesso">
+      <created>1411314586471</created>
+      <updated>1411314586471</updated>
+    </task>
+    <task id="LOCAL-00140" summary="index modificato in modo da visualizzare l'accesso">
+      <created>1411316733801</created>
+      <updated>1411316733802</updated>
+    </task>
+    <option name="localTasksCounter" value="141" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15634218" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15360501" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18374817" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18374817" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16178624" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.11755486" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13949843" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13949843" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.107669614" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3285528" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13580246" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.107669614" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15360501" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3285528" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18374817" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.11755486" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13949843" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13580246" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16178624" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1101,8 +1001,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="ripristino" />
-    <MESSAGE value="passo id_ordini in modo corretto" />
     <MESSAGE value="per serena" />
     <MESSAGE value="svuota completato" />
     <MESSAGE value="modifica_ordine_daordine" />
@@ -1126,7 +1024,9 @@
     <MESSAGE value="modificato l'invio dell'email con l'informativa sulla provacy" />
     <MESSAGE value="modificato l'invio dell'email con l'informativa sulla privacy" />
     <MESSAGE value="ricerca dal sito principale terminata" />
-    <option name="LAST_COMMIT_MESSAGE" value="ricerca dal sito principale terminata" />
+    <MESSAGE value="modificato news del sito" />
+    <MESSAGE value="index modificato in modo da visualizzare l'accesso" />
+    <option name="LAST_COMMIT_MESSAGE" value="index modificato in modo da visualizzare l'accesso" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1140,51 +1040,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/modifica_ordine_daordinare.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="29" selection-start="724" selection-end="724" vertical-scroll-proportion="0.31911263" vertical-offset="238" max-vertical-offset="850" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ordinato.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="66" selection-start="857" selection-end="857" vertical-scroll-proportion="0.2337884" vertical-offset="203" max-vertical-offset="1037" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/svuota_daordinare.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="222" selection-end="222" vertical-scroll-proportion="-0.65384614" vertical-offset="153" max-vertical-offset="1054" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1258" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utenti_registrati.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="2" selection-start="1452" selection-end="1452" vertical-scroll-proportion="0.8335664" vertical-offset="305" max-vertical-offset="1020" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arrivato_libro_ordinato.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="16" selection-start="1166" selection-end="1166" vertical-scroll-proportion="0.832853" vertical-offset="51" max-vertical-offset="1054" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arrivati_tutti_ordinati.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="93" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="935" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ordinaPer_distributore.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="69" selection-start="609" selection-end="609" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="493" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/news_modifica.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="5" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.6923077" vertical-offset="177" max-vertical-offset="884" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ordina_libri.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="0" selection-start="1186" selection-end="1186" vertical-scroll-proportion="0.0" vertical-offset="271" max-vertical-offset="1615" />
@@ -1215,16 +1070,6 @@
         <state line="14" column="5" selection-start="313" selection-end="313" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="1462" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ordinato.html.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="185" column="132" selection-start="13670" selection-end="13670" vertical-scroll-proportion="0.5706806" vertical-offset="2818" max-vertical-offset="3876" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arrivato.html.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="182" column="83" selection-start="12257" selection-end="12257" vertical-scroll-proportion="0.11396012" vertical-offset="3014" max-vertical-offset="3791" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/inserisci_distributore.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="15.692307" vertical-offset="408" max-vertical-offset="1496" />
@@ -1240,11 +1085,6 @@
         <state line="46" column="48" selection-start="473" selection-end="1479" vertical-scroll-proportion="0.0" vertical-offset="232" max-vertical-offset="952" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/menuAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="52" selection-start="1043" selection-end="1043" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="1054" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/inserisci_distributore_cancella.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="31" selection-start="336" selection-end="336" vertical-scroll-proportion="0.2582897" vertical-offset="90" max-vertical-offset="663" />
@@ -1255,24 +1095,9 @@
         <state line="24" column="20" selection-start="796" selection-end="796" vertical-scroll-proportion="0.5878962" vertical-offset="0" max-vertical-offset="694" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/daordinare.html.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="162" column="48" selection-start="9250" selection-end="10657" vertical-scroll-proportion="0.35535976" vertical-offset="2512" max-vertical-offset="3876" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/daordinare.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="2" selection-start="10" selection-end="3333" vertical-scroll-proportion="0.0" vertical-offset="887" max-vertical-offset="1632" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modifica_libro.html.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="195" column="75" selection-start="10853" selection-end="10871" vertical-scroll-proportion="0.0" vertical-offset="1924" max-vertical-offset="3757" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/utente.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="419" column="0" selection-start="16253" selection-end="16253" vertical-scroll-proportion="0.0" vertical-offset="6033" max-vertical-offset="7225" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/visualizza_distributore.php">
@@ -1293,31 +1118,6 @@
     <entry file="file://$PROJECT_DIR$/modifica_salva_distributore.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="52" column="31" selection-start="2503" selection-end="2503" vertical-scroll-proportion="1.008726" vertical-offset="306" max-vertical-offset="1139" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stampe.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="42" selection-start="1039" selection-end="1039" vertical-scroll-proportion="0.6230366" vertical-offset="0" max-vertical-offset="3247" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timbri.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="42" selection-start="951" selection-end="951" vertical-scroll-proportion="0.6230366" vertical-offset="0" max-vertical-offset="1564" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rilegaturaTesi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="42" selection-start="960" selection-end="960" vertical-scroll-proportion="0.6230366" vertical-offset="0" max-vertical-offset="1258" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plotter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="42" selection-start="1039" selection-end="1039" vertical-scroll-proportion="0.6230366" vertical-offset="0" max-vertical-offset="5576" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/visualizza_tutte_le_news.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="42" selection-start="1208" selection-end="1208" vertical-scroll-proportion="0.7853403" vertical-offset="128" max-vertical-offset="1513" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/ordini.js">
@@ -1355,11 +1155,6 @@
         <state line="104" column="40" selection-start="3027" selection-end="3055" vertical-scroll-proportion="-1.1399318" vertical-offset="2436" max-vertical-offset="3060" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="89" selection-start="2061" selection-end="2131" vertical-scroll-proportion="0.55497384" vertical-offset="719" max-vertical-offset="1292" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ricerca.html.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="47" selection-start="220" selection-end="227" vertical-scroll-proportion="-1.017452" vertical-offset="668" max-vertical-offset="1241" />
@@ -1367,52 +1162,146 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ricerca_sito.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="0" selection-start="2987" selection-end="2987" vertical-scroll-proportion="0.0" vertical-offset="1785" max-vertical-offset="1938">
-          <folding>
-            <marker date="1411210808285" expanded="true" signature="797:974" placeholder="SELECT * FRO..libro..." />
-            <marker date="1411210808285" expanded="true" signature="1442:1619" placeholder="SELECT * FRO..libro..." />
-            <marker date="1411210808285" expanded="true" signature="1442:1643" placeholder="SELECT * FRO..libro..." />
-            <marker date="1411210808285" expanded="true" signature="2191:2368" placeholder="SELECT * FRO..libro..." />
-          </folding>
-        </state>
+        <state line="105" column="0" selection-start="2987" selection-end="2987" vertical-scroll-proportion="0.0" vertical-offset="1785" max-vertical-offset="1938" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ricerca_sito.html.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="34" selection-start="2966" selection-end="2966" vertical-scroll-proportion="-19.615385" vertical-offset="680" max-vertical-offset="2380">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="22457">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="1028" selection-end="1028" vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="3570">
-          <folding>
-            <marker date="1411297106126" expanded="true" signature="2196:2274" placeholder="SELECT id_ne..news..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/menu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="55" selection-start="1098" selection-end="1098" vertical-scroll-proportion="-20.923077" vertical-offset="0" max-vertical-offset="986">
-          <folding />
-        </state>
+        <state line="70" column="34" selection-start="2966" selection-end="2966" vertical-scroll-proportion="-19.615385" vertical-offset="680" max-vertical-offset="2380" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/leggi_news.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="0" selection-start="2958" selection-end="2958" vertical-scroll-proportion="0.8512397" vertical-offset="914" max-vertical-offset="1598">
+        <state line="78" column="0" selection-start="2958" selection-end="2958" vertical-scroll-proportion="-15.846154" vertical-offset="914" max-vertical-offset="1598" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dati_utente.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="28" selection-start="1377" selection-end="1377" vertical-scroll-proportion="-16.653847" vertical-offset="349" max-vertical-offset="935" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menuAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="39" selection-start="312" selection-end="312" vertical-scroll-proportion="-0.5665529" vertical-offset="468" max-vertical-offset="1054" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="5" selection-start="408" selection-end="408" vertical-scroll-proportion="-0.7116041" vertical-offset="672" max-vertical-offset="1258" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dati_utente.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="0" selection-start="1744" selection-end="1744" vertical-scroll-proportion="-22.884615" vertical-offset="136" max-vertical-offset="2227" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/access.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="37" selection-start="807" selection-end="815" vertical-scroll-proportion="-5.8846154" vertical-offset="340" max-vertical-offset="2431" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/right-sidebar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5746" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timbri.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="4" selection-start="10" selection-end="10" vertical-scroll-proportion="0.029668411" vertical-offset="0" max-vertical-offset="1530" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="9" selection-start="971" selection-end="973" vertical-scroll-proportion="-2.4328098" vertical-offset="1836" max-vertical-offset="22457" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style-desktop.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="23" selection-start="617" selection-end="617" vertical-scroll-proportion="0.6388889" vertical-offset="0" max-vertical-offset="6579" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style-mobile.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="23" selection-start="661" selection-end="661" vertical-scroll-proportion="0.8333333" vertical-offset="0" max-vertical-offset="6630" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plotter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="4" selection-start="10" selection-end="10" vertical-scroll-proportion="0.029010238" vertical-offset="0" max-vertical-offset="5542" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preventivo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="4" selection-start="10" selection-end="10" vertical-scroll-proportion="0.029010238" vertical-offset="0" max-vertical-offset="3434" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stampe.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="4" selection-start="10" selection-end="10" vertical-scroll-proportion="0.029010238" vertical-offset="0" max-vertical-offset="3213" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/visualizza_tutte_le_news.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="9" selection-start="403" selection-end="403" vertical-scroll-proportion="0.59342915" vertical-offset="0" max-vertical-offset="1513" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rilegaturaTesi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="4" selection-start="10" selection-end="10" vertical-scroll-proportion="-0.0" vertical-offset="17" max-vertical-offset="1224" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="2" selection-start="766" selection-end="766" vertical-scroll-proportion="-18.307692" vertical-offset="0" max-vertical-offset="578" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/utente.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="419" column="0" selection-start="16253" selection-end="16253" vertical-scroll-proportion="2.1206226" vertical-offset="6033" max-vertical-offset="7225" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="66" selection-start="112" selection-end="230" vertical-scroll-proportion="-1.1467577" vertical-offset="740" max-vertical-offset="1326" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="27" selection-start="967" selection-end="967" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="3689">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/daordinare.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="71" selection-start="2358" selection-end="2376" vertical-scroll-proportion="-17.653847" vertical-offset="510" max-vertical-offset="3876" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arrivato.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="67" selection-start="2148" selection-end="2148" vertical-scroll-proportion="-8.5" vertical-offset="765" max-vertical-offset="3808" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ordinato.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="71" selection-start="2358" selection-end="2358" vertical-scroll-proportion="-8.5" vertical-offset="765" max-vertical-offset="3893" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/stampa.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="104" selection-start="906" selection-end="906" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
           <folding>
-            <marker date="1411297258868" expanded="true" signature="63:105" placeholder="SELECT * FRO..news..." />
+            <marker date="1411326977159" expanded="true" signature="325:343" placeholder="..." />
+            <marker date="1411326977159" expanded="true" signature="547:573" placeholder="..." />
+            <marker date="1411326977159" expanded="true" signature="771:796" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/daordinare.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="63" selection-start="1643" selection-end="2095" vertical-scroll-proportion="0.28498295" vertical-offset="632" max-vertical-offset="1632">
+          <folding />
         </state>
       </provider>
     </entry>

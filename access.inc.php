@@ -18,8 +18,6 @@ function userIsLoggedIn()
 
         if (databaseContainsAuthor($_POST['email'], $password))
         {
-            echo "contiene l\'autore: ".$password;
-
             session_start();
             $_SESSION['loggedIn'] = TRUE;
             $_SESSION['email'] = $_POST['email'];
@@ -41,9 +39,6 @@ function userIsLoggedIn()
     if (isset($_POST['action']) and $_POST['action'] == 'logout')
     {
         session_start();
-       /* unset($_SESSION['loggedIn']);
-        unset($_SESSION['email']);
-        unset($_SESSION['password']);*/
 
         session_destroy();
         header("Location: index.php");

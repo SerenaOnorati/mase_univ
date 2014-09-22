@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -108,7 +111,7 @@
 
                 <!-- Sidebar -->
                 <div id="sidebar" class="4u">
-                    <!-- Excerpts -->
+                    <!-- Highlights -->
                     <section>
                         <ul class="divided">
                             <li>
@@ -121,44 +124,51 @@
                             </li>
                         </ul>
                     </section>
+                    <?php
+                        if(!isset($_SESSION['loggedIn'])){
+                    ?>
+                        <section>
+                            <ul class="divided">
+                                <li>
+                                    <!-- Highlight -->
+                                    <article class="is-highlight">
 
-                    <!-- Highlights -->
+                                            <header>
+                                                <h3 style="color: #ed786a"><a name = "login">Accedi</a></h3><br>
+                                            </header>
+                                            <form action="login.php" method="post">
+                                                <div>
+                                                    <input id="email" name="email" placeholder="e-mail" type="text" class="text"/><br>
+                                                    <input id="password" name="password" placeholder="Password" type="password" class="text"/>
+                                                    <input type="hidden" name="action" value="login">
+                                                    <br>
+                                                    <p style=" text-align: center"><b style="color: red">
+                                                            <?php
+                                                            if(isset($loginError)){
+                                                                echo $loginError;
+                                                            }
+                                                            ?>
+                                                        </b></p>
+                                                </div>
+                                                <br>
+                                                <ul class="actions">
+                                                    <li>
+                                                        <input type='submit' id="accedi" class="button button-icon fa fa-lock">
+                                                        <!--<a href="login.php" id="accedi" class="button button-icon fa fa-lock">Accedi</a>
+                                                        <br><br>
+                                                        <a href="#" class="button button-icon fa fa-edit">Registrati</a>-->
+                                                    </li>
+                                                </ul>
+                                            </form>
+
+                                    </article>
+                                </li>
+                            </ul>
+                        </section>
+                    <?php } ?>
+                    <!-- Excerpts -->
                     <section>
                         <ul class="divided">
-                            <li>
-
-                                <!-- Highlight -->
-                                <article class="is-highlight">
-                                    <header>
-                                        <h3 style="color: #ed786a"><a name = "login">Accedi</a></h3><br>
-                                    </header>
-                                    <form action="login.php" method="post">
-                                        <div>
-                                            <input id="email" name="email" placeholder="e-mail" type="text" class="text"/><br>
-                                            <input id="password" name="password" placeholder="Password" type="password" class="text"/>
-                                            <input type="hidden" name="action" value="login">
-                                           <br>
-                                            <p style=" text-align: center"><b style="color: red">
-                                                <?php
-                                                    if(isset($loginError)){
-                                                        echo $loginError;
-                                                    }
-                                                ?>
-                                            </b></p>
-                                        </div>
-                                        <br>
-                                        <ul class="actions">
-                                            <li>
-                                                <input type='submit' id="accedi" class="button button-icon fa fa-lock">
-                                                <!--<a href="login.php" id="accedi" class="button button-icon fa fa-lock">Accedi</a>
-                                                <br><br>
-                                                <a href="#" class="button button-icon fa fa-edit">Registrati</a>-->
-                                            </li>
-
-                                        </ul>
-                                    </form>
-                                </article>
-                            </li>
                             <li>
                                 <article class="is-highlight">
                                     <header>
@@ -178,21 +188,18 @@
                                         <br>
                                         <p style=" text-align: center"><b style="color: red">
                                                 <?php
-                                                    if(isset($ricercaError))
-                                                    {
-                                                        echo $ricercaError;
-                                                    }
+                                                if(isset($ricercaError))
+                                                {
+                                                    echo $ricercaError;
+                                                }
                                                 ?>
-                                        </b></p>
+                                            </b></p>
                                     </form>
                                 </article>
                             </li>
-
                         </ul>
                     </section>
-
                 </div>
-
             </div>
         </div>
     </div>

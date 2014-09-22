@@ -5,11 +5,31 @@
         <img class="image-testata" src="images/universitalia.png">
     </a>
 </h1>
+<?php if(isset($_SESSION['loggedIn'])){?>
+    <form action="logout.php" method="post" id="formlogout">
+        <p style="text-align: right">
+            <script type="text/javascript">
+                function submitformLogout()
+                {
+                    this.document.forms["formlogout"].submit();
+                }
+            </script>
+            Benvenuto,
+            <a href="dati_utente.php">
+                <?php
+                echo $_SESSION['email'];
+                ?>
+            </a>
+            <input type="hidden" name="action" value="logout">
+            <a href="javascript: submitformLogout()" class="fa fa-sign-out" title="Logout">Logout</a><br>
+        </p>
+    </form>
+<?php } ?>
 <!-- Nav -->
 <nav id="nav">
     <ul id="icone">
         <li>
-            <a class="fa fa-home" href=""><span>Home</span></a>
+            <a class="fa fa-home" href="index.php"><span>Home</span></a>
             <ul>
                 <li><a href="index.php#dovesiamo">Dove siamo</a></li>
                 <li><a href="index.php#rilegaturatesi">Rilegature Tesi</a></li>
