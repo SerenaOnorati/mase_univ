@@ -19,7 +19,7 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Area Privata - Modifica Distributore</title>
+        <title>Area Privata - Aggiungi/Modifica Distributore</title>
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <meta name="description" content="" />
@@ -63,7 +63,7 @@
                     <article class="is-post" style="align-content: center">
                         <form method="post" action="" name="modifica_distributore" onsubmit="return false">
                             <header>
-                                <div><br><h2>Modifica distributore</h2></div>
+                                <div><br><h2>Aggiungi o Modifica Distributore</h2></div>
                             </header>
                             <div class="row">
                                 <div class="3u">
@@ -162,7 +162,7 @@
                                 <li>
                                     <a href="javascript: modificaSalvaDistributore(preferenza)" class="button button-icon fa fa-save">Salva Modifica</a>
                                 </li>
-                                <script language="javascript">
+                                <!--<script language="javascript">
                                     var id_distributorei = "<?php echo $_SESSION['id_distributore']; ?>";
                                     var nome_distributorei = "<?php echo $_SESSION['nome_distributore']; ?>";
                                     var indirizzoi = "<?php echo $_SESSION['indirizzo']; ?>";
@@ -177,7 +177,7 @@
                                 </script>
                                 <li>
                                     <a href="javascript: back_Distributore(id_distributorei, nome_distributorei, indirizzoi, cittai, telefonoi, faxi, emaili, capi, sito_webi, codice_libreriai, preferenza_ordinei)" class="button button-icon fa fa-backward">Indietro</a>
-                                </li>
+                                </li>-->
                             </ul>
                         </form>
                     </article>

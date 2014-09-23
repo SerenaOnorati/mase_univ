@@ -771,87 +771,6 @@ function modificaSalvaDistributore(nomeSelect)
     }
 }
 
-function back_Distributore(id_distributore, nome_distributore, indirizzo, citta, telefono, fax, email, cap, sito_web, codice_libreria, preferenza_ordine)
-{
-    var post = '';
-    if(id_distributore != "%%")
-    {
-        id_distributore = id_distributore.slice(1, id_distributore.length-1);
-        if(post == '')
-            post = post+"id_distributore="+id_distributore;
-        else
-            post = post+"&id_distributore="+id_distributore;
-    }
-    if(nome_distributore != "%%")
-    {
-        nome_distributore = nome_distributore.slice(1, nome_distributore.length-1);
-        if(post == '')
-            post = post+"nome_distributore="+nome_distributore;
-        else
-            post = post+"&nome_distributore="+nome_distributore;
-    }
-    if(titolo != "%%")
-    {
-        titolo = titolo.slice(1, titolo.length-1);
-        if(post == '')
-            post = post+"institolo="+titolo;
-        else
-            post = post+"&institolo="+titolo;
-    }
-    if(autore != "%%")
-    {
-        autore = autore.slice(1, autore.length-1);
-        if(post == '')
-            post = post+"insautore="+autore;
-        else
-            post = post+"&insautore="+autore;
-    }
-    if(casa_editrice != "%%")
-    {
-        casa_editrice = casa_editrice.slice(0, casa_editrice.length-1);
-        if(post == '')
-            post = post+"inscasaeditrice="+casa_editrice;
-        else
-            post = post+"&inscasaeditrice="+casa_editrice;
-    }
-    if(locazione != "%%")
-    {
-        locazione = locazione.slice(1, locazione.length-1);
-        if(post == '')
-            post = post+"inslocazione="+locazione;
-        else
-            post = post+"&inslocazione="+locazione;
-    }
-    if(anno_acquisto != "%%")
-    {
-        anno_acquisto = anno_acquisto.slice(1, anno_acquisto.length-1);
-        alert(anno_acquisto);
-        if(post == '')
-            post = post+"insannoacquisto="+anno_acquisto;
-        else
-            post = post+"&insannoacquisto="+anno_acquisto;
-    }
-    $.ajax({
-
-        type: 'POST',
-        url: 'ricerca.php',
-        data: post,
-        dataType: "html",
-
-        success: function(response)
-        {
-
-            document.write(response);
-            document.getElementById('menu_ricerca').href = 'admin.php';
-            document.getElementById('menu_ordini').href = 'daordinare.php';
-        },
-        error: function()
-        {
-            alert("La cancellazione non è andata a buon fine.");
-        }
-    });
-}
-
 function aggiungiCasaEditrice(nomeSelect)
 {
 
@@ -881,6 +800,109 @@ function aggiungiCasaEditrice(nomeSelect)
     }
     else
         alert("Per favore compilare tutti i campi.");
+}
+
+function aggiungiRigaCasaEditrice()
+{
+    var aggiungi = document.getElementById('aggiungi');
+    if(aggiungi.style.display == "block")
+    {
+        aggiungi.style.display = 'none';
+    }
+    else
+    {
+        aggiungi.style.display = 'block';
+    }
+}
+
+function modificaCasaEditrice(id, id_distributore)
+{
+    var nome = document.getElementById('nome'+id).innerText;
+    var sito_web = document.getElementById('sito_web'+id).innerText;
+    var nome_distributore = document.getElementById('nome_distributore'+id).innerText;
+    var id_distributore = document.getElementById('id_distributore').value;
+
+    nome = nome.replace(/^.*:/, "");
+    sito_web = sito_web.replace(/^.*:/, "");
+    nome_distributore = nome_distributore.replace(/^.*:/, "");
+
+    window.location.href = 'modifica_casa_editrice.html.php?nome='+nome+'&sito_web='+sito_web+'&nome_distributore='+nome_distributore+'&id_distributore='+id_distributore+'&id_casa_editrice='+id;
+
+}
+
+
+/********************************SONO QUIIIII *********************/
+function modificaSalvaCasaEditrice(nomeSelect)
+{
+    var id_casa_editrice = $("#id_casa_editrice").val();
+    var nome = $("#nome").val();
+    var sito_web = $("#sito_web").val();
+    var preferenza_ordine = nomeSelect.options[nomeSelect.selectedIndex].text;
+
+
+    var nome_distributore_old = $("#nome_distributore_old").val();
+    var indirizzo_old = $("#indirizzo_old").val();
+    var citta_old = $("#citta_old").val();
+    var preferenza_ordine_old = $("#preferenza_ordine_old").val();
+    var telefono_old = $("#telefono_old").val();
+    var fax_old = $("#fax_old").val();
+    var email_old = $("#email_old").val();
+    var cap_old = $("#cap_old").val();
+    var sito_web_old = $("#sito_web_old").val();
+    var codice_libreria_old = $("#codice_libreria_old").val();
+
+
+    if(nome_distributore.length != 0 && indirizzo.length != 0 && citta.length != 0 && preferenza_ordine.length != 0 && telefono.length != 0
+        && telefono.length != 0 && fax.length != 0 && email.length != 0 && cap.length != 0 && sito_web.length != 0 && codice_libreria.length != 0)
+    {
+        if(nome_distributore == nome_distributore_old && indirizzo == indirizzo_old && citta == citta_old && preferenza_ordine == preferenza_ordine_old
+            && telefono == telefono_old && fax == fax_old && email == email_old && cap == cap_old && sito_web == sito_web_old && codice_libreria == codice_libreria_old)
+        {
+            alert("Non ci sono modifiche da salvare!");
+        }
+
+        else
+        {
+            check = confirm("Sei sicuro di voler salvare le modifiche?");
+            if(check == true)
+            {
+                $.ajax({
+                    type: 'POST',
+                    url: 'modifica_salva_distributore.php',
+                    data: "nome_distributore="+nome_distributore+"&indirizzo="+indirizzo+"&citta="+citta+"&preferenza_ordine="+preferenza_ordine+
+                        "&telefono="+telefono+"&fax="+fax+"&email="+email+"&cap="+cap+"&sito_web="+sito_web+"&codice_libreria="+codice_libreria+"&id_distributore="+id_distributore,
+                    dataType: "html",
+
+                    success: function(response)
+                    {
+                        alert(response);
+                    },
+                    error: function()
+                    {
+                        alert("Le modifiche non sono state salvate.");
+                    }
+                });
+            }
+            else
+            {
+                nome_distributore = nome_distributore_old;
+                indirizzo = indirizzo_old;
+                citta = citta_old;
+                telefono = telefono_old;
+                fax = fax_old;
+                email = email_old;
+                cap = cap_old;
+                sito_web = sito_web_old;
+                codice_libreria = codice_libreria_old;
+                preferenza_ordine = preferenza_ordine_old;
+                window.location.reload();
+            }
+        }
+    }
+    else
+    {
+        alert("Alcuni o tutti i campi sono vuoti, completare i campi.");
+    }
 }
 
 function modificaLibroArrivato(id_ordine,id_row, isbn)

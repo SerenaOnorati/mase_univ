@@ -65,12 +65,12 @@ if(!userHasRole('Amministratore'))
                     <header>
                         <div><br><h2>Inserisci</h2></div>
                     </header>
-                        <div class="row" style="align-content: center !important">
-                        <a href="visualizza_distributore.php" class="fa fa-plus-square" title="Aggiungi">Aggiungi e Modifica Distributore </a>
 
-                        <a href="inserisci_casa_editrice.html.php" class="fa fa-plus-square" title="Aggiungi">Aggiungi e Modifica Casa Editrice </a>
-
-                        <a href="inserisci_libri.html.php" class="fa fa-plus-square" title="Aggiungi">Aggiungi e Modifica Libro </a>
+                        <a href="visualizza_distributore.php" class="fa fa-toggle-right" title="Aggiungi">Aggiungi e Modifica Distributore </a>
+                        <br>
+                        <a href="visualizza_casa_editrice.php" class="fa fa-toggle-right" title="Aggiungi">Aggiungi e Modifica Casa Editrice </a>
+                        <br>
+                        <a href="inserisci_libri.html.php" class="fa fa-toggle-right" title="Aggiungi">Aggiungi e Modifica Libro </a>
 
                         </div>
                 </article>
