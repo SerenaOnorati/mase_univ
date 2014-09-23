@@ -30,9 +30,10 @@
             <a id="menu_ricerca" class="fa fa-book"><span>Libri</span></a>
             <ul>
                 <li><a href="admin.php">Ricerca Libri</a></li>
-                <li><a href="visualizza_distributore.php">Inserisci Distributore</a></li>
+                <li><a href="inserisci.html.php">Inserisci</a></li>
+                <!--<li><a href="visualizza_distributore.php">Inserisci Distributore</a></li>
                 <li><a href="inserisci_casa_editrice.html.php">Inserisci Casa Editrice</a></li>
-                <li><a href="inserisci_libri.html.php">Inserisci Libri</a></li>
+                <li><a href="inserisci_libri.html.php">Inserisci Libri</a></li>-->
             </ul>
         </li>
 
