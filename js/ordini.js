@@ -383,7 +383,7 @@ function svuota(id_ordini, id_div)
     }
 }
 
-/*permette di stampare un'array di oggetti in javascript(mi serviva per il debug)*/
+/*permette di stampare un array di oggetti in javascript(mi serviva per il debug)*/
 function print_r(o,level,max) {
     var output = "";
     if(!level) level = 0;
