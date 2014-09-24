@@ -77,8 +77,12 @@ function modificaSalvaLibro(nomeSelect)
     var prezzo = $("#prezzo").val();
     var prezzo_acquisto = $("#prezzo_acquisto").val();
     var anno_acquisto = $("#anno_acquisto").val();
-    var path = $("#url").val();
-    var copertina = "\\"+path.replace(/^.*\\/, "");
+    var file = document.getElementById('nomeimmagine').val;
+    if(file == undefined)
+    {
+        file = "";
+    }
+    var copertina = "\\"+file;
     var quantita = $("#quantita").val();
     var locazione = $("#locazione").val();
 

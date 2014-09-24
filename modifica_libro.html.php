@@ -33,6 +33,8 @@
         <script src="js/skel.min.js"></script>
         <script src="js/skel-panels.min.js"></script>
         <script src="js/ordini.js"></script>
+        <script src="js/upclick.js"></script>
+
         <noscript>
             <link rel="stylesheet" href="css/skel-noscript.css" />
             <link rel="stylesheet" href="css/style.css" />
@@ -46,7 +48,7 @@
         <!-- Header -->
         <div id="header" class="container">
             <?php
-            include 'menuAdmin.php'
+                include 'menuAdmin.php'
             ?>
         </div>
     </div>
@@ -185,8 +187,9 @@
                                     <input type="hidden" id="copertina_old" value="<?php echo $_GET['copertina']; ?>"><br>
                                     <a href="javascript: cambiaCopertina()" class="fa fa-picture-o">Cambia</a>
                                     <div id="div_copertina" style="display: none">
-                                        <label id="copertina" for="url" class="floated">Inserisci la copertina del libro: </label>
-                                        <input type="file" id="url" name="url" multiple><br>
+                                        <label id="file_nuovo" for="uploader" class="floated">Inserisci una copertina per il libro: </label>
+                                        <input type="button" id="uploader" value="Upload" onclick="upload_copertina()">
+                                        <input type="hidden" id="nomeimmagine" name="nomeimmagine" value="">
                                     </div>
                                 </div>
                             </div>

@@ -316,6 +316,8 @@ function upload_news(id)
     if(id == null)
     {
         uploader = document.getElementById('uploader');
+        document.getElementById('nomeimmagine').val = "";
+
         upclick(
             {
                 element: uploader,
@@ -343,6 +345,8 @@ function upload_news(id)
     else
     {
         uploader = document.getElementById('uploader'+id);
+        document.getElementById('nomeimmagine'+id).val = "";
+
         upclick(
             {
                 element: uploader,
@@ -369,64 +373,35 @@ function upload_news(id)
     }
 }
 
-function upload_copertina(id)
+function upload_copertina()
 {
     var uploader;
-    if(id == null)
-    {
-        uploader = document.getElementById('uploader');
-        document.getElementById('nomeimmagine').val = "";
 
-        upclick(
-            {
-                element: uploader,
-                action: 'upload.php',
-                onstart:
-                    function(filename)
+    uploader = document.getElementById('uploader');
+    //document.getElementById('nomeimmagine').val = "";
+
+    upclick(
+        {
+            element: uploader,
+            action: 'upload.php',
+            onstart:
+                function(filename)
+                {
+                    alert('Start upload: '+filename);
+                },
+            oncomplete:
+                function(response_data)
+                {
+                    if(response_data != "L'upload non è andato a buon fine.")
                     {
-                        alert('Start upload: '+filename);
-                    },
-                oncomplete:
-                    function(response_data)
-                    {
-                        if(response_data != "L'upload non è andato a buon fine.")
-                        {
-                            document.getElementById('nomeimmagine').val = response_data;
-                            alert("Upload avvenuto con successo.");
-                        }
-                        else
-                        {
-                            alert(response_data);
-                        }
+                        document.getElementById('nomeimmagine').val = response_data;
+                        alert("Upload avvenuto con successo.");
                     }
-            });
-    }
-    else
-    {
-        uploader = document.getElementById('uploader'+id);
-        upclick(
-            {
-                element: uploader,
-                action: 'upload.php?news=ok',
-                onstart:
-                    function(filename)
+                    else
                     {
-                        alert('Start upload: '+filename);
-                    },
-                oncomplete:
-                    function(response_data)
-                    {
-                        if(response_data != "L'upload non è andato a buon fine.")
-                        {
-                            document.getElementById('nomeimmagine'+id).val = response_data;
-                            alert("Upload avvenuto con successo.");
-                        }
-                        else
-                        {
-                            alert(response_data);
-                        }
+                        alert(response_data);
                     }
-            });
-    }
+                }
+        });
 }
 
