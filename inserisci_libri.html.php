@@ -168,8 +168,8 @@
                                     <h3 style="color: #ed786a">Copertina</h3>
                                 </div>
                                 <div class="3u">
-                                    <label id="copertina" for="url" class="floated">Inserisci la copertina del libro: </label>
-                                    <input type="file" id="url" name="url" multiple><br>
+                                        <label id="copertina" for="url" class="floated">Inserisci la copertina del libro: </label>
+                                        <input type="file" id="url" name="url" multiple><br>
                                 </div>
                             </div>
                             <br>

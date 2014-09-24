@@ -16,6 +16,8 @@
         <script src="js/skel.min.js"></script>
         <script src="js/skel-panels.min.js"></script>
         <script src="js/utente.js"></script>
+        <script src="js/upclick.js"></script>
+
         <noscript>
             <link rel="stylesheet" href="css/skel-noscript.css" />
             <link rel="stylesheet" href="css/style.css" />
@@ -93,7 +95,29 @@
                                 <div class="3u">
                                     <label id="file_nuovo" for="url" class="floated">Inserisci un file che vuoi inviare: </label>
                                     <input type="file" id="url" name="url" multiple><br>
+                                    <input type="button" id="uploader" value="Upload">
+                                    <script type="text/javascript">
 
+                                        var uploader = document.getElementById('uploader');
+
+                                        upclick(
+                                            {
+                                                element: uploader,
+                                                action: 'upload.php',
+                                                onstart:
+                                                    function(filename)
+                                                    {
+                                                        alert(file_name);
+                                                        alert('Start upload: '+filename);
+                                                    },
+                                                oncomplete:
+                                                    function(response_data)
+                                                    {
+                                                        alert(response_data);
+                                                    }
+                                            });
+
+                                    </script>
                                 </div>
                                 <div class="3u">
                                     <input id="data_nuovo" type="date" name="data" class="text" required="required">

@@ -5,7 +5,7 @@
 
     if(!userIsLoggedIn())
     {
-        $GLOBALS['loginError'] = "Non hai effettuato il login. Inserire email e password";
+        $GLOBALS['loginError'] = "Non hai effettuato il login. Inserire email e password.";
         include 'index.php';
     }
     else{
