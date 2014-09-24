@@ -149,6 +149,10 @@ function aggiungiNews()
     var titolo = $("#titolo_nuovo").val();
     var testo = $("#testo_nuovo").val();
     var file = document.getElementById('nomeimmagine').val;
+    if(file == undefined)
+    {
+        file = "";
+    }
     var data = $("#data_nuovo").val();
     if(titolo.length != 0 && testo.length != 0 && data.length != 0)
     {
