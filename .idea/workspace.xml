@@ -4,8 +4,6 @@
     <list default="true" id="c62a4eec-d582-4e13-b7e5-eef246bc66c3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inserimento_news.html.php" afterPath="$PROJECT_DIR$/inserimento_news.html.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/upclick.js" afterPath="$PROJECT_DIR$/js/upclick.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/upload.php" afterPath="$PROJECT_DIR$/upload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/utente.js" afterPath="$PROJECT_DIR$/js/utente.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mase_univ.iws" />
@@ -63,10 +61,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="upclick.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="upclick.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/upclick.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="330" column="67" selection-start="10449" selection-end="10492" vertical-scroll-proportion="0.0" vertical-offset="4879" max-vertical-offset="5610">
+            <state line="312" column="20" selection-start="9951" selection-end="9951" vertical-scroll-proportion="0.22222222" vertical-offset="4879" max-vertical-offset="5610">
               <folding />
             </state>
           </provider>
@@ -83,15 +81,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inserimento_news.html.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="inserimento_news.html.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/inserimento_news.html.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="104" selection-start="4274" selection-end="4274" vertical-scroll-proportion="0.59511346" vertical-offset="1308" max-vertical-offset="3128">
+            <state line="96" column="106" selection-start="4170" selection-end="4170" vertical-scroll-proportion="-12.461538" vertical-offset="1308" max-vertical-offset="3128">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#form#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#strong#0;n#label#0;n#div#0;n#div#2;n#div#0;n#form#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#div#3;n#div#0;n#form#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1411584516130" expanded="false" signature="8212:8232" placeholder="..." />
+                <marker date="1411584976765" expanded="false" signature="8217:8237" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -168,9 +166,9 @@
         <option value="$PROJECT_DIR$/inserisci_libri.html.php" />
         <option value="$PROJECT_DIR$/inserisci_libri.php" />
         <option value="$PROJECT_DIR$/upload.php" />
+        <option value="$PROJECT_DIR$/js/utente.js" />
         <option value="$PROJECT_DIR$/inserimento_news.html.php" />
         <option value="$PROJECT_DIR$/js/upclick.js" />
-        <option value="$PROJECT_DIR$/js/utente.js" />
       </list>
     </option>
   </component>
@@ -1002,13 +1000,18 @@
       <created>1411570091168</created>
       <updated>1411570091168</updated>
     </task>
-    <option name="localTasksCounter" value="145" />
+    <task id="LOCAL-00145" summary="upload inserimento news completato">
+      <created>1411584961642</created>
+      <updated>1411584961642</updated>
+    </task>
+    <option name="localTasksCounter" value="146" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1378" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13580246" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15360501" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1026,7 +1029,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3285528" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13580246" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1067,7 +1069,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="completati:&#10;da ordinare&#10;&#10;ordinati&#10;&#10;parziale:&#10;&#10;arrivati (si attendono le specifiche)" />
     <MESSAGE value="menuAdmin" />
     <MESSAGE value="menu Admin" />
     <MESSAGE value="modifica quantita in ordinati" />
@@ -1092,7 +1093,8 @@
     <MESSAGE value="schermata inserisci" />
     <MESSAGE value="finire modifica Casa Editrice (js modificaSalvaCasaEditrice)" />
     <MESSAGE value="upload delle news quasi completato" />
-    <option name="LAST_COMMIT_MESSAGE" value="upload delle news quasi completato" />
+    <MESSAGE value="upload inserimento news completato" />
+    <option name="LAST_COMMIT_MESSAGE" value="upload inserimento news completato" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1349,13 +1351,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/upclick.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="330" column="67" selection-start="10449" selection-end="10492" vertical-scroll-proportion="0.0" vertical-offset="4879" max-vertical-offset="5610">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/upload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="5" selection-start="290" selection-end="290" vertical-scroll-proportion="0.31911263" vertical-offset="0" max-vertical-offset="586">
@@ -1372,13 +1367,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/inserimento_news.html.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="104" selection-start="4274" selection-end="4274" vertical-scroll-proportion="0.59511346" vertical-offset="1308" max-vertical-offset="3128">
+        <state line="96" column="106" selection-start="4170" selection-end="4170" vertical-scroll-proportion="-12.461538" vertical-offset="1308" max-vertical-offset="3128">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#form#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#strong#0;n#label#0;n#div#0;n#div#2;n#div#0;n#form#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#div#3;n#div#0;n#form#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1411584516130" expanded="false" signature="8212:8232" placeholder="..." />
+            <marker date="1411584976765" expanded="false" signature="8217:8237" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/upclick.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="312" column="20" selection-start="9951" selection-end="9951" vertical-scroll-proportion="0.22222222" vertical-offset="4879" max-vertical-offset="5610">
+          <folding />
         </state>
       </provider>
     </entry>

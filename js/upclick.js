@@ -310,7 +310,7 @@ function upclick(params)
         element.attachEvent("onmousemove", onmousemove_callback);
 }
 
-function upload()
+function upload_news()
 {
     var uploader = document.getElementById('uploader');
 
