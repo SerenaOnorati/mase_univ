@@ -93,31 +93,9 @@
                                     <textarea id="testo_nuovo" type="text" name="testo" class="text" required="required" cols="30" rows="6" required="required"></textarea>
                                 </div>
                                 <div class="3u">
-                                    <label id="file_nuovo" for="url" class="floated">Inserisci un file che vuoi inviare: </label>
-                                    <input type="file" id="url" name="url" multiple><br>
-                                    <input type="button" id="uploader" value="Upload">
-                                    <script type="text/javascript">
-
-                                        var uploader = document.getElementById('uploader');
-
-                                        upclick(
-                                            {
-                                                element: uploader,
-                                                action: 'upload.php',
-                                                onstart:
-                                                    function(filename)
-                                                    {
-                                                        alert(file_name);
-                                                        alert('Start upload: '+filename);
-                                                    },
-                                                oncomplete:
-                                                    function(response_data)
-                                                    {
-                                                        alert(response_data);
-                                                    }
-                                            });
-
-                                    </script>
+                                    <label id="file_nuovo" for="uploader" class="floated">Inserisci un file che vuoi inviare: </label>
+                                    <input type="button" id="uploader" value="Upload" onclick="upload()">
+                                    <input type="hidden" id="nomeimmagine" name="nomeimmagine" value="">
                                 </div>
                                 <div class="3u">
                                     <input id="data_nuovo" type="date" name="data" class="text" required="required">

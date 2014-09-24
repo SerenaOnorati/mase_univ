@@ -148,10 +148,8 @@ function aggiungiNews()
 
     var titolo = $("#titolo_nuovo").val();
     var testo = $("#testo_nuovo").val();
-    var path = $("#url").val();
-    var file = path.replace(/^.*\\/, "");
+    var file = document.getElementById('nomeimmagine').val;
     var data = $("#data_nuovo").val();
-    //alert(file);
     if(titolo.length != 0 && testo.length != 0 && data.length != 0)
     {
         $.ajax({
@@ -162,8 +160,7 @@ function aggiungiNews()
 
             success: function(response)
             {
-                //Upload
-
+                document.getElementById('nomeimmagine').val = "";
                 window.location.reload();
                 alert(response);
 
@@ -175,7 +172,6 @@ function aggiungiNews()
         });
     }
     else
-        //alert("lunghezza titolo"+titolo.length)
         alert("Compilare tutti i campi");
 }
 
