@@ -93,7 +93,7 @@
                                     <textarea id="testo_nuovo" type="text" name="testo" class="text" required="required" cols="30" rows="6" required="required"></textarea>
                                 </div>
                                 <div class="3u">
-                                    <label id="file_nuovo" for="uploader" class="floated">Inserisci un file che vuoi inviare: </label>
+                                    <label id="file_nuovo" for="uploader" class="floated">Inserisci un'immagine per la news: </label>
                                     <input type="button" id="uploader" value="Upload" onclick="upload_news(null)">
                                     <input type="hidden" id="nomeimmagine" name="nomeimmagine" value="">
                                 </div>

@@ -170,7 +170,7 @@
                                     <h3 style="color: #ed786a">Copertina</h3>
                                 </div>
                                 <div class="3u">
-                                    <label id="file_nuovo" for="uploader" class="floated">Inserisci un file che vuoi inviare: </label>
+                                    <label id="file_nuovo" for="uploader" class="floated">Inserisci una copertina per il libro: </label>
                                     <input type="button" id="uploader" value="Upload" onclick="upload_copertina(null)">
                                     <input type="hidden" id="nomeimmagine" name="nomeimmagine" value="">
                                 </div>
