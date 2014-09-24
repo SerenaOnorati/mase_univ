@@ -226,8 +226,12 @@ function modificaNews(id)
         var titolo = $("#titolo"+id).val();
         var testo = $("#testo"+id).val();
         var data = $("#data_mod"+id).val();
-        var path = $("#url"+id).val();
-        var immagine = "\\"+path.replace(/^.*\\/, "");
+        var file = document.getElementById('nomeimmagine'+id).val;
+        if(file == undefined)
+        {
+            file = "";
+        }
+        var immagine = "\\"+file;
 
         var valuta_data = data == "" | data == data_old;
 

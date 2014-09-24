@@ -94,7 +94,7 @@
                                 </div>
                                 <div class="3u">
                                     <label id="file_nuovo" for="uploader" class="floated">Inserisci un file che vuoi inviare: </label>
-                                    <input type="button" id="uploader" value="Upload" onclick="upload_news()">
+                                    <input type="button" id="uploader" value="Upload" onclick="upload_news(null)">
                                     <input type="hidden" id="nomeimmagine" name="nomeimmagine" value="">
                                 </div>
                                 <div class="3u">
@@ -148,7 +148,8 @@
                                         ?>
                                         <div id="div_immagine<?php echo ($new['id_news']); ?>" style="display: none"><br><br>
                                             <label id="copertina" for="url" class="floated"><strong style="color: lightseagreen">Inserisci una nuova immagine per la news:</strong></label>
-                                            <input type="file" id="url<?php echo ($new['id_news']); ?>" name="url" multiple><br>
+                                            <input type="button" id="uploader<?php echo ($new['id_news']); ?>" value="Upload" onclick="upload_news(<?php echo ($new['id_news']); ?>)">
+                                            <input type="hidden" id="nomeimmagine<?php echo ($new['id_news']); ?>" name="nomeimmagine<?php echo ($new['id_news']); ?>" value="">
                                         </div>
                                     </div>
                                     <div class="3u">

@@ -310,32 +310,63 @@ function upclick(params)
         element.attachEvent("onmousemove", onmousemove_callback);
 }
 
-function upload_news()
+function upload_news(id)
 {
-    var uploader = document.getElementById('uploader');
-
-    upclick(
-        {
-            element: uploader,
-            action: 'upload.php',
-            onstart:
-                function(filename)
-                {
-                    alert('Start upload: '+filename);
-                },
-            oncomplete:
-                function(response_data)
-                {
-                    if(response_data != "L'upload non è andato a buon fine.")
+    var uploader;
+    if(id == null)
+    {
+        uploader = document.getElementById('uploader');
+        upclick(
+            {
+                element: uploader,
+                action: 'upload.php',
+                onstart:
+                    function(filename)
                     {
-                        document.getElementById('nomeimmagine').val = response_data;
-                        alert("Upload avvenuto con successo.");
-                        alert($("#nomeimmagine").val());
-                    }
-                    else
+                        alert('Start upload: '+filename);
+                    },
+                oncomplete:
+                    function(response_data)
                     {
-                        alert(response_data);
+                        if(response_data != "L'upload non è andato a buon fine.")
+                        {
+                            document.getElementById('nomeimmagine').val = response_data;
+                            alert("Upload avvenuto con successo.");
+                            alert($("#nomeimmagine").val());
+                        }
+                        else
+                        {
+                            alert(response_data);
+                        }
                     }
-                }
-        });
+            });
+    }
+    else
+    {
+        uploader = document.getElementById('uploader'+id);
+        upclick(
+            {
+                element: uploader,
+                action: 'upload.php',
+                onstart:
+                    function(filename)
+                    {
+                        alert('Start upload: '+filename);
+                    },
+                oncomplete:
+                    function(response_data)
+                    {
+                        if(response_data != "L'upload non è andato a buon fine.")
+                        {
+                            document.getElementById('nomeimmagine'+id).val = response_data;
+                            alert("Upload avvenuto con successo.");
+                        }
+                        else
+                        {
+                            alert(response_data);
+                        }
+                    }
+            });
+    }
 }
+
