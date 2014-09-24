@@ -48,7 +48,7 @@
             catch (PDOException $e)
             {
                 $error = 'Si è verificato un errore nell\'inserimento del libro';
-                echo $e->getMessage();
+                echo $error;
             }
         }
         else
