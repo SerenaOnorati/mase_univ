@@ -5,15 +5,17 @@ function aggiungiLibro(nomeSelect)
     var autore = $("#insautore").val();
     var isbn = $("#insisbn").val();
     var titolo = $("#institolo").val();
-    var path = $("#url").val();
-    var copertina = path.replace(/^.*\\/, "");
+    var copertina = document.getElementById('nomeimmagine').val;
+    if(copertina == undefined)
+    {
+        copertina = "";
+    }
     var locazione = $("#inslocazione").val();
     var prezzo = $("#insprezzo").val();
     var prezzoa = $("#insprezzoa").val();
     var quantita = $("#insquantita").val();
     var anno = $("#insannoacquisto").val();
     var id_casa_editrice = nomeSelect.options[nomeSelect.selectedIndex].value;
-    //var nome_casa_editrice = nomeSelect.options[nomeSelect.selectedIndex].text;
 
     if(autore.length != 0 && isbn.length != 0  && titolo.length != 0 && locazione.length != 0 && prezzo.length != 0 && prezzoa.length != 0 && quantita.length != 0 && anno.length != 0 && id_casa_editrice.length != 0)
     {

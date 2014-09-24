@@ -319,7 +319,7 @@ function upload_news(id)
         upclick(
             {
                 element: uploader,
-                action: 'upload.php',
+                action: 'upload.php?news=ok',
                 onstart:
                     function(filename)
                     {
@@ -332,7 +332,6 @@ function upload_news(id)
                         {
                             document.getElementById('nomeimmagine').val = response_data;
                             alert("Upload avvenuto con successo.");
-                            alert($("#nomeimmagine").val());
                         }
                         else
                         {
@@ -347,7 +346,68 @@ function upload_news(id)
         upclick(
             {
                 element: uploader,
+                action: 'upload.php?news=ok',
+                onstart:
+                    function(filename)
+                    {
+                        alert('Start upload: '+filename);
+                    },
+                oncomplete:
+                    function(response_data)
+                    {
+                        if(response_data != "L'upload non è andato a buon fine.")
+                        {
+                            document.getElementById('nomeimmagine'+id).val = response_data;
+                            alert("Upload avvenuto con successo.");
+                        }
+                        else
+                        {
+                            alert(response_data);
+                        }
+                    }
+            });
+    }
+}
+
+function upload_copertina(id)
+{
+    var uploader;
+    if(id == null)
+    {
+        uploader = document.getElementById('uploader');
+        document.getElementById('nomeimmagine').val = "";
+
+        upclick(
+            {
+                element: uploader,
                 action: 'upload.php',
+                onstart:
+                    function(filename)
+                    {
+                        alert('Start upload: '+filename);
+                    },
+                oncomplete:
+                    function(response_data)
+                    {
+                        if(response_data != "L'upload non è andato a buon fine.")
+                        {
+                            document.getElementById('nomeimmagine').val = response_data;
+                            alert("Upload avvenuto con successo.");
+                        }
+                        else
+                        {
+                            alert(response_data);
+                        }
+                    }
+            });
+    }
+    else
+    {
+        uploader = document.getElementById('uploader'+id);
+        upclick(
+            {
+                element: uploader,
+                action: 'upload.php?news=ok',
                 onstart:
                     function(filename)
                     {

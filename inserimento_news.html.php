@@ -164,16 +164,12 @@
                             </form>
                             <br>
                         <?php endforeach; ?>
-
                     </article>
                 </div>
             </div>
         </div>
 
     </div>
-
-    </div>
-
     </body>
 </html>
 

@@ -33,6 +33,8 @@
         <script src="js/skel.min.js"></script>
         <script src="js/skel-panels.min.js"></script>
         <script src="js/ordini.js"></script>
+        <script src="js/upclick.js"></script>
+
         <noscript>
             <link rel="stylesheet" href="css/skel-noscript.css" />
             <link rel="stylesheet" href="css/style.css" />
@@ -168,8 +170,9 @@
                                     <h3 style="color: #ed786a">Copertina</h3>
                                 </div>
                                 <div class="3u">
-                                        <label id="copertina" for="url" class="floated">Inserisci la copertina del libro: </label>
-                                        <input type="file" id="url" name="url" multiple><br>
+                                    <label id="file_nuovo" for="uploader" class="floated">Inserisci un file che vuoi inviare: </label>
+                                    <input type="button" id="uploader" value="Upload" onclick="upload_copertina(null)">
+                                    <input type="hidden" id="nomeimmagine" name="nomeimmagine" value="">
                                 </div>
                             </div>
                             <br>
