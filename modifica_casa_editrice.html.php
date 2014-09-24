@@ -63,7 +63,7 @@
                     <article class="is-post" style="align-content: center">
                         <form method="post" action="" name="modifica_Casa_editrice" onsubmit="return false">
                             <header>
-                                <div><br><h2>Aggiungi o Modifica Casa Editrice</h2></div>
+                                <div><br><h2>Modifica Casa Editrice</h2></div>
                             </header>
                             <div class="row">
                                 <div class="3u">
@@ -89,7 +89,8 @@
                                 </div>
                                 <div class="3u">
                                     <input type="hidden" id="id_distributore_old" value="<?php echo $_GET['id_distributore']; ?>">
-                                    <select name ="preferenza" id="preferenza" onchange="ordinaRicercaPerDistributore(select)">
+                                    <input type="hidden" id="nome_distributore_old" value="<?php echo $_GET['nome_distributore']; ?>">
+                                    <select name ="preferenza" id="preferenza" >
 
                                         <option value="id_none">...</option>
                                         <?php

@@ -44,7 +44,7 @@
                 <article class="is-post" style="align-content: center">
                     <form method="post" action="inserisci_casa_editrice.php" name="inserisci_casa_edistrice" onsubmit="return false">
                         <header>
-                            <div><br><h2>Inserisci casa editrice</h2></div>
+                            <div><br><h2>Inserisci o Modifica casa editrice</h2></div>
                         </header>
                         <a href="javascript:aggiungiRigaCasaEditrice()" class="fa fa-plus-square" title="Aggiungi">Aggiungi Casa Editrice </a>
                         <br>
@@ -122,7 +122,7 @@
                         <form action="" method="post" onsubmit="return false">
                             <div class="row" id="row<?php echo $risultato['id_casa_editrice']; ?>">
                                 <br>
-                                <input type="text" id="id_distributore" value="<?php echo $risultato['id_distributore']; ?>">
+                                <input type="hidden" id="id_distributore" value="<?php echo $risultato['id_distributore']; ?>">
 
                                 <div class="3u">
                                     <label id="nome<?php echo $risultato['id_casa_editrice']; ?>" for="nome<?php echo $risultato['id_casa_editrice']; ?>" class="text">NOME&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['nome']; ?></strong></label>

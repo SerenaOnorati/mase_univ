@@ -830,33 +830,23 @@ function modificaCasaEditrice(id, id_distributore)
 
 }
 
-
-/********************************SONO QUIIIII *********************/
 function modificaSalvaCasaEditrice(nomeSelect)
 {
     var id_casa_editrice = $("#id_casa_editrice").val();
     var nome = $("#nome").val();
     var sito_web = $("#sito_web").val();
-    var preferenza_ordine = nomeSelect.options[nomeSelect.selectedIndex].text;
+    var index = document.getElementById("preferenza").selectedIndex;
+    var id_distributore = document.getElementsByTagName("option")[index].getAttribute("value");
 
-
-    var nome_distributore_old = $("#nome_distributore_old").val();
-    var indirizzo_old = $("#indirizzo_old").val();
-    var citta_old = $("#citta_old").val();
-    var preferenza_ordine_old = $("#preferenza_ordine_old").val();
-    var telefono_old = $("#telefono_old").val();
-    var fax_old = $("#fax_old").val();
-    var email_old = $("#email_old").val();
-    var cap_old = $("#cap_old").val();
+    var id_casa_editrice_old = $("#id_casa_editrice_old").val();
+    var nome_old = $("#nome_old").val();
     var sito_web_old = $("#sito_web_old").val();
-    var codice_libreria_old = $("#codice_libreria_old").val();
+    var id_distributore_old = $("#id_distributore_old").val();
 
 
-    if(nome_distributore.length != 0 && indirizzo.length != 0 && citta.length != 0 && preferenza_ordine.length != 0 && telefono.length != 0
-        && telefono.length != 0 && fax.length != 0 && email.length != 0 && cap.length != 0 && sito_web.length != 0 && codice_libreria.length != 0)
+    if(id_casa_editrice.length != 0 && nome.length != 0 && sito_web.length != 0 && id_distributore.length != 0)
     {
-        if(nome_distributore == nome_distributore_old && indirizzo == indirizzo_old && citta == citta_old && preferenza_ordine == preferenza_ordine_old
-            && telefono == telefono_old && fax == fax_old && email == email_old && cap == cap_old && sito_web == sito_web_old && codice_libreria == codice_libreria_old)
+        if(id_casa_editrice == id_casa_editrice_old && nome == nome_old && sito_web == sito_web_old && id_distributore == id_distributore_old)
         {
             alert("Non ci sono modifiche da salvare!");
         }
@@ -868,9 +858,8 @@ function modificaSalvaCasaEditrice(nomeSelect)
             {
                 $.ajax({
                     type: 'POST',
-                    url: 'modifica_salva_distributore.php',
-                    data: "nome_distributore="+nome_distributore+"&indirizzo="+indirizzo+"&citta="+citta+"&preferenza_ordine="+preferenza_ordine+
-                        "&telefono="+telefono+"&fax="+fax+"&email="+email+"&cap="+cap+"&sito_web="+sito_web+"&codice_libreria="+codice_libreria+"&id_distributore="+id_distributore,
+                    url: 'modifica_salva_casa_editrice.php',
+                    data: "id_casa_editrice="+id_casa_editrice+"&nome="+nome+"&sito_web="+sito_web+"&id_distributore="+id_distributore,
                     dataType: "html",
 
                     success: function(response)
@@ -885,16 +874,10 @@ function modificaSalvaCasaEditrice(nomeSelect)
             }
             else
             {
-                nome_distributore = nome_distributore_old;
-                indirizzo = indirizzo_old;
-                citta = citta_old;
-                telefono = telefono_old;
-                fax = fax_old;
-                email = email_old;
-                cap = cap_old;
+                id_casa_editrice = id_casa_editrice_old;
+                nome = nome_old;
                 sito_web = sito_web_old;
-                codice_libreria = codice_libreria_old;
-                preferenza_ordine = preferenza_ordine_old;
+                id_distributore = id_distributore_old;
                 window.location.reload();
             }
         }
