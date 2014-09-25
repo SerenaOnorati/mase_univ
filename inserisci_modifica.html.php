@@ -63,14 +63,57 @@ if(!userHasRole('Amministratore'))
                     <article class="is-post">
 
                     <header>
-                        <div><br><h2>Inserisci</h2></div>
+                        <div><br><h2>Cerca, Inserisci e Modifica</h2></div>
                     </header>
 
-                        <a href="visualizza_distributore.php" class="fa fa-toggle-right" title="Aggiungi">Aggiungi e Modifica Distributore </a>
+                        <div class="row">
+                            <div class="3u">
+                                <h3 class="fa fa-user" style="color: #ed786a">&nbsp; Distributore</h3>
+                            </div>
+                            <div class="3u">
+                                <input id="distributore" name="distributore" placeholder="Distributore" type="text" class="text" value="">
+                            </div>
+                            <div class="3u">
+                                <a href="visualizza_distributore.php" class="fa fa-plus" title="Aggiungi">Aggiungi Distributore </a>
+                            </div>
+                            <div class="3u">
+                                <a href="visualizza_distributore.php" class="fa fa-edit" title="Modifica">Modifica Distributore </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="3u">
+                                <h3 class="fa fa-building" style="color: #ed786a">&nbsp; Casa Editrice</h3>
+                            </div>
+                            <div class="3u">
+                                <input id="casaeditrice" name="casaeditrice" placeholder="Casa Editrice" type="text" class="text" value="">
+                            </div>
+                            <div class="3u">
+                                <a href="visualizza_casa_editrice.php" class="fa fa-plus" title="Aggiungi">Aggiungi Casa Editrice </a>
+                            </div>
+                            <div class="3u">
+                                <a href="visualizza_casa_editrice.php" class="fa fa-edit" title="Modifica">Modifica Casa Editrice </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="3u">
+                                <h3 class="fa fa-book" style="color: #ed786a">&nbsp; Libro</h3>
+                            </div>
+                            <div class="3u">
+                                <input id="libro" name="libro" placeholder="Autore" type="text" class="text" value="">
+                            </div>
+
+                            <div class="3u">
+                                <a href="inserisci_libri.html.php" class="fa fa-plus" title="Aggiungi">Aggiungi Libro </a>
+                            </div>
+                            <div class="3u">
+                                <a href="inserisci_libri.html.php" class="fa fa-edit" title="Aggiungi">Modifica Libro </a>
+                            </div>
+                        </div>
+                        <!--<a href="visualizza_distributore.php" class="fa fa-toggle-right" title="Aggiungi">Aggiungi e Modifica Distributore </a>
                         <br>
                         <a href="visualizza_casa_editrice.php" class="fa fa-toggle-right" title="Aggiungi">Aggiungi e Modifica Casa Editrice </a>
                         <br>
-                        <a href="inserisci_libri.html.php" class="fa fa-toggle-right" title="Aggiungi">Aggiungi e Modifica Libro </a>
+                        <a href="inserisci_libri.html.php" class="fa fa-toggle-right" title="Aggiungi">Aggiungi e Modifica Libro </a>-->
 
                         </div>
                 </article>

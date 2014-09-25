@@ -231,11 +231,11 @@ function modificaNews(id)
         {
             file = "";
         }
-        var immagine = "\\"+file;
+        var immagine = file;
 
         var valuta_data = data == "" | data == data_old;
 
-        if(immagine == '\\')
+        if(immagine == '')
         {
             var check;
             check   = confirm("Non è stata inserita nessuna immagine, mantenere la precedente?");

@@ -1,5 +1,6 @@
 <?php
     include 'db.inc.php';
+    include 'configuration.php';
 
     try
     {
@@ -66,7 +67,6 @@
                                 echo "<p>".$news['testo']."</p>";
                                 if($news['immagine'] != '\\' && isset($news['immagine']))
                                 {
-                                    include 'configuration.php';
                                     echo "<span class=\"image\"><img src=\"".$image_news_path.$news['immagine']."\"/></span>";
                                 }
                             }

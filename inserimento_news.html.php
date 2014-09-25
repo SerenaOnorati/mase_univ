@@ -123,7 +123,7 @@
                                     <div class="2u">
                                         <input type="hidden" id="immagine_old<?php echo ($new['id_news']); ?>" value="<?php echo htmlspecialchars($new['immagine'], ENT_QUOTES, 'UTF-8'); ?>">
                                         <?php
-                                            if($new['immagine'] != '\\')
+                                            if($new['immagine'] != '')
                                             {
 
                                                 include 'configuration.php';

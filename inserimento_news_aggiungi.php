@@ -25,7 +25,7 @@
                 $s = $pdo->prepare($sql);
                 $s->bindValue(':titolo', $titolo, PDO::PARAM_STR);
                 $s->bindValue(':testo', $testo, PDO::PARAM_STR);
-                $s->bindValue(':immagine', '\\'.$immagine, PDO::PARAM_STR);
+                $s->bindValue(':immagine', $immagine, PDO::PARAM_STR);
                 $s->bindValue(':data_news', $data);
                 $s->execute();
                 echo 'Inserimento avvenuto con successo.';
