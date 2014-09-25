@@ -19,7 +19,7 @@
             if(isset($_POST['copertina']))
                 $copertina = trim($_POST['copertina']);
             else
-                $copertina = "\\";
+                $copertina = "";
             $locazione = trim($_POST['locazione']);
             $prezzo = trim($_POST['prezzo']);
             $prezzo_acquisto = trim($_POST['prezzo_acquisto']);

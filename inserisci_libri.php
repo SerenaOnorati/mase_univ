@@ -22,7 +22,6 @@
             $quantita = $_POST['quantita'];
             $anno = $_POST['anno'];
             $id_casa_editrice = $_POST['id_casa_editrice'];
-            //$nome_casa_editrice = $_POST['nome_casa_editrice'];
 
             try
             {
@@ -32,7 +31,7 @@
                 $s->bindValue(':isbn', $isbn, PDO::PARAM_INT);
                 $s->bindValue(':autore', $autore, PDO::PARAM_STR);
                 $s->bindValue(':titolo', $titolo, PDO::PARAM_STR);
-                $s->bindValue(':copertina', '\\'.$copertina, PDO::PARAM_STR);
+                $s->bindValue(':copertina', $copertina, PDO::PARAM_STR);
                 $s->bindValue(':locazione', $locazione, PDO::PARAM_STR);
                 $s->bindValue(':prezzo', $prezzo);
                 $s->bindValue(':prezzo_acquisto', $prezzoa);

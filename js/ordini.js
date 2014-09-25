@@ -82,7 +82,7 @@ function modificaSalvaLibro(nomeSelect)
     {
         file = "";
     }
-    var copertina = "\\"+file;
+    var copertina = file;
     var quantita = $("#quantita").val();
     var locazione = $("#locazione").val();
 
@@ -101,7 +101,7 @@ function modificaSalvaLibro(nomeSelect)
     if(autore.length != 0 && isbn.length != 0 && titolo.length != 0 && locazione.length != 0 && prezzo.length != 0 && prezzo_acquisto.length != 0 && quantita.length != 0 && anno_acquisto.length != 0 && id_casa_editrice.length != 0)
     {
         var check;
-        if(copertina == "\\")
+        if(copertina == "")
         {
             check = confirm("Nessuna copertina selezionata, mantenere quella precedente?");
             if(check == true)

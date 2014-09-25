@@ -82,7 +82,7 @@
                                                 {
                                                     echo "
                                                                     <a href=\"upload/images/copertina".$copertina."\" target=\"_blank\">
-                                                                        <img src=\"upload/images/copertina".$copertina."\">
+                                                                        <img src=\"".$image_libro_path.$copertina."\">
                                                                     </a>
                                                                     ";
                                                 }
@@ -91,7 +91,7 @@
                                                     $copertina = "\\non_trovata.jpg" ;
                                                     echo "
                                                                     <a href=\"upload/images/copertina".$copertina."\" target=\"_blank\">
-                                                                        <img src=\"upload/images/copertina".$copertina."\">
+                                                                        <img src=\"".$image_libro_path.$copertina."\">
                                                                     </a>
                                                                     ";
                                                 }
