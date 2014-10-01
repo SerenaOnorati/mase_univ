@@ -29,14 +29,12 @@
 
     <!-- Header Wrapper -->
     <div id="header-wrapper">
-
         <!-- Header -->
         <div id="header" class="container">
             <?php
                 include 'menu.php';
             ?>
         </div>
-
     </div>
 
     <!-- Main Wrapper -->
