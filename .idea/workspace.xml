@@ -2,7 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c62a4eec-d582-4e13-b7e5-eef246bc66c3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/images_slideshow_images_text/large/bgheader.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/images_slideshow_images_text/thumbs/bgheader.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/images_slideshow_images_text/large/plotter.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/images_slideshow_images_text/thumbs/plotter.jpg" />
+      <change type="DELETED" beforePath="C:\Users\Massimo\PhpstormProjects\mase_univ\images\images_slideshow_images_text\large\1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Massimo\PhpstormProjects\mase_univ\images\images_slideshow_images_text\large\2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Massimo\PhpstormProjects\mase_univ\images\images_slideshow_images_text\large\3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Massimo\PhpstormProjects\mase_univ\images\images_slideshow_images_text\large\4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Massimo\PhpstormProjects\mase_univ\images\images_slideshow_images_text\large\5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Massimo\PhpstormProjects\mase_univ\images\images_slideshow_images_text\large\6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Massimo\PhpstormProjects\mase_univ\images\images_slideshow_images_text\large\7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Massimo\PhpstormProjects\mase_univ\images\images_slideshow_images_text\thumbs\1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Massimo\PhpstormProjects\mase_univ\images\images_slideshow_images_text\thumbs\2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Massimo\PhpstormProjects\mase_univ\images\images_slideshow_images_text\thumbs\3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Massimo\PhpstormProjects\mase_univ\images\images_slideshow_images_text\thumbs\4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Massimo\PhpstormProjects\mase_univ\images\images_slideshow_images_text\thumbs\5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Massimo\PhpstormProjects\mase_univ\images\images_slideshow_images_text\thumbs\6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Massimo\PhpstormProjects\mase_univ\images\images_slideshow_images_text\thumbs\7.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plotter.php" afterPath="$PROJECT_DIR$/plotter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stampe.php" afterPath="$PROJECT_DIR$/stampe.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/css_slideshow_images_text/style.css" afterPath="$PROJECT_DIR$/css/css_slideshow_images_text/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mase_univ.iws" />
@@ -60,13 +80,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.php">
+      <file leaf-file-name="plotter.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plotter.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="29" selection-start="1164" selection-end="1164" vertical-scroll-proportion="0.4816754" vertical-offset="234" max-vertical-offset="3655">
+            <state line="81" column="71" selection-start="3496" selection-end="3496" vertical-scroll-proportion="-3.4230769" vertical-offset="1288" max-vertical-offset="5525">
               <folding>
-                <marker date="1412194125064" expanded="true" signature="2224:2302" placeholder="SELECT id_ne..news..." />
+                <element signature="n#style#0;n#h2#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#1;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#0;n#div#0;n#li#2;n#ul#0;n#div#0;n#div#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#1;n#div#0;n#li#2;n#ul#0;n#div#0;n#div#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#0;n#div#0;n#li#3;n#ul#0;n#div#0;n#div#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#1;n#div#0;n#li#3;n#ul#0;n#div#0;n#div#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#0;n#div#0;n#li#5;n#ul#0;n#div#0;n#div#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#1;n#div#0;n#li#5;n#ul#0;n#div#0;n#div#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stampe.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/stampe.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="93" column="65" selection-start="4898" selection-end="4898" vertical-scroll-proportion="0.38568935" vertical-offset="1360" max-vertical-offset="3213">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -74,8 +112,11 @@
       <file leaf-file-name="risultato_ricerca.html.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/risultato_ricerca.html.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="80" selection-start="4159" selection-end="4159" vertical-scroll-proportion="-6.0384617" vertical-offset="1305" max-vertical-offset="2754">
-              <folding />
+            <state line="63" column="61" selection-start="2499" selection-end="2506" vertical-scroll-proportion="-3.6153846" vertical-offset="977" max-vertical-offset="2754">
+              <folding>
+                <element signature="n#style#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -103,7 +144,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/modifica_salva_distributore.php" />
         <option value="$PROJECT_DIR$/footer.php" />
         <option value="$PROJECT_DIR$/mail.php" />
         <option value="$PROJECT_DIR$/js/mail.js" />
@@ -120,9 +160,7 @@
         <option value="$PROJECT_DIR$/rilegaturaTesi.php" />
         <option value="$PROJECT_DIR$/right-sidebar.html" />
         <option value="$PROJECT_DIR$/timbri.php" />
-        <option value="$PROJECT_DIR$/plotter.php" />
         <option value="$PROJECT_DIR$/preventivo.php" />
-        <option value="$PROJECT_DIR$/stampe.php" />
         <option value="$PROJECT_DIR$/visualizza_tutte_le_news.php" />
         <option value="$PROJECT_DIR$/db.inc.php" />
         <option value="$PROJECT_DIR$/daordinare.php" />
@@ -154,6 +192,9 @@
         <option value="$PROJECT_DIR$/ricerca_sito.html.php" />
         <option value="$PROJECT_DIR$/risultato_ricerca.html.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/css/css_slideshow_images_text/style.css" />
+        <option value="$PROJECT_DIR$/plotter.php" />
+        <option value="$PROJECT_DIR$/stampe.php" />
       </list>
     </option>
   </component>
@@ -248,6 +289,92 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mase_univ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mase_univ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mase_univ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mase_univ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mase_univ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mase_univ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images_slideshow_images_text" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mase_univ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mase_univ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images_slideshow_images_text" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thumbs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mase_univ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mase_univ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images_slideshow_images_text" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="large" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -284,11 +411,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Massimo\PhpstormProjects\mase_univ\images\images_slideshow_images_text\thumbs" />
+      <recent name="C:\Users\Massimo\PhpstormProjects\mase_univ\images\images_slideshow_images_text\large" />
       <recent name="C:\Users\Serena Onorati\PhpstormProjects\mase_univ" />
       <recent name="C:\Users\Massimo\PhpstormProjects\mase_univ" />
       <recent name="C:\Users\Serena Onorati\mase_univ\images" />
-      <recent name="C:\Users\Serena Onorati\mase_univ" />
-      <recent name="C:\Users\Massimo\WebstormProjects\mase_univ" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Serena Onorati\PhpstormProjects\mase_univ\upload\images\news" />
@@ -957,13 +1084,18 @@
       <created>1411636739565</created>
       <updated>1411636739565</updated>
     </task>
-    <option name="localTasksCounter" value="154" />
+    <task id="LOCAL-00154" summary="upload copertina libri terminato">
+      <created>1412194143753</created>
+      <updated>1412194143753</updated>
+    </task>
+    <option name="localTasksCounter" value="155" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1378" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13580246" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15360501" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -981,7 +1113,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.07366771" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13580246" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1061,39 +1192,9 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/timbri.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="4" selection-start="10" selection-end="10" vertical-scroll-proportion="0.029668411" vertical-offset="0" max-vertical-offset="1530" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="9" selection-start="971" selection-end="973" vertical-scroll-proportion="-2.4328098" vertical-offset="1836" max-vertical-offset="22457" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style-desktop.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="23" selection-start="617" selection-end="617" vertical-scroll-proportion="0.6388889" vertical-offset="0" max-vertical-offset="6579" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style-mobile.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="23" selection-start="661" selection-end="661" vertical-scroll-proportion="0.8333333" vertical-offset="0" max-vertical-offset="6630" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plotter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="4" selection-start="10" selection-end="10" vertical-scroll-proportion="0.029010238" vertical-offset="0" max-vertical-offset="5542" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/preventivo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="4" selection-start="10" selection-end="10" vertical-scroll-proportion="0.029010238" vertical-offset="0" max-vertical-offset="3434" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stampe.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="4" selection-start="10" selection-end="10" vertical-scroll-proportion="0.029010238" vertical-offset="0" max-vertical-offset="3213" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rilegaturaTesi.php">
@@ -1308,19 +1409,69 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.5640496" vertical-offset="757" max-vertical-offset="1241" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="1328" selection-end="1328" vertical-scroll-proportion="0.2356021" vertical-offset="511" max-vertical-offset="3655">
+          <folding>
+            <marker date="1412194125064" expanded="true" signature="-1:-1" placeholder="SELECT id_ne..news..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/risultato_ricerca.html.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="80" selection-start="4159" selection-end="4159" vertical-scroll-proportion="-6.0384617" vertical-offset="1305" max-vertical-offset="2754">
+        <state line="63" column="61" selection-start="2499" selection-end="2506" vertical-scroll-proportion="-3.6153846" vertical-offset="977" max-vertical-offset="2754">
+          <folding>
+            <element signature="n#style#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/css_slideshow_images_text/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="150" column="21" selection-start="3132" selection-end="3132" vertical-scroll-proportion="0.8333333" vertical-offset="2040" max-vertical-offset="2754">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/images/pic03.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/bgheader.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/Logo_u.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plotter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="29" selection-start="1164" selection-end="1164" vertical-scroll-proportion="0.4816754" vertical-offset="234" max-vertical-offset="3655">
+        <state line="81" column="71" selection-start="3496" selection-end="3496" vertical-scroll-proportion="-3.4230769" vertical-offset="1288" max-vertical-offset="5525">
           <folding>
-            <marker date="1412194125064" expanded="true" signature="2224:2302" placeholder="SELECT id_ne..news..." />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#1;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#li#2;n#ul#0;n#div#0;n#div#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#1;n#div#0;n#li#2;n#ul#0;n#div#0;n#div#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#li#3;n#ul#0;n#div#0;n#div#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#1;n#div#0;n#li#3;n#ul#0;n#div#0;n#div#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#li#5;n#ul#0;n#div#0;n#div#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#1;n#div#0;n#li#5;n#ul#0;n#div#0;n#div#1;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stampe.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="65" selection-start="4898" selection-end="4898" vertical-scroll-proportion="0.38568935" vertical-offset="1360" max-vertical-offset="3213">
+          <folding />
         </state>
       </provider>
     </entry>

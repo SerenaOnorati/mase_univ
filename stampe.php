@@ -62,40 +62,40 @@
                                 <div id="ei-slider" class="ei-slider">
                                     <ul class="ei-slider-large">
                                         <li>
-                                            <img src="images/images_slideshow_images_text/large/6.jpg" alt="image06"/>
+                                            <img src="images/images_slideshow_images_text/large/bgheader.jpg" alt="image06"/>
                                             <div class="ei-title">
-                                                <h3>Cataloghi, Libretti e Manuali</h3>
+                                                <h2>Cataloghi, Libretti e Manuali</h2>
                                             </div>
                                         </li>
                                         <li>
-                                            <img src="images/images_slideshow_images_text/large/1.jpg" alt="image01" />
+                                            <img src="images/images_slideshow_images_text/large/bgheader.jpg" alt="image01" />
                                             <div class="ei-title">
                                                 <h2>Cartoline</h2>
                                                 <h2>Menu</h2>
                                             </div>
                                         </li>
                                         <li>
-                                            <img src="images/images_slideshow_images_text/large/2.jpg" alt="image02" />
+                                            <img src="images/images_slideshow_images_text/large/bgheader.jpg" alt="image02" />
                                             <div class="ei-title">
-                                                <h3>Biglietti da visita, Etichette</h3>
+                                                <h2>Biglietti da visita, Etichette</h2>
                                             </div>
                                         </li>
                                         <li>
-                                            <img src="images/images_slideshow_images_text/large/3.jpg" alt="image03"/>
+                                            <img src="images/images_slideshow_images_text/large/bgheader.jpg" alt="image03"/>
                                             <div class="ei-title">
                                                 <h2>Calendari</h2>
                                                 <h2>Segnalibro</h2>
                                             </div>
                                         </li>
                                         <li>
-                                            <img src="images/images_slideshow_images_text/large/4.jpg" alt="image04"/>
+                                            <img src="images/images_slideshow_images_text/large/bgheader.jpg" alt="image04"/>
                                             <div class="ei-title">
-                                                <h3>Diplomi</h3>
-                                                <h3>Attestati</h3>
+                                                <h2>Diplomi</2>
+                                                <h2>Attestati</h2>
                                             </div>
                                         </li>
                                         <li>
-                                            <img src="images/images_slideshow_images_text/large/5.jpg" alt="image05"/>
+                                            <img src="images/images_slideshow_images_text/large/bgheader.jpg" alt="image05"/>
                                             <div class="ei-title">
                                                 <h2>Biglietti di Auguri</h2>
                                             </div>
@@ -103,12 +103,12 @@
                                     </ul><!-- ei-slider-large -->
                                     <ul class="ei-slider-thumbs">
                                         <li class="ei-slider-element">Current</li>
-                                        <li><a href="#">Slide 6</a><img src="images/images_slideshow_images_text/thumbs/6.jpg" alt="thumb06" /></li>
-                                        <li><a href="#">Slide 1</a><img src="images/images_slideshow_images_text/thumbs/1.jpg" alt="thumb01" /></li>
-                                        <li><a href="#">Slide 2</a><img src="images/images_slideshow_images_text/thumbs/2.jpg" alt="thumb02" /></li>
-                                        <li><a href="#">Slide 3</a><img src="images/images_slideshow_images_text/thumbs/3.jpg" alt="thumb03" /></li>
-                                        <li><a href="#">Slide 4</a><img src="images/images_slideshow_images_text/thumbs/4.jpg" alt="thumb04" /></li>
-                                        <li><a href="#">Slide 5</a><img src="images/images_slideshow_images_text/thumbs/5.jpg" alt="thumb05" /></li>
+                                        <li><a href="#">Slide 6</a><img src="images/images_slideshow_images_text/thumbs/bgheader.jpg" alt="thumb06" /></li>
+                                        <li><a href="#">Slide 1</a><img src="images/images_slideshow_images_text/thumbs/bgheader.jpg" alt="thumb01" /></li>
+                                        <li><a href="#">Slide 2</a><img src="images/images_slideshow_images_text/thumbs/bgheader.jpg" alt="thumb02" /></li>
+                                        <li><a href="#">Slide 3</a><img src="images/images_slideshow_images_text/thumbs/bgheader.jpg" alt="thumb03" /></li>
+                                        <li><a href="#">Slide 4</a><img src="images/images_slideshow_images_text/thumbs/bgheader.jpg" alt="thumb04" /></li>
+                                        <li><a href="#">Slide 5</a><img src="images/images_slideshow_images_text/thumbs/bgheader.jpg" alt="thumb05" /></li>
                                     </ul><!-- ei-slider-thumbs -->
                                 </div><!-- ei-slider -->
                             </div><!-- wrapper -->

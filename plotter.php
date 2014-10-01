@@ -70,57 +70,56 @@
                                 <div id="ei-slider" class="ei-slider">
                                     <ul class="ei-slider-large">
                                         <li>
-                                            <img src="images/images_slideshow_images_text/large/6.jpg" alt="image06"/>
+                                            <img src="images/images_slideshow_images_text/large/plotter.jpg" alt="image06"/>
                                             <div class="ei-title">
-                                                <h3>Stampa su CAD</h3>
+                                                <h2 style="color: #ed786a">Stampa su CAD</h2>
 
                                             </div>
                                         </li>
                                         <li>
-                                            <img src="images/images_slideshow_images_text/large/1.jpg" alt="image01" />
+                                            <img src="images/images_slideshow_images_text/large/plotter.jpg" alt="image01" />
                                             <div class="ei-title">
-                                                <h2>Supporto di stampa</h2>
-                                                <h2>fino a 340 gr</h2>
+                                                <h2 style="color: white">Supporto di stampa</h2>
+                                                <h2 style="color: #ed786a">fino a 340 gr</h2>
                                             </div>
                                         </li>
                                         <li>
-                                            <img src="images/images_slideshow_images_text/large/2.jpg" alt="image02" />
+                                            <img src="images/images_slideshow_images_text/large/plotter.jpg" alt="image02" />
                                             <div class="ei-title">
-                                                <h3>Manifesti</h3>
-                                                <h3>Pannelli</h3>
+                                                <h2 style="color: white">Manifesti</h2>
+                                                <h2 style="color: #ed786a">Pannelli</h2>
                                             </div>
                                         </li>
                                         <li>
-                                            <img src="images/images_slideshow_images_text/large/3.jpg" alt="image03"/>
+                                            <img src="images/images_slideshow_images_text/large/plotter.jpg" alt="image03"/>
                                             <div class="ei-title">
-                                                <h2>Poster</h2>
-                                                <h2>Stampa su tela</h2>
+                                                <h2 style="color: white">Poster</h2>
+                                                <h2 style="color: #ed786a">Stampa su tela</h2>
                                             </div>
                                         </li>
                                         <li>
-                                            <img src="images/images_slideshow_images_text/large/4.jpg" alt="image04"/>
+                                            <img src="images/images_slideshow_images_text/large/plotter.jpg" alt="image04"/>
                                             <div class="ei-title">
-                                                <h3>Scritte adesive</h3>
-
+                                                <h2 style="color: white">Scritte adesive</h2>
                                             </div>
                                         </li>
                                         <li>
-                                            <img src="images/images_slideshow_images_text/large/5.jpg" alt="image05"/>
+                                            <img src="images/images_slideshow_images_text/large/plotter.jpg" alt="image05"/>
                                             <div class="ei-title">
-                                                <h2>Vinile</h2>
-                                                <h2>Vinile adesivo</h2>
+                                                <h2 style="color: white">Vinile</h2>
+                                                <h2 style="color: ">Vinile adesivo</h2>
                                             </div>
                                         </li>
 
                                     </ul><!-- ei-slider-large -->
                                     <ul class="ei-slider-thumbs">
                                         <li class="ei-slider-element">Current</li>
-                                        <li><a href="#">Slide 6</a><img src="images/images_slideshow_images_text/thumbs/6.jpg" alt="thumb06" /></li>
-                                        <li><a href="#">Slide 1</a><img src="images/images_slideshow_images_text/thumbs/1.jpg" alt="thumb01" /></li>
-                                        <li><a href="#">Slide 2</a><img src="images/images_slideshow_images_text/thumbs/2.jpg" alt="thumb02" /></li>
-                                        <li><a href="#">Slide 3</a><img src="images/images_slideshow_images_text/thumbs/3.jpg" alt="thumb03" /></li>
-                                        <li><a href="#">Slide 4</a><img src="images/images_slideshow_images_text/thumbs/4.jpg" alt="thumb04" /></li>
-                                        <li><a href="#">Slide 5</a><img src="images/images_slideshow_images_text/thumbs/5.jpg" alt="thumb05" /></li>
+                                        <li><a href="#">Slide 6</a><img src="images/images_slideshow_images_text/thumbs/plotter.jpg" alt="thumb06" /></li>
+                                        <li><a href="#">Slide 1</a><img src="images/images_slideshow_images_text/thumbs/plotter.jpg" alt="thumb01" /></li>
+                                        <li><a href="#">Slide 2</a><img src="images/images_slideshow_images_text/thumbs/plotter.jpg" alt="thumb02" /></li>
+                                        <li><a href="#">Slide 3</a><img src="images/images_slideshow_images_text/thumbs/plotter.jpg" alt="thumb03" /></li>
+                                        <li><a href="#">Slide 4</a><img src="images/images_slideshow_images_text/thumbs/plotter.jpg" alt="thumb04" /></li>
+                                        <li><a href="#">Slide 5</a><img src="images/images_slideshow_images_text/thumbs/plotter.jpg" alt="thumb05" /></li>
 
                                     </ul><!-- ei-slider-thumbs -->
                                 </div><!-- ei-slider -->
