@@ -54,12 +54,14 @@
                         <form method="get" action="" name="form_daordinare" id="form_daordinare" target="_parent" onsubmit="return false" >
                             <header>
                                 <div class="row">
-                                    <div class="10u">
-                                        <div><br><h2 id="titolo_stampa">Libri da ordinare</h2></div>
-                                        <br>
+                                    <div class="7u">
+                                        <div><h2 id="titolo_stampa">Libri da ordinare</h2></div>
+
                                     </div>
                                     <div class="2u">
                                         <p><strong style="color: lightseagreen">Seleziona per distributore</strong></p>
+                                        </div>
+                                    <div class="3u">
                                         <select name ="select" id="select" onchange="ordinaRicercaPerDistributore(select)">
                                             <!--<option selected="selected">Nome distributore</option>-->
                                             <option value="id_none">...</option>
@@ -197,8 +199,8 @@
 
                                             </div>
                                             <div class="2u">
-                                                <a href="javascript: modificaOrdine(<?php echo $risultato['isbn']; ?>, <?php echo $risultato['id_ordine']; ?>)" class="fa fa-edit" id="modifica<?php echo $risultato['isbn']; ?><?php echo $risultato['id_ordine']; ?>" title="Modifica">Modifica Ordine</a><br>
-                                                <a href="javascript: cancellaOrdine(<?php echo $risultato['id_ordine']; ?>, true)" class="fa fa-times" id="cancella<?php echo $id; ?>" title="Cancella">Cancella Ordine</a><br>
+                                                <a href="javascript: modificaOrdine(<?php echo $risultato['isbn']; ?>, <?php echo $risultato['id_ordine']; ?>)" class="fa fa-edit" id="modifica<?php echo $risultato['isbn']; ?><?php echo $risultato['id_ordine']; ?>" title="Modifica" style="color: green">Modifica Ordine</a><br>
+                                                <a href="javascript: cancellaOrdine(<?php echo $risultato['id_ordine']; ?>, true)" class="fa fa-times" id="cancella<?php echo $id; ?>" title="Cancella" style="color: red">Cancella Ordine</a><br>
                                                 <a href="javascript: ordinaLibro(<?php echo $risultato['id_ordine']; ?>,<?php echo $id; ?>)" class="fa fa-plus" id="ordina<?php echo $id; ?>" title="Libro Ordinato">Libro Ordinato</a>
                                             </div>
 

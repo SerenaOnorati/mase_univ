@@ -160,7 +160,7 @@
 		.image
 		{
 			display: inline-block;
-			border: solid 6px #ebebeb !important;
+			border: solid 3px #ebebeb !important;
 			-moz-transition: opacity 0.25s ease-in-out;
 			-webkit-transition: opacity 0.25s ease-in-out;
 			-o-transition: opacity 0.25s ease-in-out;
@@ -330,6 +330,7 @@
 			form label
 			{
 				display: block;
+                margin-bottom: -10px;
 			}
 		
 			form input.text,
@@ -343,7 +344,7 @@
 				width: 100%;
 				box-shadow: inset 2px 2px 0px 0px rgba(0,0,0,0.1);
 				border-radius: 4px;
-				padding: 0.75em 1em 0.75em 1em;
+				padding: 0.3em 1em 0.3em 1em;
 				-moz-transition: background-color 0.25s ease-in-out;
 				-webkit-transition: background-color 0.25s ease-in-out;
 				-o-transition: background-color 0.25s ease-in-out;

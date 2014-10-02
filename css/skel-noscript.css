@@ -65,7 +65,7 @@
 		.\-1u { margin-left: 8.3333333333% }
 
 		.row > * {
-			padding: 5px 0 0 50px !important;
+			padding: 0 0 0 50px !important;
 			float: left;
 			-moz-box-sizing: border-box;
 			-webkit-box-sizing: border-box;
@@ -75,11 +75,14 @@
 		}
 
 		.row + .row > * {
-			padding-top: 50px;
+			/*padding-top: 0px;
+            padding-bottom: -40px !important;*/
+            padding: 0 0 0 50px;
 		}
 
 		.row {
-			margin-left: -50px;
+			margin-left: -0px;
+            margin-bottom: -40px !important;
 		}
 
 	/* Rows */
@@ -96,7 +99,9 @@
 		}
 
 		.row > * {
-			padding-top: 0;
+			/*padding-top: 0;
+            padding-bottom: -40px;*/
+            padding: 0 0 0 50px;
 		}
 
 		/* Modifiers */
