@@ -6,13 +6,7 @@ function stampa(risultati)
     // Apro una finestra pop-up nella quale inserisco i blocchi
     var a = window.open('','','width=640,height=480');
     a.document.open("text/html");
-    a.document.write("<html><head>");
-    a.document.write("</head><body><p style='text-align: center'><img src=\"images/Logo_u.png\"  height=\"50\"><img src=\"images/universitalia.png\"  height=\"50\"></p>");
-
-    // Scrivo il titolo e il corpo con un pò di stile in CSS
-    a.document.write("<p style=\"text-align: center\">Via di Passolombardo, 421 - 00133 Roma<br>Tel: 062026342 - Email: universitalia@tin.it<br>P.Iva: 03914561000</p>");
-    a.document.write("<h2>"+titolo+"</h2>");
-    a.document.write("<div style='border: 1px solid #CCCCCC'></div>");
+    a.document.write("<html style='page-break-after: always'><head></head><body>");
 
     //prelevo il primo nome distributore e i suoi dati
     var nome_distributore = $("#distributoreval"+risultati['id'][0]).val();
@@ -26,13 +20,17 @@ function stampa(risultati)
     var codice_libreria = $("#codice_libreria"+risultati['id'][0]).val();
     var preferenza_ordine = $("#preferenza_ordine"+risultati['id'][0]).val();
 
-    a.document.write("<p>"+nome_distributore+"<br>");
+    a.document.write("<table style='text-align: left' width=\"100%\"><tr><th>");
+    a.document.write("<p>UniversItalia di Onorati Srl<br>");
+    // Scrivo il titolo e il corpo con un pò di stile in CSS
+    a.document.write("Via di Passolombardo, 421 - 00133 Roma<br>Tel: 062026342 - Email: universitalia@tin.it<br>P.Iva: 03914561000</p></th>");
+    a.document.write("<th><p>"+nome_distributore+"<br>");
     a.document.write(indirizzo+" - "+cap+" - "+citta+"<br>");
     a.document.write("Telefono: "+telefono+" - Fax: "+fax+" - Sito web: "+sito_web+"<br>");
-    a.document.write(" Codice libreria: "+codice_libreria+" - Preferenza invio ordine: "+preferenza_ordine+"</p>");
+    a.document.write(" Codice libreria: "+codice_libreria+" - Preferenza invio ordine: "+preferenza_ordine+"</p></th></tr></table>");
     a.document.write("<div style='border: 1px solid #CCCCCC'></div><br>");
     a.document.write("<div style='border: 1px solid #CCCCCC'>");
-    a.document.write("<table style='text-align: left' width=\"100%\" ><tr><th>ISBN</th><th>Qta.</th><th>Autore</th><th>Titolo</th><th>Casa Editrice</th></tr>");
+    a.document.write("<table style='text-align: left' width=\"100%\"><tr><th>ISBN</th><th>Qta.</th><th>Autore</th><th>Titolo</th><th>Casa Editrice</th></tr>");
 
     var isbn;
     var qta;
@@ -55,11 +53,15 @@ function stampa(risultati)
             codice_libreria = $("#codice_libreria"+risultati['id'][i]).val();
             preferenza_ordine = $("#preferenza_ordine"+risultati['id'][i]).val();
 
-            a.document.write("</table></div><br><div style='border: 1px solid #CCCCCC'></div>");
-            a.document.write("<p>"+nome_distributore+"<br>");
+            a.document.write("</table></div>");
+            a.document.write("<p style='page-break-after: always'></p><table style='text-align: left' width=\"100%\"><tr><th>");
+            a.document.write("<p>UniversItalia di Onorati Srl<br>");
+            // Scrivo il titolo e il corpo con un pò di stile in CSS
+            a.document.write("Via di Passolombardo, 421 - 00133 Roma<br>Tel: 062026342 - Email: universitalia@tin.it<br>P.Iva: 03914561000</p></th>");
+            a.document.write("<th><p>"+nome_distributore+"<br>");
             a.document.write(indirizzo+" - "+cap+" - "+citta+"<br>");
             a.document.write("Telefono: "+telefono+" - Fax: "+fax+" - Sito web: "+sito_web+"<br>");
-            a.document.write(" Codice libreria: "+codice_libreria+" - Preferenza invio ordine: "+preferenza_ordine+"</p>");
+            a.document.write(" Codice libreria: "+codice_libreria+" - Preferenza invio ordine: "+preferenza_ordine+"</p></th></tr></table>");
             a.document.write("<div style='border: 1px solid #CCCCCC'></div><br>");
             a.document.write("<div style='border: 1px solid #CCCCCC'>");
             a.document.write("<table style='text-align: left' width=\"100%\"><tr><th>ISBN</th><th>Qta.</th><th>Autore</th><th>Titolo</th><th>Casa Editrice</th></tr>");

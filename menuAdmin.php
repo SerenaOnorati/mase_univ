@@ -38,15 +38,16 @@
         </li>
 
         <li>
-            <a id="menu_ordini" class="fa fa-truck"><span>Ordini</span></a>
-            <ul>
-                <li><a href="daordinare.php">Da Ordinare</a></li>
-                <li><a href="ordinato.php">Ordinati</a></li>
-                <li><a href="arrivato.php">Arrivati</a></li>
-            </ul>
+            <a id="menu_ordinare" href="daordinare.php" class="fa fa-paperclip"><span>Ordinare</span></a>
         </li>
         <li>
-            <a href="utenti_registrati.php" class="fa fa-user"><span>Utenti registrati</span></a>
+            <a id="menu_ordinato" href="ordinato.php" class="fa fa-archive"><span>Ordinato</span></a>
+        </li>
+        <li>
+            <a id="menu_arrivato" href="arrivato.php" class="fa fa-truck"><span>Arrivato</span></a>
+        </li>
+        <li>
+            <a href="utenti_registrati.php" class="fa fa-group"><span>Utenti</span></a>
             <ul>
                 <li><a href="utenti_registrati.php">Visualizza utenti</a></li>
             </ul>
