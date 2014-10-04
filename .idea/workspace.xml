@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c62a4eec-d582-4e13-b7e5-eef246bc66c3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/ordini.js" afterPath="$PROJECT_DIR$/js/ordini.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/menuAdmin.php" afterPath="$PROJECT_DIR$/menuAdmin.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mase_univ.iws" />
@@ -100,10 +100,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stampa.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="stampa.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/stampa.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="67" selection-start="320" selection-end="320" vertical-scroll-proportion="-5.44" vertical-offset="0" max-vertical-offset="1530">
+            <state line="8" column="67" selection-start="320" selection-end="320" vertical-scroll-proportion="0.1915493" vertical-offset="0" max-vertical-offset="1530">
               <folding>
                 <marker date="1412450680500" expanded="true" signature="288:312" placeholder="..." />
                 <marker date="1412450680500" expanded="true" signature="1048:1064" placeholder="..." />
@@ -116,33 +116,6 @@
                 <marker date="1412450680500" expanded="true" signature="3865:3890" placeholder="..." />
                 <marker date="1412450680500" expanded="true" signature="3940:3956" placeholder="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menuAdmin.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/menuAdmin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="78" selection-start="1465" selection-end="1465" vertical-scroll-proportion="-8.90196" vertical-offset="226" max-vertical-offset="1088">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="utente.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/utente.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="154" column="5" selection-start="6070" selection-end="6182" vertical-scroll-proportion="0.0" vertical-offset="3235" max-vertical-offset="7293">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ordini.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/ordini.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="292" column="0" selection-start="9930" selection-end="9930" vertical-scroll-proportion="0.7170068" vertical-offset="4437" max-vertical-offset="16252">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -210,8 +183,8 @@
         <option value="$PROJECT_DIR$/plotter.php" />
         <option value="$PROJECT_DIR$/stampe.php" />
         <option value="$PROJECT_DIR$/js/stampa.js" />
-        <option value="$PROJECT_DIR$/menuAdmin.php" />
         <option value="$PROJECT_DIR$/js/ordini.js" />
+        <option value="$PROJECT_DIR$/menuAdmin.php" />
       </list>
     </option>
   </component>
@@ -1048,7 +1021,11 @@
       <created>1412452340048</created>
       <updated>1412452340048</updated>
     </task>
-    <option name="localTasksCounter" value="156" />
+    <task id="LOCAL-00156" summary="modifica stampa eseguita">
+      <created>1412452526218</created>
+      <updated>1412452526218</updated>
+    </task>
+    <option name="localTasksCounter" value="157" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1421,9 +1398,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/ordini.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="292" column="0" selection-start="9930" selection-end="9930" vertical-scroll-proportion="-5.9442177" vertical-offset="9333" max-vertical-offset="16252">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/utente.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="154" column="5" selection-start="6070" selection-end="6182" vertical-scroll-proportion="-0.8248663" vertical-offset="3235" max-vertical-offset="7293">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menuAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="82" selection-start="1469" selection-end="1469" vertical-scroll-proportion="0.65136296" vertical-offset="226" max-vertical-offset="1088">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/stampa.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="67" selection-start="320" selection-end="320" vertical-scroll-proportion="-5.44" vertical-offset="0" max-vertical-offset="1530">
+        <state line="8" column="67" selection-start="320" selection-end="320" vertical-scroll-proportion="0.1915493" vertical-offset="0" max-vertical-offset="1530">
           <folding>
             <marker date="1412450680500" expanded="true" signature="288:312" placeholder="..." />
             <marker date="1412450680500" expanded="true" signature="1048:1064" placeholder="..." />
@@ -1436,27 +1434,6 @@
             <marker date="1412450680500" expanded="true" signature="3865:3890" placeholder="..." />
             <marker date="1412450680500" expanded="true" signature="3940:3956" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/menuAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="78" selection-start="1465" selection-end="1465" vertical-scroll-proportion="-8.90196" vertical-offset="226" max-vertical-offset="1088">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/utente.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="154" column="5" selection-start="6070" selection-end="6182" vertical-scroll-proportion="0.0" vertical-offset="3235" max-vertical-offset="7293">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/ordini.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="292" column="0" selection-start="9930" selection-end="9930" vertical-scroll-proportion="0.7170068" vertical-offset="4437" max-vertical-offset="16252">
-          <folding />
         </state>
       </provider>
     </entry>

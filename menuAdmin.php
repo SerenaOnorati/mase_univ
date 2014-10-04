@@ -38,7 +38,7 @@
         </li>
 
         <li>
-            <a id="menu_ordinare" href="daordinare.php" class="fa fa-paperclip"><span>Ordinare</span></a>
+            <a id="menu_ordinare" href="daordinare.php" class="fa fa-shopping-cart"><span>Ordinare</span></a>
         </li>
         <li>
             <a id="menu_ordinato" href="ordinato.php" class="fa fa-archive"><span>Ordinato</span></a>
