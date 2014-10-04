@@ -76,27 +76,26 @@
                                             <input type="hidden" id="copertina<?php echo $risultato['isbn']; ?>" value="<?php echo $risultato['copertina']; ?>">
                                             <div id="copertinalink<?php echo $risultato['isbn']; ?>"  class="image">
                                                 <?php
-                                                $slash = "\\";
-                                                $copertina = $risultato['copertina'];
-                                                if(strcmp($copertina, $slash) != 0)
-                                                {
-                                                    echo "
-                                                                    <a href=\"upload/images/copertina".$copertina."\" target=\"_blank\">
-                                                                        <img src=\"".$image_libro_path.$copertina."\">
-                                                                    </a>
-                                                                    ";
-                                                }
-                                                else
-                                                {
-                                                    $copertina = "\\non_trovata.jpg" ;
-                                                    echo "
-                                                                    <a href=\"upload/images/copertina".$copertina."\" target=\"_blank\">
-                                                                        <img src=\"".$image_libro_path.$copertina."\">
-                                                                    </a>
-                                                                    ";
-                                                }
+                                                include 'configuration.php';
+                                                    $copertina = $risultato['copertina'];
+                                                    if(strcmp($copertina, "") != 0)
+                                                    {
+                                                        echo "
+                                                                            <a href=\"".$image_libro_path.$copertina."\" target=\"_blank\">
+                                                                                <img src=\"".$image_libro_path.$copertina."\">
+                                                                            </a>
+                                                                            ";
+                                                    }
+                                                    else
+                                                    {
+                                                        $copertina = "non_trovata.jpg" ;
+                                                        echo "
+                                                                            <a href=\"".$image_libro_path.$copertina."\" target=\"_blank\">
+                                                                                <img src=\"".$image_libro_path.$copertina."\">
+                                                                            </a>
+                                                                            ";
+                                                    }
                                                 ?>
-
                                             </div>
                                         </div>
                                         <div class="4u">
