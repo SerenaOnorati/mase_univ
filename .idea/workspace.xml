@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c62a4eec-d582-4e13-b7e5-eef246bc66c3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/menuAdmin.php" afterPath="$PROJECT_DIR$/menuAdmin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arrivato.html.php" afterPath="$PROJECT_DIR$/arrivato.html.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daordinare.html.php" afterPath="$PROJECT_DIR$/daordinare.html.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ordinato.html.php" afterPath="$PROJECT_DIR$/ordinato.html.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mase_univ.iws" />
@@ -60,61 +63,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="daordinare.html.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/daordinare.html.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="145" column="0" selection-start="7908" selection-end="7908" vertical-scroll-proportion="-0.0" vertical-offset="2465" max-vertical-offset="4199">
-              <folding>
-                <marker date="1412441470584" expanded="true" signature="3315:3341" placeholder="SELECT * FRO..distributore..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="configuration.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/configuration.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="21" selection-start="760" selection-end="777" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="476">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="db.inc.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db.inc.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="21" selection-start="303" selection-end="311" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="578">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="0" selection-start="1328" selection-end="1328" vertical-scroll-proportion="-5.1923075" vertical-offset="511" max-vertical-offset="3655">
+            <state line="51" column="147" selection-start="1786" selection-end="1786" vertical-scroll-proportion="0.50211567" vertical-offset="511" max-vertical-offset="3655">
               <folding>
-                <marker date="1412441470660" expanded="true" signature="2224:2302" placeholder="SELECT id_ne..news..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stampa.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/stampa.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="67" selection-start="320" selection-end="320" vertical-scroll-proportion="0.1915493" vertical-offset="0" max-vertical-offset="1530">
-              <folding>
-                <marker date="1412450680500" expanded="true" signature="288:312" placeholder="..." />
-                <marker date="1412450680500" expanded="true" signature="1048:1064" placeholder="..." />
-                <marker date="1412450680500" expanded="true" signature="1738:1763" placeholder="..." />
-                <marker date="1412450680500" expanded="true" signature="1813:1838" placeholder="..." />
-                <marker date="1412450680500" expanded="true" signature="1880:1896" placeholder="..." />
-                <marker date="1412450680500" expanded="true" signature="2984:3008" placeholder="..." />
-                <marker date="1412450680500" expanded="true" signature="3028:3044" placeholder="..." />
-                <marker date="1412450680500" expanded="true" signature="3782:3807" placeholder="..." />
-                <marker date="1412450680500" expanded="true" signature="3865:3890" placeholder="..." />
-                <marker date="1412450680500" expanded="true" signature="3940:3956" placeholder="..." />
+                <marker date="1412453131540" expanded="true" signature="2223:2301" placeholder="SELECT id_ne..news..." />
               </folding>
             </state>
           </provider>
@@ -173,18 +127,18 @@
         <option value="$PROJECT_DIR$/js/upclick.js" />
         <option value="$PROJECT_DIR$/inserisci_libri.php" />
         <option value="$PROJECT_DIR$/modifica_salva_libro.php" />
-        <option value="$PROJECT_DIR$/ordinato.html.php" />
-        <option value="$PROJECT_DIR$/daordinare.html.php" />
-        <option value="$PROJECT_DIR$/arrivato.html.php" />
         <option value="$PROJECT_DIR$/ricerca_sito.html.php" />
         <option value="$PROJECT_DIR$/risultato_ricerca.html.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/css/css_slideshow_images_text/style.css" />
         <option value="$PROJECT_DIR$/plotter.php" />
         <option value="$PROJECT_DIR$/stampe.php" />
         <option value="$PROJECT_DIR$/js/stampa.js" />
         <option value="$PROJECT_DIR$/js/ordini.js" />
         <option value="$PROJECT_DIR$/menuAdmin.php" />
+        <option value="$PROJECT_DIR$/daordinare.html.php" />
+        <option value="$PROJECT_DIR$/ordinato.html.php" />
+        <option value="$PROJECT_DIR$/arrivato.html.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -287,20 +241,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mase_univ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mase_univ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mase_univ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1025,7 +965,11 @@
       <created>1412452526218</created>
       <updated>1412452526218</updated>
     </task>
-    <option name="localTasksCounter" value="157" />
+    <task id="LOCAL-00157" summary="modifica stampa eseguita">
+      <created>1412452706420</created>
+      <updated>1412452706420</updated>
+    </task>
+    <option name="localTasksCounter" value="158" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1264,16 +1208,6 @@
         <state line="176" column="34" selection-start="9138" selection-end="9138" vertical-scroll-proportion="0.6136364" vertical-offset="2695" max-vertical-offset="3332" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ordinato.html.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="154" column="89" selection-start="8682" selection-end="8805" vertical-scroll-proportion="0.7149028" vertical-offset="2287" max-vertical-offset="4165" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arrivato.html.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="0" selection-start="7704" selection-end="7704" vertical-scroll-proportion="0.411157" vertical-offset="2300" max-vertical-offset="4114" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ricerca_sito.html.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="93" column="72" selection-start="4890" selection-end="4890" vertical-scroll-proportion="0.8429752" vertical-offset="1173" max-vertical-offset="2380" />
@@ -1327,15 +1261,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/daordinare.html.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="0" selection-start="7908" selection-end="7908" vertical-scroll-proportion="-0.0" vertical-offset="2465" max-vertical-offset="4199">
-          <folding>
-            <marker date="1412441470584" expanded="true" signature="3315:3341" placeholder="SELECT * FRO..distributore..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/configuration.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="21" selection-start="760" selection-end="777" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="476">
@@ -1382,15 +1307,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="1328" selection-end="1328" vertical-scroll-proportion="-5.1923075" vertical-offset="511" max-vertical-offset="3655">
-          <folding>
-            <marker date="1412441470660" expanded="true" signature="2224:2302" placeholder="SELECT id_ne..news..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/menu.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="66" selection-start="112" selection-end="230" vertical-scroll-proportion="-0.42923433" vertical-offset="438" max-vertical-offset="1326">
@@ -1423,16 +1339,52 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="67" selection-start="320" selection-end="320" vertical-scroll-proportion="0.1915493" vertical-offset="0" max-vertical-offset="1530">
           <folding>
-            <marker date="1412450680500" expanded="true" signature="288:312" placeholder="..." />
-            <marker date="1412450680500" expanded="true" signature="1048:1064" placeholder="..." />
-            <marker date="1412450680500" expanded="true" signature="1738:1763" placeholder="..." />
-            <marker date="1412450680500" expanded="true" signature="1813:1838" placeholder="..." />
-            <marker date="1412450680500" expanded="true" signature="1880:1896" placeholder="..." />
-            <marker date="1412450680500" expanded="true" signature="2984:3008" placeholder="..." />
-            <marker date="1412450680500" expanded="true" signature="3028:3044" placeholder="..." />
-            <marker date="1412450680500" expanded="true" signature="3782:3807" placeholder="..." />
-            <marker date="1412450680500" expanded="true" signature="3865:3890" placeholder="..." />
-            <marker date="1412450680500" expanded="true" signature="3940:3956" placeholder="..." />
+            <marker date="1412450680500" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1412450680500" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1412450680500" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1412450680500" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1412450680500" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1412450680500" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1412450680500" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1412450680500" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1412450680500" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1412450680500" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arrivato.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="222" column="153" selection-start="18056" selection-end="18056" vertical-scroll-proportion="0.7842031" vertical-offset="3218" max-vertical-offset="4114">
+          <folding>
+            <marker date="1412453080860" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..distributore..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ordinato.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="223" column="0" selection-start="19043" selection-end="19043" vertical-scroll-proportion="0.538787" vertical-offset="3409" max-vertical-offset="4148">
+          <folding>
+            <marker date="1412453034180" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..distributore..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/daordinare.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="229" column="30" selection-start="19117" selection-end="19117" vertical-scroll-proportion="0.7912553" vertical-offset="3332" max-vertical-offset="4131">
+          <folding>
+            <marker date="1412452932813" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..distributore..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="147" selection-start="1786" selection-end="1786" vertical-scroll-proportion="0.50211567" vertical-offset="511" max-vertical-offset="3655">
+          <folding>
+            <marker date="1412453131540" expanded="true" signature="2223:2301" placeholder="SELECT id_ne..news..." />
           </folding>
         </state>
       </provider>

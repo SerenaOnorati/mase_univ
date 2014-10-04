@@ -220,7 +220,7 @@
                                                       var id_ordini =". json_encode(array('id' => $id_ordini_array)).";
                                                         </script>";
                                     echo "<a href=\"javascript: stampa(id_ordini)\" class=\"button button-icon fa fa-print\">Stampa</a>&nbsp;";
-                                    echo "<a href=\"javascript: svuota(id_ordini, 'arrivati')\" class=\"button button-icon fa fa-trash-o\">Svuota</a>";
+                                    echo "<a href=\"javascript: svuota(id_ordini, 'arrivati')\" class=\"button button-icon fa fa-trash-o\">Cancella tutto</a>";
                                 }
                                 ?>
                             </li>
