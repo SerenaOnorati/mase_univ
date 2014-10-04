@@ -290,7 +290,6 @@ function back_Ricerca(isbn, titolo, autore, casa_editrice, locazione, anno_acqui
 
             document.write(response);
             document.getElementById('menu_ricerca').href = 'admin.php';
-            document.getElementById('menu_ordini').href = 'daordinare.php';
         },
         error: function()
         {

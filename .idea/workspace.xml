@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c62a4eec-d582-4e13-b7e5-eef246bc66c3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/menuAdmin.php" afterPath="$PROJECT_DIR$/menuAdmin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/stampa.js" afterPath="$PROJECT_DIR$/js/stampa.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/ordini.js" afterPath="$PROJECT_DIR$/js/ordini.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mase_univ.iws" />
@@ -121,10 +120,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menuAdmin.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="menuAdmin.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/menuAdmin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="78" selection-start="1465" selection-end="1465" vertical-scroll-proportion="0.54241335" vertical-offset="226" max-vertical-offset="1088">
+            <state line="40" column="78" selection-start="1465" selection-end="1465" vertical-scroll-proportion="-8.90196" vertical-offset="226" max-vertical-offset="1088">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utente.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/utente.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="154" column="5" selection-start="6070" selection-end="6182" vertical-scroll-proportion="0.0" vertical-offset="3235" max-vertical-offset="7293">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ordini.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/ordini.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="292" column="0" selection-start="9930" selection-end="9930" vertical-scroll-proportion="0.7170068" vertical-offset="4437" max-vertical-offset="16252">
               <folding />
             </state>
           </provider>
@@ -181,7 +198,6 @@
         <option value="$PROJECT_DIR$/inserisci_libri.html.php" />
         <option value="$PROJECT_DIR$/modifica_libro.html.php" />
         <option value="$PROJECT_DIR$/js/upclick.js" />
-        <option value="$PROJECT_DIR$/js/ordini.js" />
         <option value="$PROJECT_DIR$/inserisci_libri.php" />
         <option value="$PROJECT_DIR$/modifica_salva_libro.php" />
         <option value="$PROJECT_DIR$/ordinato.html.php" />
@@ -195,6 +211,7 @@
         <option value="$PROJECT_DIR$/stampe.php" />
         <option value="$PROJECT_DIR$/js/stampa.js" />
         <option value="$PROJECT_DIR$/menuAdmin.php" />
+        <option value="$PROJECT_DIR$/js/ordini.js" />
       </list>
     </option>
   </component>
@@ -1027,14 +1044,19 @@
       <created>1412194143753</created>
       <updated>1412194143753</updated>
     </task>
-    <option name="localTasksCounter" value="155" />
+    <task id="LOCAL-00155" summary="modifica stampa eseguita">
+      <created>1412452340048</created>
+      <updated>1412452340048</updated>
+    </task>
+    <option name="localTasksCounter" value="156" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1698" height="1034" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15360501" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13580246" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15283842" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11666667" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1051,7 +1073,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.07366771" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13580246" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1092,7 +1113,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="inserita la modifica della password nei dati utente" />
     <MESSAGE value="modifica ruolo utenti registrati completata&#10;&#10;(nota bene: ho tolto la possibilità di vedere se stessi)" />
     <MESSAGE value="completata la modifica delle news" />
     <MESSAGE value="logo univ" />
@@ -1117,7 +1137,8 @@
     <MESSAGE value="upload news completato" />
     <MESSAGE value="upload copertine inserimento libri completato" />
     <MESSAGE value="upload copertina libri terminato" />
-    <option name="LAST_COMMIT_MESSAGE" value="upload copertina libri terminato" />
+    <MESSAGE value="modifica stampa eseguita" />
+    <option name="LAST_COMMIT_MESSAGE" value="modifica stampa eseguita" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1236,11 +1257,6 @@
         <state line="15" column="47" selection-start="320" selection-end="320" vertical-scroll-proportion="0.47309834" vertical-offset="0" max-vertical-offset="539" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/utente.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="154" column="5" selection-start="6070" selection-end="6182" vertical-scroll-proportion="0.0" vertical-offset="2419" max-vertical-offset="7293" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/inserimento_news.html.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="39" selection-start="894" selection-end="940" vertical-scroll-proportion="0.581749" vertical-offset="0" max-vertical-offset="3077" />
@@ -1269,11 +1285,6 @@
     <entry file="file://$PROJECT_DIR$/inserisci_libri.html.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="176" column="34" selection-start="9138" selection-end="9138" vertical-scroll-proportion="0.6136364" vertical-offset="2695" max-vertical-offset="3332" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/ordini.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="11" selection-start="3393" selection-end="3397" vertical-scroll-proportion="0.7541322" vertical-offset="995" max-vertical-offset="16269" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ordinato.html.php">
@@ -1430,7 +1441,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/menuAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="78" selection-start="1465" selection-end="1465" vertical-scroll-proportion="0.54241335" vertical-offset="226" max-vertical-offset="1088">
+        <state line="40" column="78" selection-start="1465" selection-end="1465" vertical-scroll-proportion="-8.90196" vertical-offset="226" max-vertical-offset="1088">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/utente.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="154" column="5" selection-start="6070" selection-end="6182" vertical-scroll-proportion="0.0" vertical-offset="3235" max-vertical-offset="7293">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/ordini.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="292" column="0" selection-start="9930" selection-end="9930" vertical-scroll-proportion="0.7170068" vertical-offset="4437" max-vertical-offset="16252">
           <folding />
         </state>
       </provider>
