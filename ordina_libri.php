@@ -24,7 +24,7 @@ else{
             /* Inizio la transazione */
             $pdo->beginTransaction();
 
-            $sql = 'SELECT COUNT(*) FROM ordine_libro WHERE isbn = :isbn';
+            $sql = 'SELECT COUNT(*) FROM ordine_libro INNER JOIN ordine on ordine.id_ordine = ordine_libro.id_ordine WHERE isbn = :isbn AND arrivato = false AND ordinato = false';
             $s = $pdo->prepare($sql);
             $s->bindValue(':isbn', $isbn, PDO::PARAM_INT);
             $s->execute();
