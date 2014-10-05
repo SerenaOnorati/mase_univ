@@ -88,27 +88,13 @@ if(!userHasRole('Amministratore'))
                                 <input id="casaeditrice" name="casaeditrice" placeholder="Casa Editrice" type="text" class="text" value="">
                             </div>
                             <div class="3u">
-                                <a href="visualizza_casa_editrice.php" class="fa fa-plus" title="Aggiungi">Aggiungi Casa Editrice </a>
+                                <a href="visualizza_casa_editrice.php" class="fa fa-plus" title="Aggiungi">Aggiungi Casa Editrice</a>
                             </div>
                             <div class="3u">
                                 <a href="visualizza_casa_editrice.php" class="fa fa-edit" title="Modifica">Modifica Casa Editrice </a>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="3u">
-                                <h3 class="fa fa-book" style="color: #ed786a">&nbsp; Libro</h3>
-                            </div>
-                            <div class="3u">
-                                <input id="libro" name="libro" placeholder="Autore" type="text" class="text" value="">
-                            </div>
 
-                            <div class="3u">
-                                <a href="inserisci_libri.html.php" class="fa fa-plus" title="Aggiungi">Aggiungi Libro </a>
-                            </div>
-                            <div class="3u">
-                                <a href="inserisci_libri.html.php" class="fa fa-edit" title="Aggiungi">Modifica Libro </a>
-                            </div>
-                        </div>
                         <!--<a href="visualizza_distributore.php" class="fa fa-toggle-right" title="Aggiungi">Aggiungi e Modifica Distributore </a>
                         <br>
                         <a href="visualizza_casa_editrice.php" class="fa fa-toggle-right" title="Aggiungi">Aggiungi e Modifica Casa Editrice </a>

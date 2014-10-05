@@ -182,7 +182,7 @@
 
 		#nav > ul > li
 		{
-			display: inline-block;
+			display: inline-flex;
 			padding-right: 2em;
 		}
 		

@@ -59,7 +59,7 @@
 
                                     </div>
                                     <div class="2u">
-                                        <p><strong style="color: lightseagreen">Seleziona per distributore</strong></p>
+                                        <p><strong style="color: lightseagreen">Distributore</strong></p>
                                         </div>
                                     <div class="3u">
                                         <select name ="select" id="select" onchange="ordinaRicercaPerDistributore(select)">
@@ -110,20 +110,6 @@
                                 </div>
                             </header>
 
-
-                            <div class="row">
-                                <div class="8u">
-                                    <h3 style="color: #ed786a">Info Libro</h3>
-                                </div>
-                                <div class="2u">
-                                    <h3 style="color: #ed786a">Qtà</h3>
-                                </div>
-                                <div class="2u">
-                                    <h3 style="color: #ed786a">Azioni</h3>
-                                </div>
-
-                            </div>
-                            <br>
                             <div id="daordinare">
                             <?php
                             if(!isset($no_ordini))

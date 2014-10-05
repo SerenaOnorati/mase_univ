@@ -5,7 +5,19 @@
         <article class="is-post" style="align-content: center">
             <form method="post" action="ricerca.php" name="ricerca">
                 <header>
-                    <div><br><h2>Ricerca</h2></div>
+                    <div class="row">
+                        <div class="6u">
+                            <h2>Ricerca</h2>
+                        </div>
+                        <div class="3u">
+                            <a href="inserisci_libri.html.php" class="fa fa-book" title="Aggiungi">Nuovo Libro </a>
+                        </div>
+                        <div class="3u">
+                            <a href="inserisci_modifica.html.php" class="fa fa-home" title="Aggiungi">Casa Editrice o Distributore</a>
+                        </div>
+
+                    </div>
+
                 </header>
                 <div class="row">
                     <div class="3u">
