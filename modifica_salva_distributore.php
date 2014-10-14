@@ -39,7 +39,7 @@
                 $s->bindValue(':telefono', $telefono, PDO::PARAM_STR);
                 $s->bindValue(':fax', $fax, PDO::PARAM_STR);
                 $s->bindValue(':email', $email, PDO::PARAM_STR);
-                $s->bindValue(':cap', $cap, PDO::PARAM_INT);
+                $s->bindValue(':cap', $cap, PDO::PARAM_STR);
                 $s->bindValue(':sito_web', $sito_web, PDO::PARAM_STR);
                 $s->bindValue(':codice_libreria', $codice_libreria, PDO::PARAM_STR);
                 $s->bindValue(':preferenza_ordine', $preferenza_ordine, PDO::PARAM_STR);

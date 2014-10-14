@@ -1,4 +1,4 @@
-///funzione che permette di aggiungere un libro nel db tramite chiamata AJAX
+//funzione che permette di aggiungere un libro nel db tramite chiamata AJAX
 function aggiungiLibro(nomeSelect)
 {
 
@@ -615,7 +615,7 @@ function aggiungiDistributore(nomeSelect)
 
             success: function(response)
             {
-                //window.location.reload();
+                document.getElementById('aggiungi').style.display = 'none';
                 alert(response);
 
             },

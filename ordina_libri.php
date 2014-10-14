@@ -19,8 +19,6 @@ else{
         //inserimento della nuova news nel db
         try
         {
-
-
             /* Inizio la transazione */
             $pdo->beginTransaction();
 
