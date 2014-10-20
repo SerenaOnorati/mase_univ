@@ -205,9 +205,10 @@
                                     var casa_editricei = "<?php echo $_SESSION['casa_editrice']; ?>";
                                     var locazionei = "<?php echo $_SESSION['locazione']; ?>";
                                     var anno_acquistoi = "<?php echo $_SESSION['anno_acquisto']; ?>";
+                                    var paginai = "<?php echo $_GET['pagina']; ?>";
                                 </script>
                                 <li>
-                                    <a href="javascript: back_Ricerca(isbni, titoloi, autorei, casa_editricei, locazionei, anno_acquistoi)" class="button button-icon fa fa-backward">Indietro</a>
+                                    <a href="javascript: back_Ricerca(isbni, titoloi, autorei, casa_editricei, locazionei, anno_acquistoi, paginai)" class="button button-icon fa fa-backward">Indietro</a>
                                 </li>
                             </ul>
                         </form>

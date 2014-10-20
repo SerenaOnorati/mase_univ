@@ -54,6 +54,7 @@ function modificaLibroDaordinare(isbn)
     var quantita = document.getElementById('qtamag'+isbn).innerText;
     var locazione = document.getElementById('locazione'+isbn).innerText;
 
+    var pagina = location.href.substr(location.href.lastIndexOf("/")+1).split(/[?#]/)[0];
 
     autore = autore.replace(/^.*:/, "");
     titolo = titolo.replace(/^.*:/, "");
@@ -64,7 +65,7 @@ function modificaLibroDaordinare(isbn)
     quantita = quantita.replace(/^.*:/, "");
     locazione = locazione.replace(/^.*:/, "");
 
-    window.location.href = 'modifica_libro.html.php?isbn='+isbn+'&autore='+autore+'&titolo='+titolo+'&casa_editrice='+casa_editrice+'&prezzo='+prezzo+'&prezzo_acquisto='+prezzo_acquisto+'&anno_acquisto='+anno_acquisto+'&quantita='+quantita+'&locazione='+locazione+"&copertina="+copertina;
+    window.location.href = 'modifica_libro.html.php?isbn='+isbn+'&autore='+autore+'&titolo='+titolo+'&casa_editrice='+casa_editrice+'&prezzo='+prezzo+'&prezzo_acquisto='+prezzo_acquisto+'&anno_acquisto='+anno_acquisto+'&quantita='+quantita+'&locazione='+locazione+"&copertina="+copertina+"&pagina="+pagina;
 }
 
 function modificaSalvaLibro(nomeSelect)
@@ -226,76 +227,83 @@ function preparaOrdina(isbn)
     }
 }
 
-function back_Ricerca(isbn, titolo, autore, casa_editrice, locazione, anno_acquisto)
+function back_Ricerca(isbn, titolo, autore, casa_editrice, locazione, anno_acquisto, pagina)
 {
-    var post = '';
-    if(isbn != "%%")
+    if(pagina == "daordinare.php" || pagina == "ordinato.php" || pagina == "arrivato.php")
     {
-        isbn = isbn.slice(1, isbn.length-1);
-        if(post == '')
-            post = post+"insisbn="+isbn;
-        else
-            post = post+"&insisbn="+isbn;
+        window.location.href = pagina;
     }
-    if(titolo != "%%")
+    else
     {
-        titolo = titolo.slice(1, titolo.length-1);
-        if(post == '')
-            post = post+"institolo="+titolo;
-        else
-            post = post+"&institolo="+titolo;
-    }
-    if(autore != "%%")
-    {
-        autore = autore.slice(1, autore.length-1);
-        if(post == '')
-            post = post+"insautore="+autore;
-        else
-            post = post+"&insautore="+autore;
-    }
-    if(casa_editrice != "%%")
-    {
-        casa_editrice = casa_editrice.slice(0, casa_editrice.length-1);
-        if(post == '')
-            post = post+"inscasaeditrice="+casa_editrice;
-        else
-            post = post+"&inscasaeditrice="+casa_editrice;
-    }
-    if(locazione != "%%")
-    {
-        locazione = locazione.slice(1, locazione.length-1);
-        if(post == '')
-            post = post+"inslocazione="+locazione;
-        else
-            post = post+"&inslocazione="+locazione;
-    }
-    if(anno_acquisto != "%%")
-    {
-        anno_acquisto = anno_acquisto.slice(1, anno_acquisto.length-1);
-        alert(anno_acquisto);
-        if(post == '')
-            post = post+"insannoacquisto="+anno_acquisto;
-        else
-            post = post+"&insannoacquisto="+anno_acquisto;
-    }
-    $.ajax({
-
-        type: 'POST',
-        url: 'ricerca.php',
-        data: post,
-        dataType: "html",
-
-        success: function(response)
+        var post = '';
+        if(isbn != "%%")
         {
-
-            document.write(response);
-            document.getElementById('menu_ricerca').href = 'admin.php';
-        },
-        error: function()
-        {
-            alert("La cancellazione non è andata a buon fine.");
+            isbn = isbn.slice(1, isbn.length-1);
+            if(post == '')
+                post = post+"insisbn="+isbn;
+            else
+                post = post+"&insisbn="+isbn;
         }
-    });
+        if(titolo != "%%")
+        {
+            titolo = titolo.slice(1, titolo.length-1);
+            if(post == '')
+                post = post+"institolo="+titolo;
+            else
+                post = post+"&institolo="+titolo;
+        }
+        if(autore != "%%")
+        {
+            autore = autore.slice(1, autore.length-1);
+            if(post == '')
+                post = post+"insautore="+autore;
+            else
+                post = post+"&insautore="+autore;
+        }
+        if(casa_editrice != "%%")
+        {
+            casa_editrice = casa_editrice.slice(0, casa_editrice.length-1);
+            if(post == '')
+                post = post+"inscasaeditrice="+casa_editrice;
+            else
+                post = post+"&inscasaeditrice="+casa_editrice;
+        }
+        if(locazione != "%%")
+        {
+            locazione = locazione.slice(1, locazione.length-1);
+            if(post == '')
+                post = post+"inslocazione="+locazione;
+            else
+                post = post+"&inslocazione="+locazione;
+        }
+        if(anno_acquisto != "%%")
+        {
+            anno_acquisto = anno_acquisto.slice(1, anno_acquisto.length-1);
+            alert(anno_acquisto);
+            if(post == '')
+                post = post+"insannoacquisto="+anno_acquisto;
+            else
+                post = post+"&insannoacquisto="+anno_acquisto;
+        }
+        $.ajax({
+
+            type: 'POST',
+            url: 'ricerca.php',
+            data: post,
+            dataType: "html",
+
+            success: function(response)
+            {
+
+                document.write(response);
+                document.getElementById('menu_ricerca').href = 'admin.php';
+            },
+            error: function()
+            {
+                alert("La cancellazione non è andata a buon fine.");
+            }
+        });
+    }
 }
 
 function cambiaCopertina()

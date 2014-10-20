@@ -100,7 +100,7 @@
                                             </div>
                                         </div>
                                         <div class="4u">
-                                            <label id="titolo<?php echo $risultato['isbn']; ?>" for="titolo<?php echo $risultato['isbn']; ?>" class="text">TITOLO&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['titolo']; ?></strong></label>
+                                            <label id="titolo<?php echo $risultato['isbn']; ?>" for="titolo<?php echo $risultato['isbn']; ?>" class="text">TITOLO&nbsp;:<strong style="color: lightseagreen"><a href="javascript: modificaLibroDaordinare(<?php echo $risultato['isbn']; ?>)"><?php echo $risultato['titolo']; ?></a></strong></label>
                                             <label id="autore<?php echo $risultato['isbn']; ?>" for="autore<?php echo $risultato['isbn']; ?>" class="text">AUTORE&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['autore']; ?></strong></label>
                                             <label id="casaeditrice<?php echo $risultato['isbn']; ?>" for="casaeditrice<?php echo $risultato['isbn']; ?>" class="text">CASA ED.&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['nome']; ?></strong></label>
                                             <label id="distributore<?php echo $risultato['isbn']; ?>" for="distributore<?php echo $risultato['isbn']; ?>" class="text">DISTR.&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['nome_distributore']; ?></strong></label>

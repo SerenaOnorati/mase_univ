@@ -149,8 +149,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="7u">
-                                                    <label id="titolo<?php echo $id; ?>" for="titolo<?php echo $id; ?>" class="text"><strong style="color: #3333CC">"&nbsp;<?php echo $risultato['titolo']; ?>&nbsp;"</strong></label>
-                                                    <input id="titolo<?php echo $risultato['id_ordine']; ?>" name="titolo<?php echo $risultato['id_ordine'];; ?>" type="hidden" class="text" value="<?php echo $risultato['titolo']; ?>" disabled>
+                                                    <label id="titolo<?php echo $id; ?>" for="titolo<?php echo $id; ?>" class="text"><strong style="color: #3333CC">"&nbsp;<a href="javascript: modificaLibroDaordinare(<?php echo $id; ?>)"><?php echo $risultato['titolo']; ?></a>&nbsp;"</strong></label>
+                                                    <input id="titolo<?php echo $risultato['id_ordine']; ?>" name="titolo<?php echo $risultato['id_ordine']; ?>" type="hidden" class="text" value="<?php echo $risultato['titolo']; ?>" disabled>
 
                                                     <label id="autore<?php echo $id; ?>" for="autore<?php echo $id; ?>" class="text" style="display: inline"><strong style="color: #FF3300"><?php echo $risultato['autore']; ?></strong>,&nbsp;</label>
                                                     <input id="autore<?php echo $risultato['id_ordine']; ?>" name="autore<?php echo $risultato['id_ordine'];; ?>" type="hidden" class="text" value="<?php echo $risultato['autore']; ?>" disabled>

@@ -161,8 +161,8 @@
                                                 </div>
                                             </div>
                                             <div class="4u">
-                                                <label id="titolo<?php echo $id; ?>" for="titolo<?php echo $id; ?>" class="text">TITOLO&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['titolo']; ?></strong></label>
-                                                <input id="titolo<?php echo $risultato['id_ordine']; ?>" name="titolo<?php echo $risultato['id_ordine'];; ?>" type="hidden" class="text" value="<?php echo $risultato['titolo']; ?>" disabled>
+                                                <label id="titolo<?php echo $id; ?>" for="titolo<?php echo $id; ?>" class="text">TITOLO&nbsp;:<strong style="color: lightseagreen"><a href="javascript: modificaLibroDaordinare(<?php echo $id; ?>)"><?php echo $risultato['titolo']; ?></a></strong></label>
+                                                <input id="titolo<?php echo $risultato['id_ordine']; ?>" name="titolo<?php echo $risultato['id_ordine']; ?>" type="hidden" class="text" value="<?php echo $risultato['titolo']; ?>" disabled>
                                                 <label id="autore<?php echo $id; ?>" for="autore<?php echo $id; ?>" class="text">AUTORE&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['autore']; ?></strong></label>
                                                 <input id="autore<?php echo $risultato['id_ordine']; ?>" name="autore<?php echo $risultato['id_ordine'];; ?>" type="hidden" class="text" value="<?php echo $risultato['autore']; ?>" disabled>
                                                 <label id="casaeditrice<?php echo $id; ?>" for="casaeditrice<?php echo $id; ?>" class="text">CASA ED.&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['nome']; ?></strong></label>
