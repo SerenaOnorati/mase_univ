@@ -80,7 +80,6 @@
                 $sql = 'SELECT * FROM libro
                         INNER JOIN casa_editrice on libro.id_casa_editrice = casa_editrice.id_casa_editrice
                         INNER JOIN distributore on casa_editrice.id_distributore = distributore.id_distributore
-                        INNER JOIN ordine_libro on libro.isbn = ordine_libro.isbn
                         WHERE titolo LIKE :titolo AND autore LIKE :autore AND locazione LIKE :locazione
                         AND nome LIKE :nome AND libro.isbn LIKE :isbn AND anno_acquisto LIKE :anno_acquisto';
 

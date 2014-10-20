@@ -116,7 +116,7 @@
                                         </div>
                                         <div class="2u">
                                             <label id="qtamag<?php echo $risultato['isbn']; ?>" for="qtamag<?php echo $risultato['isbn']; ?>">Qta Mag&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['quantita']; ?></strong></label>
-                                            <label id="stato_ordine<?php echo $risultato['isbn']; ?>" for="stato_ordine<?php echo $risultato['isbn']; ?><?php echo $risultato['isbn']; ?>">Stato Ordine&nbsp;:<strong style="color: lightseagreen"><?php if(isset($risultato['quantita_ordine']))  echo 'Si'; else echo 'No'; ?></strong></label>
+                                            <label id="stato_ordine<?php echo $risultato['isbn']; ?>" for="stato_ordine<?php echo $risultato['isbn']; ?><?php echo $risultato['isbn']; ?>">Stato Ordine&nbsp;:<strong style="color: lightseagreen"><?php include 'utilita.php'; if(ordinato($risultato['isbn']))  echo 'Si'; else echo 'No'; ?></strong></label>
                                             <?php
                                                 if(isset($risultato['quantita_ordine']))
                                                 {
