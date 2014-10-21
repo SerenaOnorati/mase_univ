@@ -81,7 +81,7 @@
                         INNER JOIN casa_editrice on libro.id_casa_editrice = casa_editrice.id_casa_editrice
                         INNER JOIN distributore on casa_editrice.id_distributore = distributore.id_distributore
                         WHERE titolo LIKE :titolo AND autore LIKE :autore AND locazione LIKE :locazione
-                        AND nome LIKE :nome AND libro.isbn LIKE :isbn AND anno_acquisto LIKE :anno_acquisto';
+                        AND nome LIKE :nome AND libro.isbn LIKE :isbn AND anno_acquisto LIKE :anno_acquisto AND arrivato =:arrivato';
 
                 $s = $pdo->prepare($sql);
 
@@ -92,6 +92,7 @@
                 //non hanno il terzo parametro in quanto con la %% non sarebbero interi.
                 $s->bindValue(':isbn', $isbn);
                 $s->bindValue(':anno_acquisto', $anno_acquisto);
+                $s->bindValue(':arrivato', false, PDO::PARAM_BOOL);
 
                 $s->execute();
             }

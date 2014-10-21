@@ -149,7 +149,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="7u">
-                                                    <label id="titolo<?php echo $id; ?>" for="titolo<?php echo $id; ?>" class="text"><strong style="color: #3333CC">"&nbsp;<a href="javascript: modificaLibroDaordinare(<?php echo $id; ?>)"><?php echo $risultato['titolo']; ?></a>&nbsp;"</strong></label>
+                                                    <label id="titolo<?php echo $id; ?>" for="titolo<?php echo $id; ?>" class="text"><strong style="color: #3333CC">"&nbsp;<a href="javascript: modificaLibroDaordinare(<?php echo $id; ?>)" style="color: #3333CC"><?php echo $risultato['titolo']; ?></a>&nbsp;"</strong></label>
                                                     <input id="titolo<?php echo $risultato['id_ordine']; ?>" name="titolo<?php echo $risultato['id_ordine']; ?>" type="hidden" class="text" value="<?php echo $risultato['titolo']; ?>" disabled>
 
                                                     <label id="autore<?php echo $id; ?>" for="autore<?php echo $id; ?>" class="text" style="display: inline"><strong style="color: #FF3300"><?php echo $risultato['autore']; ?></strong>,&nbsp;</label>
@@ -207,7 +207,7 @@
 
                                                 </div>
                                                 <div class="2u">
-                                                    <a href="javascript: modificaOrdine(<?php echo $risultato['isbn']; ?>, <?php echo $risultato['id_ordine']; ?>)" class="fa fa-edit" id="modifica<?php echo $risultato['isbn']; ?><?php echo $risultato['id_ordine']; ?>" title="Modifica" style="color:green">Modifica Ordine</a><br>
+                                                    <a href="javascript: modificaOrdine(<?php echo $risultato['isbn']; ?>, <?php echo $risultato['id_ordine']; ?>)" class="fa fa-edit" id="modifica<?php echo $risultato['isbn']; ?><?php echo $risultato['id_ordine']; ?>" title="Modifica" style="color:#009900">Modifica Ordine</a><br>
                                                     <a href="javascript: cancellaOrdine(<?php echo $risultato['id_ordine']; ?>, true)" class="fa fa-times" id="cancella<?php echo $id; ?>" title="Cancella" style="color:red">Cancella Ordine</a><br>
                                                     <a href="javascript: arrivatoLibro(<?php echo $risultato['id_ordine']; ?>,<?php echo $risultato['isbn']; ?>,<?php echo $risultato['quantita_ordine']; ?>,<?php echo $id; ?>)" class="fa fa-plus" id="arrivato<?php echo $id; ?>" title="Libro Arrivato" style="color:#FF9933">Libro Arrivato</a><br>
                                                 </div>

@@ -186,7 +186,7 @@ function cancellaLibro(isbn)
     }
 }
 
-function preparaOrdina(isbn)
+function preparaOrdine(isbn)
 {
     //prelevo la quantita da ordinare
     var quantita = $("#qtaord"+isbn).val();
