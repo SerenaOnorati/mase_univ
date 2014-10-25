@@ -57,25 +57,31 @@
                                 </header>
                                 <div class="row">
 
-                                    <div class="6u">
-                                        <p>Nome</p>
+                                    <div class="2u" >
+                                        <h3>Nome</h3>
+                                    </div>
+                                    <div class="4u">
                                         <input id="name" name="name" placeholder="Nome" type="text" class="text" value="<?php if(isset($name)) echo $name; ?>" disabled>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="6u">
-                                        <p>Cognome</p>
+                                    <div class="2u">
+                                        <h3>Cognome</h3>
+                                    </div>
+                                    <div class="4u">
                                         <input id="surname" name="surname" placeholder="Cognome" type="text" class="text" value="<?php if(isset($surname)) echo $surname; ?>"  disabled>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="6u">
-                                        <p>E-mail</p>
-                                        <input id="email" name="email" placeholder="Email" type="text" class="text" value="<?php echo $_SESSION['email']; ?>" disabled>                                                            </div>
-                                </div>
-                                <div class="row">
-                                    <div class="6u">
-                                        <p>Telefono</p>
+                                    <div class="2u">
+                                        <h3>E-mail</h3>
+                                    </div>
+                                    <div class="4u">
+                                        <input id="email" name="email" placeholder="Email" type="text" class="text" value="<?php echo $_SESSION['email']; ?>" disabled>
+                                    </div>
+
+                                    <div class="2u">
+                                        <h3>Tel</h3>
+                                    </div>
+                                    <div class="4u">
                                         <input id="tel" name="tel" placeholder="Tel" type="text" class="text" value="<?php if(isset($tel)) echo $tel; ?>" disabled >
                                     </div>
                                 </div>
