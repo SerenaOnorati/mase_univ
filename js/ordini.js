@@ -956,3 +956,22 @@ function modificaLibroArrivato(id_ordine,id_row, isbn)
         }
     }
 }
+
+
+function visualizzaLibroRicercaSito(isbn)
+{
+    $.ajax({
+        type: 'POST',
+        url: 'ricerca_sito_libro.php',
+        data: 'isbn='+isbn,
+        dataType: 'html',
+        success: function(response)
+        {
+            //alert(response);
+        },
+        error: function()
+        {
+            alert("Errore visualizzazione libro");
+        }
+    })
+}
