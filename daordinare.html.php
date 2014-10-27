@@ -115,6 +115,9 @@
                             if(!isset($no_ordini))
                             {
                                 foreach ($risultati as $risultato): ?>
+                                    <?php
+                                         $id = $risultato['isbn'].$risultato['id_ordine'];
+                                    ?>
                                     <form action="" method="post" onsubmit="return false">
                                         <div class="row" id="row<?php echo $id; ?>">
                                             <div class="1u">
@@ -156,9 +159,13 @@
                                                 <input id="distributoreval<?php echo $risultato['id_ordine']; ?>" name="distributoreval<?php echo $risultato['id_ordine'];; ?>" type="hidden" class="text" value="<?php echo $risultato['nome_distributore']; ?>" disabled>
                                                 <br>
                                                 <label id="isbn<?php echo $id; ?>" for="isbn<?php echo $id; ?>" class="text" style="display: inline">ISBN&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['isbn']; ?></strong></label>
-                                                <input id="isbn<?php echo $risultato['id_ordine']; ?>" name="isbn<?php echo $risultato['id_ordine'];; ?>" type="hidden" class="text" value="<?php echo $risultato['isbn']; ?>" disabled>
+                                                <input id="isbn<?php echo $risultato['id_ordine']; ?>" name="isbn<?php echo $risultato['id_ordine']; ?>" type="hidden" class="text" value="<?php echo $risultato['isbn']; ?>" disabled>
                                                 <label id="prezzoacquisto<?php echo $id; ?>" for="prezzoacquisto<?php echo $id; ?>" class="text" style="display: inline">Prezzo acq&nbsp;:<strong style="color: #FFCC99"><?php echo $risultato['prezzo_acquisto']; ?></strong></label>
+                                                <input id="prezzoacquisto<?php echo $risultato['id_ordine']; ?>" name="prezzoacquisto<?php echo $risultato['id_ordine']; ?>" type="hidden" class="text" value="<?php echo $risultato['prezzo_acquisto']; ?>" disabled>
+
                                                 <label id="prezzo<?php echo $id; ?>" for="prezzo<?php echo $id; ?>" class="text" style="display: inline">Prezzo&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['prezzo']; ?></strong></label>
+                                                <input id="prezzo<?php echo $risultato['id_ordine']; ?>" name="prezzo<?php echo $risultato['id_ordine']; ?>" type="hidden" class="text" value="<?php echo $risultato['prezzo']; ?>" disabled>
+
                                                 <label id="locazione<?php echo $id; ?>" for="locazione<?php echo $id; ?>" class="text" style="display: inline">,<strong style="color: red">&nbsp;[<?php echo $risultato['locazione']; ?>&nbsp;]</strong></label>
                                                 <input id="locazione<?php echo $risultato['id_ordine']; ?>" name="locazione<?php echo $risultato['id_ordine']; ?>" type="hidden" class="text" value="<?php echo $risultato['locazione']; ?>" disabled>
                                                 <input id="distributoreval<?php echo $risultato['id_ordine']; ?>" name="distributoreval<?php echo $risultato['id_ordine']; ?>" type="hidden" class="text" value="<?php echo $risultato['nome_distributore']; ?>" disabled>
@@ -174,15 +181,6 @@
                                                 <input id="codice_libreria<?php echo $risultato['id_ordine']; ?>" name="codice_libreria<?php echo $risultato['id_ordine']; ?>" type="hidden" class="text" value="<?php if(isset($risultato['codice_libreria']))echo $risultato['codice_libreria']; ?>" disabled>
                                                 <input id="preferenza_ordine<?php echo $risultato['id_ordine']; ?>" name="preferenza_ordine<?php echo $risultato['id_ordine']; ?>" type="hidden" class="text" value="<?php if(isset($risultato['preferenza_ordine']))echo $risultato['preferenza_ordine']; ?>" disabled>
                                             </div>
-
-
-                                            <!--<div class="2u">
-                                                <label id="qtamag<?php echo $id; ?>" for="qtamag<?php echo $id; ?>">Qta Mag&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['quantita']; ?></strong></label>
-                                                <input id="qtaord<?php echo $id; ?>" name="qtaord<?php echo $id; ?>" type="text" class="text" placeholder="Qta Ord" value="<?php echo $risultato['quantita_ordine']; ?>" disabled>
-                                                <input id="qtaord<?php echo $risultato['id_ordine']; ?>" name="qtaord<?php echo $risultato['id_ordine'];; ?>" type="hidden" class="text" value="<?php echo $risultato['quantita_ordine']; ?>" disabled>
-                                                <input id="qtaord_old<?php echo $id; ?>" name="qtaord_old<?php echo $id; ?>" type="hidden" class="text" placeholder="Qta Ord" value="<?php echo $risultato['quantita_ordine']; ?>" disabled>
-
-                                            </div>-->
                                             <div class="2u">
                                                 <label id="qtamag<?php echo $id; ?>" for="qtamag<?php echo $id; ?>">Mag&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['quantita']; ?></strong></label>
                                                 <input id="qtamag<?php echo $risultato['id_ordine']; ?>" name="qtamag<?php echo $risultato['id_ordine']; ?>" type="hidden" class="text" value="<?php echo $risultato['quantita']; ?>" disabled>

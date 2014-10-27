@@ -56,9 +56,6 @@ function modificaLibroDaordinare(id)
     var isbn =  $("#isbn"+id).val();
     var pagina = location.href.substr(location.href.lastIndexOf("/")+1).split(/[?#]/)[0];
 
-    alert(autore+titolo+casa_editrice+prezzo+prezzo_acquisto+anno_acquisto+copertina+quantita+locazione+isbn+pagina);
-
-
     window.location.href = 'modifica_libro.html.php?isbn='+isbn+'&autore='+autore+'&titolo='+titolo+'&casa_editrice='+casa_editrice+'&prezzo='+prezzo+'&prezzo_acquisto='+prezzo_acquisto+'&anno_acquisto='+anno_acquisto+'&quantita='+quantita+'&locazione='+locazione+"&copertina="+copertina+"&pagina="+pagina;
 }
 
