@@ -135,7 +135,7 @@
                                             </div>
                                         </div>
                                         <div class="7u">
-                                            <label id="titolo<?php echo $risultato['isbn']; ?>" for="titolo<?php echo $risultato['isbn']; ?>" class="text"><strong style="color: #3333CC">"&nbsp;<a href="javascript: modificaLibroDaordinare(<?php echo $id; ?>)" style="color: #3333CC"><?php echo $risultato['titolo']; ?></a>&nbsp;"</strong></label>
+                                            <label id="titolo<?php echo $risultato['isbn']; ?>" for="titolo<?php echo $risultato['isbn']; ?>" class="text"><strong style="color: #3333CC">"&nbsp;<a href="javascript: modificaLibroDaordinare(<?php echo $risultato['isbn']; ?>)" style="color: #3333CC"><?php echo $risultato['titolo']; ?></a>&nbsp;"</strong></label>
                                             <label id="autore<?php echo $risultato['isbn']; ?>" for="autore<?php echo $risultato['isbn']; ?>" class="text" style="display: inline"><strong style="color: #FF3300"><?php echo $risultato['autore']; ?></strong>,&nbsp;</label>
                                             <label id="casaeditrice<?php echo $risultato['isbn']; ?>" for="casaeditrice<?php echo $risultato['isbn']; ?>" class="text" style="display: inline"><strong style="color: #CC3399"><i><?php echo $risultato['nome']; ?></i></strong>,&nbsp;</label>
                                             <label id="distributore<?php echo $risultato['isbn']; ?>" for="distributore<?php echo $risultato['isbn']; ?>" class="text" style="display: inline"><strong style="color: #FF6666"><?php echo $risultato['nome_distributore']; ?></strong></label>
@@ -159,7 +159,7 @@
                                             <input id="qtaord<?php echo $risultato['isbn']; ?>" name="qtaord<?php echo $risultato['isbn']; ?>" type="text" class="text" placeholder="Ord" style="width: 40%; margin-top: 10px;">
                                         </div>
                                         <div class="2u">
-                                            <!--<a href="javascript: modificaLibroDaordinare(<?php echo $risultato['isbn']; ?>)" class="fa fa-edit" id="modifica" title="Modifica">Modifica Libro</a><br>-->
+                                            <a href="javascript: modificaLibroDaordinare(<?php echo $risultato['isbn']; ?>)" class="fa fa-edit" id="modifica" title="Modifica">Modifica Libro</a><br>
                                             <a href="javascript: cancellaLibro(<?php echo $risultato['isbn']; ?>)" class="fa fa-times" id="cancella" title="Cancella">Cancella Libro</a><br>
                                             <a href="javascript: preparaOrdine(<?php echo $risultato['isbn']; ?>)" class="fa fa-plus" id="daordinare" title="Da Ordinare" style="color: #339933">Da Ordinare</a>
                                         </div>

@@ -42,28 +42,22 @@ function aggiungiLibro(nomeSelect)
 }
 
 
-function modificaLibroDaordinare(isbn)
+function modificaLibroDaordinare(id)
 {
-    var autore = document.getElementById('autore'+isbn).innerText;
-    var titolo = document.getElementById('titolo'+isbn).innerText;
-    var casa_editrice = document.getElementById('casaeditrice'+isbn).innerText;
-    var prezzo = document.getElementById('prezzo'+isbn).innerText;
-    var prezzo_acquisto = document.getElementById('prezzoacquisto'+isbn).innerText;
-    var anno_acquisto = document.getElementById('data'+isbn).innerText;
-    var copertina = document.getElementById('copertina'+isbn).value;
-    var quantita = document.getElementById('qtamag'+isbn).innerText;
-    var locazione = document.getElementById('locazione'+isbn).innerText;
-
+    var autore = $("#autore"+id).val();
+    var titolo = $("#titolo"+id).val();
+    var casa_editrice = $("#casa_editrice"+id).val();
+    var prezzo = $("#prezzo"+id).val();
+    var prezzo_acquisto = $("#prezzoacquisto"+id).val();
+    var anno_acquisto = $("#anno_acquisto"+id).val();
+    var copertina = document.getElementById('copertina'+id).value;
+    var quantita = $("#qtamag"+id).val();
+    var locazione = $("#locazione"+id).val();
+    var isbn =  $("#isbn"+id).val();
     var pagina = location.href.substr(location.href.lastIndexOf("/")+1).split(/[?#]/)[0];
 
-    autore = autore.replace(/^.*:/, "");
-    titolo = titolo.replace(/^.*:/, "");
-    casa_editrice = casa_editrice.replace(/^.*:/, "");
-    prezzo = prezzo.replace(/^.*:/, "");
-    prezzo_acquisto = prezzo_acquisto.replace(/^.*:/, "");
-    anno_acquisto = anno_acquisto.replace(/^.*:/, "");
-    quantita = quantita.replace(/^.*:/, "");
-    locazione = locazione.replace(/^.*:/, "");
+    alert(autore+titolo+casa_editrice+prezzo+prezzo_acquisto+anno_acquisto+copertina+quantita+locazione+isbn+pagina);
+
 
     window.location.href = 'modifica_libro.html.php?isbn='+isbn+'&autore='+autore+'&titolo='+titolo+'&casa_editrice='+casa_editrice+'&prezzo='+prezzo+'&prezzo_acquisto='+prezzo_acquisto+'&anno_acquisto='+anno_acquisto+'&quantita='+quantita+'&locazione='+locazione+"&copertina="+copertina+"&pagina="+pagina;
 }
