@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c62a4eec-d582-4e13-b7e5-eef246bc66c3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/ordini.js" afterPath="$PROJECT_DIR$/js/ordini.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arrivato.html.php" afterPath="$PROJECT_DIR$/arrivato.html.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/risultato_ricerca.html.php" afterPath="$PROJECT_DIR$/risultato_ricerca.html.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -73,7 +73,7 @@
       <file leaf-file-name="risultato_ricerca.html.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/risultato_ricerca.html.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="108" column="86" selection-start="5757" selection-end="5757" vertical-scroll-proportion="-0.18138987" vertical-offset="1990" max-vertical-offset="3604">
+            <state line="112" column="96" selection-start="6304" selection-end="6304" vertical-scroll-proportion="0.2591284" vertical-offset="1684" max-vertical-offset="3604">
               <folding>
                 <element signature="n#style#0;n#strong#0;n#label#0;n#div#1;n#div#0;n#form#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#strong#0;n#label#0;n#div#1;n#div#0;n#form#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -92,7 +92,9 @@
                 <element signature="n#style#0;n#label#7;n#div#1;n#div#0;n#form#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#strong#0;n#label#7;n#div#1;n#div#0;n#form#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#strong#0;n#label#0;n#div#2;n#div#0;n#form#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1414448217458" expanded="true" signature="3065:3091" placeholder="SELECT * FRO..distributore..." />
+                <element signature="n#style#0;n#input#1;n#div#2;n#div#0;n#form#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#2;n#div#3;n#div#0;n#form#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1414450102979" expanded="true" signature="3081:3107" placeholder="SELECT * FRO..distributore..." />
               </folding>
             </state>
           </provider>
@@ -101,7 +103,7 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="6" selection-start="59" selection-end="59" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="3655">
+            <state line="5" column="6" selection-start="59" selection-end="59" vertical-scroll-proportion="-0.0" vertical-offset="85" max-vertical-offset="3655">
               <folding>
                 <marker date="1412453131540" expanded="true" signature="2223:2301" placeholder="SELECT id_ne..news..." />
               </folding>
@@ -112,10 +114,8 @@
       <file leaf-file-name="arrivato.html.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/arrivato.html.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="151" column="57" selection-start="8487" selection-end="8716" vertical-scroll-proportion="-3.0384614" vertical-offset="2488" max-vertical-offset="4012">
-              <folding>
-                <marker date="1414445542002" expanded="true" signature="2995:3021" placeholder="SELECT * FRO..distributore..." />
-              </folding>
+            <state line="138" column="57" selection-start="6074" selection-end="8110" vertical-scroll-proportion="-16.115385" vertical-offset="1927" max-vertical-offset="4012">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -181,9 +181,9 @@
         <option value="$PROJECT_DIR$/ricerca_sito_libro.html.php" />
         <option value="$PROJECT_DIR$/daordinare.html.php" />
         <option value="$PROJECT_DIR$/modifica_libro.html.php" />
-        <option value="$PROJECT_DIR$/arrivato.html.php" />
         <option value="$PROJECT_DIR$/ordinato.html.php" />
         <option value="$PROJECT_DIR$/js/ordini.js" />
+        <option value="$PROJECT_DIR$/arrivato.html.php" />
         <option value="$PROJECT_DIR$/risultato_ricerca.html.php" />
       </list>
     </option>
@@ -272,6 +272,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -292,7 +293,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1067,14 +1067,17 @@
       <created>1414446316598</created>
       <updated>1414446316598</updated>
     </task>
-    <option name="localTasksCounter" value="171" />
+    <task id="LOCAL-00171" summary="modifica">
+      <created>1414448464453</created>
+      <updated>1414448464453</updated>
+    </task>
+    <option name="localTasksCounter" value="172" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1698" height="1034" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13580246" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.08078603" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1090,11 +1093,12 @@
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.107669614" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.07366771" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13580246" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.107669614" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1115,9 +1119,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1399,35 +1403,22 @@
     <entry file="file://$PROJECT_DIR$/ordinato.html.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="193" column="0" selection-start="17303" selection-end="17303" vertical-scroll-proportion="0.45347467" vertical-offset="2896" max-vertical-offset="4063">
-          <folding>
-            <marker date="1414445835789" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..distributore..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/daordinare.html.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="174" column="60" selection-start="8727" selection-end="17196" vertical-scroll-proportion="0.2932862" vertical-offset="2709" max-vertical-offset="3978">
-          <folding>
-            <marker date="1414444254827" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..distributore..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="6" selection-start="59" selection-end="59" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="3655">
+        <state line="5" column="6" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="3655">
           <folding>
             <marker date="1412453131540" expanded="true" signature="2223:2301" placeholder="SELECT id_ne..news..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arrivato.html.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="151" column="57" selection-start="8487" selection-end="8716" vertical-scroll-proportion="-3.0384614" vertical-offset="2488" max-vertical-offset="4012">
-          <folding>
-            <marker date="1414445542002" expanded="true" signature="2995:3021" placeholder="SELECT * FRO..distributore..." />
           </folding>
         </state>
       </provider>
@@ -1439,9 +1430,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/arrivato.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="138" column="57" selection-start="6074" selection-end="8110" vertical-scroll-proportion="-16.115385" vertical-offset="1927" max-vertical-offset="4012">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/risultato_ricerca.html.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="86" selection-start="5757" selection-end="5757" vertical-scroll-proportion="-0.18138987" vertical-offset="1990" max-vertical-offset="3604">
+        <state line="112" column="96" selection-start="6304" selection-end="6304" vertical-scroll-proportion="0.2591284" vertical-offset="1684" max-vertical-offset="3604">
           <folding>
             <element signature="n#style#0;n#strong#0;n#label#0;n#div#1;n#div#0;n#form#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#strong#0;n#label#0;n#div#1;n#div#0;n#form#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1460,7 +1458,9 @@
             <element signature="n#style#0;n#label#7;n#div#1;n#div#0;n#form#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#strong#0;n#label#7;n#div#1;n#div#0;n#form#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#strong#0;n#label#0;n#div#2;n#div#0;n#form#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1414448217458" expanded="true" signature="3065:3091" placeholder="SELECT * FRO..distributore..." />
+            <element signature="n#style#0;n#input#1;n#div#2;n#div#0;n#form#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#2;n#div#3;n#div#0;n#form#0;n#form#0;n#article#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1414450102979" expanded="true" signature="3081:3107" placeholder="SELECT * FRO..distributore..." />
           </folding>
         </state>
       </provider>
