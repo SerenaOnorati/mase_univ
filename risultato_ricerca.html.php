@@ -112,43 +112,60 @@
                                             <input type="hidden" id="copertina<?php echo $risultato['isbn']; ?>" value="<?php echo $risultato['copertina']; ?>">
                                             <div id="copertinalink<?php echo $id; ?>"  class="image">
                                                 <?php
-                                                include 'configuration.php';
-                                                $copertina = $risultato['copertina'];
-                                                if(strcmp($copertina, "") != 0)
-                                                {
-                                                    echo "
-                                                                        <a href=\"".$image_libro_path.$copertina."\" target=\"_blank\">
-                                                                            <img src=\"".$image_libro_path.$copertina."\">
-                                                                        </a>
-                                                                        ";
-                                                }
-                                                else
-                                                {
-                                                    $copertina = "non_trovata.jpg" ;
-                                                    echo "
-                                                                        <a href=\"".$image_libro_path.$copertina."\" target=\"_blank\">
-                                                                            <img src=\"".$image_libro_path.$copertina."\">
-                                                                        </a>
-                                                                        ";
-                                                }
+                                                    include 'configuration.php';
+                                                    $copertina = $risultato['copertina'];
+                                                    if(strcmp($copertina, "") != 0)
+                                                    {
+                                                        echo "
+                                                                            <a href=\"".$image_libro_path.$copertina."\" target=\"_blank\">
+                                                                                <img src=\"".$image_libro_path.$copertina."\">
+                                                                            </a>
+                                                                            ";
+                                                    }
+                                                    else
+                                                    {
+                                                        $copertina = "non_trovata.jpg" ;
+                                                        echo "
+                                                                            <a href=\"".$image_libro_path.$copertina."\" target=\"_blank\">
+                                                                                <img src=\"".$image_libro_path.$copertina."\">
+                                                                            </a>
+                                                                            ";
+                                                    }
                                                 ?>
                                             </div>
                                         </div>
                                         <div class="7u">
                                             <label id="titolo<?php echo $risultato['isbn']; ?>" for="titolo<?php echo $risultato['isbn']; ?>" class="text"><strong style="color: #3333CC">"&nbsp;<a href="javascript: modificaLibroDaordinare(<?php echo $risultato['isbn']; ?>)" style="color: #3333CC"><?php echo $risultato['titolo']; ?></a>&nbsp;"</strong></label>
+                                            <input id="titolo<?php echo $risultato['isbn']; ?>" name="titolo<?php echo $risultato['isbn']; ?>" type="hidden" class="text" value="<?php echo $risultato['titolo']; ?>" disabled>
+
                                             <label id="autore<?php echo $risultato['isbn']; ?>" for="autore<?php echo $risultato['isbn']; ?>" class="text" style="display: inline"><strong style="color: #FF3300"><?php echo $risultato['autore']; ?></strong>,&nbsp;</label>
-                                            <label id="casaeditrice<?php echo $risultato['isbn']; ?>" for="casaeditrice<?php echo $risultato['isbn']; ?>" class="text" style="display: inline"><strong style="color: #CC3399"><i><?php echo $risultato['nome']; ?></i></strong>,&nbsp;</label>
+                                            <input id="autore<?php echo $risultato['isbn']; ?>" name="autore<?php echo $risultato['isbn']; ?>" type="hidden" class="text" value="<?php echo $risultato['autore']; ?>" disabled>
+
+                                            <label id="casaeditrice<?php echo $risultato['isbn']; ?>" for="casa_editrice<?php echo $risultato['isbn']; ?>" class="text" style="display: inline"><strong style="color: #CC3399"><i><?php echo $risultato['nome']; ?></i></strong>,&nbsp;</label>
+                                            <input id="casa_editrice<?php echo $risultato['isbn']; ?>" name="casa_editrice<?php echo $risultato['isbn']; ?>" type="hidden" class="text" value="<?php echo $risultato['nome']; ?>" disabled>
+
                                             <label id="distributore<?php echo $risultato['isbn']; ?>" for="distributore<?php echo $risultato['isbn']; ?>" class="text" style="display: inline"><strong style="color: #FF6666"><?php echo $risultato['nome_distributore']; ?></strong></label>
                                             <!--<label id="preferenza<?php echo $risultato['isbn']; ?>" for="preferenza<?php echo $risultato['isbn']; ?>" class="text">Preferenza invio ordine&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['preferenza_ordine']; ?></strong></label>-->
                                             <br>
                                             <label id="isbn<?php echo $risultato['isbn']; ?>" for="isbn<?php echo $risultato['isbn']; ?>" class="text" style="display: inline">ISBN&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['isbn']; ?></strong></label>
+                                            <input id="isbn<?php echo $risultato['isbn']; ?>" name="isbn<?php echo $risultato['isbn']; ?>" type="hidden" class="text" value="<?php echo $risultato['isbn']; ?>" disabled>
+
                                             <label id="prezzoacquisto<?php echo $risultato['isbn']; ?>" for="prezzoacquisto<?php echo $risultato['isbn']; ?>" class="text" style="display: inline">Prezzo acq&nbsp;:<strong style="color: #FFCC99"><?php echo $risultato['prezzo_acquisto']; ?></strong></label>
+                                            <input id="prezzoacquisto<?php echo $risultato['isbn']; ?>" name="prezzoacquisto<?php echo $risultato['isbn']; ?>" type="hidden" class="text" value="<?php echo $risultato['prezzo_acquisto']; ?>"disabled>
+
                                             <label id="prezzo<?php echo $risultato['isbn']; ?>" for="prezzo<?php echo $risultato['isbn']; ?>" class="text" style="display: inline">Prezzo&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['prezzo']; ?></strong></label>
+                                            <input id="prezzo<?php echo $risultato['isbn']; ?>" name="prezzo<?php echo $risultato['isbn']; ?>" type="hidden" class="text" value="<?php echo $risultato['prezzo']; ?>" disabled>
+
                                             <label id="locazione<?php echo $risultato['isbn']; ?>" for="locazione<?php echo $risultato['isbn']; ?>" class="text" style="display: inline">,<strong style="color: red">&nbsp;[<?php echo $risultato['locazione']; ?>&nbsp;]</strong></label>
+                                            <input id="locazione<?php echo $risultato['isbn']; ?>" name="locazione<?php echo $risultato['isbn']; ?>" type="hidden" class="text" value="<?php echo $risultato['locazione']; ?>" disabled>
+                                            <input id="anno_acquisto<?php echo $risultato['isbn']; ?>" name="anno_acquisto<?php echo $risultato['isbn']; ?>" type="hidden" class="text" value="<?php echo $risultato['anno_acquisto']; ?>" disabled>
+
                                         </div>
 
                                         <div class="2u">
                                             <label id="qtamag<?php echo $risultato['isbn']; ?>" for="qtamag<?php echo $risultato['isbn']; ?>">Qta Mag&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['quantita']; ?></strong></label>
+                                            <input id="qtamag<?php echo $risultato['isbn']; ?>" name="qtamag<?php echo $risultato['isbn']; ?>" type="hidden" class="text" value="<?php echo $risultato['quantita']; ?>" disabled>
+
                                             <!--<label id="stato_ordine<?php echo $risultato['isbn']; ?>" for="stato_ordine<?php echo $risultato['isbn']; ?><?php echo $risultato['isbn']; ?>">Stato Ordine&nbsp;:<strong style="color: lightseagreen"><?php include 'utilita.php'; if(ordinato($risultato['isbn']))  echo 'Si'; else echo 'No'; ?></strong></label>-->
                                             <?php
                                                 if(isset($risultato['quantita_ordine']))
