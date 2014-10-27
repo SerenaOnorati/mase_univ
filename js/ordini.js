@@ -33,7 +33,7 @@ function aggiungiLibro(nomeSelect)
             },
             error: function()
             {
-                alert("L'inserimento del libro non è andato a buon fine");
+                alert("L'inserimento del libro non è andato a buon fine.");
             }
         });
     }

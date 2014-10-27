@@ -127,17 +127,19 @@
                                     if(!empty($case_editrici))
                                     {
                                         echo "<select id=\"case_editrici\" name=\"case_editrici\">";
-
+                                        $casa_editrice ="";
                                         foreach ($case_editrici as $case_editrice):
                                             if(strcmp($_GET['casa_editrice'],$case_editrice['nome']) == 0 )
                                             {
                                                 echo "<option value=\"".$case_editrice['id_casa_editrice']."\"selected=\"selected\" >".$case_editrice['nome']."</option>";
-                                                echo "<input type = \"hidden\" id=\"id_casa_editrice_old\" value=\"".$case_editrice['id_casa_editrice']."\">";
+                                                $casa_editrice = $case_editrice['id_casa_editrice'];
                                             }
                                             else
                                                 echo "<option value=\"".$case_editrice['id_casa_editrice']."\">".$case_editrice['nome']."</option>";
                                         endforeach;
                                         echo "</select>";
+                                        echo "<input type = \"hidden\" id=\"id_casa_editrice_old\" value=\"".$casa_editrice."\">";
+
                                     }
                                     else{
                                         $error = 'La ricerca delle case editrici non ha prodotto risultati.';
