@@ -179,6 +179,10 @@ function cancellaLibro(isbn)
     }
 }
 
+function riordina(isbn){
+    preparaOrdine(isbn);
+}
+
 function preparaOrdine(isbn)
 {
     //prelevo la quantita da ordinare
