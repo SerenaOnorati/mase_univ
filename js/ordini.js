@@ -574,15 +574,13 @@ function ArrivatiTuttiOrdinati(id_ordini)
     }
 }
 
+function ordinaRicercaPerDistributore(nomeDistributore){
 
-function ordinaRicercaPerDistributore(nomeSelect)
-{
-    var nome_distributore = nomeSelect.options[nomeSelect.selectedIndex].text;
     $.ajax({
 
         type: 'POST',
         url: 'ordinaPer_distributore.php',
-        data: "nome_distributore="+nome_distributore,
+        data: "nome_distributore="+nomeDistributore,
         dataType: "html",
 
         success: function(response)
@@ -594,6 +592,14 @@ function ordinaRicercaPerDistributore(nomeSelect)
             alert("La selezione per distributore non e' andata a buon fine.");
         }
     });
+}
+
+
+function ordinaDistributoreBySelect(nomeSelect)
+{
+
+    var nome_distributore = nomeSelect.options[nomeSelect.selectedIndex].text;
+    ordinaRicercaPerDistributore(nome_distributore);
 }
 
 function aggiungiDistributore(nomeSelect)
