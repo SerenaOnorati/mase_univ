@@ -162,7 +162,7 @@
                                                         echo "var nome_distributore".$id." = '".$risultato['nome_distributore']."';\n";
                                                         echo "</script>";
                                                     ?>
-                                                    <label id="distributore<?php echo $id; ?>" for="distributore<?php echo $id; ?>" class="text" style="display: inline"><strong style="color: #FF6666"><a href="javascript: ordinaRicercaPerDistributore(nome_distributore<?php echo $id;?>)"><?php echo $risultato['nome_distributore']; ?></a></strong></label>
+                                                    <label id="distributore<?php echo $id; ?>" for="distributore<?php echo $id; ?>" class="text" style="display: inline"><strong style="color: #FF6666"><a href="javascript: ordinaRicercaPerDistributore(nome_distributore<?php echo $id;?>)" style="color: #FF6666"><?php echo $risultato['nome_distributore']; ?></a></strong></label>
                                                     <input id="distributoreval<?php echo $risultato['id_ordine']; ?>" name="distributoreval<?php echo $risultato['id_ordine'];; ?>" type="hidden" class="text" value="<?php echo $risultato['nome_distributore']; ?>" disabled>
                                                     <br>
                                                     <label id="isbn<?php echo $id; ?>" for="isbn<?php echo $id; ?>" class="text" style="display: inline">ISBN&nbsp;:<strong style="color: lightseagreen"><?php echo $risultato['isbn']; ?></strong></label>
