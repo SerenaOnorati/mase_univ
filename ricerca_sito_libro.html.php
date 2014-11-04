@@ -1,6 +1,8 @@
 //da terminare
 
 
+
+
 <?php
 session_start();
 ?>
@@ -76,8 +78,8 @@ session_start();
                             </div>
                             <?php } ?>
                             <?php if(!isset($checkError)){foreach ($risultati as $risultato): ?>
-                                <form action="" method="post" onsubmit="return false" style="display: inline">
-                                    <div class="row" id="row<?php echo $risultato['isbn']; ?>">
+                                <form action="" method="post" onsubmit="return false">
+                                    <div class="row result" id="row<?php echo $risultato['isbn']; ?>">
 
                                             <div class="2u">
                                                 <input type="hidden" id="copertina<?php echo $risultato['isbn']; ?>" value="<?php echo $risultato['copertina']; ?>">
@@ -105,17 +107,16 @@ session_start();
                                                     ?>
                                                 </div>
                                             </div>
-                                            <div class="8u">
+                                            <div class="4u">
                                                 <label id="titolo<?php echo $risultato['isbn']; ?>" for="titolo<?php echo $risultato['isbn']; ?>" class="text"><strong style="color: #167C77">"<a href="javascript:visualizzaLibroRicercaSito(<?php echo $risultato['isbn']; ?>)" style="color: #167C77"><?php echo $risultato['titolo']; ?></a>"</strong></label>
                                                 <label id="autore<?php echo $risultato['isbn']; ?>" for="autore<?php echo $risultato['isbn']; ?>" class="text" style="color: lightseagreen">&nbsp;<?php echo $risultato['autore']; ?></label>
                                                 <!--<label id="data<?php echo $risultato['isbn']; ?>" for="data<?php echo $risultato['isbn']; ?>" class="text" style="display: inline">&nbsp;<strong style="color: lightseagreen"><?php echo $risultato['anno_acquisto']; ?></strong></label>-->
                                                 <label id="casaeditrice<?php echo $risultato['isbn']; ?>" for="casaeditrice<?php echo $risultato['isbn']; ?>" class="text">&nbsp;<i style="color: lightseagreen"><?php echo $risultato['nome']; ?></i></label>
                                                 <label id="prezzo<?php echo $risultato['isbn']; ?>" for="prezzo<?php echo $risultato['isbn']; ?>" class="text" style="display: inline">&nbsp;<strong style="color: red">&euro;<?php echo $risultato['prezzo']; ?></strong></label>
-                                            </div>
-                                            <div class="3u">
                                                 <label style="font-size: 14px; display: inline">metti nel carrello</label> <a href="javascript:visualizzaLibroRicercaSito(<?php echo $risultato['isbn']; ?>)" class="fa fa-shopping-cart"></a>
 
                                             </div>
+
                                         <!--
                                         <div class="2u">
                                             <a href="javascript: modificaLibroDaordinare(<?php echo $risultato['isbn']; ?>)" class="fa fa-edit" id="modifica" title="Modifica">Modifica Libro</a><br>
