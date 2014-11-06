@@ -65,11 +65,11 @@ session_start();
                                     ?>
 
                                     <div class="10u">
-                                        <div><br><h2>Risultato ricerca titoli</h2></div>
-                                        <br>
+                                        <div><h2>Risultato ricerca titoli</h2></div>
                                     </div>
                                 </div>
                             </header>
+
                             <?php if(!isset($checkError)){?>
                             <div class="row">
                                 <div class="8u">

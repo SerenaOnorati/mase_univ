@@ -178,5 +178,7 @@
 /********************MyCSS************************/
 .result
 {
-    width: 50%;
+    float:left;
+    clear: left;
+    display: inline;
 }

@@ -48,9 +48,7 @@
                             <header>
                                 <div><br><h2>Inserisci distributore</h2></div>
                             </header>
-                            <a href="javascript:aggiungiRigaDistributore()" class="fa fa-plus-square" title="Aggiungi">Aggiungi Distributore </a>
-                            <br>
-                            <div id="aggiungi" style="display: none" onsubmit="return false">
+                            <div id="aggiungi">
                                 <div class="row">
                                     <div class="3u">
                                         <h3 style="color: #ed786a">Nome</h3>

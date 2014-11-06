@@ -61,8 +61,7 @@ session_start();
                                     ?>
 
                                     <div class="10u">
-                                        <div><br><h2>Risultato ricerca titoli</h2></div>
-                                        <br>
+                                        <div><h2>Risultato ricerca titoli</h2></div>
                                     </div>
                                 </div>
                             </header>
@@ -75,7 +74,7 @@ session_start();
                             <?php } ?>
                             <?php if(!isset($checkError)){foreach ($risultati as $risultato): ?>
                                 <form action="" method="post" onsubmit="return false" style="display: inline">
-                                    <div class="row" id="row<?php echo $risultato['isbn']; ?>">
+                                    <div class="row quarter result" id="row<?php echo $risultato['isbn']; ?>"  >
 
                                             <div class="1u">
                                                 <input type="hidden" id="copertina<?php echo $risultato['isbn']; ?>" value="<?php echo $risultato['copertina']; ?>">

@@ -604,7 +604,6 @@ function ordinaDistributoreBySelect(nomeSelect)
 
 function aggiungiDistributore(nomeSelect)
 {
-
     var nome = $("#insnome").val();
     var indirizzo = $("#insindirizzo").val();
     var citta = $("#inscitta").val();
@@ -626,7 +625,7 @@ function aggiungiDistributore(nomeSelect)
 
             success: function(response)
             {
-                document.getElementById('aggiungi').style.display = 'none';
+                //document.getElementById('aggiungi').style.display = 'none';
                 alert(response);
 
             },
