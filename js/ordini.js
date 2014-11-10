@@ -626,6 +626,7 @@ function aggiungiDistributore(nomeSelect)
             success: function(response)
             {
                 //document.getElementById('aggiungi').style.display = 'none';
+                window.location.reload();
                 alert(response);
 
             },
@@ -991,9 +992,11 @@ function cancellaCasaEditrice(id_casa_editrice)
 
             success: function(response)
             {
-                var riga = document.getElementById('row'+id_casa_editrice);
-                riga.style.display = 'none';
+                window.location.reload();
+                /*var riga = document.getElementById('row'+id_casa_editrice);
+                riga.style.display = 'none';*/
                 alert(response);
+
 
             },
             error: function()
@@ -1017,8 +1020,9 @@ function cancellaDistributore(id_distributore)
 
             success: function(response)
             {
-                var riga = document.getElementById('row'+id_distributore);
-                riga.style.display = 'none';
+                /*var riga = document.getElementById('row'+id_distributore);
+                riga.style.display = 'none';*/
+                window.location.reload();
                 alert(response);
 
             },

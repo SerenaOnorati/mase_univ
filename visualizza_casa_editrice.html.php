@@ -69,12 +69,13 @@
                                         </div>
                                         <div class="3u">
                                             <a id="modificacasaedistrice<?php echo ($risultato['id_casa_editrice']); ?>" href="javascript:modificaCasaEditrice(<?php echo ($risultato['id_casa_editrice']); ?>)" class="fa fa-edit" title="Modifica">Modifica</a>
-                                            <a href="javascript:cancellaCasaEditrice(<?php echo ($risultato['id_casa_editrice']); ?>)" class="fa fa-times" title="Cancella">Cancella</a>
+                                            <br>
+                                            <a href="javascript:cancellaCasaEditrice(<?php echo ($risultato['id_casa_editrice']); ?>)" class="fa fa-times" title="Cancella" style="color: red">Cancella</a>
                                         </div>
                                     </div>
                                 </form>
                                 <br>
-                            <?php endforeach; ?>-->
+                            <?php endforeach; ?>
                         </form>
                     </article>
                 </div>

@@ -19,11 +19,19 @@
         {
 
             include 'db.inc.php';
-            //recupera i dati delle news
+            if(isset($_POST['distributore'])){
+                $nome_distributore = "%".trim($_POST['distributore'])."%";
+            }
+            else
+            {
+                $nome_distributore = "%%";
+
+            }
             try
             {
-                $sql = 'SELECT * FROM distributore';
+                $sql = 'SELECT * FROM distributore WHERE nome_distributore LIKE :nome_distributore';
                 $s = $pdo->prepare($sql);
+                $s->bindValue(':nome_distributore', $nome_distributore, PDO::PARAM_STR);
                 $s->execute();
 
             }
@@ -47,7 +55,7 @@
                 echo "</script>";
             }
 
-            include 'inserisci_distributore.html.php';
+            include 'visualizza_distributore.html.php';
         }
     }
 ?>

@@ -66,7 +66,7 @@ if(!userHasRole('Amministratore'))
                         <div><br><h2>Cerca, Inserisci e Modifica</h2></div>
                     </header>
 
-                        <form method="post" action="ricerca_distributore.php" name="ricerca_distributore">
+                        <form method="post" action="visualizza_distributore.php" name="ricerca_distributore">
 
                             <div class="row">
                                 <div class="3u">
@@ -77,14 +77,15 @@ if(!userHasRole('Amministratore'))
 
                                 </div>
                                 <div class="3u">
-                                    <a href="inserisci_distributore.html.php" class="fa fa-plus" title="Aggiungi">Aggiungi Distributore </a>
+                                    <a href="visualizza_distributore.php" class="fa fa-edit" title="Modifica">Modifica Distributore </a>
                                 </div>
                                 <div class="3u">
-                                    <a href="inserisci_casa_editrice.html.php" class="fa fa-edit" title="Modifica">Modifica Distributore </a>
+                                    <a href="inserisci_distributore.html.php" class="fa fa-plus" title="Aggiungi">Aggiungi Distributore </a>
                                 </div>
+
                             </div>
 
-                        <form method="post" action="visualizza_casa_editrice.php" name="ricerca_casa_editrice">
+                        <form method="post" action="visualizza_casa_editrice.php" name="ricerca_casa_editrice" id="ricerca_casa_editrice">
                             <div class="row">
                                 <div class="3u">
                                     <h3 class="fa fa-building" style="color: #ed786a">&nbsp; Casa Editrice</h3>
@@ -92,12 +93,21 @@ if(!userHasRole('Amministratore'))
                                 <div class="3u">
                                     <input id="casaeditrice" name="casaeditrice" placeholder="Casa Editrice" type="text" class="text" value="">
                                 </div>
+                                <!--<script type="text/javascript">
+                                    function submitform()
+                                    {
+                                        document.getElementById("ricerca_casa_editrice").submit();
+                                        //this.document.forms["ricerca_casa_editrice"].submit();
+                                    }
+                                </script>-->
+                                <div class="3u actions">
+                                    <!--<a href="javascript: submitform()" class="fa fa-edit" title="Modifica">Modifica Casa Editrice </a>-->
+                                    <a href="visualizza_casa_editrice.php" class="fa fa-edit" title="Modifica">Modifica Casa Editrice </a>
+                                </div>
                                 <div class="3u">
                                     <a href="inserisci_casa_editrice.html.php" class="fa fa-plus" title="Aggiungi">Aggiungi Casa Editrice</a>
                                 </div>
-                                <div class="3u">
-                                    <a href="visualizza_casa_editrice.php" class="fa fa-edit" title="Modifica">Modifica Casa Editrice </a>
-                                </div>
+
                             </div>
                         </form>
                         <!--<a href="visualizza_distributore.php" class="fa fa-toggle-right" title="Aggiungi">Aggiungi e Modifica Distributore </a>
