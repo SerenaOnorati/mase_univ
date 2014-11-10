@@ -77,14 +77,14 @@ if(!userHasRole('Amministratore'))
 
                                 </div>
                                 <div class="3u">
-                                    <a href="visualizza_distributore.php" class="fa fa-plus" title="Aggiungi">Aggiungi Distributore </a>
+                                    <a href="inserisci_distributore.html.php" class="fa fa-plus" title="Aggiungi">Aggiungi Distributore </a>
                                 </div>
                                 <div class="3u">
-                                    <a href="visualizza_distributore.php" class="fa fa-edit" title="Modifica">Modifica Distributore </a>
+                                    <a href="inserisci_casa_editrice.html.php" class="fa fa-edit" title="Modifica">Modifica Distributore </a>
                                 </div>
                             </div>
 
-                        <form method="post" action="" name="ricerca_casa_editrice">
+                        <form method="post" action="visualizza_casa_editrice.php" name="ricerca_casa_editrice">
                             <div class="row">
                                 <div class="3u">
                                     <h3 class="fa fa-building" style="color: #ed786a">&nbsp; Casa Editrice</h3>
@@ -93,7 +93,7 @@ if(!userHasRole('Amministratore'))
                                     <input id="casaeditrice" name="casaeditrice" placeholder="Casa Editrice" type="text" class="text" value="">
                                 </div>
                                 <div class="3u">
-                                    <a href="visualizza_casa_editrice.php" class="fa fa-plus" title="Aggiungi">Aggiungi Casa Editrice</a>
+                                    <a href="inserisci_casa_editrice.html.php" class="fa fa-plus" title="Aggiungi">Aggiungi Casa Editrice</a>
                                 </div>
                                 <div class="3u">
                                     <a href="visualizza_casa_editrice.php" class="fa fa-edit" title="Modifica">Modifica Casa Editrice </a>

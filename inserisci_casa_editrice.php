@@ -13,18 +13,18 @@ else{
     {
         //prelevo i nuovi campi del nuovo libro dalla chiamata AJAX
         $nome = $_POST['nome'];
-        $sito_web = $_POST['sito'];
+        $sito_web_casa_editrice = $_POST['sito'];
         $id_distributore = $_POST['id_distributore'];
 
         try
         {
             $pdo->beginTransaction();
 
-            $sql = 'SELECT COUNT(*) FROM casa_editrice WHERE nome LIKE :nome AND sito_web LIKE :sito_web AND id_distributore LIKE :id_distributore';
+            $sql = 'SELECT COUNT(*) FROM casa_editrice WHERE nome LIKE :nome AND sito_web_casa_editrice LIKE :sito_web_casa_editrice AND id_distributore LIKE :id_distributore';
             $s = $pdo->prepare($sql);
 
             $s->bindValue(':nome', $nome, PDO::PARAM_STR);
-            $s->bindValue(':sito_web', $sito_web, PDO::PARAM_STR);
+            $s->bindValue(':sito_web_casa_editrice', $sito_web_casa_editrice, PDO::PARAM_STR);
             $s->bindValue(':id_distributore', $id_distributore, PDO::PARAM_INT);
 
             $s->execute();
@@ -36,11 +36,11 @@ else{
             }
             else
             {
-                $sql = 'INSERT INTO casa_editrice (nome, sito_web, id_distributore)
-                                          VALUES (:nome, :sito_web, :id_distributore)';
+                $sql = 'INSERT INTO casa_editrice (nome, sito_web_casa_editrice, id_distributore)
+                                          VALUES (:nome, :sito_web_casa_editrice, :id_distributore)';
                 $s = $pdo->prepare($sql);
                 $s->bindValue(':nome', $nome, PDO::PARAM_STR);
-                $s->bindValue(':sito_web', $sito_web, PDO::PARAM_STR);
+                $s->bindValue(':sito_web_casa_editrice', $sito_web_casa_editrice, PDO::PARAM_STR);
                 $s->bindValue(':id_distributore', $id_distributore, PDO::PARAM_INT);
 
                 $s->execute();

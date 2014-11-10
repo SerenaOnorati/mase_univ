@@ -1,3 +1,20 @@
+<?php
+include 'access.inc.php';
+include 'configuration.php';
+
+
+if(!userIsLoggedIn())
+{
+    $GLOBALS['loginError'] = "Non hai effettuato il login. Inserire email e password";
+    include 'index.php';
+}
+if(!userHasRole('Amministratore'))
+{
+
+    $GLOBALS['loginError'] = "Non sei autorizzato ad accedere alla pagina di amministrazione";
+    include 'index.php';
+}
+?>
 <!DOCTYPE HTML>
     <html>
     <head>
@@ -136,7 +153,7 @@
                         </form>
 
                         <!-- Visualizzazione di tutti i ditributori -->
-                        <?php foreach ($risultati as $risultato): ?>
+                        <!--<?php foreach ($risultati as $risultato): ?>
                             <form action="" method="post" onsubmit="return false">
                                 <div class="row" id="row<?php echo $risultato['id_distributore']; ?>">
                                     <br>
@@ -168,7 +185,7 @@
                                 </div>
                             </form>
                             <br>
-                        <?php endforeach; ?>
+                        <?php endforeach; ?>-->
                     </article>
                 </div>
             </div>

@@ -977,3 +977,55 @@ function visualizzaLibroRicercaSito(isbn)
         }
     })
 }
+
+function cancellaCasaEditrice(id_casa_editrice)
+{
+    var check = confirm("Sei sicuro di voler cancellare la casa editrice?");
+    if(check == true)
+    {
+        $.ajax({
+            type: 'POST',
+            url: 'cancella_casa_editrice.php',
+            data: "id_casa_editrice="+id_casa_editrice,
+            dataType: "html",
+
+            success: function(response)
+            {
+                var riga = document.getElementById('row'+id_casa_editrice);
+                riga.style.display = 'none';
+                alert(response);
+
+            },
+            error: function()
+            {
+                alert("La cancellazione non è andata a buon fine.");
+            }
+        });
+    }
+}
+
+function cancellaDistributore(id_distributore)
+{
+    var check = confirm("Sei sicuro di voler cancellare il distributore?");
+    if(check == true)
+    {
+        $.ajax({
+            type: 'POST',
+            url: 'cancella_distributore.php',
+            data: "id_distributore="+id_distributore,
+            dataType: "html",
+
+            success: function(response)
+            {
+                var riga = document.getElementById('row'+id_distributore);
+                riga.style.display = 'none';
+                alert(response);
+
+            },
+            error: function()
+            {
+                alert("La cancellazione non è andata a buon fine.");
+            }
+        });
+    }
+}

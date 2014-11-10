@@ -19,12 +19,23 @@
         {
 
             include 'db.inc.php';
-            //recupera i dati delle news
+            //recupera i dati della casa editrice
+            if(isset($_POST['casaeditrice'])){
+                $casa_editrice = "%".trim($_POST['casaeditrice'])."%";
+            }
+            else
+            {
+                $casa_editrice = "%%";
+
+            }
+
             try
             {
                 $sql = 'SELECT * FROM casa_editrice
-                          INNER JOIN  distributore on casa_editrice.id_distributore = distributore.id_distributore';
+                          INNER JOIN  distributore on casa_editrice.id_distributore = distributore.id_distributore
+                          WHERE nome LIKE :casa_editrice';
                 $s = $pdo->prepare($sql);
+                $s->bindValue(':casa_editrice', $casa_editrice, PDO::PARAM_STR);
                 $s->execute();
 
             }
@@ -48,7 +59,7 @@
                 echo "</script>";
             }
 
-            include 'inserisci_casa_editrice.html.php';
+            include 'visualizza_casa_editrice.html.php';
         }
     }
 ?>
