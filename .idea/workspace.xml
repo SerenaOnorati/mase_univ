@@ -1102,13 +1102,18 @@
       <created>1415658333523</created>
       <updated>1415658333523</updated>
     </task>
-    <option name="localTasksCounter" value="178" />
+    <task id="LOCAL-00178" summary="inserimento, modifica e cancellazione distributore e casa editrice,&#10;da ultimare&#10;1) ricerca distributore secondo keyword&#10;2)capire perchò non fa il reload (anche se c'è) della pagina dopo inserimento del distributore&#10;----&gt;nuova commit">
+      <created>1417716383441</created>
+      <updated>1417716383441</updated>
+    </task>
+    <option name="localTasksCounter" value="179" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13559322" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.08078603" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16036506" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1117,7 +1122,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.161875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31681877" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31681877" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31681877" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.107669614" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1126,7 +1131,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.07366771" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985657" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13559322" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1144,7 +1148,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Cancellazione distributore da finire" />
     <MESSAGE value="modificato l'invio dell'email con l'informativa sulla provacy" />
     <MESSAGE value="modificato l'invio dell'email con l'informativa sulla privacy" />
     <MESSAGE value="ricerca dal sito principale terminata" />
@@ -1169,7 +1172,8 @@
     <MESSAGE value="colori vari q" />
     <MESSAGE value="inserimento e modifica casa editrice, finire distributore" />
     <MESSAGE value="inserimento, modifica e cancellazione distributore e casa editrice,&#10;da ultimare&#10;1) ricerca distributore secondo keyword&#10;2)capire perchò non fa il reload (anche se c'è) della pagina dopo inserimento del distributore" />
-    <option name="LAST_COMMIT_MESSAGE" value="inserimento, modifica e cancellazione distributore e casa editrice,&#10;da ultimare&#10;1) ricerca distributore secondo keyword&#10;2)capire perchò non fa il reload (anche se c'è) della pagina dopo inserimento del distributore" />
+    <MESSAGE value="inserimento, modifica e cancellazione distributore e casa editrice,&#10;da ultimare&#10;1) ricerca distributore secondo keyword&#10;2)capire perchò non fa il reload (anche se c'è) della pagina dopo inserimento del distributore&#10;----&gt;nuova commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="inserimento, modifica e cancellazione distributore e casa editrice,&#10;da ultimare&#10;1) ricerca distributore secondo keyword&#10;2)capire perchò non fa il reload (anche se c'è) della pagina dopo inserimento del distributore&#10;----&gt;nuova commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
