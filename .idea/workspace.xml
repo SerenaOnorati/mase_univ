@@ -1106,7 +1106,11 @@
       <created>1417716383441</created>
       <updated>1417716383441</updated>
     </task>
-    <option name="localTasksCounter" value="179" />
+    <task id="LOCAL-00179" summary="inserimento, modifica e cancellazione distributore e casa editrice,&#10;da ultimare&#10;1) ricerca distributore secondo keyword&#10;2)capire perchò non fa il reload (anche se c'è) della pagina dopo inserimento del distributore&#10;----&gt;nuova commit">
+      <created>1417716600404</created>
+      <updated>1417716600404</updated>
+    </task>
+    <option name="localTasksCounter" value="180" />
     <servers />
   </component>
   <component name="ToolWindowManager">
